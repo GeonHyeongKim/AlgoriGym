@@ -3,7 +3,8 @@
 //  Question Link: https://leetcode.com/problems/number-of-islands/
 //  Primary idea:   1. 2중 반복문에서 dfs로 풀기
 //                  2. grid[0][0]이 1인지 확인하기
-//                  3. String으로 if문 비교하기
+//                  3. if, guard를 통해 조건 비교하기
+//                  4. String으로 변경 후 if문 비교하기
 //
 //  Time Complexity:
 //  Space Complexity ://
@@ -14,7 +15,7 @@ import Foundation
 
 class Solution {
     func numIslands(_ grid: [[Character]]) -> Int {
-        guard grid.count > 0 || grid[0].count > 0 else {
+        guard grid.count >= 0 || grid[0].count >= 0 else {
             return 0
         }
         var grid = grid
