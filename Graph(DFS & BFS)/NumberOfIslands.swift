@@ -7,7 +7,7 @@
 //                  4. String으로 변경 후 if문 비교하기
 //
 //  Time Complexity:
-//  Space Complexity ://
+//  Space Complexity :
 //  Created by gunhyeong on 2020/02/09.
 //
 
