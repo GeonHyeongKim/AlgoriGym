@@ -62,18 +62,19 @@ class Solution {
                 if str == endWord {
                     return level
                 }
-                for neighbor in neighbors(str!, wordList){
+                for neighbor in neighbors(str!, dict){
                     queue.enqueue(neighbor)
                 }
             }
+            
             level += 1
         }
         return 0
     }
     
-    func neighbors(_ currentWord: String, _ wordList: [String]) -> [String]{
+    func neighbors(_ currentWord: String, _ wordList: Set<String>) -> [String]{
         var result = [String]()
-        var dict = Set<String>(wordList)
+        var dict = wordList
         let allAlphabet = Array("abcdefghijklmnopqrstuvwxyz")
         
         for i in 0..<currentWord.count{
