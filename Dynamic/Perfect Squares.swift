@@ -56,7 +56,7 @@ class Solution {
         result[0] = 0
         
         for i in 1..<n+1{
-            for j in 1..<n where j*j<=i {
+            for j in 1..<i where j*j<=i {
                 result[i] = min(result[i], result[i-j*j]+1)
             }
         }
