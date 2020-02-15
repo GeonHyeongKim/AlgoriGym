@@ -63,4 +63,27 @@ class Solution {
         
         return result.last!
     }
+    
+    ///Mark. Time Limit Exceeded
+    func _staticDP(_ n : inout Int) -> Int {
+        guard n >= 4 else {
+            return n
+        }
+        
+        var result = [Int]()
+        result.append(0)
+        
+        while result.count <= n {
+            let currentSquare = result.count
+            var cntSquare = INTPTR_MAX
+            
+            for i in 1..<currentSquare+1 where i*i<=currentSquare {
+                cntSquare = min(cntSquare, result[currentSquare - i*i] + 1)
+            }
+            
+            result.append(cntSquare)
+        }
+        
+        return result.last!
+    }
 }
