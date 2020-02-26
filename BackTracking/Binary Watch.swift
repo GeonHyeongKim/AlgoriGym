@@ -1,12 +1,10 @@
 //
 //  Binary Watch.swift
-//  Question Link: https://leetcode.com/problems/letter-case-permutation/
+//  Question Link: https://leetcode.com/problems/binary-watch/
 //  Primary idea:   <BackTracking>
-//                  1. 문자한개를 추출하여 숫자인지 문자인지 isNumber를 통해 판단
-//                  2. 다음 문자를 upper와 lower를 통해 재귀함수로 돌림
-//                  3. 조건에 맞을 때까지 계속 전진
-//                  4. 더이상 나아갈 길이 없으면 한칸 후퇴
-//                  5. 계속 반복
+//                  1. 기본적으로 시간과 분을 함수로 파라미터로 보낸 뒤 계수를 반환한다.
+//                  2. String(Int, radix: 진수) 함수를 이용해 각 숫자(시 분)의 계수를 구한다.
+//                  3. Array의 filter를 이용하여 1인 것만 다시 배열에 집어 넣는다.
 
 //  Time Complexity :
 //  Space Complexity :
@@ -18,6 +16,26 @@ import Foundation
 
 class Solution {
     func readBinaryWatch(_ num: Int) -> [String] {
+        guard num >= 0 else {
+            return ["00:00"]
+        }
         
+        var result = [String]()
+        
+        for hour in 0...11 { // 시
+            for minute in 0...59 { // 분
+                if find(hour, minute) == num {
+                    result.append(String(format: "%02d:02%d", hour, minute))
+                }
+            }
+        }
+        
+        return result
+    }
+    
+    private func find(_ hour: Int, _ minute: Int) -> Int {
+        let hourCnt = Array(String(hour, radix: 2)).filter {$0 == "1"}.count
+        let minuteCnt = Array(String(minute, radix: 2)).filter {$0 == "1"}.count
+        return hourCnt + minuteCnt
     }
 }
