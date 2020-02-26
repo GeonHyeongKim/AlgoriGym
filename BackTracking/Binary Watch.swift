@@ -16,7 +16,7 @@ import Foundation
 
 class Solution {
     func readBinaryWatch(_ num: Int) -> [String] {
-        guard num >= 0 else {
+        guard num > 0 else {
             return ["0:00"]
         }
         
