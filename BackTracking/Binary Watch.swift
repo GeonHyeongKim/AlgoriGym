@@ -17,7 +17,7 @@ import Foundation
 class Solution {
     func readBinaryWatch(_ num: Int) -> [String] {
         guard num >= 0 else {
-            return ["00:00"]
+            return ["0:00"]
         }
         
         var result = [String]()
@@ -25,7 +25,7 @@ class Solution {
         for hour in 0...11 { // 시
             for minute in 0...59 { // 분
                 if find(hour, minute) == num {
-                    result.append(String(format: "%02d:02%d", hour, minute))
+                    result.append(String(format: "%d:02%d", hour, minute))
                 }
             }
         }
