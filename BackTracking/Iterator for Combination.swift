@@ -5,8 +5,8 @@
 //                  1. 2자리의 모든 경우의 수를 구한다.
 
 
-//  Runtime :
-//  Memory :
+//  Runtime : 72 ms
+//  Memory : 22.3 MB
 //
 //  Created by gunhyeong on 2020/02/28.
 //
@@ -14,7 +14,7 @@
 import Foundation
 
 class CombinationIterator {
-    var result = Set<String>()
+    var result = [String]()
     
     init(_ characters: String, _ combinationLength: Int) {
         var characters = Array(characters)
@@ -39,7 +39,7 @@ class CombinationIterator {
     
     private func backtracking(_ characters: inout [Character], _  combinationLength: inout Int, _ currentLength: Int, _ currentString: String){
         if currentString.count == combinationLength {
-            result.insert(currentString)
+            result.append(currentString)
             return
         }
         
