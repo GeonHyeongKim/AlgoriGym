@@ -19,7 +19,7 @@ class CombinationIterator {
     init(_ characters: String, _ combinationLength: Int) {
         var characters = Array(characters)
         var combinationLength = combinationLength
-        self.backtracking(&characters, &combinationLength, 0)
+        self.backtracking(&characters, &combinationLength, 0, "")
         print(result)
     }
     
@@ -37,19 +37,14 @@ class CombinationIterator {
         return (isExist == nil) ? false : true
     }
     
-    private func backtracking(_ characters: inout [Character], _  combinationLength: inout Int, _ currentLength: Int){
-        if currentLength == combinationLength {
-            result.insert(String(characters[0..<combinationLength]))
-        }
-        
-        if currentLength == characters.count {
+    private func backtracking(_ characters: inout [Character], _  combinationLength: inout Int, _ currentLength: Int, _ currentString: String){
+        if currentString.count == combinationLength {
+            result.insert(currentString)
             return
         }
         
         for index in currentLength..<characters.count {
-            characters.swapAt(index, currentLength)
-            backtracking(&characters, &combinationLength, currentLength + 1)
-            characters.swapAt(index, currentLength)
+            backtracking(&characters, &combinationLength, index + 1, currentString+String(characters[index]))
         }
     }
 }
