@@ -6,9 +6,9 @@
 //                  2. 결과에 포함되는 조건
 //                  3. 탈출 조건 (계산하는 string의 총 길이와 탐색하고 있는 index의 값이 일치할떄)
 
-//  Time Complexity :
-//  Space Complexity :
-//
+//  Runtime : 232 ms
+//  Memory : 21.5 MB
+
 //  Created by gunhyeong on 2020/02/27.
 //
 
