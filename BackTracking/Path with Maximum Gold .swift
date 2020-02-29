@@ -3,7 +3,7 @@
 //  Question Link: https://leetcode.com/problems/path-with-maximum-gold/
 //  Primary idea:   <BackTracking>
 //                  1. guard를 통해 grid의 기본적인 nil 체크 및 dfs로 grid의 크기를 벗어났는지를 check
-
+//                  2. 현재 grid[i][j]를 sum 변수에 누적해서 더하고 dfs로 다시 재귀
 
 //  Runtime :
 //  Memory :
@@ -15,7 +15,7 @@ import Foundation
 
 class Solution {
     
-    let dir = [[-1,0], [1,0], [0,1], [0,-1]]
+    let dirs = [[-1,0], [1,0], [0,1], [0,-1]]
     var row: Int = 0
     var col: Int = 0
     
@@ -30,9 +30,12 @@ class Solution {
 
         for i in 0..<row {
             for j in 0..<col {
-                if grid[i][j] != 0{ // 0이 아닌곳을 start로 지정
+                if grid[i][j] != 0{ // 0이 아닌곳을 start로 지정\
+                    print("\(grid[i][j]) -> ", terminator :" ")
                     let sum = dfs(grid, i, j, 0)
                     result = max(result, sum)
+                    print(": \(result)", terminator :" ")
+                    print("\n")
                 }
             }
         }
@@ -41,12 +44,20 @@ class Solution {
     }
     
     func dfs(_ grid: [[Int]], _ i: Int, _ j: Int, _ sum: Int) -> Int{
-        guard i > 0  && i < row && j > 0 && j < col else { // grid의 크기를 벗어날 경우
+        guard i >= 0  && i < row && j >= 0 && j < col else { // grid의 크기를 벗어날 경우
             return sum // 지금까지의 합을 반환한다.
         }
+        print("\(grid[i][j]) -> ", terminator :" ")
+        var sum = sum
+        sum += grid[i][j] // 현재 grid[i][j] 값을 sum에 누적
         
+        for dir in dirs {
+            let dx = i + dir[0]
+            let dy = j + dir[1]
+            
+            sum = max(sum, dfs(grid, dx, dy, sum))
+        }
         
-        
-        return 0
+        return sum
     }
 }
