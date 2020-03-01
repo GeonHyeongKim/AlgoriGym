@@ -5,8 +5,8 @@
 //                  1. 우선 모든 경우에 수를 찍어 본다.
 //                  2. result에 담는 조건과 for문을 탈출하는 조건을 생각한다.
 
-//  Runtime :
-//  Memory :
+//  Runtime : 32 ms
+//  Memory : 21.1 MB    
 //
 //  Created by gunhyeong on 2020/03/01.
 //
