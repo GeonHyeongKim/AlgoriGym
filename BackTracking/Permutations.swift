@@ -37,7 +37,11 @@ class Solution {
         
         // 2. for 저장, 탈출
         for i in 0..<nums.count { // 탈출 조건
-            if curList.count == nums.count {
+//            if curList.count == nums.count {
+//                continue
+//            }
+            
+            if curList.contains(nums[i]){
                 continue
             }
             curList.append(nums[i])
@@ -46,4 +50,3 @@ class Solution {
         }
     }
 }
-
