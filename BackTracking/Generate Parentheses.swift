@@ -9,6 +9,7 @@
 //                  2. append 조건
 //                      1) "(" : left의 갯수 < input의 갯수
 //                      2) ")" : right의 갯수 < left의 현재 갯수
+//                  3. 마지막으로 넣은 문자 제거
 
 //  Runtime :
 //  Memory :
@@ -44,11 +45,13 @@ class Solution {
         if left < input {
             pair.append("(")
             backTracking(&pair, left+1, right) // append했기 때문에 left 한개 증가
+            pair.removeLast() // 방금 넣은 "(" 제거
         }
         
         if right < left {
             pair.append(")")
             backTracking(&pair, left, right+1) // append했기 때문에 right 한개 증가
+            pair.removeLast() // 방금 넣은 ")" 제거
         }
     }
 }
