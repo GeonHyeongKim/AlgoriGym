@@ -11,8 +11,8 @@
 //                      2) ")" : right의 갯수 < left의 현재 갯수
 //                  3. 마지막으로 넣은 문자 제거
 
-//  Runtime :
-//  Memory :
+//  Runtime : 20 ms
+//  Memory : 20.8 MB
 //
 //  Created by gunhyeong on 2020/03/02.
 //
