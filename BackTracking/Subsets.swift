@@ -4,6 +4,7 @@
 //  Primary idea:   <BackTracking>
 //                  1. 결과를 담기
 //                  2. for 저장, 탈출
+//                      1) for에서 시작하는 index의 시작값은 parameter로 들어온 index 변수값으로 시작한다.
 
 //  Runtime :
 //  Memory :
@@ -33,7 +34,7 @@ class Solution {
     func backTracking(_ num: inout [Int], _ index: Int) {
         result.append(num) // 1. 결과 담기
         
-        for i in 0..<index { // 2. for 저장, 탈출
+        for i in index..<nums.count { // 2. for 저장, 탈출
             num.append(nums[i])
             backTracking(&num, i+1)
             num.removeLast()
