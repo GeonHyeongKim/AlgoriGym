@@ -6,8 +6,8 @@
 //                  2. for 저장, 탈출
 //                      1) for에서 시작하는 index의 시작값은 parameter로 들어온 index 변수값으로 시작한다.
 
-//  Runtime :
-//  Memory :
+//  Runtime : 12 ms
+//  Memory : 21.3 MB
 //
 //  Created by gunhyeong on 2020/03/03.
 //
