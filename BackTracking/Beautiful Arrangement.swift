@@ -11,8 +11,8 @@
 //                      3) 배열에 접근을 최소화 2 ( append하는 것을 줄이기 위해 visited 배열로 방문했는지 하지 않았는지 Check)
 //                          * 참고 : https://leetcode.com/problems/beautiful-arrangement/discuss/99729/Swift-solution-Backtracking
 
-//  Runtime :
-//  Memory :
+//  Runtime : 316 ms
+//  Memory : 20.6 MB
 //
 //  Created by gunhyeong on 2020/03/04.
 //
