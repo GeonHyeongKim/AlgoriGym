@@ -23,7 +23,7 @@ class Solution {
     var endIndex = 10
     
     func combinationSum3(_ k: Int, _ n: Int) -> [[Int]] {
-        guard k > 0 && k < 10 && n > 5 && n < 25 else {
+        guard k > 0 && k < 10 else {
             return result
         }
         
