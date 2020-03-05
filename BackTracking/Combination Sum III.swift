@@ -8,8 +8,8 @@
 //                      2) 계산한 Set 집합(combinationSet)의 합(reduce 함수 이용)이 n일 경우
 //                  3. 건너띄기 - Set 집합(combinationSet)에 contain되어 있으면 다음 숫자로 넘어가기
 
-//  Runtime :
-//  Memory :
+//  Runtime : 8 ms
+//  Memory : 22.4 MB,
 //
 //  Created by gunhyeong on 2020/03/05.
 //
