@@ -27,24 +27,24 @@ class Solution {
         self.target = target
         var candidate = [Int]() // 1. 계산된 candidate
         
-        backTracking(&candidate, 0)
+        backTracking(&candidate, 0, 0)
         
         return selectedCandidates
     }
     
-    func backTracking(_ candidate: inout [Int], _ startIndex: Int){
-        if candidate.reduce(0, +) > target { // 2. 방금 포함된 candidate의 중복 허용 조건
+    func backTracking(_ candidate: inout [Int], _ sum: Int, _ startIndex: Int){
+        if sum > target { // 2. 방금 포함된 candidate의 중복 허용 조건
             return
         }
         
-        if candidate.reduce(0, +) == target { // 3. 결과값 저장
+        if sum == target { // 2. 결과값 저장
             selectedCandidates.append(candidate.sorted())
             return
         }
         
         for i in startIndex..<candidates.count {
             candidate.append(candidates[i])
-            backTracking(&candidate, i)
+            backTracking(&candidate, sum + candidates[i], i)
             candidate.removeLast()
         }
     }
