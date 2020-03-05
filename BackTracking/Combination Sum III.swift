@@ -1,6 +1,6 @@
 //
 //  Combination Sum III.swift
-//  Question Link: https://leetcode.com/problems/beautiful-arrangement/
+//  Question Link: https://leetcode.com/problems/combination-sum-iii/
 //  Primary idea:   <BackTracking>
 //                  1. set으로 unique 보장
 //                  2. 결과값 저장
