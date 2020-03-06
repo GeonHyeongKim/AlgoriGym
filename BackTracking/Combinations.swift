@@ -6,8 +6,8 @@
 //                  2. 저장 조건
 //                  3. 반복문에서 upperIndex > lowerIndex를 방지
 
-//  Runtime:
-//  Memory Usage:
+//  Runtime: 244 ms
+//  Memory Usage: 22.9 MB
 //
 //  Created by gunhyeong on 2020/03/06.
 //
