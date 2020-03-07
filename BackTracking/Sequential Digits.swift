@@ -6,8 +6,8 @@
 //                  2. 저장 - 계산된 숫자(next)가 시작 자릿수(low) <= next <= high일 경우
 //                  3. 계산 - next%10+1 은 다음 자릿수를 고려하여 9가 넘지 않을 경우.
 
-//  Runtime:
-//  Memory Usage:
+//  Runtime: 8 ms
+//  Memory Usage: 21.4 MB
 //
 //  Created by gunhyeong on 2020/03/07.
 //
