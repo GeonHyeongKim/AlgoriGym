@@ -8,8 +8,8 @@
 //                      - index : 계산하기 위한 조건
 //                      - num : reference로 연결
 
-//  Runtime: 1) 12 ms,
-//  Memory Usage: 1) 20.5 MB,
+//  Runtime: 1) 12 ms, 2) 12 ms
+//  Memory Usage: 1) 20.5 MB, 2) 20.7 MB    
 //
 //  Created by gunhyeong on 2020/03/08.
 //
