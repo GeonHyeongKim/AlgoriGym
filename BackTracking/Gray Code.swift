@@ -6,8 +6,8 @@
 //                      - 오른쪽으로 비트 쉬프트 한 다음, 본래 값과 논리합을 하면 끝난다는 것
 //                  2. backTracking
 
-//  Runtime:
-//  Memory Usage:
+//  Runtime: 1) 12 ms,
+//  Memory Usage: 1) 20.5 MB,
 //
 //  Created by gunhyeong on 2020/03/08.
 //
