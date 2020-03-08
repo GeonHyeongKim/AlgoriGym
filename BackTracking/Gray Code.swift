@@ -20,7 +20,18 @@ class Solution {
             return [0]
         }
         var result = [Int]()
-
+        
+        folmula(n, &result) //1. 공식
+        
         return result
+    }
+    
+    
+    func folmula(_ n: Int, _ result: inout [Int]) { // 공식 사용
+        let num = (1<<n)
+        
+        for bin in 0..<num {
+            result.append(bin ^ (bin>>1))
+        }
     }
 }
