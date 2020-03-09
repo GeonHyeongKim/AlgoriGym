@@ -10,8 +10,8 @@
 //                  3. 탈출 조건 : target < 0 을 하지 않으면 무한 루프에 빠지게 된다.
 //
 
-//  Runtime:
-//  Memory Usage:
+//  Runtime: 48 ms
+//  Memory Usage: 21 MB
 //
 //  Created by gunhyeong on 2020/03/09.
 //
