@@ -9,8 +9,8 @@
 //                          * 2 : 문자 자체가 Unique한지 check
 //
 
-//  Runtime: 96 ms
-//  Memory Usage: 21.3 MB
+//  Runtime: 364 ms -> 96ms
+//  Memory Usage: 21.5 MB -> 21.3MB
 //
 //  Created by gunhyeong on 2020/03/10.
 //
