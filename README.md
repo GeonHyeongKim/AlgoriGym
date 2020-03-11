@@ -1,8 +1,11 @@
 # AlgoriGym
 My algorithm solution repository
 
+## Goal-oriented
+Daily commit - I will commit at least one algorithm problem once a day.
+
 ## Start
-2020/02/01 ~ 
+2020/02/01 ~ at this momen
 
 ## Language
 Swift
