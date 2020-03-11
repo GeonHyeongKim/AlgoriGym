@@ -8,8 +8,11 @@
 //                      2) contains를 통해 포함되어 있는지를 check
 //
 
-//  Runtime:
-//  Memory Usage:
+
+//  Time Complexity: O(n^n)
+//  Space Complexity: O(n)
+//  Runtime: 112 ms
+//  Memory Usage: 21.4 MB
 //
 //  Created by gunhyeong on 2020/03/11.
 //
