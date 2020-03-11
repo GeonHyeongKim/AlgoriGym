@@ -8,7 +8,7 @@
 * [LeetCode ](https://leetcode.com/ "LeetCode"), [백준 알고리즘](https://www.acmicpc.net/ "백준 알고리즘"), [프로그래머스](https://programmers.co.kr/ "프로그래머스")
 
 ## Back Tracking
-|Title||Solution||Difficulty||Time||Space||See|
+|Title|Solution|Difficulty|Time|Space|See|
 |:---|:---:|:---:|:---:|:---:|:---:|
 |[Subsets II](https://leetcode.com/problems/subsets-ii/ "LeetCode")|[Swift](https://github.com/GeonHyeongKim/AlgoriGym/blob/master/BackTracking/Subsets%20II.swift)|Medium|||LeetCode|
 
