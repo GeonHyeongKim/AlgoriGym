@@ -12,7 +12,7 @@ Swift
 
 ## Back Tracking
 |Title|Solution|Difficulty|Time|Space|See|Etc|
-|:---|:---:|:---:|:---:|:---:|:---:|
+|:---|:---:|:---:|:---:|:---:|:---:|:---|
 |[Subsets II](https://leetcode.com/problems/subsets-ii/ "LeetCode")|[Swift](https://github.com/GeonHyeongKim/AlgoriGym/blob/master/BackTracking/Subsets%20II.swift)|Medium|||LeetCode||
 
 ## Author
