@@ -6,10 +6,10 @@
 *                  2. guard를 통해 2~9인 숫자만 가지고 있는지 check
 *                  3. dictionary([Character:String])로 배열을 선언하여 #42에서 바로 index로 접근할 수 있도록 변경
 *
-*  Time Complexity:
-*  Space Complexity:
-*  Runtime:  ms
-*  Memory Usage:  MB
+*  Time Complexity: O(n^n)
+*  Space Complexity: O(n)
+*  Runtime: 4 ms
+*  Memory Usage: 21.9 MB
 *
 *  Created by gunhyeong on 2020/03/12.
 */

@@ -16,7 +16,7 @@ Swift
 ## Depth-first search(DFS)
 |Title|Solution|Difficulty|Time|Space|See|Etc|
 |:---|:---:|:---:|:---:|:---:|:---:|:---|
-|[Letter Combinations of a Phone Number](https://leetcode.com/problems/letter-combinations-of-a-phone-number/ "LeetCode")|[Swift](https://github.com/GeonHyeongKim/AlgoriGym/blob/master/BackTracking/Letter%20Combinations%20of%20a%20Phone%20Number.swift)|Medium|||LeetCode||
+|[Letter Combinations of a Phone Number](https://leetcode.com/problems/letter-combinations-of-a-phone-number/ "LeetCode")|[Swift](https://github.com/GeonHyeongKim/AlgoriGym/blob/master/BackTracking/Letter%20Combinations%20of%20a%20Phone%20Number.swift)|Medium|O(n^n)|O(n)|LeetCode||
 |[Subsets II](https://leetcode.com/problems/subsets-ii/ "LeetCode")|[Swift](https://github.com/GeonHyeongKim/AlgoriGym/blob/master/BackTracking/Subsets%20II.swift)|Medium|O(n^n)|O(n)|LeetCode||
 
 ## Author
