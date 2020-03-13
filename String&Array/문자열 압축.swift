@@ -10,6 +10,7 @@
 *                  2. 점수 올리기
 *                       1) 배열의 길이가 1일경우, upperBound < lowerBound 방지 -> 60점
 *                       2) 제약조건에서 1000 이하이기 때문에 초기 guard가 '<'가 아닌 '<='로 바꾸어야함 - 66점
+*                       3) 같은 숫자가 연속으로 들어올 경우
 *
 *  Time Complexity: O(n^2)
 *  Space Complexity: O(n)
@@ -61,8 +62,13 @@ func solution(_ s:String) -> Int {
             }
             endIndex = letters
         }
+        
         if s.count % cut != 0{ // 마지막 문자열 처리
-            currentLetters += String(s[endIndex..<s.count])
+            if cnt > 1 { // 2-3) 같은 숫자가 연속으로 들어올 경우
+                currentLetters = String(cnt) + currentLetters + String(s[endIndex..<s.count])
+            } else {
+                currentLetters += String(s[endIndex..<s.count])
+            }
         }
         
         if (currentLetters.count < result) { // min 내부 함수 쓰지 않기
