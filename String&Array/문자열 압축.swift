@@ -8,7 +8,8 @@
 *                       3) 문자열 비교하기
 *                       4) 문자열 길이 얻기
 *                  2. 점수 올리기
-*                       1) 배열의 길이가 1일경우, upperBound < lowerBound 방지
+*                       1) 배열의 길이가 1일경우, upperBound < lowerBound 방지 -> 60점
+*                       2) 제약조건에서 1000 이하이기 때문에 초기 guard가 '<'가 아닌 '<='로 바꾸어야함 - 66점
 *
 *  Time Complexity: O(n^2)
 *  Space Complexity: O(n)
@@ -20,7 +21,7 @@
 import Foundation
 
 func solution(_ s:String) -> Int {
-    guard s.count > 0 && s.count < 1000 else { // Constraints : 1~1000
+    guard s.count > 0 && s.count <= 1000 else { // Constraints : 1~1000
         return 0
     }
     
