@@ -7,6 +7,8 @@
 *                       2) 부분 문자열 얻기
 *                       3) 문자열 비교하기
 *                       4) 문자열 길이 얻기
+*                  2. 점수 올리기
+*                       1) 배열의 길이가 1일경우, upperBound < lowerBound 방지
 *
 *  Time Complexity: O(n^2)
 *  Space Complexity: O(n)
@@ -20,6 +22,10 @@ import Foundation
 func solution(_ s:String) -> Int {
     guard s.count > 0 && s.count < 1000 else { // Constraints : 1~1000
         return 0
+    }
+    
+    if s.count == 1 { // 1개일 경우, 방지 : upperBound < lowerBound
+        return 1
     }
     
     let s = Array(s)
@@ -54,11 +60,11 @@ func solution(_ s:String) -> Int {
             }
             endIndex = letters
         }
-        if s.count % cut != 0{
+        if s.count % cut != 0{ // 마지막 문자열 처리
             currentLetters += String(s[endIndex..<s.count])
         }
         
-        if (currentLetters.count < result) {
+        if (currentLetters.count < result) { // min 내부 함수 쓰지 않기
             result = currentLetters.count
         }
     }
