@@ -13,7 +13,7 @@ Swift
 ## See
 [LeetCode](https://leetcode.com/ "LeetCode"), [백준 알고리즘](https://www.acmicpc.net/ "백준 알고리즘"), [프로그래머스](https://programmers.co.kr/ "프로그래머스")
 
-## Brute force
+## String & (Brute force)
 |Title|Solution|Difficulty|Time|Space|See|Etc|
 |:---|:---:|:---:|:---:|:---:|:---:|:---|
 |[문자열 압축](https://programmers.co.kr/learn/courses/30/lessons/60057 "프로그래머스")|[Swift](https://github.com/GeonHyeongKim/AlgoriGym/blob/master/String%26Array/%EB%AC%B8%EC%9E%90%EC%97%B4%20%EC%95%95%EC%B6%95.swift)|Level 2|O(n^2)|O(n)|프로그래머스|2020 KAKAO BLIND RECRUITMENT|

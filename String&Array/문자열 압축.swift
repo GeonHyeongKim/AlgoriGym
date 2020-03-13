@@ -14,7 +14,7 @@
 *
 *  Time Complexity: O(n^2)
 *  Space Complexity: O(n)
-*  result : 56점
+*  result : 100점
 *
 *  Created by gunhyeong on 2020/03/12.
 */
