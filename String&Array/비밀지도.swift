@@ -6,8 +6,8 @@
 *                  2. 계산한 bit 중 갯수가 mapSize(=n) 보다 작을 경우
 *                      1) mapSize와 같아 질때까지 앞에서 부터 "0"을 삽입
 *
-*  Time Complexity:
-*  Space Complexity:
+*  Time Complexity: O(n^2)
+*  Space Complexity: O(n)
 *  result : 100점
 *  Created by gunhyeong on 2020/03/14.
 */
@@ -31,7 +31,7 @@ func solution(_ n:Int, _ arr1:[Int], _ arr2:[Int]) -> [String] {
             bit.insert("0", at: 0) // 2-1. mapSize크기 만큼 앞에 "0" 삽입
         }
 
-        for block in bit {
+        for block in bit { // transform
             if block == "1" {
                 str += "#"
             } else {
@@ -39,10 +39,8 @@ func solution(_ n:Int, _ arr1:[Int], _ arr2:[Int]) -> [String] {
             }
         }
         
-        answer.append(str)
+        answer.append(str) // save
     }
-    
-    
     
     return answer
 }
