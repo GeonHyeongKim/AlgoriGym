@@ -17,8 +17,7 @@ Swift
 |Title|Solution|Difficulty|Time|Space|See|Etc|
 |:---|:---:|:---:|:---:|:---:|:---:|:---|
 |[문자열 압축](https://programmers.co.kr/learn/courses/30/lessons/60057 "프로그래머스")|[Swift](https://github.com/GeonHyeongKim/AlgoriGym/blob/master/String%26Array/%EB%AC%B8%EC%9E%90%EC%97%B4%20%EC%95%95%EC%B6%95.swift)|Level 2|O(n^2)|O(n)|프로그래머스|2020 KAKAO BLIND RECRUITMENT|
-|[비밀지도
-](https://programmers.co.kr/learn/courses/30/lessons/17681 "프로그래머스")|[Swift](https://github.com/GeonHyeongKim/AlgoriGym/blob/master/String%26Array/%EB%AC%B8%EC%9E%90%EC%97%B4%20%EC%95%95%EC%B6%95.swift)|Level 1|O( )|O( )|프로그래머스|2018 KAKAO BLIND RECRUITMENT|
+|[비밀지도](https://programmers.co.kr/learn/courses/30/lessons/17681 "프로그래머스")|[Swift](https://github.com/GeonHyeongKim/AlgoriGym/blob/master/String%26Array/%EB%B9%84%EB%B0%80%EC%A7%80%EB%8F%84.swift)|Level 1|O( )|O( )|프로그래머스|2018 KAKAO BLIND RECRUITMENT|
 
 
 ## Depth-first search(DFS)
