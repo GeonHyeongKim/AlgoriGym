@@ -10,9 +10,9 @@
 *                      2) *일 경우, 이전값을 알아내기 위해 {*가 나타난경기 - (전체경기수 - 배열값조절)}을 통해 적용될 시작 위치를 구한다.
 *                      3) #일 경우, 해당값을 음수로 바꾸어 준다.
 *
-*  Time Complexity:
-*  Space Complexity:
-*  result :
+*  Time Complexity: O(n^2)
+*  Space Complexity: O(n)
+*  result : 100점
 *
 *  Created by gunhyeong on 2020/03/14.
 */
