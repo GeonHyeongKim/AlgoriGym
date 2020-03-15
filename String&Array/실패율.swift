@@ -10,22 +10,19 @@
 *                      1) value
 *                      2) key
 *
-*  Time Complexity:
-*  Space Complexity:
-*  result :
+*  Time Complexity: O(n^n)
+*  Space Complexity: O(n^n)
+*  result : 88.9점
 *
 *  Created by gunhyeong on 2020/03/14.
 */
 
 func solution(_ N:Int, _ stages:[Int]) -> [Int] {
     var failureRateListByStage = [Int:Double]()
-    let sortedStages = stages.sorted()
-    var notClear = [Int]()
-    var clear = [Int]()
     
     for stageCnt in 1...N {
-        notClear = sortedStages.filter{($0 == stageCnt)} // 1-1. 분자(clear 못한사람)
-        clear = sortedStages.filter{($0 >= stageCnt)} // 1-2. 분모(clear 사람)
+        let notClear = stages.filter{($0 == stageCnt)} // 1-1. 분자(clear 못한사람)
+        let clear = stages.filter{($0 >= stageCnt)} // 1-2. 분모(clear 사람)
         
         if notClear.count == 0 || clear.isEmpty {
             failureRateListByStage[stageCnt] = 0.0 // 분모가 0일때
@@ -45,6 +42,6 @@ func solution(_ N:Int, _ stages:[Int]) -> [Int] {
 //        result.append(key)
 //    }
     
-    // 키값으로 정렬한 뒤에 밸류값으로 정렬
-    return failureRateListByStage.sorted(by: <).sorted(by: { $0.value > $1.value }).map {$0.key} // 2. 다중 정렬
+    // 2. 다중 정렬 - 키값으로 정렬한 뒤에 밸류값으로 정렬
+    return failureRateListByStage.sorted(by: <).sorted(by: { $0.value > $1.value }).map {$0.key}
 }
