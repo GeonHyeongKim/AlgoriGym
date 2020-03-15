@@ -18,21 +18,8 @@
 */
 
 func solution(_ N:Int, _ stages:[Int]) -> [Int] {
-    guard 1 <= N && N <= 500 else { // Constrains 1
-        return []
-    }
-    
-    guard 1 <= stages.count && stages.count <= 200000 else { // Constrains 2
-        return []
-    }
-    
-    if stages.count == 1 {
-        return [stages.first!]
-    }
-    
     var failureRateListByStage = [Int:Double]()
     let sortedStages = stages.sorted()
-    var result = [Int]()
     var notClear = [Int]()
     var clear = [Int]()
     
@@ -40,24 +27,24 @@ func solution(_ N:Int, _ stages:[Int]) -> [Int] {
         notClear = sortedStages.filter{($0 == stageCnt)} // 1-1. 분자(clear 못한사람)
         clear = sortedStages.filter{($0 >= stageCnt)} // 1-2. 분모(clear 사람)
         
-        if clear.count == 0 {
-            failureRateListByStage[stageCnt] = 0 // 분모가 0일때
+        if notClear.count == 0 || clear.isEmpty {
+            failureRateListByStage[stageCnt] = 0.0 // 분모가 0일때
         } else {
             failureRateListByStage[stageCnt] = (Double(notClear.count) / Double(clear.count)) // 1-3. 실패율
         }
     }
     
-    let sort = failureRateListByStage.sorted(by: { // 2. 다중 정렬 - lambda
-        if ($0.1 == $1.1) {
-            return ($0.0 > $1.0)
-        }
-        return ($0.1 < $1.1)
-    })
+//    let sort = failureRateListByStage.sorted(by: { // 2. 다중 정렬 - lambda
+//        if ($0.1 == $1.1) {
+//            return ($0.0 < $1.0)
+//        }
+//        return ($0.1 > $1.1)
+//    })
+//
+//    for (key,_) in sort {
+//        result.append(key)
+//    }
     
-    for (key,_) in sort {
-        result.append(key)
-    }
-    
-    return result.reversed()
+    // 키값으로 정렬한 뒤에 밸류값으로 정렬
+    return failureRateListByStage.sorted(by: <).sorted(by: { $0.value > $1.value }).map {$0.key} // 2. 다중 정렬
 }
-
