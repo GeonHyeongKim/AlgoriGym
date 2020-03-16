@@ -1,15 +1,17 @@
-//
-//  Permutations.swift
-//  Question Link: https://leetcode.com/problems/permutations/
-//  Primary idea:   <BackTracking>
-//                  1. 우선 모든 경우에 수를 찍어 본다.
-//                  2. result에 담는 조건과 for문을 탈출하는 조건을 생각한다.
-
-//  Runtime : 32 ms
-//  Memory : 21.1 MB    
-//
-//  Created by gunhyeong on 2020/03/01.
-//
+/*
+*  Permutations.swift
+*  Question Link: https://leetcode.com/problems/permutations/
+*  Primary idea:   <BackTracking>
+*                  1. 우선 모든 경우에 수를 찍어 본다.
+*                  2. result에 담는 조건과 for문을 탈출하는 조건을 생각한다.
+*
+*  Runtime : 32 ms
+*  Memory : 21.1 MB
+*  Time Complexity: O(n^n)
+*  Space Complexity: O(n)
+*
+* Created by gunhyeong on 2020/03/01.
+*/
 
 import Foundation
 
@@ -37,9 +39,6 @@ class Solution {
         
         // 2. for 저장, 탈출
         for i in 0..<nums.count { // 탈출 조건
-//            if curList.count == nums.count {
-//                continue
-//            }
             
             if curList.contains(nums[i]){
                 continue
