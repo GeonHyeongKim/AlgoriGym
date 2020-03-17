@@ -29,6 +29,7 @@ Swift
 |:---|:---:|:---:|:---:|:---:|:---:|:---|
 |[Letter Combinations of a Phone Number](https://leetcode.com/problems/letter-combinations-of-a-phone-number/ "LeetCode")|[Swift](https://github.com/GeonHyeongKim/AlgoriGym/blob/master/BackTracking/Letter%20Combinations%20of%20a%20Phone%20Number.swift)|Medium|O(n^n)|O(n)|LeetCode||
 |[Beautiful Arrangement](https://leetcode.com/problems/beautiful-arrangement/ "LeetCode")|[Swift](https://github.com/GeonHyeongKim/AlgoriGym/blob/master/BackTracking/Beautiful%20Arrangement.swift)|Medium|O(n^n)|O(n)|LeetCode||
+|[Combination](https://leetcode.com/problems/combinations/ "LeetCode")|[Swift](https://github.com/GeonHyeongKim/AlgoriGym/blob/master/BackTracking/Combinations.swift)|Medium|O(n^n)|O(n)|LeetCode||
 
 |[Permutations](https://leetcode.com/problems/permutations/ "LeetCode")|[Swift](https://github.com/GeonHyeongKim/AlgoriGym/blob/master/BackTracking/Permutations.swift)|Medium|O(n^n)|O(n)|LeetCode||
 |[Subsets II](https://leetcode.com/problems/subsets-ii/ "LeetCode")|[Swift](https://github.com/GeonHyeongKim/AlgoriGym/blob/master/BackTracking/Subsets%20II.swift)|Medium|O(n^n)|O(n)|LeetCode||

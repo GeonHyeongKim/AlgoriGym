@@ -1,16 +1,18 @@
-//
-//  Combinations.swift
-//  Question Link: https://leetcode.com/problems/combinations/
-//  Primary idea:   <BackTracking>
-//                  1. 계산된 combination
-//                  2. 저장 조건
-//                  3. 반복문에서 upperIndex > lowerIndex를 방지
-
-//  Runtime: 244 ms
-//  Memory Usage: 22.9 MB
-//
-//  Created by gunhyeong on 2020/03/06.
-//
+/*
+*  Combinations.swift
+*  Question Link: https://leetcode.com/problems/combinations/
+*  Primary idea:   <BackTracking>
+*                  1. 계산된 combination
+*                  2. 저장 조건
+*                  3. 반복문에서 upperIndex > lowerIndex를 방지
+*
+*  Time Complexity : O(n^n)
+*  Space Complexity : O(n)
+*  Runtime: 244 ms
+*  Memory Usage: 22.9 MB
+*
+*  Created by gunhyeong on 2020/03/06.
+*/
 
 import Foundation
 
