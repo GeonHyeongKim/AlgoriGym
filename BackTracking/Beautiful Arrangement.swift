@@ -1,21 +1,22 @@
-//
-//  Beautiful Arrangement.swift
-//  Question Link: https://leetcode.com/problems/beautiful-arrangement/
-//  Primary idea:   <BackTracking>
-//                  1. 기존의 Backtracking 기법을 문제들을 응용함
-//                  2. 종료조건 : 계산하는 배열과 입력한 N값이 같을때
-//                  3. branch : 계산하는 배열(arrangement)에 동일한 값을 가지고 있을때
-//                  4. N(input value)가 15일때, Time Limit Exceeded 발생
-//                      1) 결과값을 append하지 않고 Int로 선언하여 값을 증가시키기
-//                      2) 배열에 접근을 최소화 ( ex) N크기의 배열을 제거)
-//                      3) 배열에 접근을 최소화 2 ( append하는 것을 줄이기 위해 visited 배열로 방문했는지 하지 않았는지 Check)
-//                          * 참고 : https://leetcode.com/problems/beautiful-arrangement/discuss/99729/Swift-solution-Backtracking
-
-//  Runtime : 316 ms
-//  Memory : 20.6 MB
-//
-//  Created by gunhyeong on 2020/03/04.
-//
+/*
+*  Beautiful Arrangement.swift
+*  Question Link: https://leetcode.com/problems/beautiful-arrangement/
+*  Primary idea:   <BackTracking>
+*                  1. 기존의 Backtracking 기법을 문제들을 응용함
+*                  2. 종료조건 : 계산하는 배열과 입력한 N값이 같을때
+*                  3. branch : 계산하는 배열(arrangement)에 동일한 값을 가지고 있을때
+*                  4. N(input value)가 15일때, Time Limit Exceeded 발생
+*                      1) 결과값을 append하지 않고 Int로 선언하여 값을 증가시키기
+*                      2) 배열에 접근을 최소화 ( ex) N크기의 배열을 제거)
+*                      3) 배열에 접근을 최소화 2 ( append하는 것을 줄이기 위해 visited 배열로 방문했는지 하지 않았는지 Check)
+*                          * 참고 : https://leetcode.com/problems/beautiful-arrangement/discuss/99729/Swift-solution-Backtracking
+*  Time Complexity: O(n^n)
+*  Space Complexity: O(n)
+*  Runtime : 316 ms
+*  Memory : 20.6 MB
+*
+*  Created by gunhyeong on 2020/03/04.
+*/
 
 import Foundation
 
