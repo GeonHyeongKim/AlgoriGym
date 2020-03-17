@@ -1,18 +1,20 @@
-//
-//  Combination Sum III.swift
-//  Question Link: https://leetcode.com/problems/combination-sum-iii/
-//  Primary idea:   <BackTracking>
-//                  1. set으로 unique 보장
-//                  2. 결과값 저장
-//                      1) 계산한 Set 집합(combinationSet)의 갯수가 k개 인 경우
-//                      2) 계산한 Set 집합(combinationSet)의 합(reduce 함수 이용)이 n일 경우
-//                  3. 건너띄기 - Set 집합(combinationSet)에 contain되어 있으면 다음 숫자로 넘어가기
-
-//  Runtime : 8 ms
-//  Memory : 22.4 MB,
-//
-//  Created by gunhyeong on 2020/03/05.
-//
+/*
+*  Combination Sum III.swift
+*  Question Link: https://leetcode.com/problems/combination-sum-iii/
+*  Primary idea:   <BackTracking>
+*                  1. set으로 unique 보장
+*                  2. 결과값 저장
+*                      1) 계산한 Set 집합(combinationSet)의 갯수가 k개 인 경우
+*                      2) 계산한 Set 집합(combinationSet)의 합(reduce 함수 이용)이 n일 경우
+*                  3. 건너띄기 - Set 집합(combinationSet)에 contain되어 있으면 다음 숫자로 넘어가기
+*
+*  Time Complexity : O(n^n)
+*  Space Complexity : O(nCk)
+*  Runtime : 8 ms
+*  Memory : 22.4 MB,
+*
+*  Created by gunhyeong on 2020/03/05.
+*/
 
 import Foundation
 
