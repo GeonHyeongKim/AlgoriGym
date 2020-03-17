@@ -1,20 +1,21 @@
-//
-//  Combination Sum II.swift
-//  Question Link: https://leetcode.com/problems/combination-sum-ii/
-//  Primary idea:   <BackTracking>
-//                  1. 중복 방지 - candidates을 미리 오름 차순으로 정렬후
-//                      1) i != startIndex : 자기 자신을 다시 방문하는 것을 방지
-//                      2) candidates[i] == candidates[i - 1] : 정렬되어 있기 때문에 입력한 것은 다시 쓰지 않기
-//                  2. 결과를 저장할때, 저장된 합계가 target과 같은지와 정렬된 값을 비교한다. (x)
-//                  -> 2. target을 줄이는 방식이기 떄문에 0이 되면 sum과 같은 효과를 얻을 수 있다.
-//                  3. 탈출 조건 : target < 0 을 하지 않으면 무한 루프에 빠지게 된다.
-//
-
-//  Runtime: 48 ms
-//  Memory Usage: 21 MB
-//
-//  Created by gunhyeong on 2020/03/09.
-//
+/*
+*  Combination Sum II.swift
+*  Question Link: https://leetcode.com/problems/combination-sum-ii/
+*  Primary idea:   <BackTracking>
+*                  1. 중복 방지 - candidates을 미리 오름 차순으로 정렬후
+*                      1) i != startIndex : 자기 자신을 다시 방문하는 것을 방지
+*                      2) candidates[i] == candidates[i - 1] : 정렬되어 있기 때문에 입력한 것은 다시 쓰지 않기
+*                  2. 결과를 저장할때, 저장된 합계가 target과 같은지와 정렬된 값을 비교한다. (x)
+*                  -> 2. target을 줄이는 방식이기 떄문에 0이 되면 sum과 같은 효과를 얻을 수 있다.
+*                  3. 탈출 조건 : target < 0 을 하지 않으면 무한 루프에 빠지게 된다.
+*
+*  Time Complexity : O(n^n)
+*  Space Complexity : O(2^n - 2)
+*  Runtime: 48 ms
+*  Memory Usage: 21 MB
+*
+*  Created by gunhyeong on 2020/03/09.
+*/
 
 import Foundation
 
