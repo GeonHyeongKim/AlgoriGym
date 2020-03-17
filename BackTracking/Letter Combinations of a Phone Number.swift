@@ -6,7 +6,7 @@
 *                  2. guard를 통해 2~9인 숫자만 가지고 있는지 check
 *                  3. dictionary([Character:String])로 배열을 선언하여 #42에서 바로 index로 접근할 수 있도록 변경
 *
-*  Time Complexity: O(n^n)
+*  Time Complexity: O(4^n) n:digit length
 *  Space Complexity: O(n)
 *  Runtime: 4 ms
 *  Memory Usage: 21.9 MB
