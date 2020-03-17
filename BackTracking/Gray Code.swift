@@ -1,18 +1,20 @@
-//
-//  Gray Code.swift
-//  Question Link: https://leetcode.com/problems/gray-code/
-//  Primary idea:   <BackTracking>
-//                  1. 공식 : 'https://johngrib.github.io/wiki/gray-code/'을 참고
-//                      - 오른쪽으로 비트 쉬프트 한 다음, 본래 값과 논리합을 하면 끝난다는 것
-//                  2. backTracking
-//                      - index : 계산하기 위한 조건
-//                      - num : reference로 연결
-
-//  Runtime: 1) 12 ms, 2) 12 ms
-//  Memory Usage: 1) 20.5 MB, 2) 20.7 MB    
-//
-//  Created by gunhyeong on 2020/03/08.
-//
+/*
+*  Gray Code.swift
+*  Question Link: https://leetcode.com/problems/gray-code/
+*  Primary idea:   <BackTracking>
+*                  1. 공식 : 'https://johngrib.github.io/wiki/gray-code/'을 참고
+*                      - 오른쪽으로 비트 쉬프트 한 다음, 본래 값과 논리합을 하면 끝난다는 것
+*                  2. backTracking
+*                      - index : 계산하기 위한 조건
+*                      - num : reference로 연결
+*
+*  Time Complexity : O(n^n)
+*  Space Complexity : O(2^n)
+*  Runtime: 1) 12 ms, 2) 12 ms
+*  Memory Usage: 1) 20.5 MB, 2) 20.7 MB
+*
+*  Created by gunhyeong on 2020/03/08.
+*/
 
 import Foundation
 
