@@ -1,21 +1,23 @@
-//
-//  Generate Parentheses.swift
-//  Question Link: https://leetcode.com/problems/generate-parentheses/
-//  Primary idea:   <BackTracking>
-//                  1. 종료 조건
-//                      1) input(n)과 완성된 pair의 길이가 같을때 ex) (input*2) == pair.count
-//                      2) left의 갯수와 right의 갯수가 같을떄 ex) left == right
-//                      3) right의 갯수와 input의 갯수가 같을때 ex) right == input
-//                  2. append 조건
-//                      1) "(" : left의 갯수 < input의 갯수
-//                      2) ")" : right의 갯수 < left의 현재 갯수
-//                  3. 마지막으로 넣은 문자 제거
-
-//  Runtime : 20 ms
-//  Memory : 20.8 MB
-//
-//  Created by gunhyeong on 2020/03/02.
-//
+/*
+*  Generate Parentheses.swift
+*  Question Link: https://leetcode.com/problems/generate-parentheses/
+*  Primary idea:   <BackTracking>
+*                  1. 종료 조건
+*                      1) input(n)과 완성된 pair의 길이가 같을때 ex) (input*2) == pair.count
+*                      2) left의 갯수와 right의 갯수가 같을떄 ex) left == right
+*                      3) right의 갯수와 input의 갯수가 같을때 ex) right == input
+*                  2. append 조건
+*                      1) "(" : left의 갯수 < input의 갯수
+*                     2) ")" : right의 갯수 < left의 현재 갯수
+*                  3. 마지막으로 넣은 문자 제거
+*
+*  Time Complexity : O(2^n)
+*  Space Complexity : O(n)
+*  Runtime : 20 ms
+*  Memory : 20.8 MB
+*
+*  Created by gunhyeong on 2020/03/02.
+*/
 
 import Foundation
 
