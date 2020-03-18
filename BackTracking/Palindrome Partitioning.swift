@@ -6,10 +6,10 @@
 *                  2. 기본적으로 DFS로 풀이를 한다.
 *                  3. 회문인지 아닌지를 판별 - 앞의 N/2와 그에 상대되는 후반부의 element와 비교하여 끝까지 같음을 확인
 *
-*  Time Complexity :
-*  Space Complexity :
-*  Runtime: ms
-*  Memory Usage: MB
+*  Time Complexity : O(n^n)
+*  Space Complexity : O(n)
+*  Runtime: 596 ms
+*  Memory Usage: 22.1 MB
 *
 *  Created by gunhyeong on 2020/03/18.
 */
