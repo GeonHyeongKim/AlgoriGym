@@ -8,10 +8,10 @@
 *                      2) isVisited[i] : 지금 탐색할곳(nums의 i번쨰)가 방문한적이 있는지 확인
 *                         i > 0 && nums[i] == nums[i-1] && isVisited[i-1] : i을 기준으로 i-1이 방문된적이 있는지 확인 및 같은 숫자인지 확인, i>0이 조건이 되어야 첫번째 index에서 error를 방지)
 *
-*  Time Complexity :
-*  Space Complexity :
-*  Runtime:  ms
-*  Memory Usage:
+*  Time Complexity : O(n^n)
+*  Space Complexity : O(n)
+*  Runtime: 52 ms
+*  Memory Usage: 21.3 MB
 *
 *  Created by gunhyeong on 2020/03/19.
 */
