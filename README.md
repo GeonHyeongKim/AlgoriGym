@@ -37,6 +37,7 @@ Swift
 |[Letter Combinations of a Phone Number](https://leetcode.com/problems/letter-combinations-of-a-phone-number/ "LeetCode")|[Swift](https://github.com/GeonHyeongKim/AlgoriGym/blob/master/BackTracking/Letter%20Combinations%20of%20a%20Phone%20Number.swift)|Medium|O(4^n)|O(n)|LeetCode||
 |[Palindrome Partitioning](https://leetcode.com/problems/palindrome-partitioning/ "LeetCode")|[Swift](https://github.com/GeonHyeongKim/AlgoriGym/blob/master/BackTracking/Palindrome%20Partitioning.swift)|Medium|O(n^n)|O(n)|LeetCode||
 |[Permutations](https://leetcode.com/problems/permutations/ "LeetCode")|[Swift](https://github.com/GeonHyeongKim/AlgoriGym/blob/master/BackTracking/Permutations.swift)|Medium|O(n^n)|O(n)|LeetCode||
+|[Permutations II](https://leetcode.com/problems/permutations-ii/ "LeetCode")|[Swift](https://github.com/GeonHyeongKim/AlgoriGym/blob/master/BackTracking/Permutations.swift)|Medium|O(n^n)|O(n)|LeetCode||
 |[Subsets II](https://leetcode.com/problems/subsets-ii/ "LeetCode")|[Swift](https://github.com/GeonHyeongKim/AlgoriGym/blob/master/BackTracking/Subsets%20II.swift)|Medium|O(n^n)|O(n)|LeetCode||
 
 ## Author
