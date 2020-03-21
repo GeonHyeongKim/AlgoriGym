@@ -43,7 +43,9 @@ Swift
 
 ## Dynamic Programming
 |Title|Solution|Difficulty|Time|Space|See|Etc|
-|[Beautiful Arrangement](https://leetcode.com/problems/climbing-stairs/ "LeetCode")|[Swift](https://github.com/GeonHyeongKim/AlgoriGym/blob/master/Dynamic/ClimbStairs.swift)|Easy|O(n)|O(1)|LeetCode||
+|:---|:---:|:---:|:---:|:---:|:---:|:---|
+|[Climbing Stairs](https://leetcode.com/problems/climbing-stairs/ "LeetCode")|[Swift](https://github.com/GeonHyeongKim/AlgoriGym/blob/master/Dynamic/ClimbStairs.swift)|Easy|O(n)|O(1)|LeetCode||
+|[Coin Change](https://leetcode.com/problems/coin-change/ "LeetCode")|[Swift](https://github.com/GeonHyeongKim/AlgoriGym/blob/master/Dynamic/CoinChange.swift)|Easy|O(n^n)|O(n)|LeetCode||
 
 ## Author
 GeonHyeong Kim, [geonhyeong.dev@gmail.com](geonhyeong.dev@gmail.com).

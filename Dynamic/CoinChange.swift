@@ -1,17 +1,19 @@
-//
-//  CoinChange.swift
-//  Question Link: https://leetcode.com/problems/coin-change/
-//  Primary idea:   1. dp[1] = min(dp[1], dp[1 - coins[j]] + 1)
-//                      1-1 = dp[0] = 0
-//                      1-2 (x)
-//                      1-5 (x)
-//                  2. dp[i] = min(dp[i], dp[i - coins[j]] + 1)
-//
-//  Time Complexity:
-//  Space Complexity :
-//
-//  Created by gunhyeong on 2020/02/08.
-//
+/*
+*  CoinChange.swift
+*  Question Link: https://leetcode.com/problems/coin-change/
+*  Primary idea:   1. dp[1] = min(dp[1], dp[1 - coins[j]] + 1)
+*                      1-1 = dp[0] = 0
+*                      1-2 (x)
+*                      1-5 (x)
+*                  2. dp[i] = min(dp[i], dp[i - coins[j]] + 1)
+*
+*  Time Complexity : O(n^n)
+*  Space Complexity : O(N)
+*  Runtime: 768 ms
+*  Memory Usage: 21.3 MB
+*
+*  Created by gunhyeong on 2020/02/08.
+*/
 
 import Foundation
 
