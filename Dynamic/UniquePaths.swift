@@ -1,13 +1,16 @@
-//
-//  UniquePaths.swift
-//  Question Link: https://leetcode.com/problems/unique-paths/
-//  Primary idea:   1. result이 1로 다 초기화 되어 있음
-//                  2. 2행 2열 부터 result[i][j] = result[i-1][j] + result[i][j-1]
-//
-//  Time Complexity:
-//  Space Complexity :
-//  Created by gunhyeong on 2020/02/07.
-//
+/*
+*  UniquePaths.swift
+*  Question Link: https://leetcode.com/problems/unique-paths/
+*  Primary idea:   1. result이 1로 다 초기화 되어 있음
+*                  2. 2행 2열 부터 result[i][j] = result[i-1][j] + result[i][j-1]
+*
+*  Time Complexity : O(n^2)
+*  Space Complexity : O(n)
+*  Runtime: 4 ms
+*  Memory Usage: 20.6 MB
+*
+*  Created by gunhyeong on 2020/02/07.
+*/
 
 import Foundation
 
