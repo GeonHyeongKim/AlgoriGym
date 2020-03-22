@@ -1,14 +1,16 @@
-//
-//  Perfect Squares.swift
-//  Question Link: https://leetcode.com/problems/perfect-squares/
-//  Primary idea:   1. Lagrange's four-square theorem을 이용한다. (즉 8로 나누었을때, 나머지가 7인 수는 모두 4개) n = 4^k(8k+7)
-//                  2. dp를 이용, 배열에 해당에 하는 Index를 대입한다.
-
-//  Time Complexity :
-//  Space Complexity :
-//
-//  Created by gunhyeong on 2020/02/14.
-//
+/*
+*  Perfect Squares.swift
+*  Question Link: https://leetcode.com/problems/perfect-squares/
+*  Primary idea:   1. Lagrange's four-square theorem을 이용한다. (즉 8로 나누었을때, 나머지가 7인 수는 모두 4개) n = 4^k(8k+7)
+*                  2. dp를 이용, 배열에 해당에 하는 Index를 대입한다.
+*
+*  Time Complexity : O(n^2)
+*  Space Complexity : O(n)
+*  Runtime: 368 ms
+*  Memory Usage: 20.9 MB
+*
+*  Created by gunhyeong on 2020/02/14.
+*/
 
 import Foundation
 
@@ -56,7 +58,10 @@ class Solution {
         result[0] = 0
         
         for i in 1..<n+1{
-            for j in 1..<i where j*j<=i {
+            for j in 1...i {
+                if j * j > i {
+                    break
+                }
                 result[i] = min(result[i], result[i-j*j]+1)
             }
         }
@@ -64,26 +69,26 @@ class Solution {
         return result.last!
     }
     
-    ///Mark. Time Limit Exceeded
-    func _staticDP(_ n : inout Int) -> Int {
-        guard n >= 4 else {
-            return n
-        }
-        
-        var result = [Int]()
-        result.append(0)
-        
-        while result.count <= n {
-            let currentSquare = result.count
-            var cntSquare = INTPTR_MAX
-            
-            for i in 1..<currentSquare+1 where i*i<=currentSquare {
-                cntSquare = min(cntSquare, result[currentSquare - i*i] + 1)
-            }
-            
-            result.append(cntSquare)
-        }
-        
-        return result.last!
-    }
+//    ///Mark. Time Limit Exceeded
+//    func _staticDP(_ n : inout Int) -> Int {
+//        guard n >= 4 else {
+//            return n
+//        }
+//
+//        var result = [Int]()
+//        result.append(0)
+//
+//        while result.count <= n {
+//            let currentSquare = result.count
+//            var cntSquare = INTPTR_MAX
+//
+//            for i in 1..<currentSquare+1 where i*i<=currentSquare {
+//                cntSquare = min(cntSquare, result[currentSquare - i*i] + 1)
+//            }
+//
+//            result.append(cntSquare)
+//        }
+//
+//        return result.last!
+//    }
 }
