@@ -6,10 +6,10 @@
 *                      1) 앞서 나왔던 가장 최소값을 기억
 *                      2) 하고 그 값을 이용해 차를 계산하고, 만일, 최소 값보다 작은 값이 나온다면 최소 값을 update
 *
-*  Time Complexity : O()
-*  Space Complexity : O()
-*  Runtime:  ms
-*  Memory Usage:  MB
+*  Time Complexity : O(n)
+*  Space Complexity : O(1)
+*  Runtime: 36 ms
+*  Memory Usage: 21.2 MB
 *
 *  Created by gunhyeong on 2020/03/23.
 */
