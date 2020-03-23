@@ -5,10 +5,10 @@
 *                  1. dp : d[i] = min(d[i-1], d[i-2])
 *                  2. 계산 하려는 현재 값
 *
-*  Time Complexity : O()
-*  Space Complexity : O()
-*  Runtime:  ms
-*  Memory Usage:  MB
+*  Time Complexity : O(n)
+*  Space Complexity : O(n)
+*  Runtime: 28 ms
+*  Memory Usage: 21 MB
 *
 *  Created by gunhyeong on 2020/03/23.
 */
