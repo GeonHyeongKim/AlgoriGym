@@ -7,8 +7,8 @@
 *
 *  Time Complexity : O(n), n: t
 *  Space Complexity : O(n), n: s
-*  Runtime:  ms
-*  Memory Usage:  MB
+*  Runtime: 84 ms
+*  Memory Usage: 21.4 MB
 *
 * Created by gunhyeong on 2020/03/23.
 */
