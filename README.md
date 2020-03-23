@@ -16,6 +16,7 @@ Swift
 ## String & Array
 |Title|Solution|Difficulty|Time|Space|See|Etc|
 |:---|:---:|:---:|:---:|:---:|:---:|:---|
+|[Best Time to Buy and Sell Stock](https://leetcode.com/problems/best-time-to-buy-and-sell-stock/ "LeetCode")|[Swift](https://github.com/GeonHyeongKim/AlgoriGym/blob/master/Dynamic/Best%20Time%20to%20Buy%20and%20Sell%20Stock.swift)|Easy|O(n)|O(1)|LeetCode||
 |[Binary Watch](https://leetcode.com/problems/binary-watch/ "LeetCode")|[Swift](https://github.com/GeonHyeongKim/AlgoriGym/blob/master/BackTracking/Binary%20Watch.swift)|Medium|O(n^2)|O(n)|LeetCode||
 |[문자열 압축](https://programmers.co.kr/learn/courses/30/lessons/60057 "프로그래머스")|[Swift](https://github.com/GeonHyeongKim/AlgoriGym/blob/master/String%26Array/%EB%AC%B8%EC%9E%90%EC%97%B4%20%EC%95%95%EC%B6%95.swift)|Level 2|O(n^2)|O(n)|프로그래머스|2020 KAKAO BLIND RECRUITMENT|
 |[실패율](https://programmers.co.kr/learn/courses/30/lessons/42889 "프로그래머스")|[Swift](https://github.com/GeonHyeongKim/AlgoriGym/blob/master/String%26Array/%EB%8B%A4%ED%8A%B8%EA%B2%8C%EC%9E%84.swift)|Level 1|O()|O()|프로그래머스|2019 KAKAO BLIND RECRUITMENT|
@@ -44,10 +45,9 @@ Swift
 ## Dynamic Programming
 |Title|Solution|Difficulty|Time|Space|See|Etc|
 |:---|:---:|:---:|:---:|:---:|:---:|:---|
-|[Best Time to Buy and Sell Stock](https://leetcode.com/problems/best-time-to-buy-and-sell-stock/ "LeetCode")|[Swift](https://github.com/GeonHyeongKim/AlgoriGym/blob/master/Dynamic/Best%20Time%20to%20Buy%20and%20Sell%20Stock.swift)|Easy|O(n)|O(1)|LeetCode||
 |[Climbing Stairs](https://leetcode.com/problems/climbing-stairs/ "LeetCode")|[Swift](https://github.com/GeonHyeongKim/AlgoriGym/blob/master/Dynamic/ClimbStairs.swift)|Easy|O(n)|O(1)|LeetCode||
 |[Divisor Game](https://leetcode.com/problems/divisor-game/ "LeetCode")|[Swift](https://github.com/GeonHyeongKim/AlgoriGym/blob/master/Dynamic/Divisor%20Game.swift)|Easy|O(n^2)|O(n)|LeetCode||
-|[Is Subsequence](https://leetcode.com/problems/is-subsequence/ "LeetCode")|[Swift](https://github.com/GeonHyeongKim/AlgoriGym/blob/master/Dynamic/Min%20Cost%20Climbing%20Stairs.swift)|Easy|O()|O()|LeetCode||
+|[Is Subsequence](https://leetcode.com/problems/is-subsequence/ "LeetCode")|[Swift](https://github.com/GeonHyeongKim/AlgoriGym/blob/master/Dynamic/Is%20Subsequence.swift)|Easy|O()|O()|LeetCode||
 |[Min Cost Climbing Stairs](https://leetcode.com/problems/min-cost-climbing-stairs/ "LeetCode")|[Swift](https://github.com/GeonHyeongKim/AlgoriGym/blob/master/Dynamic/Min%20Cost%20Climbing%20Stairs.swift)|Easy|O(n)|O(n)|LeetCode||
 |[Coin Change](https://leetcode.com/problems/coin-change/ "LeetCode")|[Swift](https://github.com/GeonHyeongKim/AlgoriGym/blob/master/Dynamic/CoinChange.swift)|Medium|O(n^n)|O(n)|LeetCode||
 |[Perfect squares](https://leetcode.com/problems/perfect-squares/ "LeetCode")|[Swift](https://github.com/GeonHyeongKim/AlgoriGym/blob/master/Dynamic/Perfect%20Squares.swift)|Medium|O(n^2)|O(n)|LeetCode||
