@@ -44,7 +44,7 @@ Swift
 ## Dynamic Programming
 |Title|Solution|Difficulty|Time|Space|See|Etc|
 |:---|:---:|:---:|:---:|:---:|:---:|:---|
-|[Best Time to Buy and Sell Stock](https://leetcode.com/problems/best-time-to-buy-and-sell-stock/ "LeetCode")|[Swift](https://github.com/GeonHyeongKim/AlgoriGym/blob/master/Dynamic/Divisor%20Game.swift)|Easy|O()|O()|LeetCode||
+|[Best Time to Buy and Sell Stock](https://leetcode.com/problems/best-time-to-buy-and-sell-stock/ "LeetCode")|[Swift](https://github.com/GeonHyeongKim/AlgoriGym/blob/master/Dynamic/Best%20Time%20to%20Buy%20and%20Sell%20Stock.swift)|Easy|O()|O()|LeetCode||
 |[Climbing Stairs](https://leetcode.com/problems/climbing-stairs/ "LeetCode")|[Swift](https://github.com/GeonHyeongKim/AlgoriGym/blob/master/Dynamic/ClimbStairs.swift)|Easy|O(n)|O(1)|LeetCode||
 |[Divisor Game](https://leetcode.com/problems/divisor-game/ "LeetCode")|[Swift](https://github.com/GeonHyeongKim/AlgoriGym/blob/master/Dynamic/Divisor%20Game.swift)|Easy|O(n^2)|O(n)|LeetCode||
 |[Coin Change](https://leetcode.com/problems/coin-change/ "LeetCode")|[Swift](https://github.com/GeonHyeongKim/AlgoriGym/blob/master/Dynamic/CoinChange.swift)|Medium|O(n^n)|O(n)|LeetCode||
