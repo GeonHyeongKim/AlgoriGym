@@ -33,6 +33,35 @@ class NumArray {
         return sum
 }
 
+/*
+*  Primary idea:   <Dynamic Programming>
+*                  1. init() : dp 배열을 선언해 미리 구해 저장한다.
+*                  2. sumRange(i, j) : j까지 더한 값에서 i까지 더한 값 빼준다
+*
+*  Time Complexity : O()
+*  Space Complexity : O()
+*  Runtime:  ms
+*  Memory Usage:  MB
+*/
+ 
+class NumArray {
+    var dp: [Int]
+    
+    init(_ nums: [Int]) {
+        self.dp = [Int](repeating: 0, count: nums.count+1)
+        
+        for i in 0..<nums.count {
+            dp[i+1] = dp[i] + nums[i]
+        }
+    }
+    
+    func sumRange(_ i: Int, _ j: Int) -> Int {
+        
+        return dp[j+1] - dp[i]
+    }
+}
+
+
 /**
  * Your NumArray object will be instantiated and called as such:
  * let obj = NumArray(nums)
