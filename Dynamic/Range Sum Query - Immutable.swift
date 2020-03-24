@@ -38,10 +38,10 @@ class NumArray {
 *                  1. init() : dp 배열을 선언해 미리 구해 저장한다.
 *                  2. sumRange(i, j) : j까지 더한 값에서 i까지 더한 값 빼준다
 *
-*  Time Complexity : O()
-*  Space Complexity : O()
-*  Runtime:  ms
-*  Memory Usage:  MB
+*  Time Complexity : O(1)
+*  Space Complexity : O(n)
+*  Runtime: 104 ms
+*  Memory Usage: 21.8 MB
 */
  
 class NumArray {
