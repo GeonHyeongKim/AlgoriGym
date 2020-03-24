@@ -32,6 +32,8 @@ class Solution {
 /* MARK. Improve Space Complexity
 *  Time Complexity : O(n)
 *  Space Complexity : O(1)
+*  Runtime: 36 ms
+*  Memory Usage: 21.4 MB
 */
 
 class Solution {
