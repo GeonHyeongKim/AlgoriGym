@@ -5,10 +5,10 @@
 *                  1. dp
 *                  2. 점화식 : 3개 이상일 경우부터 dp[i] = max(dp[i-2] + nums[i], dp[i-1]) 규칙
 *
-*  Time Complexity : O()
-*  Space Complexity : O()
-*  Runtime:  ms
-*  Memory Usage:  MB
+*  Time Complexity : O(n)
+*  Space Complexity : O(n)
+*  Runtime: 8 ms
+*  Memory Usage: 21 MB
 *
 *  Created by gunhyeong on 2020/03/26.
 */
