@@ -50,6 +50,7 @@ Swift
 |[Maximum Subarray](https://leetcode.com/problems/maximum-subarray/ "LeetCode")|[Swift](https://github.com/GeonHyeongKim/AlgoriGym/blob/master/Dynamic/Maximum%20Subarray.swift)|Easy|O(n)|O(1)|LeetCode||
 |[Min Cost Climbing Stairs](https://leetcode.com/problems/min-cost-climbing-stairs/ "LeetCode")|[Swift](https://github.com/GeonHyeongKim/AlgoriGym/blob/master/Dynamic/Min%20Cost%20Climbing%20Stairs.swift)|Easy|O(n)|O(n)|LeetCode||
 |[Range Sum Query - Immutable](https://leetcode.com/problems/range-sum-query-immutable/ "LeetCode")|[Swift](https://github.com/GeonHyeongKim/AlgoriGym/blob/master/Dynamic/Range%20Sum%20Query%20-%20Immutable.swift)|Easy|O(1)|O(n)|LeetCode||
+|[Matrix Block Sum](https://leetcode.com/problems/matrix-block-sum/ "LeetCode")|[Swift](https://github.com/GeonHyeongKim/AlgoriGym/blob/master/Dynamic/Matrix%20Block%20Sum.swift)|Medium|O()|O()|LeetCode||
 |[Coin Change](https://leetcode.com/problems/coin-change/ "LeetCode")|[Swift](https://github.com/GeonHyeongKim/AlgoriGym/blob/master/Dynamic/CoinChange.swift)|Medium|O(n^n)|O(n)|LeetCode||
 |[Perfect squares](https://leetcode.com/problems/perfect-squares/ "LeetCode")|[Swift](https://github.com/GeonHyeongKim/AlgoriGym/blob/master/Dynamic/Perfect%20Squares.swift)|Medium|O(n^2)|O(n)|LeetCode||
 |[Unique Paths](https://leetcode.com/problems/unique-paths/ "LeetCode")|[Swift](https://github.com/soapyigu/LeetCode-Swift/blob/master/DP/UniquePaths.swift)|Medium|O(nm)|O(nm)|LeetCode||
