@@ -7,10 +7,10 @@
 *                      1) 계산할 배열값을 기준으로, (왼쪽 위 대각선, 위, 왼쪽) 중 최소값을 구한 뒤 1을 더한값
 *                      2) 누적해서 더해준다.
 *
-*  Time Complexity : O()
-*  Space Complexity : O()
-*  Runtime:  ms
-*  Memory Usage: MB
+*  Time Complexity : O(n^2)
+*  Space Complexity : O(n^2)
+*  Runtime: 508 ms
+*  Memory Usage: 21.3 MB
 *
 * Created by gunhyeong on 2020/03/29.
 */
