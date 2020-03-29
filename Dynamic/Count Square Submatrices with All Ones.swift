@@ -7,8 +7,8 @@
 *                      1) 계산할 배열값을 기준으로, (왼쪽 위 대각선, 위, 왼쪽) 중 최소값을 구한 뒤 1을 더한값
 *                      2) 누적해서 더해준다.
 *
-*  Time Complexity : O(n^2)
-*  Space Complexity : O(n^2)
+*  Time Complexity : O(mn)
+*  Space Complexity : O(mn)
 *  Runtime: 508 ms
 *  Memory Usage: 21.3 MB
 *
