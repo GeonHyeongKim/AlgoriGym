@@ -1,14 +1,11 @@
 /*
 *  Counting Bits.swift
 *  Question Link: https://leetcode.com/problems/counting-bits/
-*  Primary idea:   <Dynamic programming>
-*                  1.
 *
 *  Created by gunhyeong on 2020/03/30.
 */
 
 import Foundation
-
 
 /*
 *  Primary idea:   <Brute force>
@@ -17,6 +14,7 @@ import Foundation
 *  Runtime: 140 ms
 *  Memory Usage: 24.3 MB
 */
+
 class Solution {
     func countBits(_ num: Int) -> [Int] {
         var dp = [Int](repeating: 0, count: num+1)
@@ -45,10 +43,10 @@ class Solution {
 *                     1) 홀수 : (홀수 - 1)의 1의 갯수 + 1
 *                     2) 짝수 : (짝수 / 2)의 갯수와 같음
 *
-*  Time Complexity : O)
-*  Space Complexity : O()
-*  Runtime:  ms
-*  Memory Usage: MB
+*  Time Complexity : O(n)
+*  Space Complexity : O(n)
+*  Runtime: 68 ms
+*  Memory Usage: 24.6 MB
 */
 
 class Solution {
