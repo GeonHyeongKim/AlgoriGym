@@ -18,8 +18,8 @@ import Foundation
 *  Primary idea:   <Thinking>
 *  Time Complexity :
 *  Space Complexity :
-*  Runtime:  ms
-*  Memory Usage:  MB
+*  Runtime: 12 ms
+*  Memory Usage: 20.7 MB
 */
 
 class Solution {
