@@ -55,7 +55,7 @@ Swift
 |[Counting Bits](https://leetcode.com/problems/counting-bits/ "LeetCode")|[Swift](https://github.com/GeonHyeongKim/AlgoriGym/blob/master/Dynamic/Counting%20Bits.swift)|Medium|O(n)|O(n)|LeetCode||
 |[Matrix Block Sum](https://leetcode.com/problems/matrix-block-sum/ "LeetCode")|[Swift](https://github.com/GeonHyeongKim/AlgoriGym/blob/master/Dynamic/Matrix%20Block%20Sum.swift)|Medium|O(mn)|O(mn)|LeetCode||
 |[Perfect squares](https://leetcode.com/problems/perfect-squares/ "LeetCode")|[Swift](https://github.com/GeonHyeongKim/AlgoriGym/blob/master/Dynamic/Perfect%20Squares.swift)|Medium|O(n^2)|O(n)|LeetCode||
-|[Stone Game](https://leetcode.com/problems/stone-game/ "LeetCode")|[Swift](https://github.com/GeonHyeongKim/AlgoriGym/blob/master/Dynamic/Perfect%20Squares.swift)|Medium|O()|O()|LeetCode||
+|[Stone Game](https://leetcode.com/problems/stone-game/ "LeetCode")|[Swift](https://github.com/GeonHyeongKim/AlgoriGym/blob/master/Dynamic/Stone%20Game.swift)|Medium|O()|O()|LeetCode||
 |[Unique Paths](https://leetcode.com/problems/unique-paths/ "LeetCode")|[Swift](https://github.com/soapyigu/LeetCode-Swift/blob/master/DP/UniquePaths.swift)|Medium|O(nm)|O(nm)|LeetCode||
 
 ## Author

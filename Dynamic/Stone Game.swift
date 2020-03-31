@@ -14,8 +14,16 @@
 
 import Foundation
 
+/*
+*  Primary idea:   <Thinking>
+*  Time Complexity :
+*  Space Complexity :
+*  Runtime:  ms
+*  Memory Usage:  MB
+*/
+
 class Solution {
     func stoneGame(_ piles: [Int]) -> Bool {
-        
+        return true // 첫번째 하는 사람이 항상 이긴다..
     }
 }
