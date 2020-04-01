@@ -33,5 +33,4 @@ class JewelsAndStones {
         
         return result
     }
-        
 }
