@@ -5,10 +5,10 @@
 *                  1. check : "R"일때 1증가, "L"일떄 1감소
 *                  2. count : check 변수가 0일때 증가
 *
-*  Time Complexity :
-*  Space Complexity :
-*  Runtime:  ms
-*  Memory Usage:  MB
+*  Time Complexity : O(n)
+*  Space Complexity : O(1)
+*  Runtime: 8 ms
+*  Memory Usage: 20.7 MB
 *
 *  Created by gunhyeong on 2020/04/01.
 */
