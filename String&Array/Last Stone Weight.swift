@@ -10,7 +10,6 @@
 *                  2. smash한 값의 절대값 씌우기
 *                  3. 결과값이 nil일 경우 0으로 반환
 *
-*
 *  Time Complexity : O(nlogn)
 *  Space Complexity : O(n)
 *  Runtime: 8 ms
