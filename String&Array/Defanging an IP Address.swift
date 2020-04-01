@@ -4,10 +4,10 @@
 *  Primary idea:   <String&Array>
 *                  1. 문자열을 대체하는 내부 함수를 사용(대체, 제거) - replacingOccurrences
 *
-*  Time Complexity :
-*  Space Complexity :
-*  Runtime:  ms
-*  Memory Usage:  MB
+*  Time Complexity : O(1)
+*  Space Complexity : O(1)
+*  Runtime: 8 ms
+*  Memory Usage: 21.8 MB
 *
 *  Created by gunhyeong on 2020/04/01.
 */
