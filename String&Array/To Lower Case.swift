@@ -4,10 +4,10 @@
 *  Primary idea:   <String & Array>
 *                  1. lowercased() - char이나 string을 lower로 바꾸어줌
 *
-*  Time Complexity :
-*  Space Complexity :
-*  Runtime:  ms
-*  Memory Usage:  MB
+*  Time Complexity : O(1)
+*  Space Complexity : O(1)
+*  Runtime: 4 ms
+*  Memory Usage: 21.1 MB
 *
 *  Created by gunhyeong on 2020/04/02.
 */
