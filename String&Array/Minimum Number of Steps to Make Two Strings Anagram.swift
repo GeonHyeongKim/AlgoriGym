@@ -6,10 +6,10 @@
 *                  2. s의 alphabet의 각 갯수
 *                  3. t의 alphabet의 각 갯수가 0보다 클경우, 사용했으므로 한개씩 감소
 *
-*  Time Complexity :
-*  Space Complexity :
-*  Runtime:  ms
-*  Memory Usage:  MB
+*  Time Complexity : O(n)
+*  Space Complexity : O(n)
+*  Runtime: 304 ms
+*  Memory Usage: 21 MB
 *
 *  Created by gunhyeong on 2020/04/02.
 */
