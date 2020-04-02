@@ -2,7 +2,7 @@
 *  To Lower Case.swift
 *  Question Link: https://leetcode.com/problems/to-lower-case/
 *  Primary idea:   <String & Array>
-*                  1.
+*                  1. lowercased() - char이나 string을 lower로 바꾸어줌
 *
 *  Time Complexity :
 *  Space Complexity :
@@ -16,6 +16,6 @@ import Foundation
 
 class Solution {
     func toLowerCase(_ str: String) -> String {
-        
+        return str.lowercased()
     }
 }
