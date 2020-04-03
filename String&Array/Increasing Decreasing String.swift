@@ -6,10 +6,10 @@
 *                  2. alphabet의 갯수가 1이상일때, 1개씩 감소
 *                  3. sort : i(index)의 홀짝을 판별하면서, smallest, largest를 표현
 *
-*  Time Complexity :
-*  Space Complexity :
-*  Runtime:  ms
-*  Memory Usage:  MB
+*  Time Complexity : O(n)
+*  Space Complexity : O(n)
+*  Runtime: 160 ms
+*  Memory Usage: 21.2 MB
 *
 *  Created by gunhyeong on 2020/04/03.
 */

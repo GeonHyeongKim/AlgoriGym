@@ -18,7 +18,7 @@ Swift
 |:---|:---:|:---:|:---:|:---:|:---:|:---|
 |[Best Time to Buy and Sell Stock](https://leetcode.com/problems/best-time-to-buy-and-sell-stock/ "LeetCode")|[Swift](https://github.com/GeonHyeongKim/AlgoriGym/blob/master/String%26Array/Is%20Subsequence.swift)|Easy|O(n)|O(n)|LeetCode||
 |[Defanging an IP Address](https://leetcode.com/problems/defanging-an-ip-address/ "LeetCode")|[Swift](https://github.com/GeonHyeongKim/AlgoriGym/blob/master/String%26Array/Defanging%20an%20IP%20Address.swift)|Easy|O(1)|O(1)|LeetCode|[대체, 제거] replacingOccurrences()|
-|[Increasing Decreasing String](https://leetcode.com/problems/increasing-decreasing-string/ "LeetCode")|[Swift](https://github.com/GeonHyeongKim/AlgoriGym/blob/master/String%26Array/Increasing%20Decreasing%20String.swift)|Easy|||LeetCode||
+|[Increasing Decreasing String](https://leetcode.com/problems/increasing-decreasing-string/ "LeetCode")|[Swift](https://github.com/GeonHyeongKim/AlgoriGym/blob/master/String%26Array/Increasing%20Decreasing%20String.swift)|Easy|O(n)|O(n)|LeetCode||
 |[Is Subsequence](https://leetcode.com/problems/is-subsequence/ "LeetCode")|[Swift](https://github.com/GeonHyeongKim/AlgoriGym/blob/master/String%26Array/Is%20Subsequence.swift)|Easy|O(n)|O(n)|LeetCode||
 |[Last Stone Weight](https://leetcode.com/problems/last-stone-weight/ "LeetCode")|[Swift](https://github.com/GeonHyeongKim/AlgoriGym/blob/master/String%26Array/Last%20Stone%20Weight.swift)|Easy|O(nlogn)|O(n)|LeetCode||
 |[Jewels and Stones](https://leetcode.com/problems/jewels-and-stones/ "LeetCode")|[Swift](https://github.com/GeonHyeongKim/AlgoriGym/blob/master/String%26Array/JewelsAndStones.swift)|Easy|O(J+S)|O(1)|LeetCode||
