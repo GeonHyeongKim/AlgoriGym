@@ -5,10 +5,10 @@
 *                  1. morse : 미리 dictionary를 만들어 놓는다
 *                  2. 이중 for문 : 단어와 일치하는 모스부호를 입력해 결과(result<set>)에 넣는다.
 *
-*  Time Complexity :
-*  Space Complexity :
-*  Runtime:  ms
-*  Memory Usage:  MB
+*  Time Complexity : O(n)
+*  Space Complexity : O(n)
+*  Runtime: 16 ms
+*  Memory Usage: 21.6 MB
 *
 *  Created by gunhyeong on 2020/04/04.
 */
