@@ -6,10 +6,10 @@
 *                  1. #일 경우 : 현재 index(i)에서 왼쪽에서 2번째와 1번째를 value값으로 식별 후 index를 -2 감소
 *                  2. #이 아닐 경우 : 현재 index에 해당하는 배열값을 value값으로 식별
 *
-*  Time Complexity :
-*  Space Complexity :
-*  Runtime:  ms
-*  Memory Usage:  MB
+*  Time Complexity : O(n)
+*  Space Complexity : O(n)
+*  Runtime: 24 ms
+*  Memory Usage: 20.9 MB
 *
 *  Created by gunhyeong on 2020/04/06.
 */
