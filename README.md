@@ -25,6 +25,7 @@ Swift
 |[Jewels and Stones](https://leetcode.com/problems/jewels-and-stones/ "LeetCode")|[Swift](https://github.com/GeonHyeongKim/AlgoriGym/blob/master/String%26Array/JewelsAndStones.swift)|Easy|O(J+S)|O(1)|LeetCode||
 |[Move Zeroes](https://leetcode.com/problems/move-zeroes/ "LeetCode")|[Swift](https://github.com/GeonHyeongKim/AlgoriGym/blob/master/String%26Array/MoveZeros.swift)|Easy|O(n)|O(1)|LeetCode||
 |[Plus One](https://github.com/GeonHyeongKim/AlgoriGym/blob/master/String%26Array/PlusOne.swift "LeetCode")|[Swift](https://github.com/GeonHyeongKim/AlgoriGym/blob/master/String%26Array/MoveZeros.swift)|Easy|O(n)|O(1)|LeetCode||
+|[Reverse String](https://leetcode.com/problems/reverse-string/ "LeetCode")|[Swift](https://github.com/GeonHyeongKim/AlgoriGym/blob/master/String%26Array/MoveZeros.swift)|Easy|||LeetCode||
 |[Split a String in Balanced Strings](https://leetcode.com/problems/split-a-string-in-balanced-strings/ "LeetCode")|[Swift](https://github.com/GeonHyeongKim/AlgoriGym/blob/master/String%26Array/Split%20a%20String%20in%20Balanced%20Strings.swift)|Easy|O(n)|O(1)|LeetCode||
 |[To Lower Case](https://leetcode.com/problems/to-lower-case/ "LeetCode")|[Swift](https://github.com/GeonHyeongKim/AlgoriGym/blob/master/String%26Array/To%20Lower%20Case.swift)|Easy|O(1)|O(1)|LeetCode|[lowerCase로 변경] lowercased()|
 |[Unique Email Addresses](https://leetcode.com/problems/unique-email-addresses/ "LeetCode")|[Swift](https://github.com/GeonHyeongKim/AlgoriGym/blob/master/String%26Array/UniqueEmailAddresses.swift)|Easy|O(n)|O(1)|LeetCode|[중간에 제거] components|
