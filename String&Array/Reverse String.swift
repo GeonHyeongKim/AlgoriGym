@@ -2,7 +2,7 @@
 *  Reverse String.swift
 *  Question Link: https://leetcode.com/problems/reverse-string/
 *  Primary idea:   <String & Array>
-*                  1.
+*                  1. reversed()
 *
 *  Time Complexity :
 *  Space Complexity :
@@ -16,6 +16,6 @@ import Foundation
 
 class Solution {
     func reverseString(_ s: inout [Character]) {
-        
+        s = s.reversed()
     }
 }
