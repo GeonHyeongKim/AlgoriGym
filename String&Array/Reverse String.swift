@@ -4,10 +4,10 @@
 *  Primary idea:   <String & Array>
 *                  1. reversed()
 *
-*  Time Complexity :
-*  Space Complexity :
-*  Runtime:  ms
-*  Memory Usage:  MB
+*  Time Complexity : O(1)
+*  Space Complexity : O(1)
+*  Runtime: 568 ms
+*  Memory Usage: 24.6 MB
 *
 *  Created by gunhyeong on 2020/04/07.
 */
