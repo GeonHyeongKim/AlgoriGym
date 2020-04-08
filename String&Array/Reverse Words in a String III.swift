@@ -5,10 +5,10 @@
 *                  1. 분리 : Split()으로 " "를 인식하면 분리
 *                  2. 마지막 문자열 제거 : dropLast()를 이용해 마지막 문자열(" ") 제거
 *
-*  Time Complexity :
-*  Space Complexity :
-*  Runtime:  ms
-*  Memory Usage:  MB
+*  Time Complexity : O(n)
+*  Space Complexity : O(n)
+*  Runtime: 196 ms
+*  Memory Usage: 22 MB
 *
 *  Created by gunhyeong on 2020/04/08.
 */
