@@ -10,10 +10,10 @@
 *                      4-2 : 포함되어 있지 않을 경우, Latin만
 *                  5. Latin : 문자열에 "a" 추가
 *
-*  Time Complexity :
-*  Space Complexity :
-*  Runtime:  ms
-*  Memory Usage:  MB
+*  Time Complexity : O(n)
+*  Space Complexity : O(n), n은 vowel의 수
+*  Runtime: 8 ms
+*  Memory Usage: 21.4 MB
 *
 *  Created by gunhyeong on 2020/04/09.
 */
