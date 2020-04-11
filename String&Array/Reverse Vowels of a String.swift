@@ -8,10 +8,10 @@
 *                  4. right index : 오른쪽 문자열이 문자인지 판별(isLetter) 후, 문자가 아니면 다음칸으로 이동
 *                  5. swap : 상대적로 같은 위치에 있는 문자만 서로 위치를 바꾼다.
 *
-*  Time Complexity :
-*  Space Complexity :
-*  Runtime:  ms
-*  Memory Usage:  MB
+*  Time Complexity : O(n)
+*  Space Complexity : O(n)
+*  Runtime: 196 ms
+*  Memory Usage: 21.9 MB
 *
 *  Created by gunhyeong on 2020/04/11.
 */
