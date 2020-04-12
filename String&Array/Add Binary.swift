@@ -6,10 +6,10 @@
 *                  2. 판별 : 각자리에 계산 할 수가 있을떄(>=0), 그 값을 가져오고 아닐 경우 0으로 대체
 *                  3. 결과 : sum의 경우의 수가 0, 1, 2가 나오는데 2일때는 carray빌셍
 *
-*  Time Complexity :
-*  Space Complexity :
-*  Runtime:  ms
-*  Memory Usage:  MB
+*  Time Complexity : O(n)
+*  Space Complexity : O(1)
+*  Runtime: 16 ms
+*  Memory Usage: 20.8 MB
 *
 *  Created by gunhyeong on 2020/04/12.
 */
