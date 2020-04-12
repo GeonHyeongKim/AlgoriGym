@@ -16,6 +16,7 @@ Swift
 ## String & Array
 |Title|Solution|Difficulty|Time|Space|See|Etc|
 |:---|:---:|:---:|:---:|:---:|:---:|:---|
+|[Add Binary](https://leetcode.com/problems/add-binary/ "LeetCode")|[Swift](https://github.com/GeonHyeongKim/AlgoriGym/blob/master/String%26Array/Is%20Subsequence.swift)|Easy|||LeetCode||
 |[Best Time to Buy and Sell Stock](https://leetcode.com/problems/best-time-to-buy-and-sell-stock/ "LeetCode")|[Swift](https://github.com/GeonHyeongKim/AlgoriGym/blob/master/String%26Array/Is%20Subsequence.swift)|Easy|O(n)|O(n)|LeetCode||
 |[Defanging an IP Address](https://leetcode.com/problems/defanging-an-ip-address/ "LeetCode")|[Swift](https://github.com/GeonHyeongKim/AlgoriGym/blob/master/String%26Array/Defanging%20an%20IP%20Address.swift)|Easy|O(1)|O(1)|LeetCode|[대체, 제거] replacingOccurrences()|
 |[Decrypt String from Alphabet to Integer Mapping](https://leetcode.com/problems/decrypt-string-from-alphabet-to-integer-mapping/ "LeetCode")|[Swift](https://github.com/GeonHyeongKim/AlgoriGym/blob/master/String%26Array/Decrypt%20String%20from%20Alphabet%20to%20Integer%20Mapping.swift)|Easy|O(n)|O(n)|LeetCode||
