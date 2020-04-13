@@ -47,7 +47,7 @@ Swift & Java
 |Title|Solution|Difficulty|Time|Space|See|Etc|
 |:---|:---:|:---:|:---:|:---:|:---:|:---|
 |[ATM](https://www.acmicpc.net/problem/11399 "프로그래머스")|[Java](https://github.com/GeonHyeongKim/AlgoriGym/blob/master/Greedy/Java/ATM.java)|66.275%|O(n)|O(n)|프로그래머스||
-|[Two City Scheduling](https://leetcode.com/problems/two-city-scheduling/ "Leetcode")|[Swift](https://github.com/GeonHyeongKim/AlgoriGym/blob/master/Greedy/Java/ATM.java)|Easy|||LeetCode||
+|[Two City Scheduling](https://leetcode.com/problems/two-city-scheduling/ "Leetcode")|[Swift](https://github.com/GeonHyeongKim/AlgoriGym/blob/master/Greedy/Two%20City%20Scheduling.swift)|Easy|||LeetCode||
 
 ## Depth-first search(DFS)
 |Title|Solution|Difficulty|Time|Space|See|Etc|
