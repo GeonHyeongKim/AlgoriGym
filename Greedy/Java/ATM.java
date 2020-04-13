@@ -1,3 +1,8 @@
+// *  Time Complexity : O(n)
+// *  Space Complexity : O(n)
+// *  Runtime : 152 ms
+// *  Memory Usage : 17952 KB
+
 import java.util.Arrays;
 import java.util.Scanner;
 
