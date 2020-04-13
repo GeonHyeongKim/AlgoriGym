@@ -5,10 +5,10 @@
 *                  1. 정렬 : B city보다 저렴한 A city로 정렬
 *                  2. City 별 계산
 *
-*  Time Complexity :
-*  Space Complexity :
-*  Runtime:  ms
-*  Memory Usage:  MB
+*  Time Complexity : O(n)
+*  Space Complexity : O(1)
+*  Runtime: 24 ms
+*  Memory Usage: 21.3 MB
 *
 *  Created by gunhyeong on 2020/04/13.
 */
