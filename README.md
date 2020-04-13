@@ -8,7 +8,7 @@ Daily commit - I will commit at least one algorithm problem once a day.
 2020/02/01 ~ at this momen
 
 ## Language
-Swift
+Swift & Java
 
 ## See
 [LeetCode](https://leetcode.com/ "LeetCode"), [백준 알고리즘](https://www.acmicpc.net/ "백준 알고리즘"), [프로그래머스](https://programmers.co.kr/ "프로그래머스")
@@ -42,6 +42,11 @@ Swift
 |[실패율](https://programmers.co.kr/learn/courses/30/lessons/42889 "프로그래머스")|[Swift](https://github.com/GeonHyeongKim/AlgoriGym/blob/master/String%26Array/%EB%8B%A4%ED%8A%B8%EA%B2%8C%EC%9E%84.swift)|Level 1|O()|O()|프로그래머스|2019 KAKAO BLIND RECRUITMENT|
 |[다트게임](https://programmers.co.kr/learn/courses/30/lessons/17682 "프로그래머스")|[Swift](https://github.com/GeonHyeongKim/AlgoriGym/blob/master/String%26Array/%EB%8B%A4%ED%8A%B8%EA%B2%8C%EC%9E%84.swift)|Level 1|O(n^2)|O(n)|프로그래머스|2018 KAKAO BLIND RECRUITMENT|
 |[비밀지도](https://programmers.co.kr/learn/courses/30/lessons/17681 "프로그래머스")|[Swift](https://github.com/GeonHyeongKim/AlgoriGym/blob/master/String%26Array/%EB%B9%84%EB%B0%80%EC%A7%80%EB%8F%84.swift)|Level 1|O(n^2)|O(n)|프로그래머스|2018 KAKAO BLIND RECRUITMENT|
+
+## Greedy
+|Title|Solution|Difficulty|Time|Space|See|Etc|
+|:---|:---:|:---:|:---:|:---:|:---:|:---|
+|[ATM](https://www.acmicpc.net/problem/11399 "프로그래머스")|[Java](https://github.com/GeonHyeongKim/AlgoriGym/blob/master/BackTracking/Beautiful%20Arrangement.swift)|66.275%|O(n)|O(n)|프로그래머스||
 
 ## Depth-first search(DFS)
 |Title|Solution|Difficulty|Time|Space|See|Etc|
