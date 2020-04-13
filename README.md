@@ -46,7 +46,7 @@ Swift & Java
 ## Greedy
 |Title|Solution|Difficulty|Time|Space|See|Etc|
 |:---|:---:|:---:|:---:|:---:|:---:|:---|
-|[ATM](https://www.acmicpc.net/problem/11399 "프로그래머스")|[Java](https://github.com/GeonHyeongKim/AlgoriGym/blob/master/BackTracking/Beautiful%20Arrangement.swift)|66.275%|O(n)|O(n)|프로그래머스||
+|[ATM](https://www.acmicpc.net/problem/11399 "프로그래머스")|[Java](https://github.com/GeonHyeongKim/AlgoriGym/blob/master/Greedy/Java/ATM.java)|66.275%|O(n)|O(n)|프로그래머스||
 
 ## Depth-first search(DFS)
 |Title|Solution|Difficulty|Time|Space|See|Etc|
