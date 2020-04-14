@@ -47,7 +47,7 @@ Swift & Java
 |Title|Solution|Difficulty|Time|Space|See|Etc|
 |:---|:---:|:---:|:---:|:---:|:---:|:---|
 |[ATM](https://www.acmicpc.net/problem/11399 "프로그래머스")|[Java](https://github.com/GeonHyeongKim/AlgoriGym/blob/master/Greedy/Java/ATM.java)|66.275%|O(n)|O(n)|프로그래머스||
-|[Minimum Subsequence in Non-Increasing Order](https://leetcode.com/problems/minimum-subsequence-in-non-increasing-order/ "Leetcode")|[Swift](https://github.com/GeonHyeongKim/AlgoriGym/blob/master/Greedy/Minimum%20Subsequence%20in%20Non-Increasing%20Order.swift)|Easy|||LeetCode||
+|[Minimum Subsequence in Non-Increasing Order](https://leetcode.com/problems/minimum-subsequence-in-non-increasing-order/ "Leetcode")|[Swift](https://github.com/GeonHyeongKim/AlgoriGym/blob/master/Greedy/Minimum%20Subsequence%20in%20Non-Increasing%20Order.swift)|Easy|O(n)|O(1)|LeetCode||
 |[Two City Scheduling](https://leetcode.com/problems/two-city-scheduling/ "Leetcode")|[Swift](https://github.com/GeonHyeongKim/AlgoriGym/blob/master/Greedy/Two%20City%20Scheduling.swift)|Easy|O(n)|O(1)|LeetCode||
 
 ## Depth-first search(DFS)
