@@ -6,10 +6,10 @@
 *                  2. 최댓값 : 파티션에 속한 문자들의 마지막 index를 알아낸다.
 *                  3. 조건 : 최댓값과 파티션의 모든 문자를 탐색하는 index(i)가 같아 졌을때, parition으로 구분
 *
-*  Time Complexity :
-*  Space Complexity :
-*  Runtime:  ms
-*  Memory Usage:  MB
+*  Time Complexity : O(n)
+*  Space Complexity : O(1)
+*  Runtime: 28 ms
+*  Memory Usage: 21.3 MB
 *
 *  Created by gunhyeong on 2020/04/15.
 */
