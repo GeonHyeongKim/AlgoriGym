@@ -49,7 +49,8 @@ Swift & Java
 |[ATM](https://www.acmicpc.net/problem/11399 "프로그래머스")|[Java](https://github.com/GeonHyeongKim/AlgoriGym/blob/master/Greedy/Java/ATM.java)|66.275%|O(n)|O(n)|프로그래머스||
 |[Minimum Subsequence in Non-Increasing Order](https://leetcode.com/problems/minimum-subsequence-in-non-increasing-order/ "Leetcode")|[Swift](https://github.com/GeonHyeongKim/AlgoriGym/blob/master/Greedy/Minimum%20Subsequence%20in%20Non-Increasing%20Order.swift)|Easy|O(n)|O(1)|LeetCode||
 |[Two City Scheduling](https://leetcode.com/problems/two-city-scheduling/ "Leetcode")|[Swift](https://github.com/GeonHyeongKim/AlgoriGym/blob/master/Greedy/Two%20City%20Scheduling.swift)|Easy|O(n)|O(1)|LeetCode||
-|[Partition Labels](https://leetcode.com/problems/partition-labels/ "Leetcode")|[Swift](https://github.com/GeonHyeongKim/AlgoriGym/blob/master/Greedy/Partition%20Labels.swift)|Easy|||LeetCode||
+|[Partition Labels](https://leetcode.com/problems/partition-labels/ "Leetcode")|[Swift](https://github.com/GeonHyeongKim/AlgoriGym/blob/master/Greedy/Partition%20Labels.swift)|Easy|O(n)|O(1)|LeetCode||
+|[Group the People Given the Group Size They Belong To](https://leetcode.com/problems/group-the-people-given-the-group-size-they-belong-to/ "Leetcode")|[Swift](https://github.com/GeonHyeongKim/AlgoriGym/blob/master/Greedy/Partition%20Labels.swift)|Medium|||LeetCode||
 
 ## Depth-first search(DFS)
 |Title|Solution|Difficulty|Time|Space|See|Etc|
