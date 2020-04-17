@@ -51,6 +51,8 @@ Swift & Java
 |[Two City Scheduling](https://leetcode.com/problems/two-city-scheduling/ "Leetcode")|[Swift](https://github.com/GeonHyeongKim/AlgoriGym/blob/master/Greedy/Two%20City%20Scheduling.swift)|Easy|O(n)|O(1)|LeetCode||
 |[Partition Labels](https://leetcode.com/problems/partition-labels/ "Leetcode")|[Swift](https://github.com/GeonHyeongKim/AlgoriGym/blob/master/Greedy/Partition%20Labels.swift)|Easy|O(n)|O(1)|LeetCode||
 |[Group the People Given the Group Size They Belong To](https://leetcode.com/problems/group-the-people-given-the-group-size-they-belong-to/ "Leetcode")|[Swift](https://github.com/GeonHyeongKim/AlgoriGym/blob/master/Greedy/Group%20the%20People%20Given%20the%20Group%20Size%20They%20Belong%20To.swift)|Medium|O(n)|O(n)|LeetCode||
+|[Minimum Add to Make Parentheses Valid](https://leetcode.com/problems/minimum-add-to-make-parentheses-valid/ "Leetcode")|[Swift](https://github.com/GeonHyeongKim/AlgoriGym/blob/master/Greedy/Group%20the%20People%20Given%20the%20Group%20Size%20They%20Belong%20To.swift)|Medium|||LeetCode||
+
 
 ## Depth-first search(DFS)
 |Title|Solution|Difficulty|Time|Space|See|Etc|
