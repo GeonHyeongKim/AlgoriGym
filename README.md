@@ -52,7 +52,7 @@ Swift & Java
 |[Partition Labels](https://leetcode.com/problems/partition-labels/ "Leetcode")|[Swift](https://github.com/GeonHyeongKim/AlgoriGym/blob/master/Greedy/Partition%20Labels.swift)|Easy|O(n)|O(1)|LeetCode||
 |[Group the People Given the Group Size They Belong To](https://leetcode.com/problems/group-the-people-given-the-group-size-they-belong-to/ "Leetcode")|[Swift](https://github.com/GeonHyeongKim/AlgoriGym/blob/master/Greedy/Group%20the%20People%20Given%20the%20Group%20Size%20They%20Belong%20To.swift)|Medium|O(n)|O(n)|LeetCode||
 |[Minimum Add to Make Parentheses Valid](https://leetcode.com/problems/minimum-add-to-make-parentheses-valid/ "Leetcode")|[Swift](https://github.com/GeonHyeongKim/AlgoriGym/commit/38983914cb022066cd159fd6db4c66a3fe78a476)|Medium|O(n)|O(1)|LeetCode||
-
+|[초콜릿 자르기](https://www.acmicpc.net/problem/2163 "프로그래머스")|[Swift](https://github.com/GeonHyeongKim/AlgoriGym/commit/38983914cb022066cd159fd6db4c66a3fe78a476)|71.625%|||프로그래머스||
 
 ## Depth-first search(DFS)
 |Title|Solution|Difficulty|Time|Space|See|Etc|
