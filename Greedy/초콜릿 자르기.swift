@@ -6,10 +6,10 @@
 *                  2. bottom-up approach : 매번 반으로 잘라서 모든 조각의 크기가 1 x 1이 될 때 까지 자르기
 *                  3. 계산 : 반으로 잘랐을 때 초콜릿의 값(dp[half]) + 나머지(dp[remainder]) + 현재 초콜릿 크기(i)에서 한번 반으로 자르기 1회
 *
-*  Time Complexity :
-*  Space Complexity :
-*  Runtime:  ms
-*  Memory Usage:  MB
+*  Time Complexity : O(N*M)
+*  Space Complexity : O(N*M)
+*  Runtime: 8 ms
+*  Memory Usage: 64.756 MB
 *
 *  Created by gunhyeong on 2020/04/18.
 */
