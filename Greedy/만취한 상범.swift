@@ -6,10 +6,10 @@
 *                  2. 열고 닫음 : 2중 for문으로 1의 배수 -> 2의 배수 -> ... 만큼 등비수열 값이 입력받은 방의 수보다 작을 경우 값을 switch한다.
 *                  3. 결과 : filter를 통해 결과가 true인 값들만 count해서 출력
 *
-*  Time Complexity :
-*  Space Complexity :
-*  Runtime:  ms
-*  Memory Usage:  MB
+*  Time Complexity : O(n)
+*  Space Complexity : O(n)
+*  Runtime: 8 ms
+*  Memory Usage: 64.048 MB
 *
 *  Created by gunhyeong on 2020/04/19.
 */
@@ -28,5 +28,5 @@ for _ in 1...testCase {
         }
     }
 
-    print(room.filter({$0 == true}).count) // 2. 결과
+    print(room.filter({$0 == true}).count) // 3. 결과
 }
