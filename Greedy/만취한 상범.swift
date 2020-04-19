@@ -23,12 +23,8 @@ for _ in 1...testCase {
     var room = [Bool](repeating: false, count: n+1) // 1. 방 생성
     
     for i in 1...n {
-        for j in 1...100 {
-            let cal = i * j
-            
-            if n >= cal { // 2. 열고 닫음
-                room[cal] = !room[cal]
-            }
+        for j in 1...100 where n >= i * j {
+            room[i * j] = !room[i * j] // 2. 열고 닫음
         }
     }
 
