@@ -52,7 +52,7 @@ Swift & Java
 |[Partition Labels](https://leetcode.com/problems/partition-labels/ "Leetcode")|[Swift](https://github.com/GeonHyeongKim/AlgoriGym/blob/master/Greedy/Partition%20Labels.swift)|Easy|O(n)|O(1)|LeetCode||
 |[Group the People Given the Group Size They Belong To](https://leetcode.com/problems/group-the-people-given-the-group-size-they-belong-to/ "Leetcode")|[Swift](https://github.com/GeonHyeongKim/AlgoriGym/blob/master/Greedy/Group%20the%20People%20Given%20the%20Group%20Size%20They%20Belong%20To.swift)|Medium|O(n)|O(n)|LeetCode||
 |[Minimum Add to Make Parentheses Valid](https://leetcode.com/problems/minimum-add-to-make-parentheses-valid/ "Leetcode")|[Swift](https://github.com/GeonHyeongKim/AlgoriGym/commit/38983914cb022066cd159fd6db4c66a3fe78a476)|Medium|O(n)|O(1)|LeetCode||
-|[만취한 상범](https://www.acmicpc.net/problem/6359 "프로그래머스")|[Swift](https://github.com/GeonHyeongKim/AlgoriGym/blob/master/Greedy/%EC%B4%88%EC%BD%9C%EB%A6%BF%20%EC%9E%90%EB%A5%B4%EA%B8%B0.swift)|70.118%|||프로그래머스||
+|[만취한 상범](https://www.acmicpc.net/problem/6359 "프로그래머스")|[Swift](https://github.com/GeonHyeongKim/AlgoriGym/blob/master/Greedy/%EB%A7%8C%EC%B7%A8%ED%95%9C%20%EC%83%81%EB%B2%94.swift)|70.118%|||프로그래머스||
 |[초콜릿 자르기](https://www.acmicpc.net/problem/2163 "프로그래머스")|[Swift](https://github.com/GeonHyeongKim/AlgoriGym/blob/master/Greedy/%EC%B4%88%EC%BD%9C%EB%A6%BF%20%EC%9E%90%EB%A5%B4%EA%B8%B0.swift)|71.625%|O(N*M)|O(N*M)|프로그래머스||
 
 ## Depth-first search(DFS)
