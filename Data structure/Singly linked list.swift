@@ -22,12 +22,12 @@
 
 import Foundation
 
-struct Node {
+public class Node {
     var data: Int
-    var link: Int
+    var link: Node?
     
-    init(data: Int, link: Int){
+    init(_ data: Int, _ link: Node? = nil){
         self.data = data
-        self.link = link
     }
 }
+
