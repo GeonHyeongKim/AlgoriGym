@@ -93,8 +93,7 @@ Swift & Java
 ## Dynamic Programming
 |Title|Solution|Etc|
 |:---|:---:|:---|
-|[Singly Linked List]|[Swift](https://github.com/GeonHyeongKim/AlgoriGym/blob/master/Dynamic/ClimbStairs.swift)||
-
+|Singly Linked List|[Swift](https://github.com/GeonHyeongKim/AlgoriGym/blob/master/Data%20structure/Singly%20linked%20list.swift)||
 
 ## Author
 GeonHyeong Kim, [geonhyeong.dev@gmail.com](geonhyeong.dev@gmail.com).
