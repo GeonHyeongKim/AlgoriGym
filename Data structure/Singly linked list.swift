@@ -22,3 +22,12 @@
 
 import Foundation
 
+struct Node {
+    var data: Int
+    var link: Int
+    
+    init(data: Int, link: Int){
+        self.data = data
+        self.link = link
+    }
+}
