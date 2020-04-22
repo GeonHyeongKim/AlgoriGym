@@ -32,8 +32,8 @@ public class Node {
 }
 
 public class LinkedList {
-    public var head: Node? = nil
-    public var tail: Node? = nil
+    private var head: Node?
+    private var tail: Node?
     
     // 비어 있는지 확인
     public var isEmpty: Bool {
