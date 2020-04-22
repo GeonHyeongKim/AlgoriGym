@@ -35,6 +35,19 @@ public class LinkedList {
     private var head: Node?
     private var tail: Node?
     
+    // list 뒤에 삽입
+    func insertLast(data: Int) {
+        let newNode = Node(data)
+        
+        if let tailNode = tail { // tailNode가 nil이 아닐때, 즉 무엇인가 link가 되어있다.
+            tailNode.link = newNode
+        } else {
+            head = newNode
+        }
+        
+        tail = newNode
+    }
+    
     // 비어 있는지 확인
     public var isEmpty: Bool {
         return head == nil
