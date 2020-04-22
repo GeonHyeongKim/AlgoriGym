@@ -50,3 +50,18 @@ public class LinkedList {
         return tail
     }
 }
+
+extension LinkedList: CustomStringConvertible { // 출력할 때 description 지정
+    public var description: String {
+        var str = ""
+        var node = head
+        
+        while node != nil {
+            str += "\(node!.data)"
+            node = node!.link
+            if node != nil { str += " -> " }
+        }
+        
+        return str
+    }
+}
