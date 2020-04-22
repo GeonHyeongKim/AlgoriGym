@@ -39,4 +39,14 @@ public class LinkedList {
     public var isEmpty: Bool {
         return head == nil
     }
+    
+    // 첫번째 Node
+    public var fisrt: Node? {
+        return head
+    }
+    
+    // 마지막 Node
+    public var last: Node? {
+        return tail
+    }
 }
