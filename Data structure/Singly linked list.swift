@@ -78,3 +78,21 @@ extension LinkedList: CustomStringConvertible { // 출력할 때 description 지
         return str
     }
 }
+
+// 역으로 출력하는 함수
+func reverse(l: LinkedList) -> String {
+    var currentNode = l.fisrt // head
+    l.head = l.tail
+
+    var preNode: Node?
+    var nextNode: Node?
+    
+    while currentNode != nil {
+        nextNode = currentNode?.link
+        currentNode?.link = preNode
+        preNode = currentNode
+        currentNode = nextNode
+    }
+    
+    return l.description
+}
