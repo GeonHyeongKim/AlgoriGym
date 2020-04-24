@@ -17,7 +17,7 @@ Swift & Java
 |Title|Solution|Difficulty|Time|Space|See|Etc|
 |:---|:---:|:---:|:---:|:---:|:---:|:---|
 |[Add Binary](https://leetcode.com/problems/add-binary/ "LeetCode")|[Swift](https://github.com/GeonHyeongKim/AlgoriGym/blob/master/String%26Array/Add%20Binary.swift)|Easy|O(n)|O(n)|LeetCode||
-|[Best Time to Buy and Sell Stock](https://leetcode.com/problems/best-time-to-buy-and-sell-stock/ "LeetCode")|[Swift](Gym/blob/master/String%26Array/Is%20Subsequenc)|Easy|||LeetCode||
+|[Best Time to Buy and Sell Stock](https://leetcode.com/problems/best-time-to-buy-and-sell-stock/ "LeetCode")|[Swift](Gym/blob/master/String%26Array/Is%20Subsequenc)|Easy|O(n)|O(1)|LeetCode||
 |[Defanging an IP Address](https://leetcode.com/problems/defanging-an-ip-address/ "LeetCode")|[Swift](https://github.com/GeonHyeongKim/AlgoriGym/blob/master/String%26Array/Defanging%20an%20IP%20Address.swift)|Easy|O(1)|O(1)|LeetCode|[대체, 제거] replacingOccurrences()|
 |[Decrypt String from Alphabet to Integer Mapping](https://leetcode.com/problems/decrypt-string-from-alphabet-to-integer-mapping/ "LeetCode")|[Swift](https://github.com/GeonHyeongKim/AlgoriGym/blob/master/String%26Array/Decrypt%20String%20from%20Alphabet%20to%20Integer%20Mapping.swift)|Easy|O(n)|O(n)|LeetCode||
 |[Goat Latin](https://leetcode.com/problems/goat-latin/ "LeetCode")|[Swift](https://github.com/GeonHyeongKim/AlgoriGym/blob/master/String%26Array/Goat%20Latin.swift)|Easy|O(n)|O(n)|LeetCode||
