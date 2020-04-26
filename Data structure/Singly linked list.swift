@@ -64,6 +64,12 @@ public class LinkedList {
       return nil
     }
     
+    // 모든 node 제거
+    public func removeAll() {
+      head = nil
+      tail = nil
+    }
+    
     // 비어 있는지 확인
     public var isEmpty: Bool {
         return head == nil
