@@ -32,8 +32,8 @@ public class Node {
 }
 
 public class LinkedList {
-    private var head: Node?
-    private var tail: Node?
+    public var head: Node?
+    public var tail: Node?
     
     // list 뒤에 삽입
     func insertLast(data: Int) {
@@ -46,6 +46,22 @@ public class LinkedList {
         }
         
         tail = newNode
+    }
+    
+    // index 번호를 통해 node data 확인
+    func nodeAt(index: Int) -> Node? {
+
+        if index >= 0 {
+        var node = head
+        var i = index
+
+        while node != nil {
+          if i == 0 { return node }
+          i -= 1
+          node = node!.link
+        }
+      }
+      return nil
     }
     
     // 비어 있는지 확인
