@@ -8,10 +8,10 @@
 *                    4. 1~3번의 과정을 총 거스름돈이 0원이 될때까지 반복한다.(Ex : 120 - 100 = 20엔, 20 - 10 = 10엔, 10 - 10 = 0엔)
 *                    5. 더해진 총 동전 개수를 구한다.(500엔 1개, 100엔 1개, 10엔 2개 -> 4개)
 *
-*  Time Complexity :
-*  Space Complexity :
-*  Runtime:  ms
-*  Memory Usage:  MB
+*  Time Complexity : O(1)
+*  Space Complexity : O(1)
+*  Runtime: 8 ms
+*  Memory Usage: 64.044 MB
 *
 *  Created by gunhyeong on 2020/04/27.
 */
