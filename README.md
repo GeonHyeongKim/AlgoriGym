@@ -56,6 +56,7 @@ Swift & Java
 |[거스름돈](https://www.acmicpc.net/problem/5585 "프로그래머스")|[Swift](https://github.com/GeonHyeongKim/AlgoriGym/blob/master/Greedy/%EA%B1%B0%EC%8A%A4%EB%A6%84%EB%8F%88.swift)|61.284%|O(1)|O(1)|프로그래머스||
 |[만취한 상범](https://www.acmicpc.net/problem/6359 "프로그래머스")|[Swift](https://github.com/GeonHyeongKim/AlgoriGym/blob/master/Greedy/%EB%A7%8C%EC%B7%A8%ED%95%9C%20%EC%83%81%EB%B2%94.swift)|70.118%|O(n)|O(n)|프로그래머스||
 |[초콜릿 자르기](https://www.acmicpc.net/problem/2163 "프로그래머스")|[Swift](https://github.com/GeonHyeongKim/AlgoriGym/blob/master/Greedy/%EC%B4%88%EC%BD%9C%EB%A6%BF%20%EC%9E%90%EB%A5%B4%EA%B8%B0.swift)|71.625%|O(N*M)|O(N*M)|프로그래머스||
+|[힙 정렬](https://www.acmicpc.net/problem/2220 "프로그래머스")|[Swift](https://github.com/GeonHyeongKim/AlgoriGym/blob/master/Greedy/%EC%B4%88%EC%BD%9C%EB%A6%BF%20%EC%9E%90%EB%A5%B4%EA%B8%B0.swift)|57.377%|||프로그래머스||
 
 ## Depth-first search(DFS)
 |Title|Solution|Difficulty|Time|Space|See|Etc|
