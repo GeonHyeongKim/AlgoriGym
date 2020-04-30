@@ -7,8 +7,8 @@
 *                    3. 자기보다 키 큰 사람이 있는 경우 빈 자리를 지나칩니다.
 *                    4. 빈 자리이고 2번에서 입력받은 수만큼 키 큰 사람을 지나쳤다면 자신의 자리입니다.
 *
-*  Time Complexity :
-*  Space Complexity :
+*  Time Complexity : O(n^2)
+*  Space Complexity : O(n)
 *  Runtime:  ms
 *  Memory Usage:
 *
