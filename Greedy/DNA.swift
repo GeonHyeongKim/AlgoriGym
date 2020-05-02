@@ -7,10 +7,10 @@
 *                    2. 반복문을 돌리면서 제일 많이 쓰인 알파벳을 출력하고 Hamming Distance를 계산합니다.
 *                    3. 마지막에 Hamming Distance의 누적합을 출력해주면 됩니다.
 *
-*  Time Complexity :
-*  Space Complexity :
-*  Runtime:  ms
-*  Memory Usage:
+*  Time Complexity : O(N*M) ~ O(N)
+*  Space Complexity : O(1)
+*  Runtime: 64.192 ms
+*  Memory Usage: 28
 *
 *  Created by gunhyeong on 2020/05/02.
 */
