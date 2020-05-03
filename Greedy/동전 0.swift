@@ -5,10 +5,11 @@
 *                    1. Greedy는 매 순간마다 k를 넘지 않는 가장 큰 값을 고르는 경우를 세면 된다. (DP X)
 *                    2. 나누기를 이용해서 횟수를 구하기
 *                    3. k는 %연산자를 이용해 값을 갱신
-*  Time Complexity :
-*  Space Complexity :
-*  Runtime:  ms
-*  Memory Usage:
+*
+*  Time Complexity : O(n)
+*  Space Complexity : O(n)
+*  Runtime: 8 ms
+*  Memory Usage: 64.052 MB
 *
 *  Created by gunhyeong on 2020/05/03.
 */
