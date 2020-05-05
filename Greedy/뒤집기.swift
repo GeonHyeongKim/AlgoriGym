@@ -5,10 +5,10 @@
 *                       1. 0과 1일 바뀌는 순간, 0과 1로 구성된 연속된 덩어리들을 증가
 *                       2. 가장 작은 덩어리를 출력
 *
-*  Time Complexity :
-*  Space Complexity :
-*  Runtime:  ms
-*  Memory Usage:  MB
+*  Time Complexity : O(n)
+*  Space Complexity : O(n)
+*  Runtime: 8 ms
+*  Memory Usage: 64.044 MB
 *
 *  Created by gunhyeong on 2020/05/04.
 */
