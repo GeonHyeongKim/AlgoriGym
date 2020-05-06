@@ -5,10 +5,10 @@
 *                       1. 앞/뒤로는 무조건 긴 문자열과 같은 값이 되도록 값을 넣는다고 가정
 *                       2. a의 길이 < b의 길이 : a[i] != b[j]의 개수가 가장 짧은 구간으로 선택
 *
-*  Time Complexity :
-*  Space Complexity :
-*  Runtime:  ms
-*  Memory Usage:  MB
+*  Time Complexity : O(a^b)
+*  Space Complexity : O(1)
+*  Runtime: 8 ms
+*  Memory Usage: 64.048 MB
 *
 *  Created by gunhyeong on 2020/05/06.
 */
