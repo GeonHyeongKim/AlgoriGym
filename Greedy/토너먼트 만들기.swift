@@ -9,10 +9,10 @@
 *                                1 2 3 (3 - 2 = 1)
 *                                1 2 (2 - 1 = 1)
 *
-*  Time Complexity :
-*  Space Complexity :
-*  Runtime:  ms
-*  Memory Usage:  MB
+*  Time Complexity : O(n)
+*  Space Complexity : O(1)
+*  Runtime: 8 ms
+*  Memory Usage: 64.052 MB
 *
 *  Created by gunhyeong on 2020/05/07.
 */
@@ -21,7 +21,6 @@ import Foundation
 
 var n = Int(readLine()!)!
 var ranks = Array(readLine()!.split(separator: " ").map{Int($0)!})
-
 var maxRank = n
 var diff = 0
 
