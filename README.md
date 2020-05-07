@@ -61,6 +61,8 @@ Swift & Java
 |[문자열](https://www.acmicpc.net/problem/1120 "프로그래머스")|[Swift](https://github.com/GeonHyeongKim/AlgoriGym/blob/master/Greedy/%EB%AC%B8%EC%9E%90%EC%97%B4.swift)|52.122%
 |O(a^b)|O(1)|프로그래머스||
 |[초콜릿 자르기](https://www.acmicpc.net/problem/2163 "프로그래머스")|[Swift](https://github.com/GeonHyeongKim/AlgoriGym/blob/master/Greedy/%EC%B4%88%EC%BD%9C%EB%A6%BF%20%EC%9E%90%EB%A5%B4%EA%B8%B0.swift)|71.625%|O(N*M)|O(N*M)|프로그래머스||
+|[토너먼트 만들기](https://www.acmicpc.net/problem/2262 "프로그래머스")|[Swift](https://github.com/GeonHyeongKim/AlgoriGym/blob/master/Greedy/%EC%B4%88%EC%BD%9C%EB%A6%BF%20%EC%9E%90%EB%A5%B4%EA%B8%B0.swift)|51.220%
+|||프로그래머스||
 |[한 줄로 서기](https://www.acmicpc.net/problem/1138 "프로그래머스")|[Swift](https://github.com/GeonHyeongKim/AlgoriGym/blob/master/Greedy/%ED%95%9C%20%EC%A4%84%EB%A1%9C%20%EC%84%9C%EA%B8%B0.swift)|57.181%|O(n^2)|O(n)|프로그래머스||
 |[힙 정렬](https://www.acmicpc.net/problem/2220 "프로그래머스")|[Swift](https://github.com/GeonHyeongKim/AlgoriGym/blob/master/Greedy/%ED%9E%99%20%EC%A0%95%EB%A0%AC.swift)|57.377%|||프로그래머스||
 
