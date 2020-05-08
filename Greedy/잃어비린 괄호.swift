@@ -4,8 +4,8 @@
 *  Primary idea:        <Greedy>
 *                       1. 최솟값을 위해 덧셈끼리 모두 묶기
 *
-*  Time Complexity :
-*  Space Complexity :
+*  Time Complexity : O(n)
+*  Space Complexity : O(n)
 *  Runtime: 64.044 ms
 *  Memory Usage: 8 MB
 *
