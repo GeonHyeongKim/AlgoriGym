@@ -77,7 +77,7 @@ Swift & Java
 |[Generate Parentheses](https://leetcode.com/problems/combination-sum-iii/ "LeetCode")|[Swift](https://github.com/GeonHyeongKim/AlgoriGym/blob/master/BackTracking/Generate%20Parentheses.swift)|Medium|O(2^n)|O(n)|LeetCode||
 |[Gray Code](https://leetcode.com/problems/combination-sum-iii/ "LeetCode")|[Swift](https://github.com/GeonHyeongKim/AlgoriGym/blob/master/BackTracking/Gray%20Code.swift)|Medium|O(n^n)|O(2^n)|LeetCode||
 |[Letter Combinations of a Phone Number](https://leetcode.com/problems/letter-combinations-of-a-phone-number/ "LeetCode")|[Swift](https://github.com/GeonHyeongKim/AlgoriGym/blob/master/BackTracking/Letter%20Combinations%20of%20a%20Phone%20Number.swift)|Medium|O(4^n)|O(n)|LeetCode||
-|[N과 M (1)](https://www.acmicpc.net/problem/15649 "프로그래머스")|[Swift](https://github.com/GeonHyeongKim/AlgoriGym/blob/master/Greedy/%ED%9E%99%20%EC%A0%95%EB%A0%AC.swift)|60.797%|O(n^n)|O(n)|프로그래머스||
+|[N과 M (1)](https://www.acmicpc.net/problem/15649 "프로그래머스")|[Swift](https://github.com/GeonHyeongKim/AlgoriGym/blob/master/BackTracking/N%EA%B3%BC%20M(1).swift)|60.797%|O(n^n)|O(n)|프로그래머스||
 |[Palindrome Partitioning](https://leetcode.com/problems/palindrome-partitioning/ "LeetCode")|[Swift](https://github.com/GeonHyeongKim/AlgoriGym/blob/master/BackTracking/Palindrome%20Partitioning.swift)|Medium|O(n^n)|O(n)|LeetCode||
 |[Permutation Sequence](https://leetcode.com/problems/permutation-sequence/ "LeetCode")|[Swift](https://github.com/GeonHyeongKim/AlgoriGym/blob/master/BackTracking/Permutation%20Sequence.swift)|Medium|||LeetCode||
 |[Permutations](https://leetcode.com/problems/permutations/ "LeetCode")|[Swift](https://github.com/GeonHyeongKim/AlgoriGym/blob/master/BackTracking/Permutations.swift)|Medium|O(n^n)|O(n)|LeetCode||
