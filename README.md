@@ -110,7 +110,7 @@ Swift & Java
 ## Test
 |Title|Solution|Etc|
 |:---|:---:|:---|
-|k-i|[Swift](https://github.com/GeonHyeongKim/AlgoriGym/blob/master/Data%20structure/Singly%20linked%20list.swift)|2020-5|
+|k-i|[Swift](https://github.com/GeonHyeongKim/AlgoriGym/blob/master/Test/k-i.swift)|2020-5|
 
 ## Author
 GeonHyeong Kim, [geonhyeong.dev@gmail.com](geonhyeong.dev@gmail.com).
