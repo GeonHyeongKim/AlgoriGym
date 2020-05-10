@@ -26,3 +26,18 @@
 
 import Foundation
 
+struct Head<Element: Comparable> { // Comparable을 채택하게한 건 sort에 <, >를 가능
+    var elements: [Element] = [] // 배열로 구현! Tree : O(log n), 배열 : O(1)
+    var sort: (Element, Element) -> Bool // 함수 타입의  상수가 있음
+    
+    // @escaping : 클로져가 함수의 매개변수로 쓰일 때 그 함수가 리턴한 후에도 클로져가 호출될때 escaping 이 필요
+    init(sort: @escaping (Element, Element) -> Bool, elements: [Element] = []) {
+        self.sort = sort
+        self.elements = elements
+        
+        if !elements.isEmpty {
+            for i in stride(from: elements.count/2 - 1, through: 0, by: -1) {
+                //                siftDown(from: i)
+            }
+        }
+    }
