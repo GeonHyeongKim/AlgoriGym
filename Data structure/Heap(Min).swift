@@ -51,3 +51,8 @@ struct Head<Element: Comparable> { // Comparable을 채택하게한 건 sort에 
     var count: Int {
         return elements.count
     }
+    
+    // 가장 최대&최소 element 찾기
+    func peek() -> Element? {
+        return elements.first
+    }
