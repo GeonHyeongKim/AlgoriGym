@@ -86,5 +86,10 @@ struct Head<Element: Comparable> { // Comparable을 채택하게한 건 sort에 
         
         return elements.removeLast() // 삭제할 node 삭제 후 반환
     }
-}
+    
+    //MARK: - new node 삽입
+    // 시간 복잡도 : append는 O(1), siftUp은 O(log n) 이므로 전체 효율은 O(log n)
+    mutating func insert(_ element: Element) {
+        elements.append(element)
+    }
 }
