@@ -56,3 +56,8 @@ struct Head<Element: Comparable> { // Comparable을 채택하게한 건 sort에 
     func peek() -> Element? {
         return elements.first
     }
+    
+    // 왼쪽 자식의 index 찾기
+    func leftChildIndex(ofParentAt index: Int) -> Int {
+        return 2*index + 1
+    }
