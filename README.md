@@ -84,6 +84,11 @@ Swift & Java
 |[Permutations II](https://leetcode.com/problems/permutations-ii/ "LeetCode")|[Swift](https://github.com/GeonHyeongKim/AlgoriGym/blob/master/BackTracking/Permutations%20II.swift)|Medium|O(n^n)|O(n)|LeetCode||
 |[Subsets II](https://leetcode.com/problems/subsets-ii/ "LeetCode")|[Swift](https://github.com/GeonHyeongKim/AlgoriGym/blob/master/BackTracking/Subsets%20II.swift)|Medium|O(n^n)|O(n)|LeetCode||
 
+## Dijkstra
+|Title|Solution|Difficulty|Time|Space|See|Etc|
+|:---|:---:|:---:|:---:|:---:|:---:|:---|
+|[Climbing Stairs](https://www.acmicpc.net/problem/1753 "LeetCode")|[Swift](https://github.com/GeonHyeongKim/AlgoriGym/blob/master/Dynamic/ClimbStairs.swift)|Easy|O(n)|O(1)|LeetCode||
+
 ## Dynamic Programming
 |Title|Solution|Difficulty|Time|Space|See|Etc|
 |:---|:---:|:---:|:---:|:---:|:---:|:---|
