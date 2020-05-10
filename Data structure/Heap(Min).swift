@@ -71,4 +71,20 @@ struct Head<Element: Comparable> { // Comparable을 채택하게한 건 sort에 
     func parentIndex(ofChildAt index: Int) -> Int {
         return (index - 1) / 2
     }
+    
+    //MARK: - root node 제거
+    // 시간 복잡도 : swap은 O(1), siftDown은 O(log n)이므로 O(log n)
+    mutating func remove() -> Element? {
+        guard !isEmpty else { // 비어 있지 않으면 삭제 연산
+            return nil
+        }
+        
+        elements.swapAt(0, count - 1) // 처음과 마지막 element 위치 변경
+        
+        defer { // { } 실행구문 안의 로직을 가장 마지막에 실행하도록 순서를 보장해주는 역할
+        }
+        
+        return elements.removeLast() // 삭제할 node 삭제 후 반환
+    }
+}
 }
