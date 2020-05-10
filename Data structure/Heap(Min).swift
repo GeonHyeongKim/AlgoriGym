@@ -66,3 +66,9 @@ struct Head<Element: Comparable> { // Comparable을 채택하게한 건 sort에 
     func rightChileIndex(ofParentAt index: Int) -> Int {
         return 2*index + 2
     }
+    
+    // 부모의 index 찾기
+    func parentIndex(ofChildAt index: Int) -> Int {
+        return (index - 1) / 2
+    }
+}
