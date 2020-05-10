@@ -41,3 +41,8 @@ struct Head<Element: Comparable> { // Comparable을 채택하게한 건 sort에 
             }
         }
     }
+    
+    // 비어 있는가?
+    var isEmpty: Bool {
+        return elements.isEmpty
+    }
