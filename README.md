@@ -47,24 +47,24 @@ Swift & Java
 ## Greedy
 |Title|Solution|Difficulty|Time|Space|See|Etc|
 |:---|:---:|:---:|:---:|:---:|:---:|:---|
-|[ATM](https://www.acmicpc.net/problem/11399 "프로그래머스")|[Java](https://github.com/GeonHyeongKim/AlgoriGym/blob/master/Greedy/Java/ATM.java)|66.275%|O(n)|O(n)|프로그래머스||
-|[DNA](https://www.acmicpc.net/problem/1969 "프로그래머스")|[Swift](https://github.com/GeonHyeongKim/AlgoriGym/blob/master/Greedy/DNA.swift)|57.232%|O(n^m) ~ O(n)|O(1)|프로그래머스||
+|[ATM](https://www.acmicpc.net/problem/11399 "백준 알고리즘")|[Java](https://github.com/GeonHyeongKim/AlgoriGym/blob/master/Greedy/Java/ATM.java)|66.275%|O(n)|O(n)|백준 알고리즘||
+|[DNA](https://www.acmicpc.net/problem/1969 "백준 알고리즘")|[Swift](https://github.com/GeonHyeongKim/AlgoriGym/blob/master/Greedy/DNA.swift)|57.232%|O(n^m) ~ O(n)|O(1)|백준 알고리즘||
 |[Minimum Subsequence in Non-Increasing Order](https://leetcode.com/problems/minimum-subsequence-in-non-increasing-order/ "Leetcode")|[Swift](https://github.com/GeonHyeongKim/AlgoriGym/blob/master/Greedy/Minimum%20Subsequence%20in%20Non-Increasing%20Order.swift)|Easy|O(n)|O(1)|LeetCode||
 |[Two City Scheduling](https://leetcode.com/problems/two-city-scheduling/ "Leetcode")|[Swift](https://github.com/GeonHyeongKim/AlgoriGym/blob/master/Greedy/Two%20City%20Scheduling.swift)|Easy|O(n)|O(1)|LeetCode||
 |[Partition Labels](https://leetcode.com/problems/partition-labels/ "Leetcode")|[Swift](https://github.com/GeonHyeongKim/AlgoriGym/blob/master/Greedy/Partition%20Labels.swift)|Easy|O(n)|O(1)|LeetCode||
 |[Group the People Given the Group Size They Belong To](https://leetcode.com/problems/group-the-people-given-the-group-size-they-belong-to/ "Leetcode")|[Swift](https://github.com/GeonHyeongKim/AlgoriGym/blob/master/Greedy/Group%20the%20People%20Given%20the%20Group%20Size%20They%20Belong%20To.swift)|Medium|O(n)|O(n)|LeetCode||
 |[Minimum Add to Make Parentheses Valid](https://leetcode.com/problems/minimum-add-to-make-parentheses-valid/ "Leetcode")|[Swift](https://github.com/GeonHyeongKim/AlgoriGym/commit/38983914cb022066cd159fd6db4c66a3fe78a476)|Medium|O(n)|O(1)|LeetCode||
-|[거스름돈](https://www.acmicpc.net/problem/5585 "프로그래머스")|[Swift](https://github.com/GeonHyeongKim/AlgoriGym/blob/master/Greedy/%EA%B1%B0%EC%8A%A4%EB%A6%84%EB%8F%88.swift)|61.284%|O(1)|O(1)|프로그래머스||
-|[계산기](https://www.acmicpc.net/problem/2200 "프로그래머스")|[Swift](https://github.com/GeonHyeongKim/AlgoriGym/blob/master/Greedy/%EA%B3%84%EC%82%B0%EA%B8%B0.swift)|50.000%|||프로그래머스||
-|[동전 0](https://www.acmicpc.net/problem/11047 "프로그래머스")|[Swift](https://github.com/GeonHyeongKim/AlgoriGym/blob/master/Greedy/%EB%8F%99%EC%A0%84%200.swift)|54.570%|O(n)|O(n)|프로그래머스||
-|[뒤집기](https://www.acmicpc.net/problem/1439 "프로그래머스")|[Swift](https://github.com/GeonHyeongKim/AlgoriGym/blob/master/Greedy/%EB%8F%99%EC%A0%84%200.swift)|53.950%|O(n)|O(n)|프로그래머스||
-|[만취한 상범](https://www.acmicpc.net/problem/6359 "프로그래머스")|[Swift](https://github.com/GeonHyeongKim/AlgoriGym/blob/master/Greedy/%EB%A7%8C%EC%B7%A8%ED%95%9C%20%EC%83%81%EB%B2%94.swift)|70.118%|O(n)|O(n)|프로그래머스||
-|[문자열](https://www.acmicpc.net/problem/1120 "프로그래머스")|[Swift](https://github.com/GeonHyeongKim/AlgoriGym/blob/master/Greedy/%EB%AC%B8%EC%9E%90%EC%97%B4.swift)|52.122%|O(a^b)|O(1)|프로그래머스||
-|[잃어버린 괄호](https://www.acmicpc.net/problem/1120 "프로그래머스")|[Swift](https://github.com/GeonHyeongKim/AlgoriGym/blob/master/Greedy/%EB%AC%B8%EC%9E%90%EC%97%B4.swift)|49.596%|O(n)|O(n)|프로그래머스||
-|[초콜릿 자르기](https://www.acmicpc.net/problem/2163 "프로그래머스")|[Swift](https://github.com/GeonHyeongKim/AlgoriGym/blob/master/Greedy/%EC%B4%88%EC%BD%9C%EB%A6%BF%20%EC%9E%90%EB%A5%B4%EA%B8%B0.swift)|71.625%|O(N*M)|O(N*M)|프로그래머스||
-|[토너먼트 만들기](https://www.acmicpc.net/problem/2262 "프로그래머스")|[Swift](https://github.com/GeonHyeongKim/AlgoriGym/blob/master/Greedy/%ED%86%A0%EB%84%88%EB%A8%BC%ED%8A%B8%20%EB%A7%8C%EB%93%A4%EA%B8%B0.swift)|51.220%|O(n)|O(1)|프로그래머스||
-|[한 줄로 서기](https://www.acmicpc.net/problem/1138 "프로그래머스")|[Swift](https://github.com/GeonHyeongKim/AlgoriGym/blob/master/Greedy/%ED%95%9C%20%EC%A4%84%EB%A1%9C%20%EC%84%9C%EA%B8%B0.swift)|57.181%|O(n^2)|O(n)|프로그래머스||
-|[힙 정렬](https://www.acmicpc.net/problem/2220 "프로그래머스")|[Swift](https://github.com/GeonHyeongKim/AlgoriGym/blob/master/Greedy/%ED%9E%99%20%EC%A0%95%EB%A0%AC.swift)|57.377%|||프로그래머스||
+|[거스름돈](https://www.acmicpc.net/problem/5585 "백준 알고리즘")|[Swift](https://github.com/GeonHyeongKim/AlgoriGym/blob/master/Greedy/%EA%B1%B0%EC%8A%A4%EB%A6%84%EB%8F%88.swift)|61.284%|O(1)|O(1)|백준 알고리즘||
+|[계산기](https://www.acmicpc.net/problem/2200 "백준 알고리즘")|[Swift](https://github.com/GeonHyeongKim/AlgoriGym/blob/master/Greedy/%EA%B3%84%EC%82%B0%EA%B8%B0.swift)|50.000%|||백준 알고리즘||
+|[동전 0](https://www.acmicpc.net/problem/11047 "백준 알고리즘")|[Swift](https://github.com/GeonHyeongKim/AlgoriGym/blob/master/Greedy/%EB%8F%99%EC%A0%84%200.swift)|54.570%|O(n)|O(n)|백준 알고리즘||
+|[뒤집기](https://www.acmicpc.net/problem/1439 "백준 알고리즘")|[Swift](https://github.com/GeonHyeongKim/AlgoriGym/blob/master/Greedy/%EB%8F%99%EC%A0%84%200.swift)|53.950%|O(n)|O(n)|백준 알고리즘||
+|[만취한 상범](https://www.acmicpc.net/problem/6359 "백준 알고리즘")|[Swift](https://github.com/GeonHyeongKim/AlgoriGym/blob/master/Greedy/%EB%A7%8C%EC%B7%A8%ED%95%9C%20%EC%83%81%EB%B2%94.swift)|70.118%|O(n)|O(n)|백준 알고리즘||
+|[문자열](https://www.acmicpc.net/problem/1120 "백준 알고리즘")|[Swift](https://github.com/GeonHyeongKim/AlgoriGym/blob/master/Greedy/%EB%AC%B8%EC%9E%90%EC%97%B4.swift)|52.122%|O(a^b)|O(1)|백준 알고리즘||
+|[잃어버린 괄호](https://www.acmicpc.net/problem/1120 "백준 알고리즘")|[Swift](https://github.com/GeonHyeongKim/AlgoriGym/blob/master/Greedy/%EB%AC%B8%EC%9E%90%EC%97%B4.swift)|49.596%|O(n)|O(n)|백준 알고리즘||
+|[초콜릿 자르기](https://www.acmicpc.net/problem/2163 "백준 알고리즘")|[Swift](https://github.com/GeonHyeongKim/AlgoriGym/blob/master/Greedy/%EC%B4%88%EC%BD%9C%EB%A6%BF%20%EC%9E%90%EB%A5%B4%EA%B8%B0.swift)|71.625%|O(N*M)|O(N*M)|백준 알고리즘||
+|[토너먼트 만들기](https://www.acmicpc.net/problem/2262 "백준 알고리즘")|[Swift](https://github.com/GeonHyeongKim/AlgoriGym/blob/master/Greedy/%ED%86%A0%EB%84%88%EB%A8%BC%ED%8A%B8%20%EB%A7%8C%EB%93%A4%EA%B8%B0.swift)|51.220%|O(n)|O(1)|백준 알고리즘||
+|[한 줄로 서기](https://www.acmicpc.net/problem/1138 "백준 알고리즘")|[Swift](https://github.com/GeonHyeongKim/AlgoriGym/blob/master/Greedy/%ED%95%9C%20%EC%A4%84%EB%A1%9C%20%EC%84%9C%EA%B8%B0.swift)|57.181%|O(n^2)|O(n)|백준 알고리즘||
+|[힙 정렬](https://www.acmicpc.net/problem/2220 "백준 알고리즘")|[Swift](https://github.com/GeonHyeongKim/AlgoriGym/blob/master/Greedy/%ED%9E%99%20%EC%A0%95%EB%A0%AC.swift)|57.377%|||백준 알고리즘||
 
 ## Depth-first search(DFS)
 |Title|Solution|Difficulty|Time|Space|See|Etc|
@@ -77,7 +77,7 @@ Swift & Java
 |[Generate Parentheses](https://leetcode.com/problems/combination-sum-iii/ "LeetCode")|[Swift](https://github.com/GeonHyeongKim/AlgoriGym/blob/master/BackTracking/Generate%20Parentheses.swift)|Medium|O(2^n)|O(n)|LeetCode||
 |[Gray Code](https://leetcode.com/problems/combination-sum-iii/ "LeetCode")|[Swift](https://github.com/GeonHyeongKim/AlgoriGym/blob/master/BackTracking/Gray%20Code.swift)|Medium|O(n^n)|O(2^n)|LeetCode||
 |[Letter Combinations of a Phone Number](https://leetcode.com/problems/letter-combinations-of-a-phone-number/ "LeetCode")|[Swift](https://github.com/GeonHyeongKim/AlgoriGym/blob/master/BackTracking/Letter%20Combinations%20of%20a%20Phone%20Number.swift)|Medium|O(4^n)|O(n)|LeetCode||
-|[N과 M (1)](https://www.acmicpc.net/problem/15649 "프로그래머스")|[Swift](https://github.com/GeonHyeongKim/AlgoriGym/blob/master/BackTracking/N%EA%B3%BC%20M(1).swift)|60.797%|O(n^n)|O(n)|프로그래머스||
+|[N과 M (1)](https://www.acmicpc.net/problem/15649 "백준 알고리즘")|[Swift](https://github.com/GeonHyeongKim/AlgoriGym/blob/master/BackTracking/N%EA%B3%BC%20M(1).swift)|60.797%|O(n^n)|O(n)|백준 알고리즘||
 |[Palindrome Partitioning](https://leetcode.com/problems/palindrome-partitioning/ "LeetCode")|[Swift](https://github.com/GeonHyeongKim/AlgoriGym/blob/master/BackTracking/Palindrome%20Partitioning.swift)|Medium|O(n^n)|O(n)|LeetCode||
 |[Permutation Sequence](https://leetcode.com/problems/permutation-sequence/ "LeetCode")|[Swift](https://github.com/GeonHyeongKim/AlgoriGym/blob/master/BackTracking/Permutation%20Sequence.swift)|Medium|||LeetCode||
 |[Permutations](https://leetcode.com/problems/permutations/ "LeetCode")|[Swift](https://github.com/GeonHyeongKim/AlgoriGym/blob/master/BackTracking/Permutations.swift)|Medium|O(n^n)|O(n)|LeetCode||
@@ -105,9 +105,9 @@ Swift & Java
 |[Perfect squares](https://leetcode.com/problems/perfect-squares/ "LeetCode")|[Swift](https://github.com/GeonHyeongKim/AlgoriGym/blob/master/Dynamic/Perfect%20Squares.swift)|Medium|O(n^2)|O(n)|LeetCode||
 |[Stone Game](https://leetcode.com/problems/stone-game/ "LeetCode")|[Swift](https://github.com/GeonHyeongKim/AlgoriGym/blob/master/Dynamic/Stone%20Game.swift)|Medium|O()|O()|LeetCode||
 |[Unique Paths](https://leetcode.com/problems/unique-paths/ "LeetCode")|[Swift](https://github.com/soapyigu/LeetCode-Swift/blob/master/DP/UniquePaths.swift)|Medium|O(nm)|O(nm)|LeetCode||
-|[동전 1](https://www.acmicpc.net/problem/2293 "백준")|[Swift](https://github.com/GeonHyeongKim/AlgoriGym/blob/master/Dynamic/%EB%8F%99%EC%A0%84%201.swift)|42.588%|||프로그래머스||
+|[동전 1](https://www.acmicpc.net/problem/2293 "백준 알고리즘")|[Swift](https://github.com/GeonHyeongKim/AlgoriGym/blob/master/Dynamic/%EB%8F%99%EC%A0%84%201.swift)|42.588%|||백준 알고리즘||
 
-## Dynamic Programming
+## Data Structure
 |Title|Solution|Etc|
 |:---|:---:|:---|
 |Singly Linked List|[Swift](https://github.com/GeonHyeongKim/AlgoriGym/blob/master/Data%20structure/Singly%20linked%20list.swift)||
