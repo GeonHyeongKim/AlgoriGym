@@ -27,7 +27,7 @@
 
 import Foundation
 
-struct Head<Element: Comparable> { // Comparable을 채택하게한 건 sort에 <, >를 가능
+struct Heap<Element: Comparable> { // Comparable을 채택하게한 건 sort에 <, >를 가능
     var elements: [Element] = [] // 배열로 구현! Tree : O(log n), 배열 : O(1)
     var sort: (Element, Element) -> Bool // 함수 타입의  상수가 있음
     
