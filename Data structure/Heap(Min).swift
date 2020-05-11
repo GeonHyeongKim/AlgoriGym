@@ -122,5 +122,23 @@ struct Head<Element: Comparable> { // Comparable을 채택하게한 건 sort에 
     // 시간 복잡도 : append는 O(1), siftUp은 O(log n) 이므로 전체 효율은 O(log n)
     mutating func insert(_ element: Element) {
         elements.append(element)
+        siftUp(from: elements.count - 1) // 배열의 마지막에 삽입된 element 위로 올리기
+    }
+    
+    //MARK: - node 위로 내리기
+    // 메소드가 실행될 시점에는, 배열의 최대&최소 값이 root noed가 되어있는 시점
+    mutating func siftUp(from index: Int) {
+        var child = index // 마지막 index
+        
+        while true {
+            let parent = parentIndex(ofChildAt: child)
+            
+            if child > 0 && sort(elements[child], elements[parent]) { // >
+                elements.swapAt(child, parent)
+                child = parent
+            } else { // 종료 조건
+                return
+            }
+        }
     }
 }
