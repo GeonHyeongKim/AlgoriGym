@@ -159,3 +159,22 @@ struct Heap<Element: Comparable> { // Comparable을 채택하게한 건 sort에 
     }
 }
 
+let array = [7,2,1,3,5,4,6,8]
+// > max , < min 을 의미
+var heap = Heap<Int>(sort: <, elements: array)
+
+print(heap.elements) // [1, 2, 4, 3, 5, 7, 6, 8]
+
+print(heap.remove()!) // 1
+print(heap.elements) // [2, 3, 4, 8, 5, 7, 6]
+
+heap.insert(3)
+print(heap.elements) // [2, 3, 4, 3, 5, 7, 6, 8]
+
+print(heap.remove(at: 2)!) // 4
+print(heap.elements) // [2, 3, 6, 3, 5, 7, 8]
+
+
+print(heap.remove(at: 3)!) // 3
+print(heap.elements) // [2, 3, 6, 8, 5, 7]
+
