@@ -141,4 +141,21 @@ struct Heap<Element: Comparable> { // Comparable을 채택하게한 건 sort에 
             }
         }
     }
+    
+    //MARK: - 임의의 노드 제거하기
+    mutating func remove(at index: Int) -> Element? {
+        guard index < elements.count else {  return nil }
+        // 위에 정의한 count 를 쓰지않은 이유는 count 는 Heap 인스턴스에서 count를 알려고 하는 것
+        // 인스턴스의 메소드가 실행될떄마다 값이 바뀔 가능성 존재
+        
+        if index == elements.count - 1 {
+            return elements.removeLast()
+        }else {
+            elements.swapAt(index, elements.count-1) // 제거하려는 값을 맨뒤로 변경
+            siftDown(from: index) // index 자리 기준으로 아랫쪽 재정렬
+            siftUp(from: index) // index 자리 기준으로 위쪽 재정렬
+        }
+        return elements.removeLast()
+    }
 }
+
