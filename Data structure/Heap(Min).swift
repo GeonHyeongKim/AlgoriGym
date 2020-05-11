@@ -38,7 +38,7 @@ struct Head<Element: Comparable> { // Comparable을 채택하게한 건 sort에 
         
         if !elements.isEmpty {
             for i in stride(from: elements.count/2 - 1, through: 0, by: -1) {
-                //                siftDown(from: i)
+                siftDown(from: i)
             }
         }
     }
@@ -83,9 +83,39 @@ struct Head<Element: Comparable> { // Comparable을 채택하게한 건 sort에 
         elements.swapAt(0, count - 1) // 처음과 마지막 element 위치 변경
         
         defer { // { } 실행구문 안의 로직을 가장 마지막에 실행하도록 순서를 보장해주는 역할
+            siftDown(from: 0) // root node를 sift down
         }
         
         return elements.removeLast() // 삭제할 node 삭제 후 반환
+    }
+    
+    //MARK: - node 아래로 내리기
+    // 메소드가 실행될 시점에는, 배열의 최대&최소 값이 root noed가 되어있는 시점
+    mutating func siftDown(from index: Int) {
+        var parent = index
+        
+        while true {
+            let left = leftChildIndex(ofParentAt: parent)
+            let right = rightChileIndex(ofParentAt: parent)
+            
+            var candidate = parent // 탐색할 node
+            if right < count, sort(elements[left], elements[candidate]) {
+                // 왼쪽 child node가 존재할떄, child node 값이 parent node 값보다 클 경우
+                candidate = left
+            }
+            
+            if right < count, sort(elements[right], elements[candidate]) {
+                // 오른쪽 child node가 존재할떄, child node 값이 parent node 값보다 클 경우
+                candidate = right
+            }
+            
+            if candidate == parent { // 반복문 종료
+                return
+            }
+            
+            elements.swapAt(parent, candidate)
+            parent = candidate
+        }
     }
     
     //MARK: - new node 삽입
