@@ -76,7 +76,7 @@ struct Heap<Element: Comparable> { // Comparable을 채택하게한 건 sort에 
     //MARK: - root node 제거
     // 시간 복잡도 : swap은 O(1), siftDown은 O(log n)이므로 O(log n)
     mutating func remove() -> Element? {
-        guard !isEmpty else { // 비어 있지 않으면 삭제 연산
+        guard !isEmpty else { // 비어 있으면 아무 동작 안함
             return nil
         }
         
