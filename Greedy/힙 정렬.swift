@@ -8,15 +8,16 @@
 *                    3) nodeIndex(parent)에 위치한 부모 노드로 최댓값을 올려보낸다.(스위치)
 *                    4) n-1위치에서 1의 위치로 최댓값이 갈 때 까지 3)을 반복
 *
-*  Time Complexity :
-*  Space Complexity :
+*  Time Complexity : O(nlog n)
+*  Space Complexity : O(n)
 *  Runtime:  ms
-*  Memory Usage:
+*  Memory Usage: MB
 *  Created by gunhyeong on 2020/04/29.
 */
 
 import Foundation
 
+// 런타임 에러
 var n = Int(readLine()!)!
 var result = [0, 1]
 
