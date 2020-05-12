@@ -20,29 +20,18 @@ var input = readLine()!.split(separator: " ")
 var n = Int(input[0])!
 var k = Int(input[1])!
 var coins = [Int]()
-var count = 0
-var maxAmount_DP = [Int](repeating: -1, count: k+1)
-maxAmount_DP[0] = 0
+var maxAmount_DP = [Int](repeating: 0, count: k+1)
+maxAmount_DP[0] = 1
 
-for _ in 1...n {
-    let coin = Int(readLine()!)!
-    coins.append(coin)
+for _ in 0..<n {
+    coins.append(Int(readLine()!)!)
 }
 
-coins = coins.sorted()
-
-
-for i in 1...k {
-    for coin in coins {
-        if coin > i { // 현재 값(i)이 coin을
-            break
+for i in 0..<n {
+    for coin in 0...k {
+        if coin >= coins[i] {
+            maxAmount_DP[coin] += maxAmount_DP[coin - coins[i]]
         }
-        
-        if maxAmount_DP[i - coin] == -1 {
-            continue
-        }
-        
-        maxAmount_DP[i] = maxAmount_DP[i] == -1 ? maxAmount_DP[i - coin] + 1 : max(maxAmount_DP[i - coin] + 1, maxAmount_DP[i])
     }
 }
 
