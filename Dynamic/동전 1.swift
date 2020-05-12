@@ -6,8 +6,8 @@
 *                         * DFS(Search의 개념)이 아니다.
 *                     2. dp[j] += dp[j-a[i]]
 *
-*  Time Complexity :
-*  Space Complexity :
+*  Time Complexity : O(n^k)
+*  Space Complexity : O(n)
 *  Runtime:  ms
 *  Memory Usage:  MB
 *
@@ -16,6 +16,7 @@
 
 import Foundation
 
+// 런타임 에러
 var input = readLine()!.split(separator: " ")
 var n = Int(input[0])!
 var k = Int(input[1])!
