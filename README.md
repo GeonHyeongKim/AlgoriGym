@@ -112,6 +112,7 @@ Swift & Java
 |:---|:---:|:---|
 |Singly Linked List|[Swift](https://github.com/GeonHyeongKim/AlgoriGym/blob/master/Data%20structure/Singly%20linked%20list.swift)||
 |Heap|[Swift](https://github.com/GeonHyeongKim/AlgoriGym/blob/master/Data%20structure/Singly%20linked%20list.swift)|Array|
+|Heap Sort|[Swift](https://github.com/GeonHyeongKim/AlgoriGym/blob/master/Data%20structure/Singly%20linked%20list.swift)|Maximun, Array|
 
 ## Test
 |Title|Solution|Etc|
