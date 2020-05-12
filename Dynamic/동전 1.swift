@@ -1,12 +1,10 @@
 /*
 *  동전 1.swift
 *  Question Link: https://www.acmicpc.net/problem/2293
-*  Primary idea:    <Dynamic Programming>
-*                   1. dp[1] = min(dp[1], dp[1 - coins[j]] + 1)
-*                      1-1 = dp[0] = 0
-*                      1-2 (x)
-*                      1-5 (x)
-*                   2. dp[i] = min(dp[i], dp[i - coins[j]] + 1)
+*  Primary idea:      <Dynamic Programming>
+*                     1. DP 문제: 내가 정한 결과 값은 이미 더 작은 값(이전 값)에서 구해져 있다.
+*                         * DFS(Search의 개념)이 아니다.
+*                     2. dp[j] += dp[j-a[i]]
 *
 *  Time Complexity :
 *  Space Complexity :
