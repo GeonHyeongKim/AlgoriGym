@@ -111,7 +111,7 @@ Swift & Java
 |Title|Solution|Etc|
 |:---|:---:|:---|
 |Singly Linked List|[Swift](https://github.com/GeonHyeongKim/AlgoriGym/blob/master/Data%20structure/Singly%20linked%20list.swift)||
-|Heap|[Swift](https://github.com/GeonHyeongKim/AlgoriGym/blob/master/Data%20structure/Singly%20linked%20list.swift)|Minmun, Array|
+|Heap|[Swift](https://github.com/GeonHyeongKim/AlgoriGym/blob/master/Data%20structure/Singly%20linked%20list.swift)|Array|
 
 ## Test
 |Title|Solution|Etc|
