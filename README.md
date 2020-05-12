@@ -105,7 +105,7 @@ Swift & Java
 |[Perfect squares](https://leetcode.com/problems/perfect-squares/ "LeetCode")|[Swift](https://github.com/GeonHyeongKim/AlgoriGym/blob/master/Dynamic/Perfect%20Squares.swift)|Medium|O(n^2)|O(n)|LeetCode||
 |[Stone Game](https://leetcode.com/problems/stone-game/ "LeetCode")|[Swift](https://github.com/GeonHyeongKim/AlgoriGym/blob/master/Dynamic/Stone%20Game.swift)|Medium|O()|O()|LeetCode||
 |[Unique Paths](https://leetcode.com/problems/unique-paths/ "LeetCode")|[Swift](https://github.com/soapyigu/LeetCode-Swift/blob/master/DP/UniquePaths.swift)|Medium|O(nm)|O(nm)|LeetCode||
-|[동전 1](https://www.acmicpc.net/problem/2293 "백준 알고리즘")|[Swift](https://github.com/GeonHyeongKim/AlgoriGym/blob/master/Dynamic/%EB%8F%99%EC%A0%84%201.swift)|42.588%|||백준 알고리즘||
+|[동전 1](https://www.acmicpc.net/problem/2293 "백준 알고리즘")|[Swift](https://github.com/GeonHyeongKim/AlgoriGym/blob/master/Dynamic/%EB%8F%99%EC%A0%84%201.swift)|42.588%|O(n^k)|(n)|백준 알고리즘||
 
 ## Data Structure
 |Title|Solution|Etc|
