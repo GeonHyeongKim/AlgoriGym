@@ -18,10 +18,34 @@ func heapSort(array arr: inout [Int]) {
 
     // init, max heap
     for i in stride(from: len/2-1 , through: 0, by: -1) { // len ~ 0 (0 포함 o)
+        heapify(array: &arr, length: len, parent: i)
     }
     
     // for extract max element from heap
     for i in stride(from: len-1, to: 0, by: -1) { // len ~ <0 (0 포함 x)
         arr.swapAt(0, i) // 배열의 마지막 element가 계산된 max 값
+        heapify(array: &arr, length: i, parent: 0)
+    }
+}
+
+func heapify(array arr: inout [Int], length len: Int, parent i: Int) {
+    var p = i // palett node
+    let l = i*2 + 1 // left child node
+    let r = i*2 + 2 // right child node
+    
+    // left node
+    if l < len && arr[p] < arr[l] { // arr[p] > arr[l] -> min heap
+        p = l
+    }
+    
+    // right node
+    if r < len && arr[p] < arr[r] { // arr[p] > arr[l] -> min heap
+        p = r
+    }
+    
+    // parent < child
+    if i != p {
+        arr.swapAt(p, i)
+        heapify(array: &arr, length: len, parent: p)
     }
 }
