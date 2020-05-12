@@ -49,3 +49,12 @@ func heapify(array arr: inout [Int], length len: Int, parent i: Int) {
         heapify(array: &arr, length: len, parent: p)
     }
 }
+
+var array = [7,2,1,3,5,4,6,8]
+heapSort(array: &array)
+print(array.removeLast()) // 8
+print(array) // [7, 6, 5, 4, 3, 2, 1]
+
+heapSort(array: &array)
+print(array.removeLast()) // 7
+print(array) // [6, 5, 4, 3, 2, 1]
