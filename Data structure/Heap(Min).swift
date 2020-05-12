@@ -99,7 +99,7 @@ struct Heap<Element: Comparable> { // Comparable을 채택하게한 건 sort에 
             let right = rightChileIndex(ofParentAt: parent)
             
             var candidate = parent // 탐색할 node
-            if right < count, sort(elements[left], elements[candidate]) {
+            if left < count, sort(elements[left], elements[candidate]) {
                 // 왼쪽 child node가 존재할떄, child node 값이 parent node 값보다 클 경우
                 candidate = left
             }
