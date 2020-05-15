@@ -2,8 +2,9 @@
 *  최단경로.swift
 *  Question Link: https://www.acmicpc.net/problem/2220
 *  Primary idea:    <Greedy>
-*                    1.
-*  Time Complexity :
+*                    1. 배열로 
+*
+*  Time Complexity : O(V^2), 정점 개수가 V
 *  Space Complexity :
 *  Runtime:  ms
 *  Memory Usage: MB
@@ -12,6 +13,30 @@
 */
 
 import Foundation
+
+let input = readLine()!.split(separator: " ")
+let V = Int(input[0])!
+let E = Int(input[1])!
+let K = Int(readLine()!)! // Start Number
+var graph = [[Int]](repeating: [Int](repeating: 0, count: V), count: V)
+
+for _ in 0..<E {
+    let line = readLine()!.split(separator: " ")
+    let source = Int(line[0])!
+    let destination = Int(line[1])!
+    let cost = Int(line[2])!
+
+    graph[source-1][destination-1] = cost
+}
+
+
+for i in dijstra(graph: &graph, start: K-1) {
+    if i == Int.max {
+        print("INF")
+    } else {
+        print(i)
+    }
+}
 
 // 가장 최소 거리를 가지고 있는 정점을 반환
 func minDistance(distance dist: inout [Int], isVisted: inout [Bool]) -> Int{
@@ -28,8 +53,8 @@ func minDistance(distance dist: inout [Int], isVisted: inout [Bool]) -> Int{
     return index
 }
 
-func dijstra(graph: inout [[Int]], start: Int) {
-    var dist = [Int](repeating: 0, count: V)
+func dijstra(graph: inout [[Int]], start: Int) -> [Int] {
+    var dist = [Int](repeating: Int.max, count: V)
     var isVisted = [Bool](repeating: false, count: V)
     
     for i in 0..<V {
@@ -51,7 +76,7 @@ func dijstra(graph: inout [[Int]], start: Int) {
             // 2. u-v 간에 edge가 존재하고
             // 3. src부터 u까지의 경로가 존재하고
             // 4. 기존의 v노드까지의 최단거리 값보다 새로 계산되는 최단거리가 더 짧을 경우
-            if isVisted[v] && dist[current] != Int.max &&  dist[v] > dist[current] + graph[current][v] {
+            if !isVisted[v] && graph[current][v] != 0 && dist[current] != Int.max &&  dist[v] > dist[current] + graph[current][v] {
                 // 최단거리를 갱신해준다.
                 dist[v] = dist[current] + graph[current][v]
             }
@@ -61,4 +86,8 @@ func dijstra(graph: inout [[Int]], start: Int) {
         isVisted[current] = true
 
     }
+    
+    return dist
 }
+
+
