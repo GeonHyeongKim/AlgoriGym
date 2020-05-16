@@ -58,6 +58,7 @@ Swift & Java
 |[계산기](https://www.acmicpc.net/problem/2200 "백준 알고리즘")|[Swift](https://github.com/GeonHyeongKim/AlgoriGym/blob/master/Greedy/%EA%B3%84%EC%82%B0%EA%B8%B0.swift)|50.000%|||백준 알고리즘||
 |[동전 0](https://www.acmicpc.net/problem/11047 "백준 알고리즘")|[Swift](https://github.com/GeonHyeongKim/AlgoriGym/blob/master/Greedy/%EB%8F%99%EC%A0%84%200.swift)|54.570%|O(n)|O(n)|백준 알고리즘||
 |[뒤집기](https://www.acmicpc.net/problem/1439 "백준 알고리즘")|[Swift](https://github.com/GeonHyeongKim/AlgoriGym/blob/master/Greedy/%EB%8F%99%EC%A0%84%200.swift)|53.950%|O(n)|O(n)|백준 알고리즘||
+|[로프](https://www.acmicpc.net/problem/2217 "백준 알고리즘")|[Swift](https://github.com/GeonHyeongKim/AlgoriGym/blob/master/Greedy/%ED%95%9C%20%EC%A4%84%EB%A1%9C%20%EC%84%9C%EA%B8%B0.swift)|44.164%|||백준 알고리즘||
 |[만취한 상범](https://www.acmicpc.net/problem/6359 "백준 알고리즘")|[Swift](https://github.com/GeonHyeongKim/AlgoriGym/blob/master/Greedy/%EB%A7%8C%EC%B7%A8%ED%95%9C%20%EC%83%81%EB%B2%94.swift)|70.118%|O(n)|O(n)|백준 알고리즘||
 |[문자열](https://www.acmicpc.net/problem/1120 "백준 알고리즘")|[Swift](https://github.com/GeonHyeongKim/AlgoriGym/blob/master/Greedy/%EB%AC%B8%EC%9E%90%EC%97%B4.swift)|52.122%|O(a^b)|O(1)|백준 알고리즘||
 |[잃어버린 괄호](https://www.acmicpc.net/problem/1120 "백준 알고리즘")|[Swift](https://github.com/GeonHyeongKim/AlgoriGym/blob/master/Greedy/%EB%AC%B8%EC%9E%90%EC%97%B4.swift)|49.596%|O(n)|O(n)|백준 알고리즘||
@@ -87,7 +88,7 @@ Swift & Java
 ## Dijkstra
 |Title|Solution|Difficulty|Time|Space|See|Etc|
 |:---|:---:|:---:|:---:|:---:|:---:|:---|
-|[Climbing Stairs](https://www.acmicpc.net/problem/1753 "LeetCode")|[Swift](https://github.com/GeonHyeongKim/AlgoriGym/blob/master/Dynamic/ClimbStairs.swift)|Easy|O(n)|O(1)|LeetCode||
+|[최단 경로](https://www.acmicpc.net/problem/1753 "백준 알고리즘")|[Swift](https://github.com/GeonHyeongKim/AlgoriGym/blob/master/Dijkstra/%EC%B5%9C%EB%8B%A8%EA%B2%BD%EB%A1%9C.swift)|23.021%|||백준 알고리즘||
 
 ## Dynamic Programming
 |Title|Solution|Difficulty|Time|Space|See|Etc|
