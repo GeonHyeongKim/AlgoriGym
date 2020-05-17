@@ -5,10 +5,10 @@
 //                      1. 각각의 로프에 모두 동일한 중량 : 각 로프를 선택했을 때 최대로 걸리는 중량을 계산
 //                      2. preValue = max(preValue, str[index] * (N - index)
 //
-//  Time Complexity :
-//  Space Complexity :
-//  Runtime:  ms
-//  Memory Usage:  MB
+//  Time Complexity : O(n)
+//  Space Complexity : O(1)
+//  Runtime: 65.228 ms
+//  Memory Usage: 52 MB
 //
 //  Created by gunhyeong on 2020/05/16.
 //
@@ -23,7 +23,7 @@ for i in 0..<N {
     weightList[i] = Int(readLine()!)!
 }
 
-weightList.sort(by: <)
+weightList.sort(by: <) // 입력 받은 후 정렬
 
 for i in 0..<N {
     result = max(result, weightList[i]*(N-i))
