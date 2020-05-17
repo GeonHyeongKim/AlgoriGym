@@ -65,6 +65,7 @@ Swift & Java
 |[초콜릿 자르기](https://www.acmicpc.net/problem/2163 "백준 알고리즘")|[Swift](https://github.com/GeonHyeongKim/AlgoriGym/blob/master/Greedy/%EC%B4%88%EC%BD%9C%EB%A6%BF%20%EC%9E%90%EB%A5%B4%EA%B8%B0.swift)|71.625%|O(N*M)|O(N*M)|백준 알고리즘||
 |[토너먼트 만들기](https://www.acmicpc.net/problem/2262 "백준 알고리즘")|[Swift](https://github.com/GeonHyeongKim/AlgoriGym/blob/master/Greedy/%ED%86%A0%EB%84%88%EB%A8%BC%ED%8A%B8%20%EB%A7%8C%EB%93%A4%EA%B8%B0.swift)|51.220%|O(n)|O(1)|백준 알고리즘||
 |[한 줄로 서기](https://www.acmicpc.net/problem/1138 "백준 알고리즘")|[Swift](https://github.com/GeonHyeongKim/AlgoriGym/blob/master/Greedy/%ED%95%9C%20%EC%A4%84%EB%A1%9C%20%EC%84%9C%EA%B8%B0.swift)|57.181%|O(n^2)|O(n)|백준 알고리즘||
+|[회의실배정](https://www.acmicpc.net/problem/1931 "백준 알고리즘")|[Swift](https://github.com/GeonHyeongKim/AlgoriGym/blob/master/Greedy/%ED%95%9C%20%EC%A4%84%EB%A1%9C%20%EC%84%9C%EA%B8%B0.swift)|57.181%|O(n^2)|O(n)|백준 알고리즘||
 |[힙 정렬](https://www.acmicpc.net/problem/2220 "백준 알고리즘")|[Swift](https://github.com/GeonHyeongKim/AlgoriGym/blob/master/Greedy/%ED%9E%99%20%EC%A0%95%EB%A0%AC.swift)|57.377%|O(nlog n)|O(n)|백준 알고리즘||
 
 ## Depth-first search(DFS)
