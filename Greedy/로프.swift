@@ -14,3 +14,19 @@
 //
 
 import Foundation
+
+var N = Int(readLine()!)!
+var weightList = [Int](repeating: 0, count : N)
+var result = 0
+
+for i in 0..<N {
+    weightList[i] = Int(readLine()!)!
+}
+
+weightList.sort(by: <)
+
+for i in 0..<N {
+    result = max(result, weightList[i]*(N-i))
+}
+
+print(result)
