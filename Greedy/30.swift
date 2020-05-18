@@ -15,3 +15,17 @@
 //
 
 import Foundation
+
+var N = readLine()!
+var sum = 0
+
+for num in N {
+    sum += num.wholeNumberValue! // 각자리 합
+}
+
+if !N.contains("0") || sum % 3 != 0 { // 아이디어 1,2
+    print(-1)
+} else {
+    print(String(N.sorted(by: >))) // 정렬 : 내림차순
+}
+
