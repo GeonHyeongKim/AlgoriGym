@@ -56,7 +56,7 @@ Swift & Java
 |[Minimum Add to Make Parentheses Valid](https://leetcode.com/problems/minimum-add-to-make-parentheses-valid/ "Leetcode")|[Swift](https://github.com/GeonHyeongKim/AlgoriGym/commit/38983914cb022066cd159fd6db4c66a3fe78a476)|Medium|O(n)|O(1)|LeetCode||
 |[거스름돈](https://www.acmicpc.net/problem/5585 "백준 알고리즘")|[Swift](https://github.com/GeonHyeongKim/AlgoriGym/blob/master/Greedy/%EA%B1%B0%EC%8A%A4%EB%A6%84%EB%8F%88.swift)|61.284%|O(1)|O(1)|백준 알고리즘||
 |[계산기](https://www.acmicpc.net/problem/2200 "백준 알고리즘")|[Swift](https://github.com/GeonHyeongKim/AlgoriGym/blob/master/Greedy/%EA%B3%84%EC%82%B0%EA%B8%B0.swift)|50.000%|||백준 알고리즘||
-|[대회 or 인턴](https://www.acmicpc.net/problem/2875 "백준 알고리즘")|[Swift](https://github.com/GeonHyeongKim/AlgoriGym/blob/master/Greedy/%EB%8F%99%EC%A0%84%200.swift)|42.138%|||백준 알고리즘||
+|[대회 or 인턴](https://www.acmicpc.net/problem/2875 "백준 알고리즘")|[Swift](https://github.com/GeonHyeongKim/AlgoriGym/blob/master/Greedy/%EB%8C%80%ED%9A%8C%20or%20%EC%9D%B8%ED%84%B4.swift)|42.138%|||백준 알고리즘||
 |[동전 0](https://www.acmicpc.net/problem/11047 "백준 알고리즘")|[Swift](https://github.com/GeonHyeongKim/AlgoriGym/blob/master/Greedy/%EB%8F%99%EC%A0%84%200.swift)|54.570%|O(n)|O(n)|백준 알고리즘||
 |[뒤집기](https://www.acmicpc.net/problem/1439 "백준 알고리즘")|[Swift](https://github.com/GeonHyeongKim/AlgoriGym/blob/master/Greedy/%EB%8F%99%EC%A0%84%200.swift)|53.950%|O(n)|O(n)|백준 알고리즘||
 |[로프](https://www.acmicpc.net/problem/2217 "백준 알고리즘")|[Swift](https://github.com/GeonHyeongKim/AlgoriGym/blob/master/Greedy/%EB%A1%9C%ED%94%84.swift)|44.164%|O(n)|O(1)|백준 알고리즘||
