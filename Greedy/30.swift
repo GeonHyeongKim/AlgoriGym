@@ -6,10 +6,10 @@
 //                      2. 마지막 숫자를 제외한 나머지 숫자는 3의 배수이며, 3의 배수는 모든 자리의 숫자의 합이 3의 배수이다.
 //                         (이때 숫자의 순서는 상관없기 때문에 큰 순서대로 출력해주면 된다.)
 //
-//  Time Complexity :
-//  Space Complexity :
-//  Runtime:  ms
-//  Memory Usage:  MB
+//  Time Complexity : O(n)
+//  Space Complexity : O(1)
+//  Runtime: 60 ms
+//  Memory Usage: 66.400 MB
 //
 //  Created by gunhyeong on 2020/05/17.
 //
