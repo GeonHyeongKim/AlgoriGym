@@ -8,10 +8,10 @@
 //                      2. 대회에 보낼 인원이 있을 경우
 //                        (여자 인원 + 남자 인원 - 대회에 보낼 인원) / 3
 //
-//  Time Complexity :
-//  Space Complexity :
-//  Runtime:  ms
-//  Memory Usage:  MB
+//  Time Complexity : O(1)
+//  Space Complexity : O(1)
+//  Runtime: 8 ms
+//  Memory Usage: 64.048 MB
 //
 //  Created by gunhyeong on 2020/05/18.
 //
