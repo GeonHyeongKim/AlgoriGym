@@ -17,3 +17,10 @@
 //
 
 import Foundation
+
+let people = readLine()!.split(separator: " ")
+let N = Int(people[0])!
+let M = Int(people[1])!
+let K = Int(people[2])!
+
+print(min(min(N/2, M), (N+M-K)/3))
