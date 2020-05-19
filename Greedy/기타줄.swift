@@ -18,3 +18,25 @@
 //
 
 import Foundation
+
+let input = readLine()!.split(separator: " ")
+let N = Int(input[0])! // 끊긴 기타줄
+let M = Int(input[1])! // 브랜드
+var minPackageCost = Int.max
+var minUnitCost = Int.max
+
+// 최소 패키지 가격과 단품 가격
+for _ in 1...M {
+    let brand = readLine()!.split(separator: " ")
+    let packageCost = Int(brand[0])! // package
+    let unitCost = Int(brand[1])! // unit
+    
+    minPackageCost = min(minPackageCost, packageCost)
+    minUnitCost = min(minUnitCost, unitCost)
+}
+
+if N <= 6 { // 6개 이하
+    print(min(minPackageCost, minUnitCost*N))
+} else { // 7개 이상
+    print((N/6)*minPackageCost + min((N%6)*minUnitCost, minPackageCost))
+}
