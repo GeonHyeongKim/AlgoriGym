@@ -3,8 +3,8 @@
 //  Question Link: https://www.acmicpc.net/problem/1049
 //  Primary idea:       <Greedy>
 //                      1. 패키지와 단품 가격 각각의 최소 가격을 계산
-//                      2. 6개 이하일때, 패키지 or 낱개의 가격중 더 최소 가격을 계산
-//                      2. 7개 이상일떄, 끊어진 기타줄 만큼 패키지 구매 + min(개당 구매, 패키지구매)
+//                      2. 패키지 or (낱개의 가격*6) 중 더 최소 가격을 계산
+//                      3. 끊어진 기타줄 만큼 패키지 구매 + min(개당 구매, 패키지구매)
 //
 //  Time Complexity :
 //  Space Complexity :
