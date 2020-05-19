@@ -6,10 +6,10 @@
 //                      2. 패키지 or (낱개의 가격*6) 중 더 최소 가격을 계산
 //                      3. 끊어진 기타줄 만큼 패키지 구매 + min(개당 구매, 패키지구매)
 //
-//  Time Complexity :
-//  Space Complexity :
-//  Runtime:  ms
-//  Memory Usage:  MB
+//  Time Complexity : O(n), n은 M의 개수
+//  Space Complexity : O(1)
+//  Runtime: 8 ms
+//  Memory Usage: 64.048 MB
 //
 //  Created by gunhyeong on 2020/05/19.
 //
