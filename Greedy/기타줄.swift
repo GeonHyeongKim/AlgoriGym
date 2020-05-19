@@ -32,8 +32,9 @@ for _ in 1...M {
     minUnitCost = min(minUnitCost, unitCost)
 }
 
-if N <= 6 { // 6개 이하
-    print(min(minPackageCost, minUnitCost*N))
-} else { // 7개 이상
-    print((N/6)*minPackageCost + min((N%6)*minUnitCost, minPackageCost))
+if minPackageCost > minUnitCost * 6 {
+    minPackageCost = minUnitCost * 6
 }
+
+print((N/6)*minPackageCost + min((N%6)*minUnitCost, minPackageCost))
+
