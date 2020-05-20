@@ -8,6 +8,7 @@
 //                        i) 완전탐색 : O(N^2)
 //                           1차원적으로는 증가 부분수열을 모두 만들어보면서 그중 가장 긴 증가 부분수열의 길이를 구하기
 //                        ii) DP : O(N^2)
+//                           BOTTOM-UP : array[i]의 값보다 작은 이전 dp의 최댓값 + 1
 //                        iii) 이진 탐색 : O(NlogN)
 //
 //  Created by gunhyeong on 2020/05/20.
@@ -49,3 +50,25 @@ func lisWithBruteForce(_ array: inout [Int]) -> Int{
 
 var arr = [1,4,6,8,3,5,6,7]
 print(lisWithBruteForce(&arr)) //5
+// MARK: - DP : O(N^2)
+// array[i]의 값보다 작은 이전 dp의 최댓값 + 1
+
+func lisWithDp(_ array: inout [Int]) -> Int {
+    guard !array.isEmpty else {
+        return 0
+    }
+    
+    var dp = [Int](repeating: 1, count: array.count)
+    
+    for i in 1..<array.count {
+        // 0 ~ i - 1 위치까지 반복
+        for j in 0..<i {
+            // 현재 위치의 값보다 작을때
+            if array[i] > array[j] {
+                dp[i] = max(dp[i], dp[j]+1)
+            }
+        }
+    }
+    
+    return dp.max()!
+}
