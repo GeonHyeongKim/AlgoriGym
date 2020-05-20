@@ -9,7 +9,11 @@
 //                           1차원적으로는 증가 부분수열을 모두 만들어보면서 그중 가장 긴 증가 부분수열의 길이를 구하기
 //                        ii) DP : O(N^2)
 //                           BOTTOM-UP : array[i]의 값보다 작은 이전 dp의 최댓값 + 1
-//                        iii) 이진 탐색 : O(NlogN)
+//                        iii) 이진 탐색(Binary Search) : O(NlogN)
+//                           증가 수열의 길이를 최대한 늘리는데 가장 유리한 증가 수열
+//                           1) case1, array[i]가 dp(i-1)의 마지막 항 보다 큰 경우.
+//                           2) case2, array[i]가 dp(i-1)의 마지막 항에 비해서만 작은 경우.
+//                           3) case3, array[i]가 중간항에 비교해서 작을 경우. -> lower_bound(이분 탐색을 통해 해당하는 위치를 return) 이용
 //
 //  Created by gunhyeong on 2020/05/20.
 //
@@ -71,4 +75,13 @@ func lisWithDp(_ array: inout [Int]) -> Int {
     }
     
     return dp.max()!
+}
+
+// MARK: - 이진 탐색(Binary Search) : O(N LogN)
+// 1) case1, array[i]가 dp(i-1)의 마지막 항 보다 큰 경우.
+// 2) case2, array[i]가 dp(i-1)의 마지막 항에 비해서만 작은 경우.
+// 3) case3, array[i]가 중간항에 비교해서 작을 경우. -> lower_bound(이분 탐색을 통해 해당하는 위치를 return) 이용
+
+func lisWithBinarySearch(_ array: inout [Int]) -> Int {
+
 }
