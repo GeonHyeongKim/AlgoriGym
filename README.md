@@ -118,7 +118,7 @@ Swift & Java
 |Singly Linked List|[Swift](https://github.com/GeonHyeongKim/AlgoriGym/blob/master/Data%20structure/Singly%20linked%20list.swift)||
 |Heap|[Swift](https://github.com/GeonHyeongKim/AlgoriGym/blob/master/Data%20structure/Singly%20linked%20list.swift)|Array|
 |Heap Sort|[Swift](https://github.com/GeonHyeongKim/AlgoriGym/blob/master/Data%20structure/Singly%20linked%20list.swift)|Maximun, Array|
-|LIS|[Swift](https://github.com/GeonHyeongKim/AlgoriGym/blob/master/Data%20structure/LIS.swift)|1. 완전 탐색 : O(N^2)<br/>2. DP : O(N^2)<br/>3. 이진 탐색 : O(NlogN)|
+|LIS|[Swift](https://github.com/GeonHyeongKim/AlgoriGym/blob/master/Data%20structure/LIS.swift)|1. 완전 탐색 : O(2^N)<br/>2. DP : O(N^2)<br/>3. 이진 탐색 : O(NlogN)|
 
 ## Test
 |Title|Solution|Etc|
