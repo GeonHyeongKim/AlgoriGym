@@ -83,7 +83,27 @@ func lisWithDp(_ array: inout [Int]) -> Int {
 // 3) case3, array[i]가 중간항에 비교해서 작을 경우. -> lower_bound(이분 탐색을 통해 해당하는 위치를 return) 이용
 
 func lisWithBinarySearch(_ array: inout [Int]) -> Int {
+    guard !array.isEmpty else {
+        return 0
+    }
     
+    var lis = [Int](repeating: 0, count: array.count)
+    lis[0] = array[0]
+    
+    var lisIndex = 1
+    for i in 1..<lis.count { // 1부터 시작
+        // lis의 가장 큰 값보다 더 큰값이 들어오면
+        if lis[lisIndex-1] < array[i] {
+            lis[lisIndex] = array[i]
+            lisIndex += 1
+        } else {
+            let index = lowerBound(arr: &lis, start: 0, end: lisIndex, target: array[i])
+            lis[index - 1] = array[i]
+        }
+    }
+    
+    print(lis)
+    return lisIndex
 }
 
 // Binary search
