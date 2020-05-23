@@ -88,6 +88,7 @@ func lisWithBinarySearch(_ array: inout [Int]) -> Int {
     }
     
     var lis = [Int](repeating: 0, count: array.count)
+    var pos = [Int](repeating: 1, count: array.count)
     lis[0] = array[0]
     
     var lisIndex = 1
@@ -96,14 +97,38 @@ func lisWithBinarySearch(_ array: inout [Int]) -> Int {
         if lis[lisIndex-1] < array[i] {
             lis[lisIndex] = array[i]
             lisIndex += 1
+            pos[i] = lisIndex // 실제 경로의 index를 저장
         } else {
             let index = lowerBound(arr: &lis, start: 0, end: lisIndex, target: array[i])
             lis[index - 1] = array[i]
+            
+            if index != 0 {
+                pos[i] = index // 실제 경로의 index를 저장
+            }
         }
+        
     }
     
-    print(lis)
+    backtrace(&array, &pos, array.count - 1, lisIndex)
     return lisIndex
+}
+
+// 경로 역추적
+// 배열의 크기가 커서 메모리가 늘어나고,
+// 다시 출력하는데 O(N)의 시간이 걸리므로, 재귀함수를 이용한 백트래킹
+
+func backtrace(_ array: inout [Int], _ pos: inout [Int], _ idx: Int, _ last: Int) {
+    if idx < 0 {
+        return
+    }
+    
+    if pos[idx] == last {
+        backtrace(&array, &pos, idx - 1, last - 1)
+        print(array[idx])
+    }
+    else {
+        backtrace(&array, &pos, idx - 1, last);
+    }
 }
 
 // Binary search
