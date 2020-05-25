@@ -6,10 +6,11 @@
 //                      1) case1, array[i]가 dp(i-1)의 마지막 항 보다 큰 경우.
 //                      2) case2, array[i]가 dp(i-1)의 마지막 항에 비해서만 작은 경우.
 //                      3) case3, array[i]가 중간항에 비교해서 작을 경우. -> lower_bound(이분 탐색을 통해 해당하는 위치를 return) 이용
-//  Time Complexity :
-//  Space Complexity :
-//  Runtime:  ms
-//  Memory Usage:  MB
+//
+//  Time Complexity : O(n logn)
+//  Space Complexity : O(n)
+//  Runtime: 72 ms
+//  Memory Usage: 67.408 MB
 //
 //  Created by gunhyeong on 2020/05/24.
 //
