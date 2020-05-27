@@ -6,8 +6,8 @@
 //                      2) lost 배열의 값을하나씩 꺼내어 해당 student를 false로 만든다. 단, reserve와 값이 같은 것이 있다면 reserve 값을 제거하고 continue
 //                      3) 전체 학생 수를 반복하면서 false일때, 왼쪽과 오른쪽에 대한 reserve값이 나아있는 지 확인 후 true로 바꾸고 reserve에서 값 제거
 //
-//  Time Complexity :
-//  Space Complexity :
+//  Time Complexity : O(n)
+//  Space Complexity : O(n)
 //  Runtime:  ms
 //  Memory Usage:  MB
 //
