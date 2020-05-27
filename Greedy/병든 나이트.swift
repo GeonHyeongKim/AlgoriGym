@@ -22,10 +22,10 @@
 //                                        M = 7 -> 5, M - 2
 //                                        M = 8 -> 6
 //
-//  Time Complexity :
-//  Space Complexity :
-//  Runtime:  ms
-//  Memory Usage:  MB
+//  Time Complexity : O(1)
+//  Space Complexity : O(1)
+//  Runtime: 8 ms
+//  Memory Usage: 64.052 MB
 //
 //  Created by gunhyeong on 2020/05/26.
 //
