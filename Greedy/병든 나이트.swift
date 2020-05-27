@@ -31,3 +31,22 @@
 //
 
 import Foundation
+
+guard let input = readLine()?.split(separator: " ").map({Int($0)!}) else { // 입력 받는 형식(readLine()의 ?와, fatalError() 주의)
+    fatalError()
+}
+
+let n = input[0] // 세로
+let m = input[1] // 가로
+
+if n == 1 {
+    print("1") // 나이트는 이동할 수 없음
+} else if n == 2 {
+    print(min((m+1)/2, 4)) // 높이가 2인 경우 위로1칸 오른쪽 2칸, 밑으로 1칸 오른쪽 2칸 으로만 이동, 최대 4까지 가능
+} else { // n > 3
+    if m <= 6 {
+        print(min(m, 4))
+    } else {
+        print(m-2)
+    }
+}
