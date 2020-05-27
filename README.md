@@ -67,7 +67,7 @@ Swift & Java
 |[병든 나이트](https://www.acmicpc.net/problem/1783 "백준 알고리즘")|[Swift](https://github.com/GeonHyeongKim/AlgoriGym/blob/master/Greedy/%EB%B3%91%EB%93%A0%20%EB%82%98%EC%9D%B4%ED%8A%B8.swift)|42.247%|O(1)|O(1)|백준 알고리즘||
 |[잃어버린 괄호](https://www.acmicpc.net/problem/1120 "백준 알고리즘")|[Swift](https://github.com/GeonHyeongKim/AlgoriGym/blob/master/Greedy/%EB%AC%B8%EC%9E%90%EC%97%B4.swift)|49.596%|O(n)|O(n)|백준 알고리즘||
 |[초콜릿 자르기](https://www.acmicpc.net/problem/2163 "백준 알고리즘")|[Swift](https://github.com/GeonHyeongKim/AlgoriGym/blob/master/Greedy/%EC%B4%88%EC%BD%9C%EB%A6%BF%20%EC%9E%90%EB%A5%B4%EA%B8%B0.swift)|71.625%|O(N*M)|O(N*M)|백준 알고리즘||
-|[체육복](https://programmers.co.kr/learn/courses/30/lessons/42862 "프로그래머스")|[Swift](https://github.com/GeonHyeongKim/AlgoriGym/blob/master/String%26Array/%EB%AC%B8%EC%9E%90%EC%97%B4%20%EC%95%95%EC%B6%95.swift)|Level 1|||프로그래머스|코딩테스트 고득점 Kit|
+|[체육복](https://programmers.co.kr/learn/courses/30/lessons/42862 "프로그래머스")|[Swift](https://github.com/GeonHyeongKim/AlgoriGym/blob/master/Greedy/%EC%B2%B4%EC%9C%A1%EB%B3%B5.swift)|Level 1|||프로그래머스|코딩테스트 고득점 Kit|
 |[토너먼트 만들기](https://www.acmicpc.net/problem/2262 "백준 알고리즘")|[Swift](https://github.com/GeonHyeongKim/AlgoriGym/blob/master/Greedy/%ED%86%A0%EB%84%88%EB%A8%BC%ED%8A%B8%20%EB%A7%8C%EB%93%A4%EA%B8%B0.swift)|51.220%|O(n)|O(1)|백준 알고리즘||
 |[한 줄로 서기](https://www.acmicpc.net/problem/1138 "백준 알고리즘")|[Swift](https://github.com/GeonHyeongKim/AlgoriGym/blob/master/Greedy/%ED%95%9C%20%EC%A4%84%EB%A1%9C%20%EC%84%9C%EA%B8%B0.swift)|57.181%|O(n^2)|O(n)|백준 알고리즘||
 |[회의실배정](https://www.acmicpc.net/problem/1931 "백준 알고리즘")|[Swift](https://github.com/GeonHyeongKim/AlgoriGym/blob/master/Greedy/%ED%9A%8C%EC%9D%98%EC%8B%A4%EB%B0%B0%EC%A0%95.swift)|28.426%|O(n logn)|O(1)|백준 알고리즘||
