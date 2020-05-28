@@ -8,8 +8,6 @@
 //
 //  Time Complexity : O(n)
 //  Space Complexity : O(n)
-//  Runtime:  ms
-//  Memory Usage:  MB
 //
 //  Created by gunhyeong on 2020/05/27.
 //
