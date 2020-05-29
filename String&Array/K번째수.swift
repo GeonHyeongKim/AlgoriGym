@@ -16,3 +16,19 @@
 //
 
 import Foundation
+
+func solution(_ array:[Int], _ commands:[[Int]]) -> [Int] {
+    var result = [Int]()
+    let oneBasedNumbering = 1
+    
+    for command in commands {
+        let start = command[0] - oneBasedNumbering
+        let end = command[1] - oneBasedNumbering
+        let target = command[2] - oneBasedNumbering
+        
+        let sortedArr = array[start...end].sorted()
+        result.append(sortedArr[target])
+    }
+    
+    return result
+}
