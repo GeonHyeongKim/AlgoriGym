@@ -25,6 +25,7 @@ Swift & Java
 |[Is Subsequence](https://leetcode.com/problems/is-subsequence/ "LeetCode")|[Swift](https://github.com/GeonHyeongKim/AlgoriGym/blob/master/String%26Array/Is%20Subsequence.swift)|Easy|O(n)|O(n)|LeetCode||
 |[Last Stone Weight](https://leetcode.com/problems/last-stone-weight/ "LeetCode")|[Swift](https://github.com/GeonHyeongKim/AlgoriGym/blob/master/String%26Array/Last%20Stone%20Weight.swift)|Easy|O(nlogn)|O(n)|LeetCode||
 |[Jewels and Stones](https://leetcode.com/problems/jewels-and-stones/ "LeetCode")|[Swift](https://github.com/GeonHyeongKim/AlgoriGym/blob/master/String%26Array/JewelsAndStones.swift)|Easy|O(J+S)|O(1)|LeetCode||
+|[K번째수](https://programmers.co.kr/learn/courses/30/lessons/42748 "프로그래머스")|[Swift](https://github.com/GeonHyeongKim/AlgoriGym/blob/master/Greedy/%ED%81%B0%20%EC%88%98%20%EB%A7%8C%EB%93%A4%EA%B8%B0.swift)|Level 1|||프로그래머스|코딩테스트 고득점 Kit|
 |[Maximum Number of Balloons](https://leetcode.com/problems/maximum-number-of-balloons/ "LeetCode")|[Swift](https://github.com/GeonHyeongKim/AlgoriGym/blob/master/String%26Array/Maximum%20Number%20of%20Balloons.swift)|Easy|O(n)|O(1)|LeetCode||
 |[Move Zeroes](https://leetcode.com/problems/move-zeroes/ "LeetCode")|[Swift](https://github.com/GeonHyeongKim/AlgoriGym/blob/master/String%26Array/MoveZeros.swift)|Easy|O(n)|O(1)|LeetCode||
 |[Plus One](https://github.com/GeonHyeongKim/AlgoriGym/blob/master/String%26Array/PlusOne.swift "LeetCode")|[Swift](https://github.com/GeonHyeongKim/AlgoriGym/blob/master/String%26Array/MoveZeros.swift)|Easy|O(n)|O(1)|LeetCode||
