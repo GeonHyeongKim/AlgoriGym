@@ -6,9 +6,8 @@
 //                      2. command의 3가지 값(start, end, target)에서 index조절 값 1을 빼기
 //                      3. 정렬 후 결과값에 append
 //
-//
-//  Time Complexity :
-//  Space Complexity :
+//  Time Complexity : O(n), n은 commands의 수
+//  Space Complexity : O(1)
 //  Runtime:  ms
 //  Memory Usage:  MB
 //
