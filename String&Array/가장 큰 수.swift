@@ -10,8 +10,8 @@
 //                      2. 정렬된 배열의 첫 번째 값이 0인지 확인하여 0 일 경우 "0"을 출력한다.
 //                          정렬한 첫 번째 값이 0이라는 것은 모든 배열의 값이 0 일 경우를 의미하게 된다. [0,0,0,0] 이 주어졌을 때 그대로 값을 붙여서 return 하면 "0"이 아니라 "0000" 이 출력되기 때문에 올바르지 않게 된다.
 //                      3. 정렬된 배열의 값을 하나씩 꺼내서 하나의 문자열로 합친(reduce) 결과값을 반환한다.
-//  Time Complexity :
-//  Space Complexity :
+//  Time Complexity : O(n)
+//  Space Complexity : O(n)
 //  Runtime:  ms
 //  Memory Usage:  MB
 //
