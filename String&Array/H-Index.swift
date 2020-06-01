@@ -14,3 +14,15 @@
 //
 
 import Foundation
+
+func solution(_ citations:[Int]) -> Int {
+    let sorted = citations.sorted(by: >) // 내림 차순 정렬
+    
+    for (index, citation) in sorted.enumerated() {
+        if index >= citation { // index가 value(=citation)보다 큰 경우
+            return index // h-index
+        }
+    }
+    
+    return sorted.count
+}
