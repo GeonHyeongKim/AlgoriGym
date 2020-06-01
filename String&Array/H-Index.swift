@@ -5,8 +5,8 @@
 //                      1. 내림차순으로 정렬한다.
 //                      2. 정렬한 값에서 내림차순 값이 index의 값 보다 작아 질때 return 한다.
 //
-//  Time Complexity :
-//  Space Complexity : 
+//  Time Complexity : O(n)
+//  Space Complexity : O(n)
 //  Runtime:  ms
 //  Memory Usage:  MB
 //
