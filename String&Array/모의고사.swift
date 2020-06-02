@@ -9,8 +9,8 @@
 //                      2. answers를 반복하면서 패턴마다 반복되는 index 만큼 %(나머지 값) 연산을 해서 결과값에 넣는다.
 //                      3. 이때, 결과값(result)는 key값을 반환하기위해 dictionary로 만든다.
 //
-//  Time Complexity :
-//  Space Complexity :
+//  Time Complexity : O(n)
+//  Space Complexity : O(n)
 //  Runtime:  ms
 //  Memory Usage:  MB
 //
@@ -39,7 +39,6 @@ func solution(_ answers:[Int]) -> [Int] {
             result[3]! += 1
         }
     }
-
             
     return result.filter { result.values.max() == $0.value }.map { $0.key }.sorted(by: <)
 }
