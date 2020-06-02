@@ -45,7 +45,7 @@ Swift & Java
 |[모의고사](https://programmers.co.kr/learn/courses/30/lessons/42840 "프로그래머스")|[Swift](https://github.com/GeonHyeongKim/AlgoriGym/blob/master/String%26Array/%EB%AA%A8%EC%9D%98%EA%B3%A0%EC%82%AC.swift)|Level 1|O(n)|O(n)|프로그래머스|코딩테스트 고득점 Kit|
 |[문자열 압축](https://programmers.co.kr/learn/courses/30/lessons/60057 "프로그래머스")|[Swift](https://github.com/GeonHyeongKim/AlgoriGym/blob/master/String%26Array/%EB%AC%B8%EC%9E%90%EC%97%B4%20%EC%95%95%EC%B6%95.swift)|Level 2|O(n^2)|O(n)|프로그래머스|2020 KAKAO BLIND RECRUITMENT|
 |[비밀지도](https://programmers.co.kr/learn/courses/30/lessons/17681 "프로그래머스")|[Swift](https://github.com/GeonHyeongKim/AlgoriGym/blob/master/String%26Array/%EB%B9%84%EB%B0%80%EC%A7%80%EB%8F%84.swift)|Level 1|O(n^2)|O(n)|프로그래머스|2018 KAKAO BLIND RECRUITMENT|
-|[소수 찾기](https://programmers.co.kr/learn/courses/30/lessons/42839?language=swift "프로그래머스")|[Swift](https://github.com/GeonHyeongKim/AlgoriGym/blob/master/String%26Array/%EA%B0%80%EC%9E%A5%20%ED%81%B0%20%EC%88%98.swift)|Level 2|||프로그래머스|코딩테스트 고득점 Kit|
+|[소수 찾기](https://programmers.co.kr/learn/courses/30/lessons/42839?language=swift "프로그래머스")|[Swift](https://github.com/GeonHyeongKim/AlgoriGym/blob/master/String%26Array/%EC%86%8C%EC%88%98%20%EC%B0%BE%EA%B8%B0.swift)|Level 2|||프로그래머스|코딩테스트 고득점 Kit|
 |[수열의 값](https://www.acmicpc.net/problem/2867 "프로그래머스")|[Swift](https://github.com/GeonHyeongKim/AlgoriGym/blob/master/String%26Array/%EB%8B%A4%ED%8A%B8%EA%B2%8C%EC%9E%84.swift)|39.521%|||프로그래머스||
 |[실패율](https://programmers.co.kr/learn/courses/30/lessons/42889 "프로그래머스")|[Swift](https://github.com/GeonHyeongKim/AlgoriGym/blob/master/String%26Array/%EB%8B%A4%ED%8A%B8%EA%B2%8C%EC%9E%84.swift)|Level 1|O()|O()|프로그래머스|2019 KAKAO BLIND RECRUITMENT|
 
