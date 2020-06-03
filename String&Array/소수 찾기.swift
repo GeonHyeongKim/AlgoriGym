@@ -15,7 +15,45 @@
 import Foundation
 
 func solution(_ numbers:String) -> Int {
-    return 0
+    //    var num = numbers.compactMap{$0.wholeNumberValue} // String -> [Int]
+    var num = Array(numbers) // String -> [Character]
+    var result = Set<Int>() // 결과
+    var isVisit = [Bool](repeating: false, count: num.count)
+    var cur = [Character]()
+    
+    dfs(&num, &result, &cur, &isVisit)
+    
+    return result.count
+}
+
+func dfs(_ numbers: inout [Character], _ result: inout Set<Int>, _ cur: inout [Character], _ isVisit: inout [Bool]) {
+    var finished = true
+    
+    for flag in isVisit {
+        if !flag {
+            finished = false
+            break
+        }
+    }
+    
+    if finished {
+        return
+    }
+
+    for i in 0..<numbers.count {
+        if !isVisit[i] {
+            cur.append(numbers[i])
+                    
+            let intCur = Int(String(cur))!
+            if isPrime(intCur) {
+                result.insert(intCur)
+            }
+            isVisit[i] = true
+            dfs(&numbers, &result, &cur, &isVisit)
+            isVisit[i] = false
+            cur.removeLast()
+        }
+    }
 }
 
 // 소수 인지 판별
