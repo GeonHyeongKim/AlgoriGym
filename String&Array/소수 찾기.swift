@@ -19,14 +19,14 @@ func solution(_ numbers:String) -> Int {
     var num = Array(numbers) // String -> [Character]
     var result = Set<Int>() // 결과
     var isVisit = [Bool](repeating: false, count: num.count)
-    var cur = [Character]()
+    var cur = ""
     
     dfs(&num, &result, &cur, &isVisit)
     
     return result.count
 }
 
-func dfs(_ numbers: inout [Character], _ result: inout Set<Int>, _ cur: inout [Character], _ isVisit: inout [Bool]) {
+func dfs(_ numbers: inout [Character], _ result: inout Set<Int>, _ cur: inout String, _ isVisit: inout [Bool]) {
     var finished = true
     
     for flag in isVisit {
@@ -39,13 +39,13 @@ func dfs(_ numbers: inout [Character], _ result: inout Set<Int>, _ cur: inout [C
     if finished {
         return
     }
-
+    
     for i in 0..<numbers.count {
         if !isVisit[i] {
             cur.append(numbers[i])
                     
             let intCur = Int(String(cur))!
-            if isPrime(intCur) {
+            if !cur.isEmpty && isPrime(intCur) {
                 result.insert(intCur)
             }
             isVisit[i] = true
