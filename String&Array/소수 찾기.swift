@@ -4,7 +4,7 @@
 //  Primary idea:       <String & Array> - Brute force
 //                      1. 에라토스테네스의 체 이용
 //
-//  Time Complexity : O(n)
+//  Time Complexity : O(n^n)
 //  Space Complexity : O(n)
 //  Runtime:  ms
 //  Memory Usage:  MB
@@ -27,23 +27,11 @@ func solution(_ numbers:String) -> Int {
 }
 
 func dfs(_ numbers: inout [Character], _ result: inout Set<Int>, _ cur: inout String, _ isVisit: inout [Bool]) {
-    var finished = true
-    
-    for flag in isVisit {
-        if !flag {
-            finished = false
-            break
-        }
-    }
-    
-    if finished {
-        return
-    }
-    
     for i in 0..<numbers.count {
         if !isVisit[i] {
             cur.append(numbers[i])
                     
+            print(cur)
             let intCur = Int(String(cur))!
             if !cur.isEmpty && isPrime(intCur) {
                 result.insert(intCur)
@@ -58,5 +46,6 @@ func dfs(_ numbers: inout [Character], _ result: inout Set<Int>, _ cur: inout St
 
 // 소수 인지 판별
 func isPrime(_ number: Int) -> Bool {
-    return number > 1 && !(2..<number).contains { number % $0 == 0 }
+    let num = Int(floor(sqrt(Double(number))))
+    return number > 1 && !(2...num).contains { number % $0 == 0 }
 }
