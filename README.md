@@ -134,6 +134,7 @@ Swift & Java
 |Title|Solution|Etc|
 |:---|:---:|:---|
 |k-i|[Swift](https://github.com/GeonHyeongKim/AlgoriGym/blob/master/Test/k-i.swift)|2020-5|
+|p-dev|[Swift](https://github.com/GeonHyeongKim/AlgoriGym/blob/master/Test/k-i.swift)|2020-6|
 
 ## Author
 GeonHyeong Kim, [geonhyeong.dev@gmail.com](geonhyeong.dev@gmail.com).
