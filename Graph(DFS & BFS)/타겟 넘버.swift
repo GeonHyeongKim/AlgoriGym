@@ -8,8 +8,8 @@
 //                          ii) 다르면 0을 return
 //                      3. dfs에 sum에 해당값을 더했을경우(왼쪽) + sum에 해당값을 뺏했을경우(오른쪽)값을 return
 //
-//  Time Complexity :
-//  Space Complexity :
+//  Time Complexity : O(n^n)
+//  Space Complexity : O(1)
 //  Runtime:  ms
 //  Memory Usage:  MB
 //
