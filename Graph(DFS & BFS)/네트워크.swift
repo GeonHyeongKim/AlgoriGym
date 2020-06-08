@@ -8,10 +8,10 @@
 //                      4. 다른 컴퓨터를 모두 확인하여 방문되지 않았고, 연결이 되어있는(관계가 1인) 경우가 있을 경우
 //                      5. 3에서 false인 경우만 갯수(network)를 증가 = 독립된 네트워크이다.
 //
-//  Time Complexity :
-//  Space Complexity :
-//  Runtime:  ms
-//  Memory Usage:  MB
+//  Time Complexity : O(n^2)
+//  Space Complexity : O(n)
+//  Runtime: 0.16 ~ 3.93 ms
+//  Memory Usage: 23.6 ~ 24.8 MB
 //
 //  Created by gunhyeong on 2020/06/08.
 //
