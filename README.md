@@ -80,7 +80,7 @@ Swift & Java
 |[힙 정렬](https://www.acmicpc.net/problem/2220 "백준 알고리즘")|[Swift](https://github.com/GeonHyeongKim/AlgoriGym/blob/master/Greedy/%ED%9E%99%20%EC%A0%95%EB%A0%AC.swift)|57.377%|O(nlog n)|O(n)|백준 알고리즘||
 |[30](https://www.acmicpc.net/problem/10610 "백준 알고리즘")|[Swift](https://github.com/GeonHyeongKim/AlgoriGym/blob/master/Greedy/30.swift)|35.125%|O(n)|O(1)|백준 알고리즘||
 
-## Depth-first search(DFS)
+## DFS & BFS
 |Title|Solution|Difficulty|Time|Space|See|Etc|
 |:---|:---:|:---:|:---:|:---:|:---:|:---|
 |[Beautiful Arrangement](https://leetcode.com/problems/beautiful-arrangement/ "LeetCode")|[Swift](https://github.com/GeonHyeongKim/AlgoriGym/blob/master/BackTracking/Beautiful%20Arrangement.swift)|Medium|O(n^n)|O(n)|LeetCode||
