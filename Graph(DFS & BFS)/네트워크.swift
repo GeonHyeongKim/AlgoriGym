@@ -19,5 +19,26 @@
 import Foundation
 
 func solution(_ n:Int, _ computers:[[Int]]) -> Int {
-    return 0
+    var network = 0
+    var isVisit = [Bool](repeating: false, count: computers.count) // 2
+    
+    for node in 0..<n { // 3
+        if !isVisit[node] { // 중복 방지
+            dfs(computers, &isVisit, node)
+            network += 1
+        }
+    }
+    
+    return network
+}
+
+func dfs(_ computers: [[Int]], _ isVisit: inout [Bool], _ node: Int) {
+    isVisit[node] = true
+    
+    for i in 0..<isVisit.count {
+        // 양방향이기 때문에 computers[node][i] == computers[i][node]
+        if !isVisit[i] && computers[node][i] == 1 { // 4
+            dfs(computers, &isVisit, i)
+        }
+    }
 }
