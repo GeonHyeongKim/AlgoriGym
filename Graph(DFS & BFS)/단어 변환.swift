@@ -21,5 +21,50 @@
 import Foundation
 
 func solution(_ begin:String, _ target:String, _ words:[String]) -> Int {
+    guard words.contains(target) else {
+        return 0
+    }
+    
+    var queue = [String]()
+    var dict = Set<String>(words)
+    
+    queue.append(begin) // enqueue
+    dict.remove(begin) // begin는 필요가 없음
+    
+    var level = 0
+    
+    while !queue.isEmpty {
+        for _ in 0..<queue.count {
+            let str = queue.isEmpty ? nil : queue.removeFirst() // dequeue
+            if str == target { // 종료
+                return level
+            }
+            for neighbor in neighbors(str!, dict) {
+                queue.append(neighbor) // enqueue
+            }
+        }
+        level += 1
+    }
+    
     return 0
+}
+
+func neighbors(_ currentWord: String, _ wordList: Set<String>) -> [String]{
+    var result = [String]()
+    var dict = wordList
+    let allAlphabet = Array("abcdefghijklmnopqrstuvwxyz")
+    
+    for i in 0..<currentWord.count{
+        var chars = Array(currentWord)
+        
+        for alphabet in allAlphabet {
+            chars[i] = alphabet // ait ~ sit
+            let word = String(chars)
+            if dict.remove(word) != nil {
+                result.append(word)
+            }
+        }
+    }
+    
+    return result
 }
