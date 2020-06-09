@@ -10,10 +10,10 @@
 //                      4. queue에서 한개씩 꺼내면서 단어(str)의 각자리를 a~z까지로 분해해 변형 가능한 words 안에 있는 단어들을 알아낸다.
 //                      5. 단어들을 queue에 넣어 target과 같은지 확인 -> 종료
 //
-//  Time Complexity :
-//  Space Complexity :
-//  Runtime:  ms
-//  Memory Usage: MB
+//  Time Complexity : O(m^2 * n), m은 각 word의 길이, n은 words의 크기
+//  Space Complexity : O(m^2 * n), m은 각 word의 길이, n은 words의 크기
+//  Runtime: 0.14ms ~ 327.16 ms
+//  Memory Usage: 24.1 ~ 24.4 MB
 //
 //  Created by gunhyeong on 2020/06/08.
 //
