@@ -18,22 +18,9 @@ import Foundation
 
 class Solution {
     func addBinary(_ a: String, _ b: String) -> String {
-        let aStrArr = Array(a)
-        let bStrArr = Array(b)
-        var aIndex = aStrArr.count - 1
-        var bIndex = bStrArr.count - 1
-        var sum = 0 // 각 자리수 합
+]
         var result = ""
-        
-        while aIndex >= 0 || bIndex >= 0 || sum == 1{ // 1. 조건
-            sum += (aIndex >= 0) ? Int(String(aStrArr[aIndex]))! : 0 // 2. 판별
-            sum += (bIndex >= 0) ? Int(String(bStrArr[bIndex]))! : 0 // 2. 판별
-            result = String(sum%2) + result // 3. 결과
-            sum /= 2
-                
-            aIndex -= 1
-            bIndex -= 1
-        }
+
         
         return result
     }
