@@ -18,9 +18,23 @@ import Foundation
 
 class Solution {
     func addBinary(_ a: String, _ b: String) -> String {
-]
+        let arrA = Array(a)
+        let arrB = Array(b)
+        var lenA = arrA.count - 1
+        var lenB = arrB.count - 1
+        
         var result = ""
-
+        var sum = 0
+        
+        while sum == 1 || lenA >= 0 || lenB >= 0 {
+            sum += lenA >= 0 ? Int(String(arrA[lenA]))! : 0
+            sum += lenB >= 0 ? Int(String(arrB[lenB]))! : 0
+            result = String(sum%2) + result
+            sum /= 2
+            
+            lenA -= 1
+            lenB -= 1
+        }
         
         return result
     }
