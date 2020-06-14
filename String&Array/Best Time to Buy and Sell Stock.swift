@@ -17,21 +17,7 @@ import Foundation
 
 class Solution {
     func maxProfit(_ prices: [Int]) -> Int {
-        if prices.isEmpty { // 빈 배열인지 확인
-            return 0
-        }
-        
-        var result = 0
-        var minPrice = prices.max()!
-        
-        for price in prices {
-            if price < minPrice {
-                minPrice = price
-            }
-            
-            result = max(result, price - minPrice)
-        }
-        
+
         return result
     }
 }
