@@ -22,8 +22,25 @@ import Foundation
 
 class Solution {
     func toGoatLatin(_ S: String) -> String {
+        let vowel = ["a", "e", "i", "o", "u", "A", "E", "I", "O", "U"]
         var result = ""
+        let words = S.split(separator: " ")
+        var latin = "maa"
 
+        for word in words {
+            var newWord = word
+            let first = String(newWord.first!)
+            if vowel.contains(first) {
+                newWord += latin
+            } else {
+                newWord = newWord.dropFirst()
+                newWord += first + latin
+            }
+            
+            latin += "a"
+            result += newWord + " "
+        }
+        
         return String(result.dropLast())
     }
 }
