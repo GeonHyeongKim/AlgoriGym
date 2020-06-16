@@ -21,5 +21,31 @@
 import Foundation
 
 func solution(_ tickets:[[String]]) -> [String] {
-    return []
+    var result = [String]()
+    var visited = [Bool](repeating: false, count: tickets.count)
+    let sortedTickets = tickets.sorted(by: { $0[1] < $1[1] })
+    var path: [String] = []
+
+    dfs(sortedTickets, &visited, &result, &path, "ICN", 0)
+    
+    return result
+}
+
+func dfs(_ tickets: [[String]], _ visited: inout [Bool], _ result: inout [String], _ path: inout [String], _ from :String, _ depth: Int) {
+    path.append(from)
+    
+    if depth == tickets.count {
+        result = path
+        return
+    }
+    
+    for i in 0..<tickets.count {
+        if tickets[i][0] == from && visited[i] == false {
+            visited[i] = true
+            dfs(tickets, &visited, &result, &path, tickets[i][1], depth+1)
+            visited[i] = false
+        }
+    }
+    
+    path.removeLast()
 }
