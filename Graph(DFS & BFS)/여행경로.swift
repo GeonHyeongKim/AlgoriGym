@@ -39,7 +39,7 @@ func dfs(_ tickets: [[String]], _ visited: inout [Bool], _ result: inout [String
         return
     }
     
-    for i in 0..<tickets.count {
+    for i in 0..<tickets.count where result.isEmpty{
         if tickets[i][0] == from && visited[i] == false {
             visited[i] = true
             dfs(tickets, &visited, &result, &path, tickets[i][1], depth+1)
@@ -49,3 +49,5 @@ func dfs(_ tickets: [[String]], _ visited: inout [Bool], _ result: inout [String
     
     path.removeLast()
 }
+
+print(solution([["ICN", "SFO"], ["ICN", "ATL"], ["SFO", "ATL"], ["ATL", "ICN"], ["ATL","SFO"]]))
