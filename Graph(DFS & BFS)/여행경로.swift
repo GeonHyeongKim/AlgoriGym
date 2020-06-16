@@ -10,10 +10,10 @@
 //                      3. 종료 조건 : 주어진 항공권을 통하여 모든 경로를 탐색하여 롼료한 경우
 //                      4. visited([Bool])을 통해 방문했던 항공사인지 확인
 //
-//  Time Complexity :
-//  Space Complexity :
-//  Runtime:  ms
-//  Memory Usage:  MB
+//  Time Complexity : O(n^n)
+//  Space Complexity : O(n)
+//  Runtime: 0.35 ~ 1.48 ms
+//  Memory Usage: 24.1 ~ 24.4 MB
 //
 //  Created by gunhyeong on 2020/06/10.
 //
