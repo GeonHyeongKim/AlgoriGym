@@ -49,6 +49,7 @@ Swift & Java
 |[수열의 값](https://www.acmicpc.net/problem/2867 "프로그래머스")|[Swift](https://github.com/GeonHyeongKim/AlgoriGym/blob/master/String%26Array/%EB%8B%A4%ED%8A%B8%EA%B2%8C%EC%9E%84.swift)|39.521%|||프로그래머스||
 |[숫자 야구](https://programmers.co.kr/learn/courses/30/lessons/42841 "프로그래머스")|[Swif](https://github.com/GeonHyeongKim/AlgoriGym/blob/master/String%26Array/%EC%88%AB%EC%9E%90%20%EC%95%BC%EA%B5%AC.swift)|Level 2|||프로그래머스|]코딩테스트 고득점 Kit|
 |[실패율](https://programmers.co.kr/learn/courses/30/lessons/42889 "프로그래머스")|[Swift](https://github.com/GeonHyeongKim/AlgoriGym/blob/master/String%26Array/%EB%8B%A4%ED%8A%B8%EA%B2%8C%EC%9E%84.swift)|Level 1|O()|O()|프로그래머스|2019 KAKAO BLIND RECRUITMENT|
+|[카펫](https://programmers.co.kr/learn/courses/30/lessons/42842 "프로그래머스")|[Swif](https://github.com/GeonHyeongKim/AlgoriGym/blob/master/String%26Array/%EC%88%AB%EC%9E%90%20%EC%95%BC%EA%B5%AC.swift)|Level 2|||프로그래머스|]코딩테스트 고득점 Kit|
 
 ## Greedy
 |Title|Solution|Difficulty|Time|Space|See|Etc|
