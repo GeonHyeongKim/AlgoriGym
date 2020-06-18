@@ -19,5 +19,30 @@
 import Foundation
 
 func solution(_ baseball:[[Int]]) -> Int {
+    var result = [String]() // 결과
+    var isVisit = [Bool](repeating: false, count: 10)
+    var curball = [Int]()
+    
+    dfs(baseball, &curball, &isVisit, &result)
+    
+    print(result)
+    
     return 0
+}
+
+func dfs(_ baseball: [[Int]], _ curball: inout [Int], _ isVisit: inout [Bool], _ result: inout [String]) {
+    if curball.count == 3 {
+        result.append(curball.reduce("", {$0 + "\($1)" }))
+        return
+    }
+    
+    for i in 0..<10 {
+        if !isVisit[i] {
+            curball.append(i)
+            isVisit[i] = true
+            dfs(baseball, &curball, &isVisit, &result)
+            isVisit[i] = false
+            curball.removeLast()
+        }
+    }
 }
