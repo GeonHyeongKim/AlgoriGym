@@ -2,7 +2,10 @@
 //  카펫.swift
 //  Question Link: https://programmers.co.kr/learn/courses/30/lessons/42842
 //  Primary idea:       <String & Array> - Brute force
-//                      1.
+//                      1. 방정식을 이용
+//                          i) x + y : (brown + 4) / 2
+//                          ii) xy : brown + yellow
+//                      2, 2중 반복문을 돌면서 방정식의 값들과 같으면 return
 //
 //  Time Complexity :
 //  Space Complexity :
