@@ -21,15 +21,15 @@ func solution(_ brown:Int, _ yellow:Int) -> [Int] {
     let equation1 = (brown + 4) / 2 // x + y
     let equation2 = brown + yellow // xy
 
-    for x in 1...5000 {
-        for y in 1...x {
-            if (x + y == equation1) && (x * y == equation2) {
-                return [x, y]
-            }
+    for x in 3...5000 {
+        let y = equation2/x
+        if equation1 == x + y {
+            return x > y ? [x,y] : [y,x]
         }
     }
     
     return []
 }
+
 
 print(solution(10, 2))
