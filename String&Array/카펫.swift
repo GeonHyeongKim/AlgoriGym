@@ -7,10 +7,10 @@
 //                          ii) xy : brown + yellow
 //                      2, 2중 반복문을 돌면서 방정식의 값들과 같으면 return
 //
-//  Time Complexity :
-//  Space Complexity :
-//  Runtime:  ms
-//  Memory Usage:  MB
+//  Time Complexity : O(sqrt(n))
+//  Space Complexity : O(1)
+//  Runtime: 0.14 ~ 0.16 ms
+//  Memory Usage: 24.0 ~ 24.3 MB
 //
 //  Created by gunhyeong on 2020/06/19.
 //
