@@ -22,6 +22,10 @@ func solution(_ brown:Int, _ yellow:Int) -> [Int] {
     let equation2 = brown + yellow // xy
 
     for x in 3...5000 {
+        if equation2 % x != 0 {
+            continue
+        }
+        
         let y = equation2/x
         if equation1 == x + y {
             return x > y ? [x,y] : [y,x]
