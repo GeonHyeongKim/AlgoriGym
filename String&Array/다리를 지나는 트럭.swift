@@ -22,25 +22,26 @@
 
 import Foundation
 
+// 71.4점 - 테스트 4,5,6,9 실패
 func solution(_ bridge_length:Int, _ weight:Int, _ truck_weights:[Int]) -> Int {
     var trucks = truck_weights
     var bridge = [Int]() // queue
-    var curWeight = 0
+    var times = [Int]()
+    var cross = [Int]()
     var time = 0
-        
+    
     while !trucks.isEmpty {
         time += 1
         
-        if !bridge.isEmpty { // 다리에 truck이 없는 경우
-            
-        }
-        
-        if curWeight + trucks.first! <= weight {
-            curWeight += trucks.first!
-            
+        if bridge.reduce(0, +) + (trucks.first!) <= weight {
+            bridge.append(trucks.first!)
+            times.append(time+bridge_length)
             trucks.removeFirst()
+        } else {
+            time = times.removeFirst() - 1
+            cross.append(bridge.removeFirst())
         }
     }
     
-    return time
+    return times.removeLast()
 }
