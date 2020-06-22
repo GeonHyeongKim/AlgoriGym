@@ -7,10 +7,10 @@
 //                          i) 시작을 가장 오른쪽 값부터 시작한여 1씩 작아진다.
 //                          ii) 해당값(i)부터 왼쪽으로 가면서 값이 커질때, 결과값에 넣고 반복문 중지
 //
-//  Time Complexity :
-//  Space Complexity :
-//  Runtime:  ms
-//  Memory Usage:  MB
+//  Time Complexity : O(n^2)
+//  Space Complexity : O(n)
+//  Runtime: 0.17 ~ 1.05 ms
+//  Memory Usage: 24.2 ~ 24.4 MB
 //
 //  Created by gunhyeong on 2020/06/22.
 //
