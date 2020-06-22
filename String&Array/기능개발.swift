@@ -16,39 +16,29 @@
 
 import Foundation
 
-func solution(_ progresses:[Int], _ speeds:[Int]) -> [Int] {
-    var result = [Int]()
-    var distributeStack = [Int]()
-    
-    for i in 0..<progresses.count {
-        var progresse = progresses[i]
-        var cnt = 0
+func solution(_ progresses:[Int], _ speeds:[Int]) -> [Int] {func solution(_ progresses:[Int], _ speeds:[Int]) -> [Int] {
+        var result = [Int]()
+        var distributeQueue = [Int]()
         
-        while progresse < 100 {
-            progresse += speeds[i]
-            cnt += 1
+        for i in 0..<progresses.count {
+            var progresse = progresses[i]
+            var cnt = 0
+            
+            while progresse < 100 {
+                progresse += speeds[i]
+                cnt += 1
+            }
+            
+            distributeQueue.append(cnt)
+            
+            if distributeQueue.first! < cnt {
+                result.append(distributeQueue.count-1) // 결과값에 방금 넣은 값을 제외하고 넣어준다.
+                distributeQueue.removeAll()
+                distributeQueue.append(cnt) // 방금 제외한 값을 다시 queue에 넣어준다.
+            }
         }
         
-        distributeStack.append(cnt)
+        result.append(distributeQueue.count)
+
+        return result
     }
-    
-    var maxDay = distributeStack.removeFirst()
-    var cnt = 1
-    
-    while !distributeStack.isEmpty {
-        let next = distributeStack.first!
-        
-        if next <= maxDay {
-            cnt += 1
-            distributeStack.removeFirst()
-        } else {
-            maxDay = next
-            result.append(cnt)
-            cnt = 0
-        }
-    }
-    
-    result.append(cnt)
-        
-    return result
-}
