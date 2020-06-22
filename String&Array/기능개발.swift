@@ -31,5 +31,23 @@ func solution(_ progresses:[Int], _ speeds:[Int]) -> [Int] {
         distributeStack.append(cnt)
     }
     
-    return []
+    var maxDay = distributeStack.removeFirst()
+    var cnt = 1
+    
+    while !distributeStack.isEmpty {
+        let next = distributeStack.first!
+        
+        if next <= maxDay {
+            cnt += 1
+            distributeStack.removeFirst()
+        } else {
+            maxDay = next
+            result.append(cnt)
+            cnt = 0
+        }
+    }
+    
+    result.append(cnt)
+        
+    return result
 }
