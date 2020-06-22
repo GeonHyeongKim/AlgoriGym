@@ -22,7 +22,7 @@
 
 import Foundation
 
-// 71.4점 - 테스트 4,5,6,9 실패
+// 85.7점 - 테스트 4,6,14 실패
 func solution(_ bridge_length:Int, _ weight:Int, _ truck_weights:[Int]) -> Int {
     var trucks = truck_weights
     var bridge = [Int]() // queue
@@ -38,10 +38,12 @@ func solution(_ bridge_length:Int, _ weight:Int, _ truck_weights:[Int]) -> Int {
             times.append(time+bridge_length)
             trucks.removeFirst()
         } else {
-            time = times.removeFirst() - 1
+            time = times.first! < time ? times.removeFirst() : times.removeFirst() - 1
             cross.append(bridge.removeFirst())
         }
     }
     
     return times.removeLast()
 }
+
+//print("\(time) \(cross) \(bridge) \(trucks) \(times)")
