@@ -15,5 +15,20 @@
 import Foundation
 
 func solution(_ progresses:[Int], _ speeds:[Int]) -> [Int] {
+    var result = [Int]()
+    var distributeStack = [Int]()
+    
+    for i in 0..<progresses.count {
+        var progresse = progresses[i]
+        var cnt = 0
+        
+        while progresse < 100 {
+            progresse += speeds[i]
+            cnt += 1
+        }
+        
+        distributeStack.append(cnt)
+    }
+    
     return []
 }
