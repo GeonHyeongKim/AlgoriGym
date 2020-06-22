@@ -18,5 +18,19 @@
 import Foundation
 
 func solution(_ heights:[Int]) -> [Int] {
-    return []
+    var result = [Int](repeating: 0, count: heights.count)
+    let size = heights.count
+    
+    for i in stride(from: size - 1, through: 0, by: -1) {
+        for j in stride(from: i, through: 0, by: -1) {
+            if heights[i] < heights[j] {
+                result[i] = j + 1
+                break
+            }
+        }
+    }
+    
+    return result
 }
+
+print(solution([6,9,5,7,4]))
