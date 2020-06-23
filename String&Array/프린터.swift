@@ -22,7 +22,34 @@
 import Foundation
 
 func solution(_ priorities:[Int], _ location:Int) -> Int {
+    var queue = [(Int,Int)]() // queue 개념을 이용 (index,priority)
+    var priorityQueue = [Int]()
+    var result = 1
     
-    var sortedPriorities = priorities.sorted(by : >)
-    return sortedPriorities.lastIndex(of : priorities[location])! + 1
+    // 주어진 배열을 먼저 index값을 포함하여 배열로 만든다
+    for (i, priority) in priorities.enumerated() {
+        queue.append((i,priority))
+        priorityQueue.append(priority)
+    }
+    
+    priorityQueue.sort(by: >) // 내림차순으로 정렬
+        
+    while !queue.isEmpty {
+        let index = queue.first!.0
+        let priority = queue.removeFirst().1
+        
+        if priority == priorityQueue.first! { // 현재 빠질 수 있는 큐의 우선순위가 최고일 경우
+            if index == location { // 해당 위치가 요구하는 인덱스일 경우
+                return result
+            } else { // 아직 요구하는 인덱스가 아닐 경우,
+                priorityQueue.removeFirst() // 우선순위 큐에서 pop, 즉 가장 우선순위 제거
+                result += 1 // 출력 수 증가
+            }
+        } else { // 방금 queue의 데이터가 최우선 순위가 아닐 경우, 다시 맨 뒤로 넣는다.
+            queue.append((index, priority))
+        }
+    }
+    
+    
+    return result
 }
