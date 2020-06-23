@@ -11,10 +11,10 @@
 //                      7. 1 ~ 6 과정을 이중배열이 없을때 까지 반복
 //                      8. 결과배열을 순회하여 index값과 location을 비교하여 같은경우 index에 +1 한 값을 출력해주면 된다.
 //
-//  Time Complexity :
-//  Space Complexity :
-//  Runtime:  ms
-//  Memory Usage:  MB
+//  Time Complexity : O(n)
+//  Space Complexity : O(n)
+//  Runtime: 0.21 ~ 3.62 ms
+//  Memory Usage: 24.1 ~ 24.4 MB
 //
 //  Created by gunhyeong on 2020/06/23.
 //
