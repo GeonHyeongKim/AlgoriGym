@@ -7,10 +7,10 @@
 //                          ii) ')'이 나오면 스택의 사이즈 만큼 정답에 더해주고, 다음 index는 skip
 //                      2. ')'가 나오면 스택에 removeLast() (즉, pop())을 해서 짝을 맞춰주고 1을 더해준다.
 //
-//  Time Complexity :
-//  Space Complexity :
-//  Runtime:  ms
-//  Memory Usage:  MB
+//  Time Complexity : O(n)
+//  Space Complexity : O(n)
+//  Runtime: 0.82 ~ 29.47 ms
+//  Memory Usage: 24.1 ~ 24.6 MB
 //
 //  Created by gunhyeong on 2020/06/23.
 //
