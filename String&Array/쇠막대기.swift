@@ -18,5 +18,30 @@
 import Foundation
 
 func solution(_ arrangement:String) -> Int {
-    return 0
+    var result = 0
+    var stack = [String]()
+    let arrArrangement = Array(arrangement)
+    let size = arrArrangement.count
+    var skip = false
+        
+    for (i, char) in arrangement.enumerated() {
+        if skip { // 다음으로 뛰어 넘는 기능
+            skip = false
+            continue
+        }
+        
+        if char == "(" {
+            if (i+1 < size) && (arrArrangement[i+1] == ")"){
+                result += stack.count
+                skip = true
+            } else {
+                stack.append("(") // push (
+            }
+        } else if char == ")" {
+            stack.removeLast()
+            result += 1
+        }
+    }
+    
+    return result
 }
