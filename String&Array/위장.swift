@@ -19,5 +19,19 @@
 import Foundation
 
 func solution(_ clothes:[[String]]) -> Int {
-    return 0
+    var dic = [String:[String]]()
+    
+    for clothe in clothes {
+        let name = clothe[0]
+        let category = clothe[1]
+                
+        if dic.keys.contains(category) { // dic에 종류가 존재할 경우
+            dic[category]!.append(name)
+        } else {
+            dic[category] = [name] // 새로운 종류 일경우
+        }
+    }
+    
+    let count = dic.mapValues{$0.count}.values // 종류별 갯수를 담은 배열ㄴ
+    return count.reduce(1){$0*($1+1)}-1  // +1 : 안입는 경우, -1 : 모두 다 안입는 경우
 }
