@@ -8,10 +8,10 @@
 //                         i) 각 원소에 +1을 하여 안입은 경우를 표현한다.
 //                         ii) -1을 하여 모두 다 입지 않는 경우를 고려한다.
 //
-//  Time Complexity :
-//  Space Complexity :
-//  Runtime:  ms
-//  Memory Usage:  MB
+//  Time Complexity : O(n logn)
+//  Space Complexity : O(n)
+//  Runtime: 0.31 ~ 2.48 ms
+//  Memory Usage: 24.0 ~ 24.3 MB
 //
 //  Created by gunhyeong on 2020/06/24.
 //
