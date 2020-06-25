@@ -37,6 +37,10 @@ func dfs(_ baseball: [[Int]], _ curball: inout [Int], _ isVisit: inout [Bool], _
     if curball.count == 3 {
         result.append(curball.reduce("", {$0 + "\($1)" }))
         return
+// 숫자가 될 수 있는지 확인
+func checkDuplicate(_ number: [Character]) -> Bool {
+    for char in number where char == "0" { // 숫자에 0이 포함되어 있을 경우 pass
+        return true
     }
     
     for i in 0..<10 {
