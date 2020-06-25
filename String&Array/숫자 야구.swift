@@ -50,6 +50,9 @@ func checkDuplicate(_ number: [Character]) -> Bool {
             dfs(baseball, &curball, &isVisit, &result)
             isVisit[i] = false
             curball.removeLast()
+    return (number[0] == number[1]) || (number[1] == number[2]) || (number[0] == number[2]) // 각자리의 숫자가 겹치는경우
+}
+
         }
     }
 }
