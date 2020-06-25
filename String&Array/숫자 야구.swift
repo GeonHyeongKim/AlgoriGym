@@ -22,34 +22,36 @@
 import Foundation
 
 func solution(_ baseball:[[Int]]) -> Int {
-    var result = [String]() // 결과
-    var isVisit = [Bool](repeating: false, count: 10)
-    var curball = [Int]()
+    var result = 0
     
-    dfs(baseball, &curball, &isVisit, &result)
+    for number in 123...987 { // 최소 ~ 최대
+        let arrNumber = Array(String(number))
+        var value = 0
+        
+        if checkDuplicate(arrNumber) {
+            continue
+        }
+        
+        for game in baseball {
+            if (game[1], game[2]) == checkCandidate(Array(String(game[0])), arrNumber) {
+                value += 1
+            }
+        }
+        
+        if value == baseball.count { // 경기 내용이 모두 일치하는 경우
+            result += 1
+        }
+    }
     
-    print(result)
-    
-    return 0
+    return result
 }
 
-func dfs(_ baseball: [[Int]], _ curball: inout [Int], _ isVisit: inout [Bool], _ result: inout [String]) {
-    if curball.count == 3 {
-        result.append(curball.reduce("", {$0 + "\($1)" }))
-        return
 // 숫자가 될 수 있는지 확인
 func checkDuplicate(_ number: [Character]) -> Bool {
     for char in number where char == "0" { // 숫자에 0이 포함되어 있을 경우 pass
         return true
     }
     
-    for i in 0..<10 {
-        if !isVisit[i] {
-            curball.append(i)
-            isVisit[i] = true
-            dfs(baseball, &curball, &isVisit, &result)
-            isVisit[i] = false
-            curball.removeLast()
     return (number[0] == number[1]) || (number[1] == number[2]) || (number[0] == number[2]) // 각자리의 숫자가 겹치는경우
 }
 
