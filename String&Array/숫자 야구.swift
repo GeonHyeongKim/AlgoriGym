@@ -11,10 +11,10 @@
 //                              가) 스트라이크 : request[i] == candidate[i]
 //                              나) 볼 : request[i] != candidate[i] && candidate.contains(request[i])
 //
-//  Time Complexity :
-//  Space Complexity :
-//  Runtime:  ms
-//  Memory Usage:  MB
+//  Time Complexity : O(n), 약 50,000번 정도 계산 = (9*8*7)n * 100(최대)
+//  Space Complexity : O(1)
+//  Runtime: 1.92 ~ 12.14 ms
+//  Memory Usage: 24.0 ~ 24.3 MB
 //
 //  Created by gunhyeong on 2020/06/17.
 //
