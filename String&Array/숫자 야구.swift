@@ -53,6 +53,17 @@ func checkDuplicate(_ number: [Character]) -> Bool {
     return (number[0] == number[1]) || (number[1] == number[2]) || (number[0] == number[2]) // 각자리의 숫자가 겹치는경우
 }
 
+func checkCandidate(_ game: [Character], _ candidate: [Character]) -> (Int, Int) {
+    var strike = 0
+    var ball = 0
+
+    for i in 0..<3 {
+        if game[i] == candidate[i] { //strike
+            strike += 1
+        } else if game[i] != candidate[i] && candidate.contains(game[i]) { // ball
+            ball += 1
         }
     }
+    
+    return (strike, ball)
 }
