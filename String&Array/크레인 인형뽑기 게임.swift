@@ -9,6 +9,10 @@
 //                          iii) 인형을 뽑은 후에 뽑은 자리는 0으로 바꿔주고 현재 반복문을 나간다.
 //                      3. 위의 과정을 반복하여 총 몇 개의 인형이 터졌는지 반환한다.
 //
+//  Time Complexity : O(n*m), n은 moves의 갯수, m은 board의 size
+//  Space Complexity : O(n)
+//  Runtime: 0.19 ~ 1.57 ms
+//  Memory Usage: 24.0 ~ 24.3 MB
 //
 //  Created by gunhyeong on 2020/06/26.
 //
