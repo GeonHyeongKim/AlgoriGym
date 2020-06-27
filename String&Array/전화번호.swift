@@ -6,10 +6,10 @@
 //                      2. 전화번호(number)와 비교할 전화번호가 같은 번호이면 continue
 //                      3. 접두사인지 판별 starts()를 이용
 //
-//  Time Complexity :
-//  Space Complexity :
-//  Runtime:  ms
-//  Memory Usage: MB
+//  Time Complexity : O(n^2)
+//  Space Complexity : O(1)
+//  Runtime: 0.51 ~ 0.71 ms, java로 풀이
+//  Memory Usage: 50.2 ~ 52.3 MB // java로 풀이
 //
 //  Created by gunhyeong on 2020/06/27.
 //
