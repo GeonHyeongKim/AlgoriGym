@@ -17,5 +17,17 @@
 import Foundation
 
 func solution(_ phone_boo: [String]) -> Bool {
+    for number in phone_boo {
+        for compare in phone_boo {
+            if number == compare {
+                continue
+            }
+            
+            if compare.starts(with: number) {
+                return false
+            }
+        }
+    }
+
     return true
 }
