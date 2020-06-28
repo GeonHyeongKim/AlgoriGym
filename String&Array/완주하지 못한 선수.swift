@@ -14,3 +14,12 @@
 //
 
 import Foundation
+
+func solution(_ participant:[String], _ completion:[String]) -> String {
+    for name in participant {
+        if !completion.contains(name) {
+            return String(name)
+        }
+    }
+    return ""
+}
