@@ -5,8 +5,8 @@
 //                      1. 반복문을 통해 participant의 값을 한번씩 체크한다.
 //                      2. if문과 contains를 이용해 값이 없는지 확인한다.
 //
-//  Time Complexity :
-//  Space Complexity :
+//  Time Complexity : O(n)
+//  Space Complexity : O(1)
 //  Runtime:  ms
 //  Memory Usage:  MB
 //
