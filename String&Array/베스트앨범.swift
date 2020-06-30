@@ -7,10 +7,10 @@
 //                      3. 정렬 후, 각 노래리스트의 플레이수를 합친값이 큰 종류순으로 정렬하여 종류 리스트를 알아낸다.
 //                      4. 정렬된 종류 리스트를 반복문으로 돌면서 play에서 해당 index값을 결과에 넣는다. 이때, 두개씩만 넣기 위해 카운트 변수를 둔다
 //
-//  Time Complexity :
-//  Space Complexity :
-//  Runtime:  ms
-//  Memory Usage:  MB
+//  Time Complexity : O(n*m), n : genres 수, m : plays 수
+//  Space Complexity : O(n*m)
+//  Runtime: 0.38 ~ 0.81 ms
+//  Memory Usage: 24.1 ~ 24.4 MB
 //
 //  Created by gunhyeong on 2020/06/30.
 //
