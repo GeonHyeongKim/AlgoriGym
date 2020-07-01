@@ -16,6 +16,18 @@
 import Foundation
 
 func solution(_ prices: [Int]) -> [Int] {
+    let size = prices.count
     
-    return []
+    var result = [Int](repeating: 0, count: size)
+    
+    for i in 0..<size {
+        for j in 1+i..<size {
+            result[i] += 1
+            if prices[i] > prices[j] {
+                break
+            }
+        }
+    }
+    
+    return result
 }
