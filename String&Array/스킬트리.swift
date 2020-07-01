@@ -7,10 +7,10 @@
 //                      3. 이 skillTree에서 skill에 포함되는 요소를 learned에 담는다. (skill : abc, skillTree : zdawcb라면 learned는 acb가 된다)
 //                      4. 만약 skill이 learned로 시작한다면 correctCount를 1 증가시켜준다.
 //
-//  Time Complexity :
-//  Space Complexity :
-//  Runtime:  ms
-//  Memory Usage:  MB
+//  Time Complexity : O(n^m), n:skill_trees의 갯수, m: 각스킬의 길이
+//  Space Complexity : O(1)
+//  Runtime: 0.13 ~ 0.22 ms
+//  Memory Usage: 24.0 ~ 24.3 MB
 //
 //  Created by gunhyeong on 2020/06/27.
 //
