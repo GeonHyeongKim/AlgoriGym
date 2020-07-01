@@ -6,8 +6,8 @@
 //                      2. dictionary를 정렬후, 1이 아닌 값들을 모은다.
 //                      3. 만약 중복된 갯수가 없을 경우 -1을 return한다
 //
-//  Time Complexity :
-//  Space Complexity :
+//  Time Complexity : O(n)
+//  Space Complexity : O(n)
 //  Runtime:  ms
 //  Memory Usage:  MB
 //
