@@ -5,10 +5,10 @@
 //                      1. 반복문을 통해 1초가 흐를떄마다 각각의 방의 값을 1씩 늘려간다.
 //                      2. 값이 작아지는 구간에 반복문으로 멈춘다.
 //
-//  Time Complexity :
-//  Space Complexity :
-//  Runtime:  ms
-//  Memory Usage:  MB
+//  Time Complexity : O(n^2)
+//  Space Complexity : O(n)
+//  Runtime: 1.47 ~ 2.38 ms
+//  Memory Usage: 50.1 ~ 54.6 MB
 //
 //  Created by gunhyeong on 2020/07/01.
 //
