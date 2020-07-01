@@ -17,5 +17,22 @@
 import Foundation
 
 func solution(_ arr:[Int]) -> [Int] {
-    return []
+    var map = [Int:Int]() // 종류:갯수
+    
+    for number in arr {
+        if map.keys.contains(number) {
+            map[number]! += 1
+        } else {
+            map[number] = 1
+        }
+    }
+    
+    let result = map.sorted(by: {$0.key < $1.key}).filter({$0.value != 1}).map {$0.value}
+    
+    return result.count > 0 ? result : [-1]
 }
+
+print(solution([1, 2, 3, 3, 3, 3, 4, 4])) // [4, 2]
+print(solution([3, 2, 4, 4, 2, 5, 2, 5, 5])) // [3, 2, 3]
+print(solution([3, 5, 7, 9, 1])) // [-1]
+
