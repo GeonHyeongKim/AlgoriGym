@@ -18,5 +18,20 @@
 import Foundation
 
 func solution(_ skill:String, _ skill_trees:[String]) -> Int {
-    return 0
+    var answer = 0
+    
+    for skills in skill_trees {
+        var murmur = "" // 중얼거리기
+        for step in skills {
+            if skill.contains(step) {
+                murmur += String(step)
+            }
+        }
+        
+        if skill.starts(with: murmur) {
+            answer += 1
+        }
+    }
+    
+    return answer
 }
