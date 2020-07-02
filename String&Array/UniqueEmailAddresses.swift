@@ -17,7 +17,12 @@ import Foundation
 class Solution {
     func numUniqueEmails(_ emails: [String]) -> Int {
         var emailSet:Set<String> = []
-
+        for s in emails{
+            let address = s.components(separatedBy: "@")
+            let name = address[0].components(separatedBy: "+").first?.filter({$0 != "."})
+            
+            emailSet.insert(name!+"@"+address.last!)
+        }
         return emailSet.count
     }
 }
