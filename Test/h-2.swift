@@ -13,3 +13,28 @@
 //
 
 import Foundation
+
+func solution(_ emails: [String]) -> Int {
+    let typeTopDomain = ["com", "net", "org"]
+    var answer = 0
+
+    for email in emails {
+        let seperate = email.components(separatedBy: "@")
+
+        let name = seperate.count != 2 ? nil : seperate.first!
+        if name == nil { continue } // 두개의 배열로 나뉘어 지지 않을때
+
+        let domains = seperate.last!.components(separatedBy: ".") // @의 뒷부분을 "."으로 분리
+        if domains.count != 2 { continue } // 두개의 배열로 나뉘어 지지 않을때
+
+        let topDomain = domains.last! // 탑 도메인 부분
+        if !typeTopDomain.contains(topDomain) { continue } // 탑도메인이 3가지 유형에 속해있지 않을 경우
+
+        answer += 1
+    }
+
+    return answer
+}
+
+print(solution(["d@co@m.com", "a@abc.com", "b@def.com", "c@ghi.net"])) // 3
+print(solution(["abc.def@x.com", "abc", "abc@defx", "abc@defx.xyz"])) // 1
