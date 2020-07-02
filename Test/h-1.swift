@@ -6,8 +6,8 @@
 //                      3. 1유형이 아닌것 중, 길이가 11인경우 : 2유형 // 010XXXXXXXX
 //                      4. 첫번재 배열값이 5개이면서 "+82-10-"으로 시작, 두번째 세번째 길이가 각각 4인경우 : 3유형 // +82-10-XXXX-XXXX
 //
-//  Time Complexity :
-//  Space Complexity :
+//  Time Complexity : O(n)
+//  Space Complexity : O(n)
 //
 //  Created by gunhyeong on 2020/07/02.
 //
