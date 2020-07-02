@@ -151,7 +151,7 @@ Swift & Java
 ## Test
 |Title|Solution|Etc|
 |:---|:---:|:---|
-|h-1|[Swift](https://github.com/GeonHyeongKim/AlgoriGym/blob/master/Test/k-i.swift)|2020-7|
+|h-1|[Swift](https://github.com/GeonHyeongKim/AlgoriGym/blob/master/Test/h-1.swift)|2020-7|
 |h-2|[Swift](https://github.com/GeonHyeongKim/AlgoriGym/blob/master/Test/h-2.swift)|2020-7|
 |k-i|[Swift](https://github.com/GeonHyeongKim/AlgoriGym/blob/master/Test/k-i.swift)|2020-5|
 |p-dev|[Swift](https://github.com/GeonHyeongKim/AlgoriGym/blob/master/Test/k-i.swift)|2020-6|
