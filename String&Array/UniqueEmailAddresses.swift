@@ -6,7 +6,7 @@
 *
 *  Time Complexity : O(n)
 *  Space Complexity : O(1)
-*  Runtime: 244 ms
+*  Runtime: 232 ms, faster than 34.94% of Swift online submissions for Unique Email Addresses.
 *  Memory Usage: 22.3 MB
 *
 *  Created by gunhyeong on 2020/02/05.
