@@ -17,6 +17,13 @@
 import Foundation
 
 func solution(_ w:Int, _ h:Int) -> Int64{
+    let gcd = GCD(min(w,h), max(w,h))
+    let block = gcd == 1 ? (w+h)-1 : (w+h)-gcd
+    return Int64((w*h) - block)
+}
 
-    return Int64(0)
+//최소 공배수
+func GCD(_ min: Int, _ max: Int) -> Int {
+    let remain = min % max
+    return remain == 0 ? max : GCD(max, remain)
 }
