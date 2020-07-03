@@ -20,10 +20,40 @@ import Foundation
 
 func solution(_ board:[[Int]]) -> Int
 {
-    var answer:Int = 0
+    var answer = 0;
     
-    // [실행] 버튼을 누르면 출력 값을 볼 수 있습니다.
-    print("Hello Swift")
-
-    return answer
+    var lengthY = board.length;
+    var lengthX = board[0].length;
+    var max = 0;
+    
+    // 행이나 열의 길이가 2 미만이라면 직접 돌리면서 1이 하나라도 있는지 체크 합니다.
+    // 하나라도 있으면 통과.
+    if (lengthY < 2 || lengthY < 2) {
+        for(var i = 0 ; i < lengthY ; i++){
+            for(var j = 0;  j < lengthX ; j++) {
+                if (board[i][j] === 1) {
+                    max = 1;
+                }
+            }
+        }
+    } else {
+        // 첫 번째 행열을 제외시키기 위해서 i와 j에 1을 할당합니다.
+        for(var i = 1 ; i < lengthY ; i++){
+            for(var j = 1;  j < lengthX ; j++) {
+                
+                // 1이 아닐 경우 패스! 1인 값만 동적으로 변경해 줍니다.
+                if(board[i][j] === 1 ){
+                    // 현재 값의 좌측값, 상단값, 좌측상단값 중 최소값에 +1을 해줍니다.
+                    board[i][j] = Math.min(board[i - 1][j], board[i][j - 1], board[i - 1][j - 1]) + 1;
+                    
+                    // 다시 배열을 돌리는 수고를 하지않기 위해서 max값을 찾아 저장해 줍니다.
+                    if (board[i][j] > max) {
+                        max = board[i][j];
+                    }
+                }
+            }
+        }
+    }
+    
+    return Math.pow(max, 2);
 }
