@@ -5,10 +5,10 @@
 //                      1. max(), min()을 이용해 큰수와 작은수를 비교한다.
 //                      2. 반복문을 통해 작은수에서 큰수까지의 수를 모두 누적한다.
 //
-//  Time Complexity :
-//  Space Complexity :
-//  Runtime:  ms
-//  Memory Usage:  MB
+//  Time Complexity : O(n), n은 a~b의 길이
+//  Space Complexity : O(1)
+//  Runtime: 0.10 ~ 122.21ms
+//  Memory Usage: 23.9 ~ 24.3 MB
 //
 //  Created by gunhyeong on 2020/07/03.
 //
