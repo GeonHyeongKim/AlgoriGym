@@ -17,5 +17,8 @@
 import Foundation
 
 func solution(_ n:Int64) -> Int64 {
-    return 0
+    let doubleTypeN = Double(n)
+    let sqrtN = sqrt(doubleTypeN)
+    
+    return sqrtN > Double(Int(sqrtN)) ? -1 : Int64(pow(sqrtN+1, 2))
 }
