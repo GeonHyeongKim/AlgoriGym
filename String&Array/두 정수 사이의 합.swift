@@ -16,5 +16,13 @@
 import Foundation
 
 func solution(_ a:Int, _ b:Int) -> Int64 {
-    return 0
+    let start = min(a, b)
+    let end = max(a, b)
+    var sum = 0
+    
+    for i in start...end {
+        sum += i
+    }
+    
+    return Int64(sum)
 }
