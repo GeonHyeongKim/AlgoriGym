@@ -18,10 +18,14 @@ import Foundation
 
 func solution(_ A:[Int], _ B:[Int]) -> Int
 {
-    var ans = 0
+    let sortedA = A.sorted()
+    let sortedB = B.sorted()
+    let size = sortedA.count
+    var sum = 0
+    
+    for i in 0..<size {
+        sum += sortedA[i] * sortedB[size - i - 1]
+    }
 
-    // [실행] 버튼을 누르면 출력 값을 볼 수 있습니다.
-    print("Hello Swift")
-
-    return ans
+    return sum
 }
