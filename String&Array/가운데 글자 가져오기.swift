@@ -6,10 +6,10 @@
 //                          i) 짝수 : 중간 인덱스와 중간 인덱스보다 1작은 값
 //                          i) 홀수 : 중간 인덱스의 값
 //
-//  Time Complexity :
-//  Space Complexity :
-//  Runtime: ms
-//  Memory Usage:  MB
+//  Time Complexity : O(1)
+//  Space Complexity : O(n)
+//  Runtime: 0.09 ~ 0.15 ms
+//  Memory Usage: 23.6 ~ 24.1 MB
 //
 //  Created by gunhyeong on 2020/07/03.
 //
