@@ -2,7 +2,9 @@
 //  멀쩡한 사각형.swift
 //  Question Link: https://programmers.co.kr/learn/courses/30/lessons/62048?language=swift
 //  Primary idea:       <String & Array>
-//                      1.
+//                      1. 두 수의 최소 공배수를 구한다.
+//                      2. 공배수가 1이면 두 수를 더한 값에 1을 빼고, 아니면 공배수값을 뺀값이 막힌 갯수이다.
+//                      3. 두 수를 곱한 뒤, 막힌 갯수를 뺴준다.
 //
 //  Time Complexity :
 //  Space Complexity :
