@@ -6,10 +6,10 @@
 //                      2. sqrt를 이용해 제곱근을 구한다.
 //                      3. 제곱급관 소수점을 버린값을 비교하여 제곱근이 더 클 경우 -1을 return, 아닌 경우 제곱근의 1을 더한값의 제곱을 구한다.
 //
-//  Time Complexity :
-//  Space Complexity :
-//  Runtime:  ms
-//  Memory Usage:  MB
+//  Time Complexity : O(1)
+//  Space Complexity : O(1)
+//  Runtime: 0.09 ~ 0.16 ms
+//  Memory Usage: 24.1 ~ 24.4 MB
 //
 //  Created by gunhyeong on 2020/07/03.
 //
