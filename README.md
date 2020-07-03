@@ -143,7 +143,7 @@ Swift & Java
 |[Perfect squares](https://leetcode.com/problems/perfect-squares/ "LeetCode")|[Swift](https://github.com/GeonHyeongKim/AlgoriGym/blob/master/Dynamic/Perfect%20Squares.swift)|Medium|O(n^2)|O(n)|LeetCode||
 |[Stone Game](https://leetcode.com/problems/stone-game/ "LeetCode")|[Swift](https://github.com/GeonHyeongKim/AlgoriGym/blob/master/Dynamic/Stone%20Game.swift)|Medium|O()|O()|LeetCode||
 |[Unique Paths](https://leetcode.com/problems/unique-paths/ "LeetCode")|[Swift](https://github.com/soapyigu/LeetCode-Swift/blob/master/DP/UniquePaths.swift)|Medium|O(nm)|O(nm)|LeetCode||
-|[가장 큰 정사각형 찾기](https://programmers.co.kr/learn/courses/30/lessons/12905 "프로그래머스")|[Swift](https://github.com/GeonHyeongKim/AlgoriGym/blob/master/Dynamic/%EA%B0%80%EC%9A%B4%EB%8D%B0%20%EA%B8%80%EC%9E%90%20%EA%B0%80%EC%A0%B8%EC%98%A4%EA%B8%B0.swift)|Level 2|||프로그래머스||
+|[가장 큰 정사각형 찾기](https://programmers.co.kr/learn/courses/30/lessons/12905 "프로그래머스")|[Swift](https://github.com/GeonHyeongKim/AlgoriGym/blob/master/Dynamic/%EA%B0%80%EC%9A%B4%EB%8D%B0%20%EA%B8%80%EC%9E%90%20%EA%B0%80%EC%A0%B8%EC%98%A4%EA%B8%B0.swift)|Level 2|O(n^2)|O(1)|프로그래머스||
 |[동전 1](https://www.acmicpc.net/problem/2293 "백준 알고리즘")|[Swift](https://github.com/GeonHyeongKim/AlgoriGym/blob/master/Dynamic/%EB%8F%99%EC%A0%84%201.swift)|42.588%|O(n^k)|(n)|백준 알고리즘||
 
 ## Data Structure

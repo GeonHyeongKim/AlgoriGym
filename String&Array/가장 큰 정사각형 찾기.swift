@@ -8,10 +8,10 @@
 //                      4. 배열이 끝날 때 까지 반복.
 //                      5. 배열의 가장 큰 값이 현재 배열의 가장 큰 정사각형의 값이 된다.
 //
-//  Time Complexity :
-//  Space Complexity :
-//  Runtime:  ms
-//  Memory Usage:  MB
+//  Time Complexity : O(n^2)
+//  Space Complexity : O(1)
+//  Runtime: 0.13 ~ 1.61 ms
+//  Memory Usage: 23.8 ~ 24.3 MB
 //
 //  Created by gunhyeong on 2020/07/03.
 //
