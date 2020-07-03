@@ -12,3 +12,22 @@
 //
 
 import Foundation
+
+func solution(_ S: [String]) -> [Int] {
+    var answer = [Int]()
+    
+    for str in S {
+        var str1 = str
+        
+        while str1.contains("01") || str1.contains("10") {
+            str1 = str1.replacingOccurrences(of: "01", with: "")
+            str1 = str1.replacingOccurrences(of: "10", with: "")
+        }
+        
+        answer.append(str1.count)
+    }
+    
+    return answer
+}
+
+print(solution(["1011", "0110011", "000111"])) // [2, 1, 0]
