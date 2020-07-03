@@ -2,14 +2,14 @@
 //  멀쩡한 사각형.swift
 //  Question Link: https://programmers.co.kr/learn/courses/30/lessons/62048?language=swift
 //  Primary idea:       <String & Array>
-//                      1. 두 수의 최소 공배수를 구한다.
+//                      1. 두 수의 최대 공배수를 구한다.
 //                      2. 공배수가 1이면 두 수를 더한 값에 1을 빼고, 아니면 공배수값을 뺀값이 막힌 갯수이다.
 //                      3. 두 수를 곱한 뒤, 막힌 갯수를 뺴준다.
 //
-//  Time Complexity :
-//  Space Complexity :
-//  Runtime:  ms
-//  Memory Usage:  MB
+//  Time Complexity : O(n)
+//  Space Complexity : O(1)
+//  Runtime: 0.10 ~ 0.17 ms
+//  Memory Usage: 24.0 ~ 24.3 MB
 //
 //  Created by gunhyeong on 2020/07/03.
 //
