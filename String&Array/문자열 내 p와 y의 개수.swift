@@ -6,10 +6,10 @@
 //                      2. filter() 통해 p,y를 구분해서 배열로 만든다
 //                      3. count를 통해 갯수를 파악
 //
-//  Time Complexity :
-//  Space Complexity :
-//  Runtime:  ms
-//  Memory Usage:  MB
+//  Time Complexity : O(n)
+//  Space Complexity : O(n)
+//  Runtime: 0.13 ~ 0.17 ms
+//  Memory Usage: 23.6 ~ 24.3 MB
 //
 //  Created by gunhyeong on 2020/07/04.
 //
