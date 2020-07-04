@@ -6,10 +6,10 @@
 //                      2. isFirst를 통해 공백 뒤에 올 첫문자를 대문자로 바꾸어 준다.
 //                      * 주의! 공백이 연속으로 나올수도 있다. 그렇다면 그 문자열 형태로 반환해야한다.
 //
-//  Time Complexity :
-//  Space Complexity :
-//  Runtime:  ms
-//  Memory Usage:  MB
+//  Time Complexity : O(n)
+//  Space Complexity : O(1)
+//  Runtime: 0.09 ~ 0.12 ms
+//  Memory Usage: 23.9 ~ 24.2 MB
 //
 //  Created by gunhyeong on 2020/07/04.
 //
