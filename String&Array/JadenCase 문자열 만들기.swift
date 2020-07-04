@@ -17,5 +17,24 @@
 import Foundation
 
 func solution(_ s:String) -> String {
-    return ''
+    let lowerCaseStr = s.lowercased()
+    var isFirst = true
+    var answer = ""
+    
+    for char in lowerCaseStr {
+        if char == " " {
+            answer += " "
+            isFirst = true
+            continue
+        }
+        
+        if isFirst {
+            answer += char.uppercased()
+            isFirst = false
+        } else {
+            answer += String(char)
+        }
+    }
+    
+    return answer
 }
