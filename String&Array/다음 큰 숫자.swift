@@ -19,7 +19,17 @@ import Foundation
 
 func solution(_ n:Int) -> Int
 {
-    answer:Int = 0
+    let binary = String(n, radix: 2)
+    let cntBinary = binary.filter({$0 == "1"}).count
     
-    return answer
+    for i in n+1...1000001 {
+        if String(i, radix: 2).filter({$0 == "1"}).count == cntBinary {
+            return i
+        }
+    }
+    
+    return 0
 }
+
+print(solution(78)) // 83
+print(solution(15)) // 23
