@@ -18,5 +18,9 @@
 import Foundation
 
 func solution(_ s:String) -> String {
-    return ''
+    let numbers = s.split(separator: " ").map{Int($0)!}
+    let minNum = numbers.min()!
+    let maxNum = numbers.max()!
+
+    return "\(minNum) \(maxNum)"
 }
