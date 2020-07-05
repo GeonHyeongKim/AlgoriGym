@@ -7,10 +7,10 @@
 //                      3. "\()"를 이용해 답을 반환한다.
 //
 //
-//  Time Complexity :
-//  Space Complexity :
-//  Runtime:  ms
-//  Memory Usage:  MB
+//  Time Complexity : O(n)
+//  Space Complexity : O(1)
+//  Runtime: 0.22 ~ 0.41 ms
+//  Memory Usage: 24.0 24.3 MB
 //
 //  Created by gunhyeong on 2020/07/05.
 //
