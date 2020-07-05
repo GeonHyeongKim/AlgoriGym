@@ -7,10 +7,10 @@
 //                      3. 반복문으로 n+1 ~ 1,000,001까지 반복하면서 결과 값이 나올때까지 반복한다.
 //                      4. 반복문의 변수를 2진수로 바꾸엇을때 1의 갯수를 세고 n의 2진수로 바꾸엇을때의 갯수와 같은지 비교한다.
 //
-//  Time Complexity :
-//  Space Complexity :
-//  Runtime:  ms
-//  Memory Usage:  MB
+//  Time Complexity : O(n)
+//  Space Complexity : O(1)
+//  Runtime: 0.15 ~ 0.18 ms
+//  Memory Usage: 24.1 ~ 24.3 MB
 //
 //  Created by gunhyeong on 2020/07/05.
 //
