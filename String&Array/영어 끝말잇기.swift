@@ -10,10 +10,10 @@
 //                      4. 종료 조건에 해당하지않고 반복문이 끝났을 경우, [0,0]을 return
 //
 //
-//  Time Complexity :
-//  Space Complexity :
-//  Runtime:  ms
-//  Memory Usage: MB
+//  Time Complexity : O(n)
+//  Space Complexity : O(n)
+//  Runtime: 0.21 ~ 0.92 ms
+//  Memory Usage: 23.8 ~ 24.4 MB
 //
 //  Created by gunhyeong on 2020/07/06.
 //
