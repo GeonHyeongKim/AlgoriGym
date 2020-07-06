@@ -21,5 +21,23 @@
 import Foundation
 
 func solution(_ n:Int, _ words:[String]) -> [Int] {
-    return []
+    var games = [String]()
+    
+    for (i, word) in words.enumerated() {
+        guard let lastWord = games.last else { // 이전 단어를 가져온다. 없을경우(첫 단어), 게임에 넣는다.
+            games.append(word)
+            continue
+        }
+        
+        if games.contains(word) || (word.first! != lastWord.last) { // 종료 조건
+            let person = (i % n) + 1 // 게임 진행중인 사람 번호
+            let turn = (i / n) + 1
+            
+            return [person, turn]
+        } else {
+            games.append(word) // 해당 단어를 게임에 넣는다.
+        }
+    }
+    
+    return [0, 0]
 }
