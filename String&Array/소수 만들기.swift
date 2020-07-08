@@ -6,10 +6,10 @@
 //                      2. 반복문의 첫번쨰 + 두번째 + 세번째 Index값들을 더해 소수인지 판단한다.
 //                      3. isPrime(Int:)를 통해 소수인지 아닌지를 판단후, 맞을 경우 1개씩 증가시킨다.
 //
-//  Time Complexity :
-//  Space Complexity :
-//  Runtime:  ms
-//  Memory Usage:  MB
+//  Time Complexity : O(n^3)
+//  Space Complexity : O(1)
+//  Runtime: 0.17 ~ 1362.17 ms
+//  Memory Usage: 23.7 ~ 24.3 MB
 //
 //  Created by gunhyeong on 2020/07/07.
 //
