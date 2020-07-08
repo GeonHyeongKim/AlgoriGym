@@ -1,9 +1,10 @@
 //
 //  소수 만들기.swift
 //  Question Link: https://programmers.co.kr/learn/courses/30/lessons/12977
-//  Primary idea:       <DFS>
-//                      1. DFS를 통해 모든 경우의 수를 구한다.
-//                      2. 경우의 수 중 3개일 경우, 결과값에 포함된 값이 아닌지 확인하고 소수인지 확인 후 return
+//  Primary idea:       <String & Array>
+//                      1. nums의 길이가 3~50개 임으로, 3중 반복문을 통해 모든 경우의 수를 구한다.
+//                      2. 반복문의 첫번쨰 + 두번째 + 세번째 Index값들을 더해 소수인지 판단한다.
+//                      3. isPrime(Int:)를 통해 소수인지 아닌지를 판단후, 맞을 경우 1개씩 증가시킨다.
 //
 //  Time Complexity :
 //  Space Complexity :
