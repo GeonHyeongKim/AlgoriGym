@@ -15,6 +15,7 @@
 
 import Foundation
 
+// 42.3점 - 나머지 시간초과
 func solution(_ nums:[Int]) -> Int {
     var result = [[Int]]()
     var visited = [Bool](repeating: false, count: nums.count)
