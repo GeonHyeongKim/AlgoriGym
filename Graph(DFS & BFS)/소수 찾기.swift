@@ -45,5 +45,18 @@ func dfs(_ numbers: String, _ result: inout Set<Int>, _ cur: inout String, _ isV
     }
 }
 
+// 소수 인지 판별
+func isPrime(_ number: Int) -> Bool {
+    if number < 2 { return false }
+    let sqrtNumber = Int(sqrt(Double(number)))
+    for i in 2..<number where i<=sqrtNumber {
+        if number % i == 0 {
+            return false
+        }
+    }
+    
+    return true
+}
+
 print(solution("17")) // 3
 print(solution("011")) // 2
