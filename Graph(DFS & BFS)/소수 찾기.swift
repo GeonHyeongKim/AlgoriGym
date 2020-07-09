@@ -6,10 +6,10 @@
 //                      2. DFS를 통해 모든 경우의 수를 구한다.
 //                      3. 해당 숫자가 소수(Prime)인지 아닌지를 판단 후 맞으면 결과값에 저장한다.
 //
-//  Time Complexity :
-//  Space Complexity :
-//  Runtime:  ms
-//  Memory Usage:  MB
+//  Time Complexity : O(n^n)
+//  Space Complexity : O(n)
+//  Runtime: 0.19 ~ 189.22 ms
+//  Memory Usage: 24.1 ~ 24.3 MB
 //
 //  Created by gunhyeong on 2020/06/02.
 //
