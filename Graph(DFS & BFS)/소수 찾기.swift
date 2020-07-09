@@ -29,6 +29,14 @@ func solution(_ numbers:String) -> Int {
 //        dfs2(numbers, &result, i, &curNumber, &visited)
 //    }
     
+    //MARK:- dfs3
+//    for i in 0..<numbers.count {
+//        visited[i] = true
+//        let stringIndex = numbers.index(numbers.startIndex, offsetBy: i)
+//        dfs3(numbers, &result, String(numbers[stringIndex]), &visited, numbers.count)
+//        visited[i] = false
+//    }
+    
     return result.count
 }
 //MARK:- dfs
@@ -68,6 +76,26 @@ func dfs2(_ numbers: String, _ result: inout Set<Int>, _ index: Int, _ curNumber
     }
     curNumber.removeLast()
     visited[index] = false
+}
+//MARK:- dfs3
+func dfs3(_ numbers: String, _ result: inout Set<Int>, _ cur: String, _ isVisit: inout [Bool], _ size: Int) {
+    if size < 0 {
+        return
+    }
+
+    let intCur = Int(cur)!
+    if isPrime(intCur) {
+        result.insert(intCur)
+    }
+    
+    for i in 0..<numbers.count {
+        if !isVisit[i] {
+            let stringIndex = numbers.index(numbers.startIndex, offsetBy: i)
+            isVisit[i] = true
+            dfs3(numbers, &result, cur + String(numbers[stringIndex]), &isVisit, size-1)
+            isVisit[i] = false
+        }
+    }
 }
 
 // 소수 인지 판별
