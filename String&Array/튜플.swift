@@ -21,6 +21,18 @@ import Foundation
 
 func solution(_ s:String) -> [Int] {
     var result = [Int]()
+    let tuples = s.components(separatedBy: ["{","}"]).filter({$0 != "" && $0 != ","})
+    let sortedTuples = tuples.sorted(by: {$0.count < $1.count})
+    
+    for tuple in sortedTuples {
+        let removeComma = tuple.components(separatedBy: ",")
+        for element in removeComma {
+            guard let intElement = Int(element) else { continue }
+            if !result.contains(intElement) {
+                result.append(intElement)
+            }
+        }
+    }
     
     return result
 }
