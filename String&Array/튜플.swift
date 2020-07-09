@@ -1,8 +1,12 @@
 //
 //  튜플.swift
 //  Question Link: https://programmers.co.kr/learn/courses/30/lessons/64065
-//  Primary idea:       <String & Array>
-//                      1.
+//  Primary idea:       <String & Array> - components(separatedBy:), filter()
+//                      1. 문자열이 넘어오기 때문에 "{","}"를 제거한 배열에서 "", ","가 아닌 배열로 다시 재구성한다.
+//                      2. 정렬을 해야하는데 이때 배열의 크기순으로 정렬한다.
+//                      3. 정렬한 tuple들의 값을 하나씩 꺼내면서 ","를 제거한 값을 구한다.
+//                      4. ","가 제거된 배열 값을 순회하면서 각 요소를 Int()형으로 바꾼다.
+//                      5. 결과값에 포함되어 있지 않으면 결과값에 포함시킨다.
 //
 //  Time Complexity :
 //  Space Complexity :
