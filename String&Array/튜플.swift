@@ -8,10 +8,10 @@
 //                      4. ","가 제거된 배열 값을 순회하면서 각 요소를 Int()형으로 바꾼다.
 //                      5. 결과값에 포함되어 있지 않으면 결과값에 포함시킨다.
 //
-//  Time Complexity :
-//  Space Complexity :
-//  Runtime:  ms
-//  Memory Usage:  MB
+//  Time Complexity : O(n^2)
+//  Space Complexity : O(n)
+//  Runtime: 0.50 ~ 3008.15 ms
+//  Memory Usage: 23.8 ~ 25.7 MB
 //
 //
 //  Created by gunhyeong on 2020/07/09.
