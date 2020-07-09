@@ -23,6 +23,12 @@ func solution(_ numbers:String) -> Int {
     
     //MARK:- dfs
     dfs(numbers, &result, &curNumber, &visited)
+    
+    //MARK:- dfs2
+//    for i in 0..<numbers.count {
+//        dfs2(numbers, &result, i, &curNumber, &visited)
+//    }
+    
     return result.count
 }
 //MARK:- dfs
@@ -43,6 +49,25 @@ func dfs(_ numbers: String, _ result: inout Set<Int>, _ cur: inout String, _ isV
             cur.removeLast()
         }
     }
+}
+//MARK:- dfs2
+func dfs2(_ numbers: String, _ result: inout Set<Int>, _ index: Int, _ curNumber: inout String, _ visited: inout [Bool]) {
+    visited[index] = true
+    let stringIndex = numbers.index(numbers.startIndex, offsetBy: index)
+    curNumber += String(numbers[stringIndex])
+
+    let intCur = Int(curNumber)!
+    if !result.contains(intCur) && isPrime(intCur) {
+        result.insert(intCur)
+    }
+
+    for i in 0..<numbers.count {
+        if !visited[i] {
+            dfs2(numbers, &result, i, &curNumber, &visited)
+        }
+    }
+    curNumber.removeLast()
+    visited[index] = false
 }
 
 // 소수 인지 판별
