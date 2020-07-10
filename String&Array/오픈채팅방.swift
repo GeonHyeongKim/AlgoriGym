@@ -19,5 +19,30 @@
 import Foundation
 
 func solution(_ record:[String]) -> [String] {
-    return []
+    var userList = [String:String]() // id:name
+    var chatMsg = [[String]]()
+    var answer = [String]()
+    
+    for message in record {
+        let separateMsg = message.components(separatedBy: " ")
+        let action = separateMsg[0]
+        let id = separateMsg[1]
+        
+        if action == "Enter" {
+            userList[id] = separateMsg[2]
+            chatMsg.append([id, "님이 들어왔습니다."])
+        } else if action == "Leave" {
+            chatMsg.append([id, "님이 나갔습니다."])
+        } else if action == "Change" {
+            userList[id] = separateMsg[2]
+        }
+    }
+    
+    for msg in chatMsg {
+        let name = userList[msg[0]]!
+        let action = msg[1]
+        answer.append("\(name)\(action)")
+    }
+    
+    return answer
 }
