@@ -8,10 +8,10 @@
 //                      4. Enter, Change 인 경우 연관 배열을 이용하여 각 유저 아이디를 키로, 닉네임을 값으로 저장해 둡니다. 이렇게 해서 최종 닉네임을 유저 아이디별로 유지합니다.
 //                      5. chatMsg 를 순회하면서 채팅방에 출력할 메시지를 생성할 때, 연관 배열에 저장된 아이디별 최종 닉네임을 이용하면 됩니다.
 //
-//  Time Complexity :
-//  Space Complexity :
-//  Runtime:  ms
-//  Memory Usage:  MB
+//  Time Complexity : O(n)
+//  Space Complexity : O(n)
+//  Runtime: 0.41 ~ 1079.47 ms
+//  Memory Usage: 24.2 ~ 70.9 MB
 //
 //  Created by gunhyeong on 2020/07/10.
 //
