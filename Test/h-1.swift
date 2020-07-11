@@ -17,7 +17,21 @@ import Foundation
 func solution(_ phone_number: [String]) -> [Int] {
     var answer = [Int](repeating: -1, count: phone_number.count)
 
-
+    for (i, number) in phone_number.enumerated() {
+        let separatedNumber = number.components(separatedBy: ["+", "-"])
+        if number.starts(with: "010-") && separatedNumber.count == 3 {
+            let secondNum = separatedNumber[1]
+            let thirdNum = separatedNumber[2]
+            if secondNum.count == 4 && thirdNum.count == 4 { answer[i] = 1 }
+        } else if number.starts(with: "010") && separatedNumber[0].count == 11 {
+            answer[i] = 1
+        } else if number.starts(with: "+82-10-") && separatedNumber.count == 5 {
+            let secondNum = separatedNumber[3]
+            let thirdNum = separatedNumber[4]
+            if secondNum.count == 4 && thirdNum.count == 4 { answer[i] = 3 }
+        }
+    }
+    
     return answer
 }
 
