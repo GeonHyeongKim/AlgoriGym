@@ -7,8 +7,8 @@
 //                      4. 2,3조건을 다 통과하고 @ 뒷부분중 마지막 요소가 topDomain! 이것이 미리 선언된 3가지 유형에 속해 있지 않을 경우 다른 형태
 //                      5. 이때 각 문자열은 영문 소문자 이여야 하기 떄문에 반복문을 통해 각 문자를 검사한다.
 //
-//  Time Complexity :
-//  Space Complexity :
+//  Time Complexity : O(n^m)
+//  Space Complexity : O(n)
 //
 //  Created by gunhyeong on 2020/07/02.
 //
@@ -19,6 +19,22 @@ func solution(_ emails: [String]) -> Int {
     let typeTopDomain = ["com", "net", "org"]
     var answer = 0
 
+    for email in emails {
+        let separatedEmail = email.components(separatedBy: "@")
+        let name = separatedEmail.count != 2 ? nil : separatedEmail.first!
+
+        if name == nil || !isLowercase(name!) { continue }
+        
+        let domains = separatedEmail.last!.components(separatedBy: ".")
+        if domains.count != 2 { continue }
+        
+        if !isLowercase(domains.first!) { continue }
+        
+        let topDomain = domains.last!
+        if !typeTopDomain.contains(topDomain) { continue }
+        
+        answer += 1
+    }
 
     return answer
 }
@@ -36,3 +52,14 @@ func isLowercase(_ str: String) -> Bool {
 
 print(solution(["d@co@m.com", "a@abc.com", "b@def.com", "c@ghi.net"])) // 3
 print(solution(["abc.def@x.com", "abc", "abc@defx", "abc@defx.xyz"])) // 1
+print(solution([""])) // 0
+print(solution(["."])) // 0
+print(solution(["@@"])) // 0
+print(solution(["@.@"])) // 0
+print(solution(["1@@"])) // 0
+print(solution(["1@2@"])) // 0
+print(solution(["1@2@.com"])) // 0
+print(solution(["1@222.com"])) // 0
+print(solution(["A@AAA.com"])) // 0
+print(solution(["a@aaa.com"])) // 1
+
