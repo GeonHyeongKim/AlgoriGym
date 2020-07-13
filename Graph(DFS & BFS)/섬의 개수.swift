@@ -18,3 +18,47 @@
 //
 
 import Foundation
+
+let input = readLine()!.split(separator: " ").map{Int($0)!}
+let w = input[0]
+let h = input[1]
+
+// 북, 동북, 동, 동남, 남, 남서, 서, 북서
+let dx = [-1,-1,0,1,1,1,0,-1]
+let dy = [0,1,1,1,0,-1,-1,-1]
+var island = [[Int]]()
+var visited = [[Bool]](repeating: [Bool](repeating: false, count: w), count: h)
+var cnt = 0
+
+for _ in 0..<h {
+    let land = readLine()!.split(separator: " ").map{Int($0)!}
+    island.append(land)
+}
+
+for i in 0..<h {
+    for j in 0..<w {
+        if !visited[i][j] && island[i][j] == 1 { // 방문을 아직한적이 없고 땅(1)이라면 섬으로 인식
+            dfs(&island, &visited, i, j)
+            cnt += 1
+        }
+    }
+}
+
+func dfs(_ island: inout [[Int]], _ visited: inout [[Bool]], _ i: Int, _ j: Int) {
+    visited[i][j] = true
+    
+    for dir in 0..<8 { // 8개 방향
+        let x = i + dx[dir]
+        let y = j + dy[dir]
+        
+        if x < 0 || x >= h || y < 0 || y >= w {
+            continue
+        }
+        
+        if !visited[x][y] && island[x][y] == 1 {
+            dfs(&island, &visited, x, y)
+        }
+    }
+}
+
+print(cnt)
