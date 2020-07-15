@@ -14,3 +14,59 @@
 //
 
 import Foundation
+
+var cntTestCase = Int(readLine()!)!
+
+while(cntTestCase > 0) {
+    cntTestCase -= 1
+    
+    let input = readLine()!.split(separator: " ").map{Int($0)!}
+    let cntCountry = input[0]
+    let cntAirplane = input[1]
+    var airport = [Int:[Int]]() // Vector 개념
+    var visited = [Bool](repeating: false, count: cntCountry+1)
+    
+    for country in 1...cntCountry {
+        airport[country] = []
+    }
+    
+    for _ in 0..<cntAirplane {
+        initAirport(&airport, cntAirplane)
+    }
+    
+    let answer = findAirport(&airport, &visited)
+    print(answer)
+}
+
+func initAirport(_ airport: inout [Int:[Int]], _ cntAirplane: Int) {
+    let input = readLine()!.split(separator: " ").map{Int($0)!}
+    let baseAirplane = input[0]
+    let otherAirplane = input[1]
+    
+    airport[baseAirplane]!.append(otherAirplane)
+    airport[otherAirplane]!.append(baseAirplane)
+}
+
+func findAirport(_ airport: inout [Int:[Int]], _ visited: inout [Bool]) -> Int {
+    var queue = [Int]()
+    var answer = 0
+
+    queue.append(1)
+    while !queue.isEmpty {
+        let currentAirplane = queue.removeFirst()
+        if !visited[currentAirplane] { // 방문하지 않았을 경우
+            visited[currentAirplane] = true
+            answer += 1
+
+            for i in 0..<airport[currentAirplane]!.count { //현재 baseAirplane에서 연결되어있는 otherAirplane 꺼낸다.
+                let nextAirplane = airport[currentAirplane]![i]
+                if !visited[nextAirplane] {
+                    queue.append(nextAirplane)
+                }
+            }
+        }
+    }
+
+    return answer - 1
+}
+
