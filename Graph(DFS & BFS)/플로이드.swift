@@ -15,3 +15,51 @@
 //
 
 import Foundation
+
+let cntCity = Int(readLine()!)!
+let cntBus = Int(readLine()!)!
+let costMax = 100000
+var answer = [[Int]](repeating: [Int](repeating: costMax, count: cntCity), count: cntCity)
+
+//init
+for i in 0..<cntCity {
+    for j in 0..<cntCity {
+        if i == j {
+            answer[i][j] = 0
+        }
+    }
+}
+
+//input
+for _ in 0..<cntBus {
+    let content = readLine()!.split(separator: " ").map{Int($0)!}
+    let start = content[0] - 1
+    let end = content[1] - 1
+    let cost = content[2]
+    
+    answer[start][end] = min(answer[start][end], cost)
+}
+
+// compare
+for k in 0..<cntCity {
+    for i in 0..<cntCity {
+        for j in 0..<cntCity {
+            if answer[i][j] > answer[i][k] + answer[k][j] {
+                answer[i][j] = answer[i][k] + answer[k][j]
+            }
+        }
+    }
+}
+
+// print
+for i in 0..<cntCity {
+    for j in 0..<cntCity {
+        if answer[i][j] >= costMax {
+            answer[i][j] = 0
+        }
+        print(answer[i][j], terminator:" ")
+    }
+    print()
+}
+
+
