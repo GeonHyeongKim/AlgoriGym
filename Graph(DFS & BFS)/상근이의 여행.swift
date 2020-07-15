@@ -70,3 +70,7 @@ func findAirport(_ airport: inout [Int:[Int]], _ visited: inout [Bool]) -> Int {
     return answer - 1
 }
 
+// 모든 경로를 한번씩 모두 거쳐만 가면 되니까 주어진 나라의 갯수에서 -1
+func otherSolution(_ cntCountry: Int) {
+    print(cntCountry)
+}
