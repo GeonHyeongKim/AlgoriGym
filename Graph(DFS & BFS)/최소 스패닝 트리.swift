@@ -21,3 +21,15 @@ class Node {
         self.vertex = vertex
     }
 }
+
+class Edg {
+    var start: Int
+    var end: Int
+    var value: Int
+    
+    init(_ start: Int, _ end: Int, _ value: Int) {
+        self.start = start
+        self.end = end
+        self.value = value
+    }
+}
