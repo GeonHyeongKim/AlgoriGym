@@ -13,3 +13,11 @@
 //
 
 import Foundation
+
+class Node {
+    var vertex: Int
+    
+    init(_ vertex: Int) {
+        self.vertex = vertex
+    }
+}
