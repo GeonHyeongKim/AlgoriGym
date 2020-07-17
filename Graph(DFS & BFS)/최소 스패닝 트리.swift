@@ -14,6 +14,16 @@
 
 import Foundation
 
+let input = readLine()!.split(separator: " ").map{Int($0)!}
+let cntV = input[0]
+let cntE = input[1]
+var aboutE = [[Int]]()
+
+for _ in 0..<cntE {
+    let contents = readLine()!.split(separator: " ").map{Int($0)!}
+    aboutE.append(contents)
+}
+
 class Node {
     var vertex: Int
     

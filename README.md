@@ -131,7 +131,7 @@ Swift & Java
 |[상근이의 여행](https://www.acmicpc.net/problem/9372 "백준 알고리즘")|[Swift](https://github.com/GeonHyeongKim/AlgoriGym/blob/master/Graph(DFS%20%26%20BFS)/%EC%83%81%EA%B7%BC%EC%9D%B4%EC%9D%98%20%EC%97%AC%ED%96%89.swift)|62.114%|O(n^n)|O(n)|백준 알고리즘||
 |[섬의 개수](https://www.acmicpc.net/problem/4963 "백준 알고리즘")|[Swift](https://github.com/GeonHyeongKim/AlgoriGym/blob/master/Graph(DFS%20%26%20BFS)/%EC%84%AC%EC%9D%98%20%EA%B0%9C%EC%88%98.swift)|49.383%|O(n^n)|O(n^2)|백준 알고리즘||
 |[소수 찾기](https://programmers.co.kr/learn/courses/30/lessons/42839?language=swift "프로그래머스")|[Swift](https://github.com/GeonHyeongKim/AlgoriGym/blob/master/Graph(DFS%20%26%20BFS)/%EC%86%8C%EC%88%98%20%EC%B0%BE%EA%B8%B0.swift)|Level 2|O(n^n)|O(1)|프로그래머스|코딩테스트 고득점 Kit|
-|[최소 스패닝 트리 분류](https://www.acmicpc.net/problem/1197 "백준 알고리즘")|[Swift](https://github.com/GeonHyeongKim/AlgoriGym/blob/master/Graph(DFS%20%26%20BFS)/%EC%86%8C%EC%88%98%20%EC%B0%BE%EA%B8%B0.swift)|38.676%|||백준 알고리즘||
+|[최소 스패닝 트리 분류](https://www.acmicpc.net/problem/1197 "백준 알고리즘")|[Swift](https://github.com/GeonHyeongKim/AlgoriGym/blob/master/Graph(DFS%20%26%20BFS)/%EC%B5%9C%EC%86%8C%20%EC%8A%A4%ED%8C%A8%EB%8B%9D%20%ED%8A%B8%EB%A6%AC.swift)|38.676%|||백준 알고리즘||
 |[타겟 넘버](https://programmers.co.kr/learn/courses/30/lessons/43165 "프로그래머스")|[Swift](https://github.com/GeonHyeongKim/AlgoriGym/blob/master/Graph(DFS%20%26%20BFS)/%ED%83%80%EA%B2%9F%20%EB%84%98%EB%B2%84.swift)|Level 2|O(n^n)|O(1)|프로그래머스|코딩테스트 고득점 Kit|
 |[플로이드](https://www.acmicpc.net/problem/11404 "백준 알고리즘")|[Swift](https://github.com/GeonHyeongKim/AlgoriGym/blob/master/Graph(DFS%20%26%20BFS)/%ED%94%8C%EB%A1%9C%EC%9D%B4%EB%93%9C.swift)|43.861%|O(n^3)|O(n^2)|백준 알고리즘||
 
