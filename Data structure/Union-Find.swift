@@ -22,4 +22,31 @@
 
 import Foundation
 
-
+class UnionFindSet {
+    var root: [Int]
+    
+    init(_ n: Int) {
+        self.root = Array(0..<n)
+    }
+    
+    func find(_ num: Int) -> Int {
+        if root[num] < 0 {
+            return num
+        }
+        
+        return find(root[num])
+    }
+    
+    func union(_ base: Int, _ other: Int) {
+        let baseRoot = find(base)
+        let otherRoot = find(other)
+        
+        if root[baseRoot] < root[otherRoot] {
+            root[baseRoot] = otherRoot
+        } else if root[baseRoot] > root[otherRoot] {
+            root[otherRoot] = baseRoot
+        } else { // root[baseRoot] == root[otherRoot]
+            return
+        }
+    }
+}
