@@ -33,20 +33,21 @@ class UnionFindSet {
         if root[num] < 0 {
             return num
         }
-        
-        return find(root[num])
+        root[num] = find(root[num]) // 현재 노드의 루트 노드를 바꿔준다.
+        return root[num]
     }
     
     func union(_ base: Int, _ other: Int) {
         let baseRoot = find(base)
         let otherRoot = find(other)
         
-        if root[baseRoot] < root[otherRoot] {
-            root[baseRoot] = otherRoot
-        } else if root[baseRoot] > root[otherRoot] {
-            root[otherRoot] = baseRoot
-        } else { // root[baseRoot] == root[otherRoot]
+        
+        if baseRoot == otherRoot {
             return
+        } else if root[baseRoot] < root[otherRoot] {
+            root[baseRoot] = otherRoot
+        } else { // root[baseRoot] > root[otherRoot]
+            root[otherRoot] = baseRoot
         }
     }
 }
