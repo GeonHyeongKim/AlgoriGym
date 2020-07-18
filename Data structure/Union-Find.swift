@@ -24,9 +24,11 @@ import Foundation
 
 class UnionFindSet {
     var root: [Int]
+    var rank: [Int]
     
     init(_ n: Int) {
         self.root = Array(0..<n)
+        self.rank = [Int](repeating: 1, count: n)
     }
     
     func find(_ num: Int) -> Int {
@@ -41,13 +43,16 @@ class UnionFindSet {
         let baseRoot = find(base)
         let otherRoot = find(other)
         
+        let totalRank = root[baseRoot] + root[otherRoot]
         
         if baseRoot == otherRoot {
             return
         } else if root[baseRoot] < root[otherRoot] {
             root[baseRoot] = otherRoot
+            rank[otherRoot] = totalRank
         } else { // root[baseRoot] > root[otherRoot]
             root[otherRoot] = baseRoot
+            rank[baseRoot] = totalRank
         }
     }
 }
