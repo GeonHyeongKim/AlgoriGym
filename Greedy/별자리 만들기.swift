@@ -5,10 +5,10 @@
 //                      1. 좌표평면에서 MST를 만드는 문제
 //                      2. MST를 적용하여, 좌표 평명 값의 떨어진 거리를 Double 타입의 값으로 저장하고 비교
 //
-//  Time Complexity :
-//  Space Complexity :
-//  Runtime:  ms
-//  Memory Usage:  MB
+//  Time Complexity : O(E logE)
+//  Space Complexity : O(E)
+//  Runtime: 16 ms
+//  Memory Usage: 81.652 MB
 //
 //  Created by gunhyeong on 2020/07/19.
 //
