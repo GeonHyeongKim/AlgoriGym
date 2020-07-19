@@ -22,3 +22,16 @@ import Foundation
 func solution(_ n:Int, _ costs:[[Int]]) -> Int {
     return 0
 }
+
+class Edge {
+    var start: Int
+    var end: Int
+    var cost: Int
+    
+    init(_ start: Int, _ end: Int, _ cost: Int){
+        self.start = start
+        self.end = end
+        self.cost = cost
+    }
+}
+
