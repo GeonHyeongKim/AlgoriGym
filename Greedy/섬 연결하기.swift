@@ -35,3 +35,14 @@ class Edge {
     }
 }
 
+// 최상위 노드를 찾는 함수 (Union-find)
+func find(_ graph: inout [Int], _ vertex: Int) -> Int {
+    if graph[vertex] == vertex {
+        return vertex
+    }
+    
+    graph[vertex] = find(&graph, graph[vertex])
+    return graph[vertex]
+}
+
+print(solution(4, [[0,1,1],[0,2,2],[1,2,5],[1,3,1],[2,3,8]])) // 4
