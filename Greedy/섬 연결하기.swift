@@ -20,7 +20,34 @@
 import Foundation
 
 func solution(_ n:Int, _ costs:[[Int]]) -> Int {
-    return 0
+    var answer = 0
+    var graph = [Int](repeating: 0, count: n+1) // graph[i] = 노드, i의 부모 노드를 가리킨다.
+    var edges = [Edge]()
+    
+    for i in 0...n {
+        graph[i] = i
+    }
+    
+    for cost in costs {
+        edges.append(Edge(cost[0], cost[1], cost[2]))
+    }
+    
+    edges = edges.sorted(by: {$0.cost < $1.cost}) // (O(E lgE))
+    
+    // 2. 모든 간선을 검사
+    for edge in edges { // union
+        let startVertex = find(&graph, edge.start)
+        let endVertex = find(&graph, edge.end)
+        
+        // start와 end가 아직 연결되지 않았을 때
+        if startVertex != endVertex {
+            // start를 end의 parent로 설정
+            graph[startVertex] = endVertex
+            answer += edge.cost
+        }
+    }
+    
+    return answer
 }
 
 class Edge {
