@@ -96,7 +96,8 @@ Swift & Java
 |[로프](https://www.acmicpc.net/problem/2217 "백준 알고리즘")|[Swift](https://github.com/GeonHyeongKim/AlgoriGym/blob/master/Greedy/%EB%A1%9C%ED%94%84.swift)|44.164%|O(n)|O(1)|백준 알고리즘||
 |[만취한 상범](https://www.acmicpc.net/problem/6359 "백준 알고리즘")|[Swift](https://github.com/GeonHyeongKim/AlgoriGym/blob/master/Greedy/%EB%A7%8C%EC%B7%A8%ED%95%9C%20%EC%83%81%EB%B2%94.swift)|70.118%|O(n)|O(n)|백준 알고리즘||
 |[문자열](https://www.acmicpc.net/problem/1120 "백준 알고리즘")|[Swift](https://github.com/GeonHyeongKim/AlgoriGym/blob/master/Greedy/%EB%AC%B8%EC%9E%90%EC%97%B4.swift)|52.122%|O(a^b)|O(1)|백준 알고리즘||
-|[반도체 설계](https://www.acmicpc.net/problem/2352 "백준 알고리즘")|[Swift](https://github.com/GeonHyeongKim/AlgoriGym/blob/master/Greedy/%EB%B0%98%EB%8F%84%EC%B2%B4%20%EC%84%A4%EA%B3%84.swift)|41.795%|O(n logn)|O(n)|백준 알고리즘||
+|[반도체 설계](https://www.acmicpc.net/problem/2352 "백준 알고리즘")|[Swift](https://github.com/GeonHyeongKim/AlgoriGym/blob/master/Greedy/%EB%B0%98%EB%8F%84%EC%B2%B4%20%EC%84%A4%EA%B3%84.swift)|51.950%|||백준 알고리즘||
+|[별자리 만들기](https://www.acmicpc.net/problem/4386 "백준 알고리즘")|[Swift](https://github.com/GeonHyeongKim/AlgoriGym/blob/master/Greedy/%EB%B3%91%EB%93%A0%20%EB%82%98%EC%9D%B4%ED%8A%B8.swift)|42.247%|O(1)|O(1)|백준 알고리즘||
 |[병든 나이트](https://www.acmicpc.net/problem/1783 "백준 알고리즘")|[Swift](https://github.com/GeonHyeongKim/AlgoriGym/blob/master/Greedy/%EB%B3%91%EB%93%A0%20%EB%82%98%EC%9D%B4%ED%8A%B8.swift)|42.247%|O(1)|O(1)|백준 알고리즘||
 |[잃어버린 괄호](https://www.acmicpc.net/problem/1120 "백준 알고리즘")|[Swift](https://github.com/GeonHyeongKim/AlgoriGym/blob/master/Greedy/%EB%AC%B8%EC%9E%90%EC%97%B4.swift)|49.596%|O(n)|O(n)|백준 알고리즘||
 |[섬 연결하기](https://programmers.co.kr/learn/courses/30/lessons/42861 "프로그래머스")|[Swift](https://github.com/GeonHyeongKim/AlgoriGym/blob/master/Greedy/%EC%84%AC%20%EC%97%B0%EA%B2%B0%ED%95%98%EA%B8%B0.swift)|Level 3|O(E lgE)|O(E)|프로그래머스|코딩테스트 고득점 Kit|
