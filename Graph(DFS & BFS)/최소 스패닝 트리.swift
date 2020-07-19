@@ -17,29 +17,59 @@ import Foundation
 let input = readLine()!.split(separator: " ").map{Int($0)!}
 let cntV = input[0]
 let cntE = input[1]
-var aboutE = [[Int]]()
+
+var graph = [Int](repeating: 0, count: cntV+1)
+var edges = [Edge]()
+var answer = 0
+
+for i in 0...cntV {
+    graph[i] = i
+}
 
 for _ in 0..<cntE {
     let contents = readLine()!.split(separator: " ").map{Int($0)!}
-    aboutE.append(contents)
+    edges.append(Edge(contents[0], contents[1], contents[2]))
 }
+edges = edges.sorted(by: {$0.cost < $1.cost}) // 오름차순 정렬
 
-class Node {
-    var vertex: Int
+for edge in edges {
+    let start = find(&graph, edge.start)
+    let end = find(&graph, edge.end)
     
-    init(_ vertex: Int) {
-        self.vertex = vertex
+    if start != end {
+        graph[start] = end
+        answer += edge.cost
     }
 }
 
-class Edg {
+class Edge {
     var start: Int
     var end: Int
-    var value: Int
+    var cost: Int
     
-    init(_ start: Int, _ end: Int, _ value: Int) {
+    init(_ start: Int, _ end: Int, _ cost: Int) {
         self.start = start
         self.end = end
-        self.value = value
+        self.cost = cost
     }
 }
+
+func find(_ graph: inout [Int], _ vertex: Int) -> Int {
+    if graph[vertex] == vertex {
+        return vertex
+    }
+    
+    graph[vertex] = find(&graph, graph[vertex])
+    return graph[vertex]
+}
+
+print(answer)
+
+/*
+3 3
+1 2 1
+2 3 2
+1 3 3
+ 
+결과 : 3
+*/
