@@ -20,3 +20,77 @@
 //
 
 import Foundation
+
+let cntPlanet = Int(readLine()!)!
+var universe = [Int](repeating: 0, count: cntPlanet)
+var posList = [[Int]]()
+var edges = [Edge]()
+var cost = 0
+
+for i in 0..<cntPlanet {
+    universe[i] = i
+}
+
+for _ in 0..<cntPlanet {
+    let pos = readLine()!.split(separator: " ").map{Int($0)!}
+    posList.append(pos)
+}
+
+for start in 0..<cntPlanet {
+    for end in start+1..<cntPlanet {
+        let cost = minCost(posList[start], posList[end])
+        edges.append(Edge(start, end, cost))
+    }
+}
+
+edges = edges.sorted(by: {$0.cost < $1.cost})
+
+for edge in edges {
+    let start = find(&universe, edge.start)
+    let end = find(&universe, edge.end)
+    
+    if start != end {
+        union(&universe, start, end)
+        cost += edge.cost
+    }
+}
+
+print(cost)
+
+class Edge {
+    var start: Int
+    var end: Int
+    var cost: Int
+    
+    init(_ start: Int, _ end: Int, _ cost: Int) {
+        self.start = start
+        self.end = end
+        self.cost = cost
+    }
+}
+
+func minCost(_ start: [Int], _ end: [Int]) -> Int {
+    let absDx = abs(start[0] - end[0])
+    let absDy = abs(start[1] - end[1])
+    let absDz = abs(start[2] - end[2])
+    
+    return min(min(absDx, absDy), absDz)
+}
+
+func find(_ universe: inout [Int], _ vertex: Int) -> Int {
+    if universe[vertex] == vertex {
+        return vertex
+    }
+    
+    universe[vertex] = find(&universe, universe[vertex])
+    return universe[vertex]
+}
+
+func union(_ universe: inout [Int], _ start: Int, _ end: Int) {
+    let startVertex = find(&universe, start)
+    let endVertex = find(&universe, end)
+    
+    if startVertex != endVertex {
+        universe[startVertex] = endVertex
+    }
+}
