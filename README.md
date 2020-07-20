@@ -90,6 +90,7 @@ Swift & Java
 |[거스름돈](https://www.acmicpc.net/problem/5585 "백준 알고리즘")|[Swift](https://github.com/GeonHyeongKim/AlgoriGym/blob/master/Greedy/%EA%B1%B0%EC%8A%A4%EB%A6%84%EB%8F%88.swift)|61.284%|O(1)|O(1)|백준 알고리즘||
 |[계산기](https://www.acmicpc.net/problem/2200 "백준 알고리즘")|[Swift](https://github.com/GeonHyeongKim/AlgoriGym/blob/master/Greedy/%EA%B3%84%EC%82%B0%EA%B8%B0.swift)|50.000%|||백준 알고리즘||
 |[기타줄](https://www.acmicpc.net/problem/1049 "백준 알고리즘")|[Swift](https://github.com/GeonHyeongKim/AlgoriGym/blob/master/Greedy/%EA%B8%B0%ED%83%80%EC%A4%84.swift)|29.757%|O(n)|O(1)|백준 알고리즘||
+|[네트워크 연결](https://www.acmicpc.net/problem/1922 "백준 알고리즘")|[Swift](https://github.com/GeonHyeongKim/AlgoriGym/blob/master/Greedy/%EA%B8%B0%ED%83%80%EC%A4%84.swift)|55.495%|||백준 알고리즘||
 |[대회 or 인턴](https://www.acmicpc.net/problem/2875 "백준 알고리즘")|[Swift](https://github.com/GeonHyeongKim/AlgoriGym/blob/master/Greedy/%EB%8C%80%ED%9A%8C%20or%20%EC%9D%B8%ED%84%B4.swift)|42.138%|O(1)|O(1)|백준 알고리즘||
 |[동전 0](https://www.acmicpc.net/problem/11047 "백준 알고리즘")|[Swift](https://github.com/GeonHyeongKim/AlgoriGym/blob/master/Greedy/%EB%8F%99%EC%A0%84%200.swift)|54.570%|O(n)|O(n)|백준 알고리즘||
 |[뒤집기](https://www.acmicpc.net/problem/1439 "백준 알고리즘")|[Swift](https://github.com/GeonHyeongKim/AlgoriGym/blob/master/Greedy/%EB%8F%99%EC%A0%84%200.swift)|53.950%|O(n)|O(n)|백준 알고리즘||
