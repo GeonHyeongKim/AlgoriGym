@@ -9,10 +9,10 @@
 //                      5. 모든 간선을 검사해서 start와 end가 연결되지 않았으면 연결해준다.
 //                         이 때 오름차순으로 정렬했기 때문에 간선의 최소비용을 구할 수 있다.
 //
-//  Time Complexity :
-//  Space Complexity :
-//  Runtime:  ms
-//  Memory Usage:  MB
+//  Time Complexity : O(E logE)
+//  Space Complexity : O(E)
+//  Runtime: 496 ms
+//  Memory Usage: 87.224 MB
 //
 //  Created by gunhyeong on 2020/07/20.
 //
