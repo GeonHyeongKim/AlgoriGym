@@ -108,7 +108,7 @@ Swift & Java
 |[큰 수 만들기](https://programmers.co.kr/learn/courses/30/lessons/42883 "프로그래머스")|[Swift](https://github.com/GeonHyeongKim/AlgoriGym/blob/master/Greedy/%ED%81%B0%20%EC%88%98%20%EB%A7%8C%EB%93%A4%EA%B8%B0.swift)|Level 2|O(n)|O(n)|프로그래머스|코딩테스트 고득점 Kit|
 |[토너먼트 만들기](https://www.acmicpc.net/problem/2262 "백준 알고리즘")|[Swift](https://github.com/GeonHyeongKim/AlgoriGym/blob/master/Greedy/%ED%86%A0%EB%84%88%EB%A8%BC%ED%8A%B8%20%EB%A7%8C%EB%93%A4%EA%B8%B0.swift)|51.220%|O(n)|O(1)|백준 알고리즘||
 |[한 줄로 서기](https://www.acmicpc.net/problem/1138 "백준 알고리즘")|[Swift](https://github.com/GeonHyeongKim/AlgoriGym/blob/master/Greedy/%ED%95%9C%20%EC%A4%84%EB%A1%9C%20%EC%84%9C%EA%B8%B0.swift)|57.181%|O(n^2)|O(n)|백준 알고리즘||
-|[행성 터널](https://www.acmicpc.net/problem/2887 "백준 알고리즘")|[Swift](https://github.com/GeonHyeongKim/AlgoriGym/blob/master/Greedy/%ED%95%9C%20%EC%A4%84%EB%A1%9C%20%EC%84%9C%EA%B8%B0.swift)|37.923%|||백준 알고리즘||
+|[행성 터널](https://www.acmicpc.net/problem/2887 "백준 알고리즘")|[Swift](https://github.com/GeonHyeongKim/AlgoriGym/blob/master/Greedy/%ED%96%89%EC%84%B1%20%ED%84%B0%EB%84%90.swift)|37.923%|||백준 알고리즘||
 |[회의실배정](https://www.acmicpc.net/problem/1931 "백준 알고리즘")|[Swift](https://github.com/GeonHyeongKim/AlgoriGym/blob/master/Greedy/%ED%9A%8C%EC%9D%98%EC%8B%A4%EB%B0%B0%EC%A0%95.swift)|28.426%|O(n logn)|O(1)|백준 알고리즘||
 |[힙 정렬](https://www.acmicpc.net/problem/2220 "백준 알고리즘")|[Swift](https://github.com/GeonHyeongKim/AlgoriGym/blob/master/Greedy/%ED%9E%99%20%EC%A0%95%EB%A0%AC.swift)|57.377%|O(nlog n)|O(n)|백준 알고리즘||
 |[30](https://www.acmicpc.net/problem/10610 "백준 알고리즘")|[Swift](https://github.com/GeonHyeongKim/AlgoriGym/blob/master/Greedy/30.swift)|35.125%|O(n)|O(1)|백준 알고리즘||
