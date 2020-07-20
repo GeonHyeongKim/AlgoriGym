@@ -18,3 +18,53 @@
 //
 
 import Foundation
+
+let cntComputer = Int(readLine()!)!
+let cntline = Int(readLine()!)!
+var computers = [Int](repeating: 0, count: cntComputer+1)
+var lines = [Line]()
+var minCost = 0
+
+for i in 0..<cntComputer {
+    computers[i] = i
+}
+
+for i in 1...cntline {
+    let line = readLine()!.split(separator: " ").map{Int($0)!}
+    lines.append(Line(line[0], line[1], line[2]))
+}
+
+lines.sort(by: {$0.cost < $1.cost})
+
+for line in lines {
+    let start = find(&computers, line.start)
+    let end = find(&computers, line.end)
+    
+    if start != end {
+        computers[start] = end
+        minCost += line.cost
+    }
+}
+
+print(minCost)
+
+class Line {
+    var start: Int
+    var end: Int
+    var cost: Int
+    
+    init(_ start: Int, _ end: Int, _ cost: Int) {
+        self.start = start
+        self.end = end
+        self.cost = cost
+    }
+}
+
+func find(_ computers: inout [Int], _ num: Int) -> Int {
+    if computers[num] == num {
+        return num
+    }
+    
+    computers[num] = find(&computers, computers[num])
+    return computers[num]
+}
