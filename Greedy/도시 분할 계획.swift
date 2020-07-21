@@ -19,3 +19,74 @@
 //
 
 import Foundation
+
+let input = readLine()!.split(separator: " ").map{Int($0)!}
+var n = input[0]
+let m = input[1]
+var towns = Array(0...n)
+var edges = [Edge]()
+var rank = [Int](repeating: 1, count: n+1)
+var minCost = 0
+
+for _ in 0..<m {
+    let input = readLine()!.split(separator: " ").map{Int($0)!}
+    edges.append(Edge(input[0], input[1], input[2]))
+}
+
+edges.sort(by: {$0.cost < $1.cost}) // 비용 기준으로 오름차순 -> 마지막 가장 비싼 비용
+
+var num = 0
+for edge in edges {
+    let start = find(&towns, edge.start)
+    let end = find(&towns, edge.end)
+
+    if start != end {
+        union(&towns, &rank, start, end)
+        minCost += edge.cost
+        num += 1
+    }
+    
+    if num == n - 2 {
+        break
+    }
+}
+
+print(minCost)
+
+class Edge {
+    var start: Int
+    var end: Int
+    var cost: Int
+    
+    init(_ start: Int, _ end: Int, _ cost: Int) {
+        self.start = start
+        self.end = end
+        self.cost = cost
+    }
+}
+
+func find(_ towns: inout [Int], _ number: Int) -> Int {
+    if towns[number] == number {
+        return number
+    }
+    
+    towns[number] = find(&towns, towns[number])
+    return towns[number]
+}
+
+func union(_ towns: inout [Int], _ rank: inout [Int], _ start: Int, _ end: Int) {
+    let start = find(&towns, start)
+    let end = find(&towns, end)
+    
+    let totalRank = rank[start] + rank[end]
+    
+    if start == end {
+        return
+    } else if rank[start] > rank[end] {
+        towns[end] = start
+        rank[start] = totalRank
+    } else {
+        towns[start] = end
+        rank[end] = totalRank
+    }
+}
