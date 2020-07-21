@@ -10,8 +10,8 @@
 //                         이 때 오름차순으로 정렬했기 때문에 간선의 최소비용을 구할 수 있다.
 //                      6. union 시킨때마다 count하여 그 값이 총 마을의 갯수 - 2개와 같을 때까지 반복한다.
 //
-//  Time Complexity :
-//  Space Complexity :
+//  Time Complexity : O(E logE)
+//  Space Complexity : O(E)
 //  Runtime:  ms
 //  Memory Usage:  MB
 //
