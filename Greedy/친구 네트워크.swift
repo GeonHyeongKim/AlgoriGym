@@ -10,10 +10,10 @@
 //                         setSize[i]는 본인 그룹의 크기로, 1로 초기화
 //                      5. merge()를 통해 그룹들을 합침.
 //
-//  Time Complexity :
-//  Space Complexity :
-//  Runtime:  ms
-//  Memory Usage:  MB
+//  Time Complexity : O(E logE)
+//  Space Complexity : O(E)
+//  Runtime: 272 ms
+//  Memory Usage: 83.504 MB
 //
 //  Created by gunhyeong on 2020/07/20.
 //
