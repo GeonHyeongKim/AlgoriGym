@@ -5,10 +5,10 @@
 //                      1. 1번 정점부터 각 정점까지의 최단거리 -> 다익스트라
 //                      2. 마지막에 최단거리 배열값에 있는 값중에 가장 먼 노드들 찾아 출력
 //
-//  Time Complexity :
-//  Space Complexity :
-//  Runtime:  ms
-//  Memory Usage:  MB
+//  Time Complexity : O(E logV)
+//  Space Complexity : O(E)
+//  Runtime: 0.35 ~ 236.35 ms
+//  Memory Usage: 24.2 ~ 35.7 MB
 //
 //  Created by gunhyeong on 2020/07/22.
 //
