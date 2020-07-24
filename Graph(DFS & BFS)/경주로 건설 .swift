@@ -24,3 +24,75 @@
 
 import Foundation
 
+let dx = [-1, 0, 1, 0]
+let dy = [0, -1, 0, 1]
+var row = 0
+var col = 0
+let INF = Int.max
+
+func solution(_ board:[[Int]]) -> Int {
+    row = board.count
+    col = board[0].count
+    var dist = [[[Int]]](repeating: [[Int]](repeating: [Int](repeating: INF, count: 4), count: 25), count: 25)
+    var queue = [Point]()
+    
+    // dist[x][y][direction]
+    dist[0][0][0] = 0
+    dist[0][0][1] = 0
+    dist[0][0][2] = 0
+    dist[0][0][3] = 0
+    
+    // 초기화
+    queue.append(Point(0,0,0,0))
+    queue.append(Point(0,0,0,1))
+    queue.append(Point(0,0,0,2))
+    queue.append(Point(0,0,0,3))
+    
+    while !queue.isEmpty {
+        let cur = queue.removeFirst()
+        let x = cur.x
+        let y = cur.y
+        let cost = cur.cost
+        let dir = cur.direction
+        
+        for i in 0..<4 {
+            let x = x + dx[dir]
+            let y = y + dy[dir]
+            
+            // 방금 왔던 칸으로 돌아가는 경우
+            if abs(dir - i) == 2 { continue }
+            
+            // out of range
+            if x < 0 || y < 0 || x >= row || y >= col || board[x][y] == 1 { continue }
+            
+            var curCost = 0
+            if dir == i { // 직진인 경우
+                curCost = 100
+            } else { // 곡선인 경우
+                curCost = 600
+            }
+            
+            let nextCost = cost + curCost
+            if dist[x][y][i] > nextCost {
+                dist[x][y][i] = nextCost
+                queue.append(Point(x, y, nextCost, i))
+            }
+        }
+    }
+        
+    return dist[row-1][col-1].min()!
+}
+
+struct Point {
+    var x: Int
+    var y: Int
+    var cost: Int
+    var direction: Int
+    
+    init(_ x: Int, _ y: Int, _ cost: Int, _ direction: Int) {
+        self.x = x
+        self.y = y
+        self.cost = cost
+        self.direction = direction
+    }
+}
