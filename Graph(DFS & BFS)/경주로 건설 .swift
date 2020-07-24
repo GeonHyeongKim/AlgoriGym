@@ -14,10 +14,10 @@
 //                      7. 움직인 거리에서의 값을 계산후, 3차원 배열의 값과 비교해 최소값을 저장함
 //
 //
-//  Time Complexity :
-//  Space Complexity : O(n^2)
-//  Runtime:  ms
-//  Memory Usage:  MB
+//  Time Complexity : O(E logE)
+//  Space Complexity : O(n^3)
+//  Runtime: 0.24 ~. 9.55  ms
+//  Memory Usage: 24.2 ~ 24.3 MB
 //
 //  Created by gunhyeong on 2020/07/22.
 //
