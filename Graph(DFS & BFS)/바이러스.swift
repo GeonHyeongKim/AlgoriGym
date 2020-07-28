@@ -18,3 +18,31 @@
 
 import Foundation
 
+let cntComputer = Int(readLine()!)!
+let cntNetwork = Int(readLine()!)!
+var visited = [Bool](repeating: false, count: cntComputer+1)
+var network = [[Int]](repeating: [Int](repeating: 0, count: cntComputer+1), count: cntComputer+1)
+var answer = 0
+
+for _ in 0..<cntNetwork {
+    let input = readLine()!.split(separator: " ").map{Int($0)!}
+    let start = input.first!
+    let end = input.last!
+    
+    network[start][end] = 1
+    network[end][start] = 1
+}
+
+dfs(1)
+print(answer)
+
+func dfs(_ start: Int) {
+    visited[start] = true
+    
+    for i in 2...cntComputer {
+        if !visited[i] && network[start][i] == 1 {
+            answer += 1
+            dfs(i)
+        }
+    }
+}
