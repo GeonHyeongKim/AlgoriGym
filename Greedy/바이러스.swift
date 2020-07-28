@@ -6,10 +6,10 @@
 //                      2. 1번과 연결되어 있는 모든 컴퓨터 갯수를 센다
 //
 //
-//  Time Complexity :
-//  Space Complexity :
-//  Runtime:  ms
-//  Memory Usage:  MB
+//  Time Complexity : O(E logE)
+//  Space Complexity : O(n)
+//  Runtime: 12 ms
+//  Memory Usage: 81.336 MB
 //
 //  Created by gunhyeong on 2020/07/28.
 //
