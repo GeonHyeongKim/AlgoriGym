@@ -7,11 +7,10 @@
 //                      3. 방문한 장소를 구별하기 위해 visited라는 Bool 배열을 만든다.
 //                      4. 1번과 연결된 컴퓨터의 숫자만 count하면 되기 때문에 dfs를 활용
 //
-//
-//  Time Complexity :
-//  Space Complexity :
-//  Runtime: ms
-//  Memory Usage:  MB
+//  Time Complexity : O(n^n)
+//  Space Complexity : O(n^2)
+//  Runtime: 12 ms
+//  Memory Usage: 81.336 MB
 //
 //  Created by gunhyeong on 2020/07/29.
 //
