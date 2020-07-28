@@ -4,8 +4,8 @@
 //  Primary idea:       <DFS & BFS>
 //                      1.
 //
-//  Time Complexity :
-//  Space Complexity :
+//  Time Complexity : O(n^n)
+//  Space Complexity : O(n^2)
 //  Runtime:  ms
 //  Memory Usage:  MB
 //
@@ -21,7 +21,6 @@ let v = input[2]
 
 var visited = [Bool](repeating: false, count: 100001)
 var graph = [[Int]](repeating: [Int](repeating: 0, count: 1001), count: 1001)
-
 
 for _ in 1...m {
     let input = readLine()!.split(separator: " ").map{Int($0)!}
