@@ -153,7 +153,7 @@ Swift & Java
 |Title|Solution|Difficulty|Time|Space|See|Etc|
 |:---|:---:|:---:|:---:|:---:|:---:|:---|
 |[최단 경로](https://www.acmicpc.net/problem/1753 "백준 알고리즘")|[Swift](https://github.com/GeonHyeongKim/AlgoriGym/blob/master/Dijkstra/%EC%B5%9C%EB%8B%A8%EA%B2%BD%EB%A1%9C.swift)|23.021%|||백준 알고리즘||
-|[미로 탐색](https://www.acmicpc.net/problem/2178 "백준 알고리즘")|[Swift](https://github.com/GeonHyeongKim/AlgoriGym/blob/master/Dijkstra/%EC%B5%9C%EB%8B%A8%EA%B2%BD%EB%A1%9C.swift)|36.173%|||백준 알고리즘||
+|[미로 탐색](https://www.acmicpc.net/problem/2178 "백준 알고리즘")|[Swift](https://github.com/GeonHyeongKim/AlgoriGym/blob/master/Dijkstra/%EB%AF%B8%EB%A1%9C%20%ED%83%90%EC%83%89.swift)|36.173%|||백준 알고리즘||
 
 ## Dynamic Programming
 |Title|Solution|Difficulty|Time|Space|See|Etc|
