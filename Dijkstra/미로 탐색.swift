@@ -13,10 +13,10 @@
 //                          iii) 값이 1(벽)일 경우
 //                      7. 움직인 거리에서의 값을 계산후, 3차원 배열의 값과 비교해 최소값을 저장함
 //
-//  Time Complexity :
-//  Space Complexity :
-//  Runtime:   ms
-//  Memory Usage:  MB
+//  Time Complexity : O(E logE)
+//  Space Complexity : O(n^3)
+//  Runtime: 24 ms
+//  Memory Usage: 82.396 MB
 //
 //  Created by gunhyeong on 2020/07/29.
 //
