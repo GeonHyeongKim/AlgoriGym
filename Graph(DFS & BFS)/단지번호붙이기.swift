@@ -10,10 +10,10 @@
 //                          iii) 한번도 방문한적이 없는 곳 ( !visited[][] )
 //                      4. 입력의 마지막 줄에는 0이 두 개 주어지는 조건 때문에 무한 반복문으로 해야한다.
 //
-//  Time Complexity :
-//  Space Complexity :
-//  Runtime:  ms
-//  Memory Usage:  MB
+//  Time Complexity : O(n^n)
+//  Space Complexity : O(n^2)
+//  Runtime: 8 ms
+//  Memory Usage: 64.056 MB
 //
 //  Created by gunhyeong on 2020/07/29.
 //
