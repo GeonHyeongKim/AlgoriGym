@@ -27,20 +27,19 @@ let row = input.first!
 let col = input.last!
 let dx = [-1, 0, 1, 0]
 let dy = [0, -1, 0, 1]
-var box = [[Int]](repeating: [Int](), count: col)
+var box = [[Int]](repeating: [Int](repeating: 0, count: row), count: col)
 var queue = [Point]()
 
 for i in 0..<col {
     let input = readLine()!.split(separator: " ").map{Int($0)!}
-    box[i].append(contentsOf: input)
-}
-
-
-for i in 0..<col {
-    for j in 0..<row {
-        if box[i][i] == 1 {
+    for (j, num) in input.enumerated() {
+        if num == 0 { continue }
+        
+        if num == 1 {
             queue.append(Point(i, j))
         }
+        
+        box[i][j] = num
     }
 }
 
@@ -53,26 +52,25 @@ while !queue.isEmpty {
         let posX = x + dx[i]
         let posY = y + dy[i]
         
-        if posX < 0 || posY < 0 || posX >= row || posY >= col || box[posX][posY] == 1 { continue }
+        if posX < 0 || posY < 0 || posX >= col || posY >= row || box[posX][posY] != 0 { continue }
         
         box[posX][posY] = box[x][y] + 1
         queue.append(Point(posX, posY))
     }
 }
 
-var maxInt = -1
+var answer = -1
+
 for i in 0..<col {
-    for j in 0..<row {
-        if box[i][i] == 0 {
-            print("-1")
-            break
-        }
-        
-        maxInt = max(maxInt, box[i][j])
+    if box[i].contains(0) {
+        answer = 0
+        break
     }
+    
+    answer = max(answer, box[i].max()!)
 }
 
-print(maxInt)
+print(answer-1)
 
 struct Point {
     var x: Int
