@@ -8,10 +8,10 @@
 //                          iii) n은 n-1의 패턴을 가지고있다
 //                          iv) 가운데 0을 기준으로 왼쪽 오른쪽이 보수 관계
 //
-//  Time Complexity :
-//  Space Complexity :
-//  Runtime: ms
-//  Memory Usage: MB
+//  Time Complexity : O(n^2)
+//  Space Complexity : O(n)
+//  Runtime: 0.24 ~ 1941.35 ms
+//  Memory Usage: 23.9 ~ 74.7 MB
 //
 //  Created by gunhyeong on 2020/07/31.
 //
