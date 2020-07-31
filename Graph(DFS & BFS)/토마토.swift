@@ -12,8 +12,8 @@
 //                          iii) 값이 0이 아닐 경우 -> 1, -1
 //                      7. 움직인 거리에서의 값을 계산후, 값을 update해줌
 //
-//  Time Complexity :
-//  Space Complexity :
+//  Time Complexity : O(E log E)
+//  Space Complexity : O(n^2)
 //  Runtime: ms
 //  Memory Usage: MB
 //

@@ -147,7 +147,7 @@ Swift & Java
 |[섬의 개수](https://www.acmicpc.net/problem/4963 "백준 알고리즘")|[Swift](https://github.com/GeonHyeongKim/AlgoriGym/blob/master/Graph(DFS%20%26%20BFS)/%EC%84%AC%EC%9D%98%20%EA%B0%9C%EC%88%98.swift)|49.383%|O(n^n)|O(n^2)|백준 알고리즘||
 |[소수 찾기](https://programmers.co.kr/learn/courses/30/lessons/42839?language=swift "프로그래머스")|[Swift](https://github.com/GeonHyeongKim/AlgoriGym/blob/master/Graph(DFS%20%26%20BFS)/%EC%86%8C%EC%88%98%20%EC%B0%BE%EA%B8%B0.swift)|Level 2|O(n^n)|O(1)|프로그래머스|코딩테스트 고득점 Kit|
 |[타겟 넘버](https://programmers.co.kr/learn/courses/30/lessons/43165 "프로그래머스")|[Swift](https://github.com/GeonHyeongKim/AlgoriGym/blob/master/Graph(DFS%20%26%20BFS)/%ED%83%80%EA%B2%9F%20%EB%84%98%EB%B2%84.swift)|Level 2|O(n^n)|O(1)|프로그래머스|코딩테스트 고득점 Kit|
-|[토마토](https://www.acmicpc.net/problem/7576 "백준 알고리즘")|[Swift](https://github.com/GeonHyeongKim/AlgoriGym/blob/master/Graph(DFS%20%26%20BFS)/%ED%86%A0%EB%A7%88%ED%86%A0.swift)|31.991%|||백준 알고리즘||
+|[토마토](https://www.acmicpc.net/problem/7576 "백준 알고리즘")|[Swift](https://github.com/GeonHyeongKim/AlgoriGym/blob/master/Graph(DFS%20%26%20BFS)/%ED%86%A0%EB%A7%88%ED%86%A0.swift)|31.991%|O(E log E)|O(n^2)|백준 알고리즘||
 |[플로이드](https://www.acmicpc.net/problem/11404 "백준 알고리즘")|[Swift](https://github.com/GeonHyeongKim/AlgoriGym/blob/master/Graph(DFS%20%26%20BFS)/%ED%94%8C%EB%A1%9C%EC%9D%B4%EB%93%9C.swift)|43.861%|O(n^3)|O(n^2)|백준 알고리즘||
 
 ## Dijkstra
