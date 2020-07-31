@@ -1,9 +1,16 @@
 //
 //  토마토.swift
 //  Question Link: https://www.acmicpc.net/problem/7576
-//  Primary idea:       (Graph & BFS)
+//  Primary idea:       (BFS)
 //                      1. BFS로 토마토를 익히는 문제
-//                      2.
+//                      2. BFS을 응용 -> queue이용
+//                      3. 2차원 배열을 만들어 x, y값을 저장 -> 초기값은 0,0에서 4가지 방향을 살핌(0)
+//                      4. Point 구조체를 만들어 x,y을 저장함
+//                      5. queue에 초기값(box의 값이 1인 x,y)을 넣은 후, 한개씩 꺼내어 quque가 빌때까지 반복함
+//                      6. 4가지 방향을 돌면서 조건에 맞지 않으면 움직이지 않음
+//                          ii) 미로를 벗어남
+//                          iii) 값이 0이 아닐 경우 -> 1, -1
+//                      7. 움직인 거리에서의 값을 계산후, 값을 update해줌
 //
 //  Time Complexity :
 //  Space Complexity :
