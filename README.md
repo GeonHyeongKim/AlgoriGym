@@ -92,6 +92,7 @@ Swift & Java
 |[계산기](https://www.acmicpc.net/problem/2200 "백준 알고리즘")|[Swift](https://github.com/GeonHyeongKim/AlgoriGym/blob/master/Greedy/%EA%B3%84%EC%82%B0%EA%B8%B0.swift)|50.000%|||백준 알고리즘||
 |[기타줄](https://www.acmicpc.net/problem/1049 "백준 알고리즘")|[Swift](https://github.com/GeonHyeongKim/AlgoriGym/blob/master/Greedy/%EA%B8%B0%ED%83%80%EC%A4%84.swift)|29.757%|O(n)|O(1)|백준 알고리즘||
 |[네트워크 연결](https://www.acmicpc.net/problem/1922 "백준 알고리즘")|[Swift](https://github.com/GeonHyeongKim/AlgoriGym/blob/master/Greedy/%EB%84%A4%ED%8A%B8%EC%9B%8C%ED%81%AC%20%EC%97%B0%EA%B2%B0.swift)|55.495%|O(E logE)|O(E)|백준 알고리즘||
+|[단속카메라](https://programmers.co.kr/learn/courses/30/lessons/42884 "프로그래머스")|[Swift](https://github.com/GeonHyeongKim/AlgoriGym/blob/master/String%26Array/%EC%B9%B4%ED%8E%AB.swift)|Level 3|||프로그래머스|코딩테스트 고득점 Kit|
 |[대회 or 인턴](https://www.acmicpc.net/problem/2875 "백준 알고리즘")|[Swift](https://github.com/GeonHyeongKim/AlgoriGym/blob/master/Greedy/%EB%8C%80%ED%9A%8C%20or%20%EC%9D%B8%ED%84%B4.swift)|42.138%|O(1)|O(1)|백준 알고리즘||
 |[도시 분할 계획](https://www.acmicpc.net/problem/1647 "백준 알고리즘")|[Swift](https://github.com/GeonHyeongKim/AlgoriGym/blob/master/Greedy/%EB%8F%84%EC%8B%9C%20%EB%B6%84%ED%95%A0%20%EA%B3%84%ED%9A%8D.swift)|48.847%|O(E logE)|O(E)|백준 알고리즘||
 |[동전 0](https://www.acmicpc.net/problem/11047 "백준 알고리즘")|[Swift](https://github.com/GeonHyeongKim/AlgoriGym/blob/master/Greedy/%EB%8F%99%EC%A0%84%200.swift)|54.570%|O(n)|O(n)|백준 알고리즘||
