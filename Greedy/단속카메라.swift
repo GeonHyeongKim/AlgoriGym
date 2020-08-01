@@ -14,3 +14,20 @@
 //
 
 import Foundation
+
+func solution(_ routes: [[Int]]) -> Int {
+    var answer = 0
+    var camera = Int.min
+    
+    for route in routes.sorted(by: {$0.last! < $1.last!}) {
+        if camera < route.first! {
+            camera = route.last!
+            print(camera)
+            answer += 1
+        }
+    }
+    return answer
+}
+
+print(solution([[-20,15], [-14,-5], [-18,-13], [-5,-3]]))
+
