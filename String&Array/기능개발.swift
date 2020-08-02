@@ -17,5 +17,30 @@
 import Foundation
 
 func solution(_ progresses:[Int], _ speeds:[Int]) -> [Int] {
+    var answer = [Int]()
+    var queue = [Int]()
+    
+    for (i, progresse) in progresses.enumerated() {
+        var progresse = progresse
+        var cnt = 0
+        
+        // 배포일까지 남은 날짜
+        while progresse < 100 {
+            progresse += speeds[i]
+            cnt += 1
+        }
+        
+        queue.append(cnt)
+        
+        // 날짜가 더 짧으면 교체
+        if queue.first! < cnt {
+            answer.append(queue.count - 1)
+            queue.removeAll()
+            queue.append(cnt)
+        }
+    }
+    
+    answer.append(queue.count)
 
+    return answer
 }
