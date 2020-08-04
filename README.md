@@ -78,6 +78,10 @@ Swift & Java
 |[튜플](https://programmers.co.kr/learn/courses/30/lessons/64065 "프로그래머스")|[Swift](https://github.com/GeonHyeongKim/AlgoriGym/blob/master/String%26Array/%ED%8A%9C%ED%94%8C.swift)|Level 2|O(n^2)|O(n)|프로그래머스|2019 카카오 개발자 겨울 인턴십|
 |[프린터](https://programmers.co.kr/learn/courses/30/lessons/42587 "프로그래머스")|[Swift](https://github.com/GeonHyeongKim/AlgoriGym/blob/master/String%26Array/%ED%94%84%EB%A6%B0%ED%84%B0.swift)|Level 2|O(n)|O(n)|프로그래머스|코딩테스트 고득점 Kit|
 
+## Simulation
+|Title|Solution|Difficulty|Time|Space|Etc|
+|[지능형 기차](https://www.acmicpc.net/problem/2455 "백준 알고리즘")|[Swift](https://github.com/GeonHyeongKim/AlgoriGym/blob/master/Greedy/DNA.swift)|77.818%||||
+
 ## Greedy
 |Title|Solution|Difficulty|Time|Space|See|Etc|
 |:---|:---:|:---:|:---:|:---:|:---:|:---|
