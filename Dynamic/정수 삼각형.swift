@@ -6,10 +6,10 @@
 //                      2. dp[i][j] = max(dp[i-1][j-1], dp[i-1][j]) + arr[i][j]
 //                         이떄, j(열의 범위)가 j > 0 이여야한다. 이를 방지하기 위해 최대 배열의 값을 501로 한다.
 //
-//  Time Complexity :
-//  Space Complexity :
-//  Runtime:  ms
-//  Memory Usage:  MB
+//  Time Complexity : O(n^2)
+//  Space Complexity : O(1)
+//  Runtime: 160 ms
+//  Memory Usage: 68.524 MB
 //
 //  Created by gunhyeong on 2020/08/04.
 //
