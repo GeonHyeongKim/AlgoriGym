@@ -7,10 +7,10 @@
 //                      3. 우선순위 큐의 가장 위에 값과 같을 때 까지 큐를 계속 돌립니다.
 //                         같아지면 우선순위 큐의 가장위를 pop하고 다시 반복합니다
 //
-//  Time Complexity :
-//  Space Complexity :
-//  Runtime:  ms
-//  Memory Usage:  MB
+//  Time Complexity : O(n logn)
+//  Space Complexity : O(n)
+//  Runtime: 16 ms
+//  Memory Usage: 81.344 MB
 //
 //  Created by gunhyeong on 2020/08/05.
 //
