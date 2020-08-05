@@ -6,10 +6,10 @@
 //                      2. 현재 타고 있는 사람수를 구한다.
 //                      3. 최대 인원인지 비교하며 값을 저장한다.
 //
-//  Time Complexity :
-//  Space Complexity :
-//  Runtime:  ms
-//  Memory Usage:  MB
+//  Time Complexity : O(1)
+//  Space Complexity : O(1)
+//  Runtime: 12 ms
+//  Memory Usage: 81.332 MB
 //
 //  Created by gunhyeong on 2020/08/05.
 //
