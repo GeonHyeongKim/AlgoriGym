@@ -81,6 +81,7 @@ Swift & Java
 ## Simulation
 |Title|Solution|Difficulty|Time|Space|Etc|
 |[지능형 기차](https://www.acmicpc.net/problem/2455 "백준 알고리즘")|[Swift](https://github.com/GeonHyeongKim/AlgoriGym/blob/master/Simulation/%EC%A7%80%EB%8A%A5%ED%98%95%20%EA%B8%B0%EC%B0%A8.swift)|77.818%|O(1)|O(1)||
+|[체스판 다시 칠하기](https://www.acmicpc.net/problem/1018 "백준 알고리즘")|[Swift](https://github.com/GeonHyeongKim/AlgoriGym/blob/master/Simulation/%EC%A7%80%EB%8A%A5%ED%98%95%20%EA%B8%B0%EC%B0%A8.swift)|46.313%||||
 
 ## Greedy
 |Title|Solution|Difficulty|Time|Space|See|Etc|
