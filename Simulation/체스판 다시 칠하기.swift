@@ -17,3 +17,42 @@
 //
 
 import Foundation
+
+let size = readLine()!.split(separator: " ").map{Int($0)!}
+let row = size.first!
+let col = size.last!
+var board = [[Character]](repeating: [Character](repeating: "B", count: col), count: row)
+var answer = Int.max
+
+for i in 0..<row {
+    let cols = readLine()!
+    
+    for (j, value) in cols.enumerated() {
+        board[i][j] = value
+    }
+}
+
+for i in 0...row-8 {
+    for j in 0...col-8 {
+        var cnt = 0
+        
+        for x in i..<i+8 {
+            for y in j..<j+8 {
+                if (x + y) % 2 == 0 {
+                    if board[x][y] == "W" {
+                        cnt += 1
+                    }
+                } else {
+                    if board[x][y] == "B" {
+                        cnt += 1
+                    }
+                }
+            }
+        }
+        
+        answer = min(answer, cnt)
+        answer = min(answer, 64-cnt)
+    }
+}
+
+print(answer)
