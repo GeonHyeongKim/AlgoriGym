@@ -15,3 +15,19 @@
 //
 
 import Foundation
+
+var people = 0
+var maxPeople = Int.min
+
+for _ in 0..<4 {
+    let subway = readLine()!.split(separator: " ").map{Int($0)!}
+    let disembark = subway.first!
+    let embark = subway.last!
+    
+    people += embark - disembark
+    
+    maxPeople = max(maxPeople, people)
+}
+
+print(maxPeople)
+
