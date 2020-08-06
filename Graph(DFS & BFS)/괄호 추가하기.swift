@@ -17,4 +17,46 @@
 
 import Foundation
 
+let len = Int(readLine()!)!
+let equation = readLine()!
+var oper = [Character]()
+var num = [Int]()
+var answer = 0
 
+for value in equation {
+    if value.isNumber {
+        num.append(value.wholeNumberValue!)
+    } else {
+        oper.append(value)
+    }
+}
+
+dfs(0, num[0])
+print(answer)
+
+func dfs(_ i: Int, _ sum: Int) {
+    if i >= oper.count {
+        if answer < sum {
+            answer = sum
+        }
+        
+        return
+    }
+    
+    let calculation1 = calculation(sum, num[i+1], oper[i])
+    dfs(i+1, calculation1)
+    
+    if i+1 < oper.count {
+        let calculation2 = calculation(num[i+1], num[i+2], oper[i+1])
+        dfs(i+2, calculation(sum, calculation2, oper[i]))
+    }
+}
+
+func calculation(_ base: Int, _ other: Int, _ oper: Character) -> Int {
+    switch oper {
+    case "+": return base + other
+    case "-": return base - other
+    case "*": return base * other
+    default: return 0
+    }
+}
