@@ -9,8 +9,8 @@
 //                      5. 대각선(2)일 때는 걸치는 부분이 모두 1이 아닌지를 체크한다.
 //                      6. 모두 만족하면 queue에 저장한다.
 //
-//  Time Complexity :
-//  Space Complexity :
+//  Time Complexity : O(n^n)
+//  Space Complexity : O(n^2)
 //  Runtime:  ms
 //  Memory Usage:  MB
 //
