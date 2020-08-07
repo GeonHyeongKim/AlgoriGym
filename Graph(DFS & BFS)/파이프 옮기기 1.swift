@@ -1,8 +1,13 @@
 //
 //  파이프 옮기기 1.swift
 //  Question Link: https://www.acmicpc.net/problem/17070
-//  Primary idea:       (DFS & Brute force)
-//                      1.
+//  Primary idea:       (BFS)
+//                      1. BFS로 queue와 while을 활용한다.
+//                      2. 위치 정보와 가로(0)/세로(1)/대각선(2)을 표시하는 방향 정보를 queue에 저장한다.
+//                      3. queue의 앞에서 하나씩 불러오며 3가지의 방향을 진행한다.
+//                      4. 가로(0) -> 세로(1), 세로(1) -> 가로(0)는 갈 수 없으므로 합이 1일 때는 제외한다.
+//                      5. 대각선(2)일 때는 걸치는 부분이 모두 1이 아닌지를 체크한다.
+//                      6. 모두 만족하면 queue에 저장한다.
 //
 //  Time Complexity :
 //  Space Complexity :
