@@ -15,3 +15,31 @@
 //
 
 import Foundation
+
+let input = readLine()!.split(separator: " ").map{Int($0)!}
+let N = input.first!
+let K = input.last!
+let INF = 100001
+var visited = [Bool](repeating: false, count: INF)
+var queue = [(Int, Int)]()
+var answer = 0
+
+queue.append((N, 0))
+
+while !queue.isEmpty {
+    let cur = queue.first!
+    let pos = cur.0
+    let depth = cur.1
+    
+    if pos == K { break }
+    
+    queue.removeFirst()
+    visited[pos] = true
+    
+    if (pos - 1 >= 0) && !visited[pos - 1] { queue.append((pos - 1, depth + 1 ))}
+    if (pos + 1 <= INF) && !visited[pos + 1] { queue.append((pos + 1, depth + 1 ))}
+    if (pos * 2 <= INF) && !visited[pos * 2] { queue.append((pos * 2, depth + 1 ))}
+
+}
+
+print(queue.first!.1)
