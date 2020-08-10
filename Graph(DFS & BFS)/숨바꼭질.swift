@@ -37,9 +37,8 @@ while !queue.isEmpty {
     visited[pos] = true
     
     if (pos - 1 >= 0) && !visited[pos - 1] { queue.append((pos - 1, depth + 1 ))}
-    if (pos + 1 <= INF) && !visited[pos + 1] { queue.append((pos + 1, depth + 1 ))}
-    if (pos * 2 <= INF) && !visited[pos * 2] { queue.append((pos * 2, depth + 1 ))}
-
+    if (pos + 1 <= 100000) && !visited[pos + 1] { queue.append((pos + 1, depth + 1 ))}
+    if (pos * 2 <= 100000) && !visited[pos * 2] { queue.append((pos * 2, depth + 1 ))}
 }
 
-print(queue.first!.1)
+solution -> 5 17 -> 4
