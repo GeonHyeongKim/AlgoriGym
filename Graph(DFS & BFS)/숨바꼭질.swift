@@ -34,11 +34,19 @@ while !queue.isEmpty {
     if pos == K { break }
     
     queue.removeFirst()
-    visited[pos] = true
     
-    if (pos - 1 >= 0) && !visited[pos - 1] { queue.append((pos - 1, depth + 1 ))}
-    if (pos + 1 <= 100000) && !visited[pos + 1] { queue.append((pos + 1, depth + 1 ))}
-    if (pos * 2 <= 100000) && !visited[pos * 2] { queue.append((pos * 2, depth + 1 ))}
+    if (pos - 1 >= 0) && !visited[pos - 1] {
+        queue.append((pos - 1, depth + 1 ))
+        visited[pos - 1] = true
+    }
+    if (pos + 1 <= 100000) && !visited[pos + 1] {
+        queue.append((pos + 1, depth + 1 ))
+        visited[pos + 1] = true
+    }
+    if (pos * 2 <= 100000) && !visited[pos * 2] {
+        queue.append((pos * 2, depth + 1 ))
+        visited[pos * 2] = true
+    }
 }
 
 solution -> 5 17 -> 4
