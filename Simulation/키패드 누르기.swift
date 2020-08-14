@@ -8,10 +8,10 @@
 //                      4. 키패드간 거리는 가로길이차이 + 세로길이차이로 계산
 //                      5. 키패드마다 좌표를 딕셔너리 형태로 저장하여 거리를 계산
 //
-//  Time Complexity :
-//  Space Complexity :
-//  Runtime:  ms
-//  Memory Usage: MB
+//  Time Complexity : O(n)
+//  Space Complexity : O(n)
+//  Runtime: 0.14 ~ 2.15 ms
+//  Memory Usage: 23.6 ~ 24.2 MB
 //
 //  Created by gunhyeong on 2020/08/14.
 //
