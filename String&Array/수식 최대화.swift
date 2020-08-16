@@ -6,8 +6,8 @@
 //
 //  Time Complexity :
 //  Space Complexity :
-//  Runtime: ms
-//  Memory Usage:  MB
+//  Runtime: 0.67 ~ 3.78 ms
+//  Memory Usage: 23.9 ~ 24.6 MB
 //
 //  Created by gunhyeong on 2020/08/15.
 //
