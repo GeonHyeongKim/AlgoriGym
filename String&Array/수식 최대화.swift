@@ -23,23 +23,30 @@ func solution(_ expression:String) -> Int64 {
     var visited = [Bool](repeating: false, count: 3)
     
     getPriority(&priorityList, &visited, [], ["+","-","*"])
-
+    
     numbers = expression.components(separatedBy: ["+","-","*"]).map{Int($0)!}
     operands = Array(expression.filter({!$0.isNumber}))
     
     for priority in priorityList {
-        var sum = 0
-
+        var copyNumbers = numbers
+        var copyOperands = operands
         for p in priority {
-            for (i, oper) in operands.enumerated() {
-                if p == String(oper) {
-                    let cal = calculation(numbers[i], numbers[i+1], oper)
-                    sum += cal
+            var i = -1
+            while i < copyOperands.count - 1 {
+                i += 1
+                if p == String(copyOperands[i]) {
+                    print(copyNumbers)
+                    print(copyOperands)
+                    let cal = calculation(copyNumbers.remove(at: i), copyNumbers.remove(at: i), copyOperands[i])
+                    copyNumbers.insert(cal, at: i)
+                    copyOperands.remove(at: i)
+                    i -= 1
                 }
             }
         }
-
-        answer = max(answer, sum)
+        
+        print(copyNumbers)
+        answer = max(answer, abs(copyNumbers.first!))
     }
     
     return Int64(answer)
@@ -59,7 +66,7 @@ func getPriority(_ priority: inout [[String]], _ visited: inout [Bool], _ cur: [
         priority.append(cur)
         return
     }
-        
+    
     for i in 0..<3 {
         if !visited[i] {
             visited[i] = true
@@ -69,6 +76,5 @@ func getPriority(_ priority: inout [[String]], _ visited: inout [Bool], _ cur: [
     }
 }
 
-
-//print(solution("100-200*300-500+20")) // 60420
+print(solution("100-200*300-500+20")) // 60420
 print(solution("50*6-3*2")) // 300
