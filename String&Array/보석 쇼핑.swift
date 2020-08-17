@@ -2,7 +2,11 @@
 //  보석 쇼핑.swift
 //  Question Link: https://programmers.co.kr/learn/courses/30/lessons/67258
 //  Primary idea:       (String & Array & Dictionary)
-//                      1.
+//                      1. 보석의 종류가 몇개인지 세어준다.
+//                      2. 보석을 저장할 Dictionary(String:Int)을 만든다.
+//                      3. 이제 보석 배열(gems)을 돌면서 Dictionary에 보석과 보석 자리를 저장한다.
+//                      4. Dictionary의 count가 보석 종류의 갯수와 일치하면, 해당 구간을 저장한다.
+//                      5. 정렬을 통해 시작 진열대 번호가 더 작은 구간 or 더 짧은 구간을 반환한다.
 //
 //  Time Complexity :
 //  Space Complexity :
