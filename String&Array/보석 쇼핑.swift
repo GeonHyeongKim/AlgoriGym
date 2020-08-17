@@ -8,10 +8,10 @@
 //                      4. Dictionary의 count가 보석 종류의 갯수와 일치하면, 해당 구간을 저장한다.
 //                      5. 정렬을 통해 시작 진열대 번호가 더 작은 구간 or 더 짧은 구간을 반환한다.
 //
-//  Time Complexity :
-//  Space Complexity :
-//  Runtime:  ms
-//  Memory Usage:  MB
+//  Time Complexity : O(n)
+//  Space Complexity : O(n)
+//  Runtime: 0.35 ~ 32.69 ms
+//  Memory Usage: 23.9 ~ 24.6 MB
 //
 //  Created by gunhyeong on 2020/08/16.
 //
