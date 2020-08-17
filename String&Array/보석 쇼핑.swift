@@ -24,7 +24,7 @@ func solution(_ gems:[String]) -> [Int] {
         dic[gem] = i + 1
         
         if count == dic.count {
-            answer.append([dic.values.min()!, dic.values.max()!])
+            answer.append([dic.values.min()!, i+1])
         }
     }
     
