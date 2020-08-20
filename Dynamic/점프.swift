@@ -16,3 +16,39 @@
 //
 
 import Foundation
+
+let size = Int(readLine()!)!
+var board = [[Int]]()
+
+for _ in 0..<size {
+    let cols = readLine()!.split(separator: " ").map{Int($0)!}
+    board.append(cols)
+}
+
+let dx = [-1, 0, 1, 0]
+let dy = [0, -1, 0 ,1]
+var dp = [[Int]](repeating: [Int](repeating: 0, count: size), count: size)
+
+dp[0][0] = 1
+
+for i in 0..<size {
+    for j in 0..<size {
+        if dp[i][j] == 0 || (i == size - 1 && j == size - 1) { continue }
+        let value = board[i][j]
+        let dx = value + i
+        let dy = value + j
+        
+        if dx < size { dp[dx][j] = dp[dx][j] + dp[i][j] }
+        if dy < size { dp[i][dy] = dp[i][dy] + dp[i][j] }
+    }
+}
+
+print(dp[size-1][size-1])
+
+
+4
+2 3 3 1
+1 2 1 3
+1 2 3 1
+3 1 1 0
+3
