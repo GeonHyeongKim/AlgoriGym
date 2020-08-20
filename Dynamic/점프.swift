@@ -7,10 +7,10 @@
 //                      3. 값의 변경은 해당값이 size보다 작을 경우 누적값으로 저장해놓는다.
 //                      4. 정답은 dp[size-1][size-1]에 저장되게 된다.
 //
-//  Time Complexity :
-//  Space Complexity :
-//  Runtime:  ms
-//  Memory Usage:  MB
+//  Time Complexity : O(n^2)
+//  Space Complexity : O(n^2)
+//  Runtime: 16 ms
+//  Memory Usage: 81.336 MB
 //
 //  Created by gunhyeong on 2020/08/20.
 //
