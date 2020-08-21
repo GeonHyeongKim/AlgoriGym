@@ -6,8 +6,8 @@
 //                      2. 4방향 중 숫자가 큰 y, x 를 재귀함수로 call한 후 +1 해줍니다.
 //                      3. 더 큰 숫자가 나타나지 않을 때까지 재귀함수를 call한 후 가장 큰 숫자를 저장하여 출력합니다.
 //
-//  Time Complexity :
-//  Space Complexity :
+//  Time Complexity : O(n^n)
+//  Space Complexity : O(n^2)
 //  Runtime:  ms
 //  Memory Usage:  MB
 //
