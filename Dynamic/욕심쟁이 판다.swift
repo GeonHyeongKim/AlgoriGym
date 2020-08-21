@@ -15,3 +15,43 @@
 //
 
 import Foundation
+
+let size = Int(readLine()!)!
+var board = [[Int]]()
+
+for _ in 0..<size {
+    let cols = readLine()!.split(separator: " ").map{Int($0)!}
+    board.append(cols)
+}
+
+let dx = [-1, 0, 1, 0]
+let dy = [0, -1, 0 ,1]
+var dp = [[Int]](repeating: [Int](repeating: 0, count: size), count: size)
+
+dp[0][0] = 1
+
+var answer = 0
+
+for i in 0..<size {
+    for j in 0..<size {
+        answer = max(answer, dfs(i, j))
+    }
+}
+
+print(answer)
+
+func dfs(_ i: Int, _ j: Int) -> Int {
+    if dp[i][j] != 0 { return dp[i][j] }
+    
+    dp[i][j] = 1
+    
+    for v in 0..<4 {
+        let x = i + dx[v]
+        let y = j + dy[v]
+        
+        if x < 0 || x >= size || y < 0 || y >= size || board[i][j] >= board[x][y] { continue }
+        
+        dp[i][j] = max(dp[i][j], dfs(x, y) + 1)
+    }
+    return dp[i][j]
+}
