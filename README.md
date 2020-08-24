@@ -192,7 +192,7 @@ Swift & Java
 |[가장 큰 정사각형 찾기](https://programmers.co.kr/learn/courses/30/lessons/12905 "프로그래머스")|[Swift](https://github.com/GeonHyeongKim/AlgoriGym/blob/master/Dynamic/%EA%B0%80%EC%9A%B4%EB%8D%B0%20%EA%B8%80%EC%9E%90%20%EA%B0%80%EC%A0%B8%EC%98%A4%EA%B8%B0.swift)|Level 2|O(n^2)|O(1)|프로그래머스||
 |[동전 1](https://www.acmicpc.net/problem/2293 "백준 알고리즘")|[Swift](https://github.com/GeonHyeongKim/AlgoriGym/blob/master/Dynamic/%EB%8F%99%EC%A0%84%201.swift)|42.588%|O(n^k)|(n)|백준 알고리즘||
 |[욕심쟁이 판다](https://www.acmicpc.net/problem/1937 "백준 알고리즘")|[Swift](https://github.com/GeonHyeongKim/AlgoriGym/blob/master/Dynamic/%EC%9A%95%EC%8B%AC%EC%9F%81%EC%9D%B4%20%ED%8C%90%EB%8B%A4.swift)|30.076%|O(n^n)|O(n^2)|백준 알고리즘||
-|[상자넣기](https://www.acmicpc.net/problem/1965 "백준 알고리즘")|[Swift](https://github.com/GeonHyeongKim/AlgoriGym/blob/master/Dynamic/%EC%83%81%EC%9E%90%EB%84%A3%EA%B8%B0.swift)|47.666%|||백준 알고리즘||
+|[상자넣기](https://www.acmicpc.net/problem/1965 "백준 알고리즘")|[Swift](https://github.com/GeonHyeongKim/AlgoriGym/blob/master/Dynamic/%EC%83%81%EC%9E%90%EB%84%A3%EA%B8%B0.swift)|47.666%|O(n^2)|O(n)|백준 알고리즘||
 |[점프](https://www.acmicpc.net/problem/1890 "백준 알고리즘")|[Swift](https://github.com/GeonHyeongKim/AlgoriGym/blob/master/Dynamic/%EC%A0%90%ED%94%84.swift)|28.055%|O(n^2)|O(n^2)|백준 알고리즘||
 |[정수 삼각형](https://www.acmicpc.net/problem/1932 "백준 알고리즘")|[Swift](https://github.com/GeonHyeongKim/AlgoriGym/blob/master/Dynamic/%EC%A0%95%EC%88%98%20%EC%82%BC%EA%B0%81%ED%98%95.swift)|58.748%|O(n^2)|O(1)|백준 알고리즘||
 
