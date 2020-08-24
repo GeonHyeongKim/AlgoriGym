@@ -15,3 +15,21 @@
 //
 
 import Foundation
+
+let size = Int(readLine()!)!
+let boxs = readLine()!.split(separator: " ").map{Int($0)!}
+var dp = [Int](repeating: 0, count: size)
+var maxValue = 0
+
+for i in 0..<boxs.count {
+    dp[i] = 1
+    for j in 0..<i {
+        if boxs[j] < boxs[i] && dp[i] < dp[j] + 1 {
+            dp[i] = dp[j] + 1
+        }
+    }
+    
+    maxValue = max(maxValue, dp[i])
+}
+
+print(maxValue) // 5
