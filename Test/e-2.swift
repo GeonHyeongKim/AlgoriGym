@@ -14,17 +14,18 @@ class Solution {
         dfs(cards, 0, num, 0, 0);
         return answer;
     }
-    public static void dfs(int[] cards, int start, int target, int sum, int cardCnt){
-        if(sum > target || cardCnt >= answer){
+    
+    public dfs(int[] cards, int start, int target, int sum, int cardCnt){
+        if sum > target || cardCnt >= answer {
             return;
         }
         
-        if(sum==target){
+        if sum == target {
             answer = cardCnt;
             return;
         }
         
-        for(int i=start; i<cards.length; i++){
+        for i in start..<cards.count {
             dfs(cards, i, target, sum+cards[i], cardCnt+1);
         }
     }
