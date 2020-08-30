@@ -14,3 +14,19 @@
 //
 
 import Foundation
+
+let input1 = readLine()!.split(separator: " ").map{Int($0)!}
+let row = input1.first!
+let col = input1.last!
+
+let input2 = readLine()!.split(separator: " ").map{Int($0)!}
+let r = input2[0]
+let c = input2[1]
+let d = input2[2]
+
+let area = [[Int]()
+for _ in 0..<row {
+    let cols = readLine()!.split(separator: " ").map{Int($0)!}
+    area.append(cols)
+}
+
