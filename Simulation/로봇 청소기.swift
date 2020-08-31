@@ -11,8 +11,8 @@
 //                        - 후진했는데 벽인 경우 : 종료
 //                        - 후진 가능한 경우 : 후진한 위치를 기준으로 DFS() 호출
 //
-//  Time Complexity :
-//  Space Complexity :
+//  Time Complexity : O(n^n)
+//  Space Complexity : O(n^m)
 //  Runtime:  ms
 //  Memory Usage:  MB
 //
