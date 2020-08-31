@@ -32,8 +32,30 @@ let c = input2[1]
 let d = input2[2]
 
 let area = [[Int]()
+let answer = 1 // 청소한 칸의 수
 for _ in 0..<row {
     let cols = readLine()!.split(separator: " ").map{Int($0)!}
     area.append(cols)
 }
 
+let dx = [-1. 0, 1, 0]
+let dy = [0, 1, 0, -1]
+
+area[r][c] = 2 // 로봇 청소기의 시작 위치는 청소
+dfs(r, c, d)
+print(answer)
+
+func dfs(_ x: Int, _ y: Int, _ dir: Int) {
+    var nextDir = d
+    var nextX: Int
+    var nextY: Int
+    
+    for dir in 0..<4 {
+        nextDir = (nextDir + 3) % 4 // 방향을 바꾸기 위한 식  // 북,서,남,동(0,3,2,1) 순서로 변경
+
+        nextX = x + dx[nextDir]
+        nextY = y + dy[nextDir]
+        
+        if nextX > row - 2 || nextX < 1 || nextY > col - 2 || nextY < 1 || area[nextX][nextY] == 1 { continue }
+    }
+}
