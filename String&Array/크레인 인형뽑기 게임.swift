@@ -19,32 +19,32 @@
 
 import Foundation
 
-func solution(_ board:[[Int]], _ moves:[Int]) -> Int {
-    var boom = 0 // 터트린 인형 갯수
-    var basketStack = [Int]() // 담는 바구니
-    var board = board
-    let reMoves = moves.map {$0 - 1} // moves의 값들을 1을 빼준다
-    let size = board.count
-
-    for move in reMoves {
-        for i in 0..<size {
-            let position = board[i][move] // 집개의 위치
-            if position == 0 { // 값이 0일 경우
-                continue
-            }
-            
-            if !basketStack.isEmpty && basketStack.last! == position { // 바구니가 비어 있지않을 경우, 바구니 가장 위에 같은 인형
-                basketStack.removeLast() // 마지막 제거
-                boom += 2 // 2개 터짐
-            } else {
-                basketStack.append(position) // 바구니에 넣기
-            }
-            
-            board[i][move] = 0 // 인형이 뽑힌 후 0으로 만들기
-            break
-        }
-        
-    }
-
-    return boom
-}
+//func solution(_ board:[[Int]], _ moves:[Int]) -> Int {
+//    var boom = 0 // 터트린 인형 갯수
+//    var basketStack = [Int]() // 담는 바구니
+//    var board = board
+//    let reMoves = moves.map {$0 - 1} // moves의 값들을 1을 빼준다
+//    let size = board.count
+//
+//    for move in reMoves {
+//        for i in 0..<size {
+//            let position = board[i][move] // 집개의 위치
+//            if position == 0 { // 값이 0일 경우
+//                continue
+//            }
+//
+//            if !basketStack.isEmpty && basketStack.last! == position { // 바구니가 비어 있지않을 경우, 바구니 가장 위에 같은 인형
+//                basketStack.removeLast() // 마지막 제거
+//                boom += 2 // 2개 터짐
+//            } else {
+//                basketStack.append(position) // 바구니에 넣기
+//            }
+//
+//            board[i][move] = 0 // 인형이 뽑힌 후 0으로 만들기
+//            break
+//        }
+//
+//    }
+//
+//    return boom
+//}
