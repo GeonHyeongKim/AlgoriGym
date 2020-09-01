@@ -48,3 +48,37 @@ import Foundation
 //
 //    return boom
 //}
+
+// MARK: - 2번째 풀이
+//  Time Complexity : O(n*m), n은 moves의 갯수, m은 board의 size
+//  Space Complexity : O(n)
+//  Runtime: 0.19 ~ 1.55 ms
+//  Memory Usage: 23.9 ~ 24.3 MB
+
+func solution(_ board:[[Int]], _ moves:[Int]) -> Int {
+    var boom = 0
+    var basketStack = [Int]() // 담아내는 바구니
+    let indexControllMove = moves.map{$0 - 1} // index 조절을 위해 1씩 빼준다
+    let size = board.count
+    var board = board
+    
+    for move in indexControllMove {
+        for i in 0..<size {
+            let position = board[i][move]
+            if position == 0 { continue }
+            
+            // 바구니가 비어 있지 않거나, 바구니 가장 위에 같은 인형이 있는경우
+            if !basketStack.isEmpty && basketStack.last! == position {
+                basketStack.removeLast()
+                boom += 2 // 2개씩 터짐
+            } else {
+                basketStack.append(position)
+            }
+            
+            board[i][move] = 0 // 인형이 뽑힌 후 공백
+            break
+        }
+    }
+    
+    return boom
+}
