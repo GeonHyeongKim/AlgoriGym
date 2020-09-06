@@ -85,6 +85,7 @@ Swift & Java
 |Title|Solution|Difficulty|Time|Space|Etc|
 |:---|:---:|:---:|:---:|:---:|:---|
 |[로봇 청소기](https://www.acmicpc.net/problem/14503 "백준 알고리즘")|[Swift](https://github.com/GeonHyeongKim/AlgoriGym/blob/master/Simulation/%EB%A1%9C%EB%B4%87%20%EC%B2%AD%EC%86%8C%EA%B8%B0.swift)|51.526%|O(n^n)|O(n^m)||
+|[주사위 굴리기](https://www.acmicpc.net/problem/14499 "백준 알고리즘")|[Swift](https://github.com/GeonHyeongKim/AlgoriGym/blob/master/Simulation/%EB%A1%9C%EB%B4%87%20%EC%B2%AD%EC%86%8C%EA%B8%B0.swift)|41.227%||||
 |[지능형 기차](https://www.acmicpc.net/problem/2455 "백준 알고리즘")|[Swift](https://github.com/GeonHyeongKim/AlgoriGym/blob/master/Simulation/%EC%A7%80%EB%8A%A5%ED%98%95%20%EA%B8%B0%EC%B0%A8.swift)|77.818%|O(1)|O(1)||
 |[체스판 다시 칠하기](https://www.acmicpc.net/problem/1018 "백준 알고리즘")|[Swift](https://github.com/GeonHyeongKim/AlgoriGym/blob/master/Simulation/%EC%B2%B4%EC%8A%A4%ED%8C%90%20%EB%8B%A4%EC%8B%9C%20%EC%B9%A0%ED%95%98%EA%B8%B0.swift)|46.313%|O(n^4)|O(n^2)||
 |[프린터 큐](https://www.acmicpc.net/problem/1966 "백준 알고리즘")|[Swift](https://github.com/GeonHyeongKim/AlgoriGym/blob/master/Simulation/%ED%94%84%EB%A6%B0%ED%84%B0%20%ED%81%90.swift)|53.788%|O(n logn)|O(n)||
