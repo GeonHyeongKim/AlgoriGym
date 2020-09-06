@@ -15,3 +15,31 @@
 //
 
 import Foundation
+
+func Solution()
+{
+    int x = Sx;
+    int y = Sy;
+ 
+    for (int i = 0; i < Cmd.size(); i++)
+    {
+        int nx = x + dx[Cmd.at(i)];
+        int ny = y + dy[Cmd.at(i)];
+        int d = Cmd.at(i);
+ 
+        if (nx < 0 || ny < 0 || nx >= N || ny >= M) continue;
+        
+        RollTheDice(d);
+        if (MAP[nx][ny] == 0) MAP[nx][ny] = Dice[6];
+        else
+        {
+            Dice[6] = MAP[nx][ny];
+            MAP[nx][ny] = 0;
+        }
+ 
+        cout << Dice[1] << endl;
+ 
+        x = nx;
+        y = ny;
+    }
+}
