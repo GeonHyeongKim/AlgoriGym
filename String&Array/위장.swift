@@ -35,3 +35,10 @@ func solution(_ clothes:[[String]]) -> Int {
     let count = dic.mapValues{$0.count}.values // 종류별 갯수를 담은 배열ㄴ
     return count.reduce(1){$0*($1+1)}-1  // +1 : 안입는 경우, -1 : 모두 다 안입는 경우
 }
+
+//MARK:- 2번쨰 재풀이
+
+func solution(_ clothes:[[String]]) -> Int {
+    
+    return
+}
