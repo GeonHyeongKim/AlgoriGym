@@ -37,8 +37,25 @@ func solution(_ clothes:[[String]]) -> Int {
 }
 
 //MARK:- 2번쨰 재풀이
+//  Time Complexity : O(n logn)
+//  Space Complexity : O(n)
+//  Runtime: 0.09 ~ 0.45 ms
+//  Memory Usage: 15.9 ~ 16.2 MB
 
 func solution(_ clothes:[[String]]) -> Int {
+    var dic = [String:[String]]()
     
-    return
+    for cloth in clothes {
+        let name = cloth.first!
+        let category = cloth.last!
+        
+        if dic.keys.contains(category) {
+            dic[category]!.append(name)
+        } else {
+            dic[category] = [name]
+        }
+    }
+    
+    let cntCategory = dic.mapValues{$0.count}.values
+    return cntCategory.reduce(1){$0*($1+1)}-1
 }
