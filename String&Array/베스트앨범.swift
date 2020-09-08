@@ -17,37 +17,47 @@
 
 import Foundation
 
+//func solution(_ genres:[String], _ plays:[Int]) -> [Int] {
+//    var plays = plays
+//    var dic = [String:[Int]]()
+//    var result = [Int]() // 결과
+//
+//    // Dictionary에 종류(genres)별 노래(play)를 저장
+//    for (i, genre) in genres.enumerated() {
+//        if dic.keys.contains(genre) {
+//            dic[genre]!.append(plays[i])
+//        } else {
+//            dic[genre] = [plays[i]]
+//        }
+//    }
+//
+//    let sortedDicByValue = dic.mapValues{$0.sorted(by:>)} // Dictionary의 value값을 오름차순으로 정렬 : 장르 내에서 많이 재생된 노래를 먼저 수록
+//    let sortedDicBykeys = sortedDicByValue.sorted(by: {$0.value.reduce(0, +) > $1.value.reduce(0, +)}).map{$0.key} // 속한 노래가 많이 재생된(reduce로 판별) 장르를 먼저 수록
+//
+//    for genre in sortedDicBykeys {
+//        var cnt = 0
+//        for value in sortedDicByValue[genre]! {
+//            if cnt == 2 { // 두 개씩 모아 베스트 앨범을 출시
+//                continue
+//            }
+//
+//            let index = plays.firstIndex(of: value)!
+//            result.append(index)
+//            plays[index] = 0 // 중복값이 있을 경우, firstIndex는 같은 값을 출력
+//            cnt += 1
+//        }
+//    }
+//    return result
+//}
+
+print(solution(["classic", "pop", "classic", "classic", "pop"], [500, 600, 150, 800, 2500]))
+
+//MARK:- 2번쨰 풀이
+
 func solution(_ genres:[String], _ plays:[Int]) -> [Int] {
     var plays = plays
     var dic = [String:[Int]]()
     var result = [Int]() // 결과
-    
-    // Dictionary에 종류(genres)별 노래(play)를 저장
-    for (i, genre) in genres.enumerated() {
-        if dic.keys.contains(genre) {
-            dic[genre]!.append(plays[i])
-        } else {
-            dic[genre] = [plays[i]]
-        }
-    }
-    
-    let sortedDicByValue = dic.mapValues{$0.sorted(by:>)} // Dictionary의 value값을 오름차순으로 정렬 : 장르 내에서 많이 재생된 노래를 먼저 수록
-    let sortedDicBykeys = sortedDicByValue.sorted(by: {$0.value.reduce(0, +) > $1.value.reduce(0, +)}).map{$0.key} // 속한 노래가 많이 재생된(reduce로 판별) 장르를 먼저 수록
-    
-    for genre in sortedDicBykeys {
-        var cnt = 0
-        for value in sortedDicByValue[genre]! {
-            if cnt == 2 { // 두 개씩 모아 베스트 앨범을 출시
-                continue
-            }
-            
-            let index = plays.firstIndex(of: value)!
-            result.append(index)
-            plays[index] = 0 // 중복값이 있을 경우, firstIndex는 같은 값을 출력
-            cnt += 1
-        }
-    }
+
     return result
 }
-
-print(solution(["classic", "pop", "classic", "classic", "pop"], [500, 600, 150, 800, 2500]))
