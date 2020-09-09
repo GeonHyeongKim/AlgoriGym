@@ -58,6 +58,31 @@ func solution(_ genres:[String], _ plays:[Int]) -> [Int] {
     var plays = plays
     var dic = [String:[Int]]()
     var result = [Int]() // 결과
-
+    
+    for (i, genre) in genres.enumerated {
+        if dic.keys.contains(genre) {
+            dic[genre]!.append(plays[i])
+        } else {
+            dic[genre] = [plays[i]]
+        }
+    }
+    
+    let sortedDicByValue = dic.mapValues{$0.sorted(by:>)}
+    let sortedDicBykeys = sortedDicByValue.sorted(by: {$0.value.reduce(0, +) > $1.value.reduce(0, +)}).map{$0.key}
+    
+    for genre in sortedDicBykeys {
+        var cnt = 0
+        for value in sortedDicByValue[genre]! {
+            if cnt == 2 { // 두 개씩 모아 베스트 앨범을 출시
+                continue
+            }
+            
+            let index = plays.firstIndex(of: value)!
+            result.append(index)
+            plays[index] = 0 // 중복값이 있을 경우, firstIndex는 같은 값을 출력
+            cnt += 1
+        }
+    }
+    
     return result
 }
