@@ -31,6 +31,17 @@ import Foundation
 //}
 
 //MARK:- 2번째 재풀이
+//  Time Complexity : O(n^n)
+//  Space Complexity : O(1)
+//  Runtime: 0.08 ~ 35.72 ms
+//  Memory Usage: 15.9 ~ 16.4 MB
+
 func solution(_ numbers:[Int], _ target:Int) -> Int {
-    return
+    return dfs(numbers, target, 0, 0)
+}
+
+func dfs(_ numbers: [Int], _ target: Int, _ index: Int, _ sum: Int) -> Int {
+    if index == numbers.count { return sum == target ? 1 : 0 }
+    
+    return dfs(numbers, target, index+1, sum+numbers[index]) + dfs(numbers, target, index+1, sum-numbers[index])
 }
