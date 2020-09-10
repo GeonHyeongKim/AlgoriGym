@@ -18,14 +18,19 @@
 
 import Foundation
 
-func solution(_ numbers:[Int], _ target:Int) -> Int {
-    return dfs(numbers, target, 0, 0)
-}
+//func solution(_ numbers:[Int], _ target:Int) -> Int {
+//    return dfs(numbers, target, 0, 0)
+//}
+//
+//func dfs(_ numbers: [Int], _ target: Int, _ node: Int, _ sum: Int) -> Int{
+//    if node == numbers.count {
+//        return sum == target ? 1 : 0
+//    }
+//
+//    return dfs(numbers, target, node+1, sum + numbers[node]) + dfs(numbers, target, node+1, sum - numbers[node]) // 왼쪽, 오른쪽
+//}
 
-func dfs(_ numbers: [Int], _ target: Int, _ node: Int, _ sum: Int) -> Int{
-    if node == numbers.count {
-        return sum == target ? 1 : 0
-    }
-    
-    return dfs(numbers, target, node+1, sum + numbers[node]) + dfs(numbers, target, node+1, sum - numbers[node]) // 왼쪽, 오른쪽
+//MARK:- 2번째 재풀이
+func solution(_ numbers:[Int], _ target:Int) -> Int {
+    return
 }
