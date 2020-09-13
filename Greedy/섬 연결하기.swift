@@ -19,36 +19,59 @@
 
 import Foundation
 
-func solution(_ n:Int, _ costs:[[Int]]) -> Int {
-    var answer = 0
-    var graph = [Int](repeating: 0, count: n+1) // graph[i] = 노드, i의 부모 노드를 가리킨다.
-    var edges = [Edge]()
-    
-    for i in 0...n {
-        graph[i] = i
-    }
-    
-    for cost in costs {
-        edges.append(Edge(cost[0], cost[1], cost[2]))
-    }
-    
-    edges = edges.sorted(by: {$0.cost < $1.cost}) // (O(E lgE))
-    
-    // 2. 모든 간선을 검사
-    for edge in edges { // union
-        let startVertex = find(&graph, edge.start)
-        let endVertex = find(&graph, edge.end)
-        
-        // start와 end가 아직 연결되지 않았을 때
-        if startVertex != endVertex {
-            // start를 end의 parent로 설정
-            graph[startVertex] = endVertex
-            answer += edge.cost
-        }
-    }
-    
-    return answer
-}
+//func solution(_ n:Int, _ costs:[[Int]]) -> Int {
+//    var answer = 0
+//    var graph = [Int](repeating: 0, count: n+1) // graph[i] = 노드, i의 부모 노드를 가리킨다.
+//    var edges = [Edge]()
+//
+//    for i in 0...n {
+//        graph[i] = i
+//    }
+//
+//    for cost in costs {
+//        edges.append(Edge(cost[0], cost[1], cost[2]))
+//    }
+//
+//    edges = edges.sorted(by: {$0.cost < $1.cost}) // (O(E lgE))
+//
+//    // 2. 모든 간선을 검사
+//    for edge in edges { // union
+//        let startVertex = find(&graph, edge.start)
+//        let endVertex = find(&graph, edge.end)
+//
+//        // start와 end가 아직 연결되지 않았을 때
+//        if startVertex != endVertex {
+//            // start를 end의 parent로 설정
+//            graph[startVertex] = endVertex
+//            answer += edge.cost
+//        }
+//    }
+//
+//    return answer
+//}
+//
+//class Edge {
+//    var start: Int
+//    var end: Int
+//    var cost: Int
+//
+//    init(_ start: Int, _ end: Int, _ cost: Int){
+//        self.start = start
+//        self.end = end
+//        self.cost = cost
+//    }
+//}
+//
+//// 최상위 노드를 찾는 함수 (Union-find)
+//func find(_ graph: inout [Int], _ vertex: Int) -> Int {
+//    if graph[vertex] == vertex {
+//        return vertex
+//    }
+//
+//    graph[vertex] = find(&graph, graph[vertex])
+//    return graph[vertex]
+//}
+//MARK:- 2번째 재풀이
 
 class Edge {
     var start: Int
@@ -62,8 +85,7 @@ class Edge {
     }
 }
 
-// 최상위 노드를 찾는 함수 (Union-find)
-func find(_ graph: inout [Int], _ vertex: Int) -> Int {
+func find(_ graph: inout [Int], vertext: Int) -> Int {
     if graph[vertex] == vertex {
         return vertex
     }
@@ -72,4 +94,7 @@ func find(_ graph: inout [Int], _ vertex: Int) -> Int {
     return graph[vertex]
 }
 
+func solution(
+    
+    
 print(solution(4, [[0,1,1],[0,2,2],[1,2,5],[1,3,1],[2,3,8]])) // 4
