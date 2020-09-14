@@ -94,7 +94,30 @@ func find(_ graph: inout [Int], vertext: Int) -> Int {
     return graph[vertex]
 }
 
-func solution(
+func solution(_ n:Int, _ costs:[[Int]]) -> Int {
+    var answer = 0
+    var graph = [Int](repeating: 0, count: n+1)
+    var edges = [Edge]()
     
+    for i in 0...n {
+        graph[i] = i
+    }
+    
+    for cost in costs { edges.append(Edge(cost[0], cost[1], cost[2])) }
+    
+    edges.sort{$0.cost < $1.cost}
+    
+    for edge in edges {
+        let start = find(&graph, edge.start)
+        let end = find(&graph, edge.end)
+        
+        if start != end {
+            graph[start] = end
+            answer += edge.cost
+        }
+    }
+    
+    return answer
+}
     
 print(solution(4, [[0,1,1],[0,2,2],[1,2,5],[1,3,1],[2,3,8]])) // 4
