@@ -4,8 +4,9 @@
 //  Primary idea:       (Simulation)
 //                      1. 입력과 출력에 주의하면서 B[i] = A[i+1]-A[i]를 계산
 //                      2. k번 반복을 주의
-//  Time Complexity :
-//  Space Complexity :
+//
+//  Time Complexity : O(n^k)
+//  Space Complexity : O(n)
 //  Runtime: 8 ms
 //  Memory Usage: 64.052 MB
 //
