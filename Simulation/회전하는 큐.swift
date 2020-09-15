@@ -42,6 +42,7 @@ for pop in popList {
         answer += queue.count - remove
     }
     
+//    print("removeFrist : \(queue.first!)")
     queue.removeFirst()
 //    print("after : queue: \(queue), remove: \(remove)\n")
 }
@@ -57,7 +58,30 @@ func pushRight(_ queue: inout [Int]) {
     queue.insert(queue.removeLast(), at: 0)
 }
 
-//10 3
-//4 6 9
+/* solution 1
+10 3
+1 2 3
 
+answer = 0
+*/
+ 
+/* solution 2
+10 3
+2 9 5
 
+answer = 8
+*/
+ 
+/* solution 3
+32 6
+27 16 30 11 6 23
+
+answer = 59
+*/
+
+/* solution 4
+10 10
+1 6 3 2 7 9 8 4 10 5
+
+answer = 14
+*/
