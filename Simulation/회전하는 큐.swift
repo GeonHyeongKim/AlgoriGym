@@ -17,3 +17,46 @@
 //
 
 import Foundation
+
+let input = readLine()!.split(separator: " ").map{Int($0)!}
+let n = input.first! // queue size
+let m = input.last! // 뽑아내려고 하는 수
+let popList = readLine()!.split(separator: " ").map{Int($0)!}
+var queue = Array(1...n)
+var answer = 0
+
+for pop in popList {
+    let remove = queue.firstIndex(of: pop)!
+    let middle = queue.count / 2
+    
+//    print("befor : queue: \(queue), remove: \(remove)")
+    if remove < middle {
+        for _ in 0..<remove {
+            pushLeft(&queue)
+        }
+    } else {
+        for _ in 0..<remove {
+            pushRight(&queue)
+        }
+    }
+    
+    answer += remove
+    queue.removeFirst()
+//    print("after : queue: \(queue), remove: \(remove)\n")
+}
+
+// 정답 출력
+print(answer)
+
+func pushLeft(_ queue: inout [Int]) {
+    queue.append(queue.removeFirst())
+}
+
+func pushRight(_ queue: inout [Int]) {
+    queue.insert(queue.removeLast(), at: 0)
+}
+
+//10 3
+//4 6 9
+
+
