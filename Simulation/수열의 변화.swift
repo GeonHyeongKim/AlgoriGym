@@ -13,3 +13,16 @@
 //
 
 import Foundation
+
+let input = readLine()!.split(separator: " ").map{Int($0)!}
+let n = input.first!
+let k = input.last!
+let sequence = readLine()!.split(separator: ",").map{Int($0)!}
+var answer = ""
+
+for i in 0..<sequence.count - 1 {
+    let calulation = sequence[i+1] - sequence[i]
+    answer += "\(calulation),"
+}
+
+print(answer.removeLast())
