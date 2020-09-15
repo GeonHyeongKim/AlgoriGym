@@ -30,17 +30,18 @@ for pop in popList {
     let middle = queue.count / 2
     
 //    print("befor : queue: \(queue), remove: \(remove)")
-    if remove < middle {
+    if remove <= middle {
         for _ in 0..<remove {
             pushLeft(&queue)
         }
+        answer += remove
     } else {
-        for _ in 0..<remove {
+        for _ in 0..<queue.count - remove{
             pushRight(&queue)
         }
+        answer += queue.count - remove
     }
     
-    answer += remove
     queue.removeFirst()
 //    print("after : queue: \(queue), remove: \(remove)\n")
 }
