@@ -20,9 +20,13 @@ let k = input.last!
 let sequence = readLine()!.split(separator: ",").map{Int($0)!}
 var answer = ""
 
+print(sequence)
+
 for i in 0..<sequence.count - 1 {
     let calulation = sequence[i+1] - sequence[i]
+    print("\(sequence[i+1]) - \(sequence[i]) = \(calulation)")
     answer += "\(calulation),"
 }
 
-print(answer.removeLast())
+answer.removeLast()
+print(answer)
