@@ -5,10 +5,10 @@
 //                      1. 야바위를 하는 문제!
 //                      2. 배열의 swapAt을 이용
 //
-//  Time Complexity :
-//  Space Complexity :
-//  Runtime:  ms
-//  Memory Usage:  MB
+//  Time Complexity : O(n)
+//  Space Complexity : O(n)
+//  Runtime: 8 ms
+//  Memory Usage: 64.056 MB
 //
 //  Created by gunhyeong on 2020/09/15.
 //
