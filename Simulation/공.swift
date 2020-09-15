@@ -15,13 +15,19 @@
 
 import Foundation
 
-var m = Int(readLine()!)!
-let switchList = [Int]()
+var n = Int(readLine()!)! // m : 바꿀 횟수
+var swapList = [[Int]]()
+var cups = [1, 0, 0]
 
 // 입력
-while m > 0 {
-    m -= 1
+while n > 0 {
+    n -= 1
     let input = readLine()!.split(separator: " ").map{Int($0)! - 1}
-    switchList.append(input)
+    swapList.append(input)
 }
 
+for swap in swapList {
+    cups.swapAt(swap.first!, swap.last!)
+}
+
+print(cups.firstIndex(of: 1)! + 1)
