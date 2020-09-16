@@ -9,10 +9,10 @@
 //                          ii) 고슴도치가 비버굴(D)에 도착한다. => Break
 //                      4. 초기에 고슴도치의 시작 위치 저장
 //
-//  Time Complexity :
-//  Space Complexity :
-//  Runtime:  ms
-//  Memory Usage:  MB
+//  Time Complexity : O(nm), n = row, m = col
+//  Space Complexity : O(nm)
+//  Runtime: 8 ms
+//  Memory Usage: 64.200 MB
 //
 //  Created by gunhyeong on 2020/09/15.
 //
