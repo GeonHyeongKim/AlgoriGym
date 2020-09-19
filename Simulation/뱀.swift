@@ -23,7 +23,7 @@ var board = [[Int]](repeating: [Int](repeating: 0, count: n), count: n)
 var applePosList = [[Point]]()
 
 for _ in 0..<k {
-    let input = readLine()!.split(separator: " ").map{Int($0)!}
+    let input = readLine()!.split(separator: " ").map{Int($0)! - 1}
     applePosList.append(Point(input.first!, input.last!))
 }
 
