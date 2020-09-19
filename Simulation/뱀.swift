@@ -7,10 +7,10 @@
 //                      3. 뱀의 몸통은 움직이기 전까지 그 자리에 정지해있다. 즉, 길이가 5인 뱀의 움직임은 ----- => ---- - => --- -- => -- --- => - ---- => ----- 식으로 움직인다는 것이다.
 //                      4. 뱀의 이동 방향은 뱀의 머리 기준 오른쪽 왼쪽이다.
 //
-//  Time Complexity :
-//  Space Complexity :
-//  Runtime:  ms
-//  Memory Usage:  MB
+//  Time Complexity : O(n+x), x는 뱀의 방향 list 크기
+//  Space Complexity : O(n^2)
+//  Runtime: 12 ms
+//  Memory Usage: 81.344 MB
 //
 //  Created by gunhyeong on 2020/09/17.
 //
@@ -24,7 +24,7 @@ var snakeDirList = [(Int, String)]()
 let dx = [-1, 0 , 1, 0]
 let dy = [0, 1, 0, -1]
 var time = 0
-var dir = 0
+var dir = 1
 
 for _ in 0..<k {
     let input = readLine()!.split(separator: " ").map{Int($0)! - 1}
@@ -49,7 +49,7 @@ while true {
     let nextY = y + dy[dir]
     
     // 벽, 자신의 일부
-    if nextX < 0 || nextX >= n || nextY < 0 || nextY >= n || board[nextX][nextY] == -1 {
+    if nextX < 0 || nextX >= n || nextY < 0 || nextY >= n || board[nextX][nextY] == 2 {
         break
         
     }
@@ -65,9 +65,9 @@ while true {
     
     if !snakeDirList.isEmpty {
         if snakeDirList.first!.0 == time {
-            if snakeDirList.last!.1 == "L" {
+            if snakeDirList.first!.1 == "L" {
                 dir = (dir + 3) % 4
-            } else if snakeDirList.last!.1 == "D" {
+            } else if snakeDirList.first!.1 == "D" {
                 dir = (dir + 1) % 4
             }
             snakeDirList.removeFirst()
@@ -81,7 +81,6 @@ while true {
 
 print(time)
 
-// 사과의 위치
 struct Point {
     var x: Int
     var y: Int
