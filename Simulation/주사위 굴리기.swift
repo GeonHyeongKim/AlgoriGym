@@ -16,30 +16,18 @@
 
 import Foundation
 
-func Solution()
-{
-    int x = Sx;
-    int y = Sy;
- 
-    for (int i = 0; i < Cmd.size(); i++)
-    {
-        int nx = x + dx[Cmd.at(i)];
-        int ny = y + dy[Cmd.at(i)];
-        int d = Cmd.at(i);
- 
-        if (nx < 0 || ny < 0 || nx >= N || ny >= M) continue;
-        
-        RollTheDice(d);
-        if (MAP[nx][ny] == 0) MAP[nx][ny] = Dice[6];
-        else
-        {
-            Dice[6] = MAP[nx][ny];
-            MAP[nx][ny] = 0;
-        }
- 
-        cout << Dice[1] << endl;
- 
-        x = nx;
-        y = ny;
-    }
+let input = readLine()!.split(separator: " ").map{Int($0)!}
+let n = input[0] // 지도의 세로크기
+let m = input[1] // 지도의 가로크기
+let x = input[2] // 주사위를 놓는곳 x
+let y = input[3] // 주사위를 놓는곳 y
+var map = [[Int]]()
+
+// init - insert map value
+for _ in 0..<n {
+    let input = readLine()!.split(separator: " ").map{Int($0)!}
+    map.append(input)
 }
+
+let k = input[4] // 명령의 갯수
+let orderList = readLine()!.split(separator: " ").map{Int($0)!}
