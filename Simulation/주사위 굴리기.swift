@@ -13,10 +13,10 @@
 //                          v)      dice[4]은 주사위 왼쪽면에 적힌 숫자
 //                          vi)     dice[5]은 주사위 아랫면에 적힌 숫자
 //
-//  Time Complexity :
-//  Space Complexity :
-//  Runtime:  ms
-//  Memory Usage:  MB
+//  Time Complexity : O(n), n은 명령의 갯수, 즉 k의 갯수
+//  Space Complexity : O(n^m), n과 m은 지도의 세로, 가로 크기
+//  Runtime: 16 ms
+//  Memory Usage: 81.336 MB
 //
 //  Created by gunhyeong on 2020/09/06.
 //
