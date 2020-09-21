@@ -15,3 +15,23 @@
 //
 
 import Foundation
+
+let play = readLine()!.split(separator: " ").map{Int($0)!}
+var ascending = true
+var descending = true
+
+for i in 1..<play.count {
+    if play[i] < play[i-1] {
+        ascending = false
+    } else {
+        descending = false
+    }
+}
+
+if ascending {
+    print("ascending")
+} else if descending {
+    print("descending")
+} else {
+    print("mixed")
+}
