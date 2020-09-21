@@ -14,3 +14,23 @@
 //
 
 import Foundation
+
+let input = readLine()!.split(separator: " ").map{Int($0)!}
+let n = input.first!
+let m = input.last!
+let card = readLine()!.split(separator: " ").map{Int($0)!}
+var maxValue = 0
+var sum = 0
+
+for i in 0..<card.count {
+    for j in i+1..<card.count {
+        for k in j+1..<card.count {
+            sum = card[i] + card[j] + card[k]
+            if sum < m {
+                maxValue = max(maxValue, sum)
+            }
+        }
+    }
+}
+
+print(maxValue)
