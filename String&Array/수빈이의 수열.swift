@@ -18,11 +18,14 @@ import Foundation
 let n = Int(readLine()!)!
 let sequence = readLine()!.split(separator: " ").map{Int($0)!}
 var answer = [Int]()
+var result = "\(sequence.first!) "
 answer.append(sequence.first!)
 
 for i in 1..<sequence.count {
     let num = sequence[i] * (i+1) - answer.reduce(0, +)
     answer.append(num)
+    result += "\(num) "
 }
 
-print(answer)
+result.removeLast()
+print(result)
