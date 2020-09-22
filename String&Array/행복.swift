@@ -6,10 +6,10 @@
 //                      2. 배열에서 가장 작은 값을 구한다. Array.min()
 //                      3. 두개의 차이를 구한다.
 //
-//  Time Complexity :
-//  Space Complexity :
-//  Runtime:  ms
-//  Memory Usage:  MB
+//  Time Complexity : O(n)
+//  Space Complexity : O(n)
+//  Runtime: 8 ms
+//  Memory Usage: 64.052 MB
 //
 //  Created by gunhyeong on 2020/09/22.
 //
