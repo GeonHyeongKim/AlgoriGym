@@ -5,10 +5,10 @@
 //                      1. 수학적 원리
 //                         해당값 = 지금까지 평균값(sequence[i]) * (i+1) - 지금까지의 합
 //
-//  Time Complexity :
-//  Space Complexity :
-//  Runtime:  ms
-//  Memory Usage:  MB
+//  Time Complexity : O(n), n은 수열의 갯수
+//  Space Complexity : O(n)
+//  Runtime: 8 ms
+//  Memory Usage: 64.056 MB
 //
 //  Created by gunhyeong on 2020/09/22.
 //
