@@ -13,10 +13,10 @@
 //                          ii) 결과값(result)에 "-" 저장
 //                      5. 4번이 아닐 경우, "NO" 출력
 //
-//  Time Complexity :
-//  Space Complexity :
-//  Runtime:  ms
-//  Memory Usage:  MB
+//  Time Complexity : O(n)
+//  Space Complexity : O(n)
+//  Runtime: 144 ms
+//  Memory Usage: 87.832 MB
 //
 //  Created by gunhyeong on 2020/09/21.
 //
