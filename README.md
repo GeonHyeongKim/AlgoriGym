@@ -92,6 +92,7 @@ Swift & Java
 |[공](https://www.acmicpc.net/problem/1547 "백준 알고리즘")|[Swift](https://github.com/GeonHyeongKim/AlgoriGym/blob/master/Simulation/%EA%B3%B5.swift)|70.306%|O(n)|O(n)|swapAt|
 |[로봇 청소기](https://www.acmicpc.net/problem/14503 "백준 알고리즘")|[Swift](https://github.com/GeonHyeongKim/AlgoriGym/blob/master/Simulation/%EB%A1%9C%EB%B4%87%20%EC%B2%AD%EC%86%8C%EA%B8%B0.swift)|51.526%|O(n^n)|O(n^m)||
 |[뱀](https://www.acmicpc.net/problem/3190 "백준 알고리즘")|[Swift](https://github.com/GeonHyeongKim/AlgoriGym/blob/master/Simulation/%EB%B1%80.swift)|35.319%|O(n+x)|O(n^2)||
+|[보너스 점수](https://www.acmicpc.net/problem/17389 "백준 알고리즘")|[Swift](https://github.com/GeonHyeongKim/AlgoriGym/blob/master/Simulation/%EB%B1%80.swift)|78.986%||||
 |[수열의 변화](https://www.acmicpc.net/problem/1551 "백준 알고리즘")|[Swift](https://github.com/GeonHyeongKim/AlgoriGym/blob/master/Simulation/%EC%88%98%EC%97%B4%EC%9D%98%20%EB%B3%80%ED%99%94.swift)|54.693%|O(n^k)|O(n)||
 |[이름궁합 테스트](https://www.acmicpc.net/problem/17269 "백준 알고리즘")|[Swift](https://github.com/GeonHyeongKim/AlgoriGym/blob/master/Simulation/%EC%9D%B4%EB%A6%84%EA%B6%81%ED%95%A9%20%ED%85%8C%EC%8A%A4%ED%8A%B8.swift)|57.851%|O((n+m)^2)|O(n)||
 |[주사위 굴리기](https://www.acmicpc.net/problem/14499 "백준 알고리즘")|[Swift](https://github.com/GeonHyeongKim/AlgoriGym/blob/master/Simulation/%EC%A3%BC%EC%82%AC%EC%9C%84%20%EA%B5%B4%EB%A6%AC%EA%B8%B0.swift)|41.316%|O(n)|O(n^m)||
