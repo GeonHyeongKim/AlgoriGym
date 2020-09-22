@@ -7,10 +7,10 @@
 //                      3. 문자열에 맞는 숫자로 대체
 //                      4. 2중 반복문을 통해 숫자를 누적해서 더함
 //
-//  Time Complexity :
-//  Space Complexity :
-//  Runtime:  ms
-//  Memory Usage:  MB
+//  Time Complexity : O((n+m)^2)
+//  Space Complexity : O(n)
+//  Runtime: 12 ms
+//  Memory Usage: 81.340 MB
 //
 //  Created by gunhyeong on 2020/09/22.
 //
