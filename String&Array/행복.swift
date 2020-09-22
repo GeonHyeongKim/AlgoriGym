@@ -15,3 +15,9 @@
 //
 
 import Foundation
+
+let cntStudent = Int(readLine()!)!
+let score = readLine()!.split(separator: " ").map{Int($0)!}
+let maxScore = score.max()!
+let minScore = score.min()!
+print(maxScore - minScore)
