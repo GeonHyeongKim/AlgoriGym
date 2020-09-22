@@ -7,10 +7,10 @@
 //                          i) "O"일경우, 전체 점수에 (i+1)과 보너스 점수(bonus)를 누적한다
 //                          ii) "X"일경우, bonus를 0으로 초기화한다.
 //
-//  Time Complexity :
-//  Space Complexity :
-//  Runtime:  ms
-//  Memory Usage:  MB
+//  Time Complexity : O(n)
+//  Space Complexity : O(n)
+//  Runtime: 12 ms
+//  Memory Usage: 81.324 MB
 //
 //  Created by gunhyeong on 2020/09/22.
 //
