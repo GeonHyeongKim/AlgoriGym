@@ -16,3 +16,19 @@
 //
 
 import Foundation
+
+let n = Int(readLine()!)!
+let ox = readLine()!
+var score = 0
+var bonus = 0
+
+for (i, v) in ox.enumerated() {
+    if v == "O" {
+        score += (i+1) + bonus
+        bonus += 1
+    } else {
+        bonus = 0
+    }
+}
+
+print(score)
