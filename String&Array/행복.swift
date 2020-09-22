@@ -2,7 +2,9 @@
 //  행복.swift
 //  Question Link: https://www.acmicpc.net/problem/15969
 //  Primary idea:       (String & Array & 구현 & Math)
-//                      1.
+//                      1. 배열에서 가장 큰 값을 구한다. Array.max()
+//                      2. 배열에서 가장 작은 값을 구한다. Array.min()
+//                      3. 두개의 차이를 구한다.
 //
 //  Time Complexity :
 //  Space Complexity :
