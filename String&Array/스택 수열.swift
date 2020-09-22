@@ -22,3 +22,35 @@
 //
 
 import Foundation
+
+let n = Int(readLine()!)!
+var list = [Int]()
+var stack = [Int]()
+var count = 1
+var answer = [String]()
+var isNo = false
+
+for _ in 1...n {
+    let data = Int(readLine()!)!
+    while count <= data {
+        stack.append(count)
+        count += 1
+        answer.append("+")
+    }
+    
+    if stack.last! == data {
+        stack.removeLast()
+        answer.append("-")
+    } else {
+        isNo = true
+        break
+    }
+}
+
+if !isNo {
+    for c in answer {
+        print(c)
+    }
+} else {
+    print("NO")
+}
