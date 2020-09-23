@@ -91,6 +91,7 @@ Swift & Java
 ## Simulation
 |Title|Solution|Difficulty|Time|Space|Etc|
 |:---|:---:|:---:|:---:|:---:|:---|
+|[The candy war](https://www.acmicpc.net/problem/9037 "백준 알고리즘")|[Swift](https://github.com/GeonHyeongKim/AlgoriGym/blob/master/Simulation/%EB%B3%B4%EB%84%88%EC%8A%A4%20%EC%A0%90%EC%88%98.swift)|65.104%||||
 |[공](https://www.acmicpc.net/problem/1547 "백준 알고리즘")|[Swift](https://github.com/GeonHyeongKim/AlgoriGym/blob/master/Simulation/%EA%B3%B5.swift)|70.306%|O(n)|O(n)|swapAt|
 |[로봇 청소기](https://www.acmicpc.net/problem/14503 "백준 알고리즘")|[Swift](https://github.com/GeonHyeongKim/AlgoriGym/blob/master/Simulation/%EB%A1%9C%EB%B4%87%20%EC%B2%AD%EC%86%8C%EA%B8%B0.swift)|51.526%|O(n^n)|O(n^m)||
 |[뱀](https://www.acmicpc.net/problem/3190 "백준 알고리즘")|[Swift](https://github.com/GeonHyeongKim/AlgoriGym/blob/master/Simulation/%EB%B1%80.swift)|35.319%|O(n+x)|O(n^2)||
@@ -108,7 +109,7 @@ Swift & Java
 ## Greedy
 |Title|Solution|Difficulty|Time|Space|See|Etc|
 |:---|:---:|:---:|:---:|:---:|:---:|:---|
-|[APC는 왜 서브태스크 대회가 되었을까?](https://www.acmicpc.net/problem/17224 "백준 알고리즘")|[Swift](https://github.com/GeonHyeongKim/AlgoriGym/blob/master/Greedy/APC%EB%8A%94%20%EC%99%9C%20%EC%84%9C%EB%B8%8C%ED%83%9C%EC%8A%A4%ED%81%AC%20%EB%8C%80%ED%9A%8C%EA%B0%80%20%EB%90%98%EC%97%88%EC%9D%84%EA%B9%8C%3F.swift)|74.247%|O(n^2)|O(n)|백준 알고리즘|swift로 혼자 푼 문제|
+|[APC는 왜 서브태스크 대회가 되었을까?](https://www.acmicpc.net/problem/17224 "백준 알고리즘")|[Swift](https://github.com/GeonHyeongKim/AlgoriGym/blob/master/Greedy/APC%EB%8A%94%20%EC%99%9C%20%EC%84%9C%EB%B8%8C%ED%83%9C%EC%8A%A4%ED%81%AC%20%EB%8C%80%ED%9A%8C%EA%B0%80%20%EB%90%98%EC%97%88%EC%9D%84%EA%B9%8C%3F.swift)|74.247%|O(n^2)|O(n)|백준 알고리즘|swift로 혼자 푼 문제, 풀이법에 다시 생각하게 해준 문제|
 |[ATM](https://www.acmicpc.net/problem/11399 "백준 알고리즘")|[Java](https://github.com/GeonHyeongKim/AlgoriGym/blob/master/Greedy/Java/ATM.java)|66.275%|O(n)|O(n)|백준 알고리즘||
 |[DNA](https://www.acmicpc.net/problem/1969 "백준 알고리즘")|[Swift](https://github.com/GeonHyeongKim/AlgoriGym/blob/master/Greedy/DNA.swift)|57.232%|O(n^m) ~ O(n)|O(1)|백준 알고리즘||
 |[Minimum Subsequence in Non-Increasing Order](https://leetcode.com/problems/minimum-subsequence-in-non-increasing-order/ "Leetcode")|[Swift](https://github.com/GeonHyeongKim/AlgoriGym/blob/master/Greedy/Minimum%20Subsequence%20in%20Non-Increasing%20Order.swift)|Easy|O(n)|O(1)|LeetCode||
