@@ -8,10 +8,10 @@
 //                      4. candy의 개수가 홀수인 아이에의 값을 1을 추가해준다.
 //                      5. candy를 반으로 나누고 오른쪽에 채워줘야하는 값을 배열에 저장해 놓는다.
 //
-//  Time Complexity :
-//  Space Complexity :
-//  Runtime:  ms
-//  Memory Usage:  MB
+//  Time Complexity : O(n^2 + m), n은 child의 개수, m은 process 개수
+//  Space Complexity : O(n)
+//  Runtime: 20 ms
+//  Memory Usage: 81.340 MB
 //
 //  Created by gunhyeong on 2020/09/23.
 //
