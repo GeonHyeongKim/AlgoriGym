@@ -17,3 +17,42 @@
 //
 
 import Foundation
+
+let testCase = Int(readLine()!)!
+
+for _ in 0..<testCase {
+    let child = Int(readLine()!)!
+    var candys = readLine()!.split(separator: " ").map{Int($0)!}
+    var process = 0
+    
+    while !check(candys) {
+        process += 1
+        var rightCandy = [Int](repeating: 0, count: child)
+
+        for i in 0..<candys.count {
+            if candys[i] % 2 == 1 {
+                candys[i] += 1
+            }
+            
+            candys[i] /= 2
+            rightCandy[(i+1) % child] = candys[i]
+        }
+        
+        for i in 0..<child {
+            candys[i] += rightCandy[i]
+        }
+    }
+    
+    print(process)
+}
+
+
+func check(_ candys: [Int]) -> Bool {
+    var candy = candys
+    for i in 0..<candy.count {
+        if candy[i] % 2 == 1 {
+            candy[i] += 1
+        }
+    }
+    return Set(candy).count == 1
+}
