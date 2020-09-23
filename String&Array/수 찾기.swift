@@ -13,3 +13,14 @@
 //
 
 import Foundation
+
+let n = Int(readLine()!)!
+let nList = readLine()!.split(separator: " ").map{Int($0)!}
+let m = Int(readLine()!)!
+let mList = readLine()!.split(separator: " ").map{Int($0)!}
+var answer = ""
+
+for num in mList.map({nList.contains($0) ? 1 : 0}) {
+    answer += "\(num) "
+}
+
