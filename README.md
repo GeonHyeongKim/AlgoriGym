@@ -62,7 +62,7 @@ Swift & Java
 |[수빈이의 수열](https://www.acmicpc.net/problem/10539 "백준 알고리즘")|[Swift](https://github.com/GeonHyeongKim/AlgoriGym/blob/master/String%26Array/%EC%88%98%EB%B9%88%EC%9D%B4%EC%9D%98%20%EC%88%98%EC%97%B4.swift)|79.636%|O(n)|O(n)|||
 |[수식 최대화](https://programmers.co.kr/learn/courses/30/lessons/67257 "프로그래머스")|[Swift](https://github.com/GeonHyeongKim/AlgoriGym/blob/master/String%26Array/%EC%88%98%EC%8B%9D%20%EC%B5%9C%EB%8C%80%ED%99%94.swift)|Level 2|?|?|프로그래머스|2020 카카오 인턴십|
 |[수열의 값](https://www.acmicpc.net/problem/2867 "백준 알고리즘")|[Swift](https://github.com/GeonHyeongKim/AlgoriGym/blob/master/String%26Array/%EB%8B%A4%ED%8A%B8%EA%B2%8C%EC%9E%84.swift)|39.521%|||백준 알고리즘||
-|[수 찾기](https://www.acmicpc.net/problem/1920 "백준 알고리즘")|[Swift](https://github.com/GeonHyeongKim/AlgoriGym/blob/master/String%26Array/%EC%88%98%20%EC%B0%BE%EA%B8%B0.swift)|29.458%|||백준 알고리즘||
+|[수 찾기](https://www.acmicpc.net/problem/1920 "백준 알고리즘")|[Swift](https://github.com/GeonHyeongKim/AlgoriGym/blob/master/String%26Array/%EC%88%98%20%EC%B0%BE%EA%B8%B0.swift)|29.458%|O(logn)|O(n)|백준 알고리즘||
 |[숫자 야구](https://programmers.co.kr/learn/courses/30/lessons/42841 "프로그래머스")|[Swift](https://github.com/GeonHyeongKim/AlgoriGym/blob/master/String%26Array/%EC%88%AB%EC%9E%90%20%EC%95%BC%EA%B5%AC.swift)|Level 2|O(n)|O(1)|프로그래머스|코딩테스트 고득점 Kit|
 |[스택 수열](https://www.acmicpc.net/problem/1874 "백준 알고리즘")|[Swift](https://github.com/GeonHyeongKim/AlgoriGym/commit/4ca2cf5cb2e33e739fc479fb97a371018629b28e)|32.340%|O(n)|O(n)|||
 |[스킬트리](https://programmers.co.kr/learn/courses/30/lessons/49993 "프로그래머스")|[Swift](https://github.com/GeonHyeongKim/AlgoriGym/blob/master/String%26Array/%EC%8A%A4%ED%82%AC%ED%8A%B8%EB%A6%AC.swift)|Level 2|O(n^m)|O(1)||Summer/Winter Coding(~2018)|

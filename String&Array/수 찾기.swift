@@ -5,10 +5,10 @@
 //                      1. 배열값들을 받고 A,B에 들어 있는지 contains()를 통해 확인한다. (x)
 //                      2. containsO(n)로 탐색하지 않고 BinarySearch(O(logN))를 직접 구현하여 값을 찾음
 //
-//  Time Complexity :
-//  Space Complexity :
-//  Runtime:  ms
-//  Memory Usage:  MB
+//  Time Complexity : O(logn)
+//  Space Complexity : O(n)
+//  Runtime: 556 ms
+//  Memory Usage: 92.476 MB
 //
 //  Created by gunhyeong on 2020/09/22.
 //
