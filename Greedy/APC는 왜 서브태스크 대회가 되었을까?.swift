@@ -12,7 +12,7 @@
 //
 //  Created by gunhyeong on 2020/09/23.
 //
-
+// MARK:- 1번째 다른 풀이 - 100점
 import Foundation
 
 let input = readLine()!.split(separator: " ").map{Int($0)!}
@@ -66,3 +66,42 @@ struct Problem {
         self.sub2 = sub2
     }
 }
+
+// MARK:- 2번째 다른 풀이 - 140점
+//  Time Complexity : O(n)
+//  Space Complexity : O(n)
+//  Runtime: 16 ms
+//  Memory Usage: 81.332 MB
+
+import Foundation
+
+let input = readLine()!.split(separator: " ").map{Int($0)!}
+let n = input[0] // 문제 개수
+let l = input[1] // 역량
+let k = input[2] // 풀수 있는 최대 개수
+var count = 0 // 풀어낸 문제의 수
+var sum = 0
+var hard = 0
+var easy = 0
+
+for _ in 0..<n {
+    let sub = readLine()!.split(separator: " ").map{Int($0)!}
+    let sub1 = sub.first!
+    let sub2 = sub.last!
+    
+    if sub2 <= l {
+        hard += 1
+    } else if sub1 <= l {
+        easy += 1
+    }
+}
+
+// hard 문제
+sum += min(hard, k) * 140
+
+// easy 문제
+if hard < k {
+    sum += min(k-hard, max(0, easy)) * 100
+}
+
+print(sum)
