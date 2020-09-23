@@ -16,3 +16,32 @@
 //
 
 import Foundation
+
+let input = readLine()!.split(separator: " ").map{Int($0)!}
+let n = input.first! // 걸그룹수
+let m = input.last! // 맞춰야 할 문제의 수
+var girlGroups = [String : [String]]() // 그룹명:[멤버명]
+
+// 걸 그룹 입력
+for _ in 0..<n {
+    let groupName = readLine()!
+    let groupCnt = Int(readLine()!)!
+    girlGroups[groupName] = []
+    
+    for _ in 0..<groupCnt {
+        let girlName = readLine()!
+        girlGroups[groupName]?.append(girlName)
+    }
+}
+
+// 퀴즈 시작
+for _ in 0..<m {
+    let name = readLine()!
+    let type = Int(readLine()!)! // 0이면 걸그룹 명, 1이면 멤버
+    
+    if type == 0 {
+        for girName in girlGroups[name]!.sorted() { print(girName) }
+    } else { // 1일 경우
+        print(girlGroups.mapValues({$0.contains(name)}).filter({$0.value}).keys.first!)
+    }
+}
