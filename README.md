@@ -91,7 +91,7 @@ Swift & Java
 ## Simulation
 |Title|Solution|Difficulty|Time|Space|Etc|
 |:---|:---:|:---:|:---:|:---:|:---|
-|[The candy war](https://www.acmicpc.net/problem/9037 "백준 알고리즘")|[Swift](https://github.com/GeonHyeongKim/AlgoriGym/blob/master/Simulation/The%20candy%20war.swift)|65.104%|O(n^2 + m)|O(n)|Set을 이용해 배열의 값이 모두 같은지 확인<br>%를 이용한 순환배열|
+|[The candy war](https://www.acmicpc.net/problem/9037 "백준 알고리즘")|[Swift](https://github.com/GeonHyeongKim/AlgoriGym/blob/master/Simulation/The%20candy%20war.swift)|65.104%|O(n^2 + m)|O(n)|Set을 이용해 배열의 값이 모두 같은지 확인<br>%를 이용한 순환배열처름 index알아내기|
 |[공](https://www.acmicpc.net/problem/1547 "백준 알고리즘")|[Swift](https://github.com/GeonHyeongKim/AlgoriGym/blob/master/Simulation/%EA%B3%B5.swift)|70.306%|O(n)|O(n)|swapAt|
 |[로봇 청소기](https://www.acmicpc.net/problem/14503 "백준 알고리즘")|[Swift](https://github.com/GeonHyeongKim/AlgoriGym/blob/master/Simulation/%EB%A1%9C%EB%B4%87%20%EC%B2%AD%EC%86%8C%EA%B8%B0.swift)|51.526%|O(n^n)|O(n^m)||
 |[뱀](https://www.acmicpc.net/problem/3190 "백준 알고리즘")|[Swift](https://github.com/GeonHyeongKim/AlgoriGym/blob/master/Simulation/%EB%B1%80.swift)|35.319%|O(n+x)|O(n^2)||
