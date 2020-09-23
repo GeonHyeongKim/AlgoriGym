@@ -108,6 +108,7 @@ Swift & Java
 ## Greedy
 |Title|Solution|Difficulty|Time|Space|See|Etc|
 |:---|:---:|:---:|:---:|:---:|:---:|:---|
+|[APC는 왜 서브태스크 대회가 되었을까?](https://www.acmicpc.net/problem/17224 "백준 알고리즘")|[Swift](https://github.com/GeonHyeongKim/AlgoriGym/blob/master/Greedy/Java/ATM.java)|74.247%|||백준 알고리즘||
 |[ATM](https://www.acmicpc.net/problem/11399 "백준 알고리즘")|[Java](https://github.com/GeonHyeongKim/AlgoriGym/blob/master/Greedy/Java/ATM.java)|66.275%|O(n)|O(n)|백준 알고리즘||
 |[DNA](https://www.acmicpc.net/problem/1969 "백준 알고리즘")|[Swift](https://github.com/GeonHyeongKim/AlgoriGym/blob/master/Greedy/DNA.swift)|57.232%|O(n^m) ~ O(n)|O(1)|백준 알고리즘||
 |[Minimum Subsequence in Non-Increasing Order](https://leetcode.com/problems/minimum-subsequence-in-non-increasing-order/ "Leetcode")|[Swift](https://github.com/GeonHyeongKim/AlgoriGym/blob/master/Greedy/Minimum%20Subsequence%20in%20Non-Increasing%20Order.swift)|Easy|O(n)|O(1)|LeetCode||
