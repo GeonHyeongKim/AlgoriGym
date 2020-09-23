@@ -7,10 +7,10 @@
 //                          i) 0 일때, 오름차순으로 정렬된 걸그룹 멤버들의 이름을 출력한다.
 //                          ii) 1 일떄, 멤버가 속해있는 걸그룹의 이름을 출력한다.
 //
-//  Time Complexity :
-//  Space Complexity :
-//  Runtime:  ms
-//  Memory Usage:  MB
+//  Time Complexity : O(n^m) // n은 걸그룹수, m은 퀴즈의 갯수
+//  Space Complexity : O(n)
+//  Runtime: 16 ms
+//  Memory Usage: 81.352 MB
 //
 //  Created by gunhyeong on 2020/09/23.
 //
