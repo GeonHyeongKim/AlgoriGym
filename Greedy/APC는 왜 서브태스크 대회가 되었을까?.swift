@@ -5,10 +5,10 @@
 //                      1. 문제를 입력받은 후 내림차순으로 정렬한다.
 //                      2. 그리고 역량을 넘지 않은 선에서 문제를 풀어낸다.
 //
-//  Time Complexity :
-//  Space Complexity :
-//  Runtime:  ms
-//  Memory Usage:  MB
+//  Time Complexity : O(n^2)
+//  Space Complexity : O(n)
+//  Runtime: 16 ms
+//  Memory Usage: 81.340 MB
 //
 //  Created by gunhyeong on 2020/09/23.
 //
