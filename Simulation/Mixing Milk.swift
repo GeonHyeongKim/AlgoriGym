@@ -17,3 +17,28 @@
 //
 
 import Foundation
+
+var capacity = [Int]()
+var amount = [Int]()
+
+// init
+for _ in 0..<3 {
+    let bucket = readLine()!.split(separator: " ").map{Int($0)!} // capacity, amount of milk
+    capacity.append(bucket.first!)
+    amount.append(bucket.last!)
+}
+
+// 100번 반복
+for i in 0..<100 {
+    let idx = i % 3
+    let nextIdx = (idx+1) % 3
+    
+    let temp = amount[idx]
+    amount[idx] = max(amount[idx] - (capacity[nextIdx] - amount[nextIdx]), 0)
+    amount[nextIdx] = min(capacity[nextIdx], temp + amount[nextIdx])
+}
+
+// 출력
+for milk in amount {
+    print(milk)
+}
