@@ -8,10 +8,10 @@
 //                      4. 옮기고 남아 있는 우유는 max(현재 우유 - (다음 우유 수용력 - 다음 우유의 양), 0)
 //                      5. 다음 우유의 양은 min(다음 우유의 수용력, (이전의 우유의 양 + 다음 우유가 가지고 있는 현재의 양)
 //
-//  Time Complexity :
-//  Space Complexity :
-//  Runtime:  ms
-//  Memory Usage:  MB
+//  Time Complexity : O(n)
+//  Space Complexity : O(1)
+//  Runtime: 16 ms
+//  Memory Usage: 81.332 MB
 //
 //  Created by gunhyeong on 2020/09/24.
 //
