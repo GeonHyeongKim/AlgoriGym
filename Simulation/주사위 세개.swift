@@ -14,3 +14,17 @@
 //
 
 import Foundation
+
+let input = readLine()!.split(separator: " ").map{Int($0)!}.sorted()
+var reward = 0
+let count = Set(input).count
+
+if count == 1 {
+    reward = 10000 + input.first! * 1000
+} else if count == 2 {
+    reward = 1000 + input[1] * 100
+} else if count == 3 {
+    reward = input.last! * 100
+}
+
+print(reward)
