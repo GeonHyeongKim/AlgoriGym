@@ -21,3 +21,32 @@
 //
 
 import Foundation
+
+let people = Int(readLine()!)!
+var answer = 0
+
+for _ in 0..<people {
+    let dice = readLine()!.split(separator: " ").map{Int($0)!}.sorted()
+    answer = max(answer, getPrice(dice))
+}
+
+func getPrice(_ dice: [Int]) -> Int {
+    let setDice = Set(dice).count
+
+    if setDice == 1 {
+        return 50000 + dice.first! * 5000
+    } else if setDice == 2 {
+        return dice[1] == dice[2] ? 10000 + dice[1] * 1000 : 2000 + (dice[1] + dice[2])*500
+    } else if setDice == 3 {
+        for i in 0..<4 {
+            if dice[i] == dice[i+1] {
+                return 1000 + dice[i] * 100
+            }
+        }
+        return 0
+    } else { //setDice == 4
+        return dice.last! * 100
+    }
+}
+
+print(answer)
