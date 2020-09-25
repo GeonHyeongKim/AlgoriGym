@@ -14,10 +14,10 @@
 //                         iii) getAnswer(r+m, c, m);
 //                         iv) getAnswer(r+m, c+m, m);
 //
-//  Time Complexity : O(1)
-//  Space Complexity : O(n)
-//  Runtime: 16 ms
-//  Memory Usage: 81.332 MB
+//  Time Complexity :  O(1)
+//  Space Complexity :  O(n)
+//  Runtime:  16 ms
+//  Memory Usage:  81.332 MB
 //
 //  Created by gunhyeong on 2020/09/24.
 //
