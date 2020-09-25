@@ -12,10 +12,10 @@
 //                          iii) 3개일 경우 - 1,000원+(같은 눈)*100원의 상금
 //                          iv) 4개일 경우 - (그 중 가장 큰 눈)*100원의 상금
 //
-//  Time Complexity :
-//  Space Complexity :
-//  Runtime:  ms
-//  Memory Usage:  MB
+//  Time Complexity : O(1)
+//  Space Complexity : O(n)
+//  Runtime: 20 ms
+//  Memory Usage: 81.344 MB
 //
 //  Created by gunhyeong on 2020/09/25.
 //
