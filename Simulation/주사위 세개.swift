@@ -5,10 +5,10 @@
 //                      1. Set을 통해 unique한 갯수를 찾아낸다.
 //                      2. 정렬을 통해 개수가 2개일 경우를 계산한다.
 //
-//  Time Complexity :
-//  Space Complexity :
-//  Runtime:  ms
-//  Memory Usage:  MB
+//  Time Complexity : O(1)
+//  Space Complexity : O(n)
+//  Runtime: 12 ms
+//  Memory Usage: 81.340 MB
 //
 //  Created by gunhyeong on 2020/09/25.
 //
