@@ -95,6 +95,7 @@ Swift & Java
 |[Mixing Milk](https://www.acmicpc.net/problem/16769 "백준 알고리즘")|[Swift](https://github.com/GeonHyeongKim/AlgoriGym/blob/master/Simulation/Mixing%20Milk.swift)|68.707%|O(n)|O(1)||
 |[The candy war](https://www.acmicpc.net/problem/9037 "백준 알고리즘")|[Swift](https://github.com/GeonHyeongKim/AlgoriGym/blob/master/Simulation/The%20candy%20war.swift)|65.104%|O(n^2 + m)|O(n)|Set을 이용해 배열의 값이 모두 같은지 확인<br>%를 이용한 순환배열처럼 index알아내기|
 |[공](https://www.acmicpc.net/problem/1547 "백준 알고리즘")|[Swift](https://github.com/GeonHyeongKim/AlgoriGym/blob/master/Simulation/%EA%B3%B5.swift)|70.306%|O(n)|O(n)|swapAt|
+|[두개의 손](https://www.acmicpc.net/problem/16675 "백준 알고리즘")|[Swift](https://github.com/GeonHyeongKim/AlgoriGym/blob/master/Simulation/%EA%B3%B5.swift)|56.338%||||
 |[로봇 청소기](https://www.acmicpc.net/problem/14503 "백준 알고리즘")|[Swift](https://github.com/GeonHyeongKim/AlgoriGym/blob/master/Simulation/%EB%A1%9C%EB%B4%87%20%EC%B2%AD%EC%86%8C%EA%B8%B0.swift)|51.526%|O(n^n)|O(n^m)||
 |[뱀](https://www.acmicpc.net/problem/3190 "백준 알고리즘")|[Swift](https://github.com/GeonHyeongKim/AlgoriGym/blob/master/Simulation/%EB%B1%80.swift)|35.319%|O(n+x)|O(n^2)||
 |[보너스 점수](https://www.acmicpc.net/problem/17389 "백준 알고리즘")|[Swift](https://github.com/GeonHyeongKim/AlgoriGym/blob/master/Simulation/%EB%B3%B4%EB%84%88%EC%8A%A4%20%EC%A0%90%EC%88%98.swift)|78.986%|O(n)|O(n)||
