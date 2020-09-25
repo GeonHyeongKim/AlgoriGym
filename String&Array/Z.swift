@@ -14,8 +14,8 @@
 //                         iii) getAnswer(r+m, c, m);
 //                         iv) getAnswer(r+m, c+m, m);
 //
-//  Time Complexity :
-//  Space Complexity :
+//  Time Complexity : O(1)
+//  Space Complexity : O(n)
 //  Runtime: 16 ms
 //  Memory Usage: 81.332 MB
 //
@@ -24,3 +24,39 @@
 
 import Foundation
 
+let input = readLine()!.split(separator: " ").map{Int($0)!}
+let n = input[0] // size
+let r = input[1] // x
+let c = input[2] // y
+var size = Int(pow(Double(2), Double(n)))
+var cnt = 0
+var answer = 0
+
+z(size, 0, 0)
+print(answer)
+
+// 0,0읗 기준으로 X,Y의 숫자
+func z(_ size: Int, _ x: Int, _ y: Int) -> Bool {
+    if size == 1 {
+        if x == r && y == c {
+            answer = cnt
+            return true
+        }
+        cnt += 1
+        return false
+    }
+    
+    if !(x<=r && r<x+size && y<=c && c<y+size) {
+        cnt += size * size
+        return false
+    }
+    
+    let m = size / 2
+    
+    for i in 0..<2 {
+        for j in 0..<2 {
+            if z(m, x+i*m, y+j*m) { return true }
+        }
+    }
+    return false
+}
