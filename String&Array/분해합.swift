@@ -12,3 +12,28 @@
 //
 
 import Foundation
+
+let input = Int(readLine()!)!
+
+print(solution(input))
+
+func solution(_ n: Int) -> Int {
+    for i in 0..<n {
+        if isSolve(i) { return i }
+    }
+    
+    return 0
+}
+
+
+func isSolve(_ n: Int) -> Bool {
+    var num = n
+    var sum = n
+    
+    while num > 0 {
+        sum += num % 10
+        num /= 10
+    }
+    
+    return sum == input
+}
