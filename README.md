@@ -189,6 +189,7 @@ Swift & Java
 |[캐슬 디펜스](https://www.acmicpc.net/problem/17135 "백준 알고리즘")|[Swift](https://github.com/GeonHyeongKim/AlgoriGym/blob/master/Simulation/%EC%BA%90%EC%8A%AC%20%EB%94%94%ED%8E%9C%EC%8A%A4.swift)|29.730%|?|?|백준 알고리즘||
 |[타겟 넘버](https://programmers.co.kr/learn/courses/30/lessons/43165 "프로그래머스")|[Swift](https://github.com/GeonHyeongKim/AlgoriGym/blob/master/Graph(DFS%20%26%20BFS)/%ED%83%80%EA%B2%9F%20%EB%84%98%EB%B2%84.swift)|Level 2|O(n^n)|O(1)|프로그래머스|코딩테스트 고득점 Kit|
 |[토마토](https://www.acmicpc.net/problem/7576 "백준 알고리즘")|[Swift](https://github.com/GeonHyeongKim/AlgoriGym/blob/master/Graph(DFS%20%26%20BFS)/%ED%86%A0%EB%A7%88%ED%86%A0.swift)|31.991%|O(E log E)|O(n^2)|백준 알고리즘||
+|[트리](https://www.acmicpc.net/problem/1068 "백준 알고리즘")|[Swift](https://github.com/GeonHyeongKim/AlgoriGym/blob/master/Graph(DFS%20%26%20BFS)/%ED%86%A0%EB%A7%88%ED%86%A0.swift)|25.367%|||백준 알고리즘||
 |[파이프 옮기기 1](https://www.acmicpc.net/problem/17070 "백준 알고리즘")|[Swift](https://github.com/GeonHyeongKim/AlgoriGym/blob/master/Graph(DFS%20%26%20BFS)/%ED%8C%8C%EC%9D%B4%ED%94%84%20%EC%98%AE%EA%B8%B0%EA%B8%B0%201.swift)|49.184%|O(n^n)|O(n^2)|백준 알고리즘||
 |[플로이드](https://www.acmicpc.net/problem/11404 "백준 알고리즘")|[Swift](https://github.com/GeonHyeongKim/AlgoriGym/blob/master/Graph(DFS%20%26%20BFS)/%ED%94%8C%EB%A1%9C%EC%9D%B4%EB%93%9C.swift)|43.861%|O(n^3)|O(n^2)|백준 알고리즘||
 
