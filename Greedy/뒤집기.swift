@@ -37,3 +37,21 @@ for i in 1..<str.count {
 print(min(zero, one))
 
 //MARK:- 2번재 문제 풀이 시작
+var str = Array(readLine()!)
+var zero = 0, one = 0
+
+if str.first == "0" {
+    zero += 1
+} else {
+    one += 1
+}
+
+for i in 1..<str.count {
+    if str[i] != str[i-1] {
+        if str[i] == "0" {
+            zero += 1
+        } else {
+            one += 1
+        }
+    }
+}
