@@ -35,3 +35,5 @@ for i in 1..<str.count {
 }
 
 print(min(zero, one))
+
+//MARK:- 2번재 문제 풀이 시작
