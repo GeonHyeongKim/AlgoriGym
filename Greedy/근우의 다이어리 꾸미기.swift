@@ -16,3 +16,20 @@
 //
 
 import Foundation
+
+int n,chk_n;
+string s_chk_n;
+
+cin >> n;
+
+string s = to_string(n);
+
+
+int size = s.size();
+for(int i = 0; i < size; i++)
+   s_chk_n+='1';
+chk_n = atoi(s_chk_n.c_str());
+
+if(n>=chk_n) cout << size;
+else if(n == 0) cout << 1;
+else         cout << size-1;
