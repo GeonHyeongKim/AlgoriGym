@@ -7,29 +7,29 @@
 //                      3. 문자열의 길이만큼 1이 포함되는 경우가 존재하는지 판단한다.
 //                      4. 3의 조건을 만족하면 문자열의 길이를, 만족하지 않으면 문자열 길이 -1을 출력한다.
 //
-//  Time Complexity :
-//  Space Complexity :
+//  Time Complexity : O(n)
+//  Space Complexity : O(1)
 //  Runtime:  ms
 //  Memory Usage:  MB
 //
 //  Created by gunhyeong on 2020/10/02.
 //
 
+
 import Foundation
 
-int n,chk_n;
-string s_chk_n;
+var n = readLine()! // 0~n
+let size = n.count
+var digit = 1
 
-cin >> n;
+for _ in 1..<size {
+    digit = digit * 10 + 1
+}
 
-string s = to_string(n);
-
-
-int size = s.size();
-for(int i = 0; i < size; i++)
-   s_chk_n+='1';
-chk_n = atoi(s_chk_n.c_str());
-
-if(n>=chk_n) cout << size;
-else if(n == 0) cout << 1;
-else         cout << size-1;
+if size == 0 {
+    print(1)
+} else if digit > Int(n)! {
+    print(size - 1)
+} else {
+    print(size)
+}
