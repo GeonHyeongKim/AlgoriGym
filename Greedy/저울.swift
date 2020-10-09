@@ -6,10 +6,10 @@
 //                      2. 저울추의 총 합을 재는 변수는 sum
 //                      3. 이제 저울추를 하나씩 올려보며 주어진 저울추로 무게는 측정할 수 있는지 검사
 //
-//  Time Complexity :
-//  Space Complexity :
-//  Runtime:  ms
-//  Memory Usage:  MB
+//  Time Complexity : O(n)
+//  Space Complexity : O(n)
+//  Runtime: 8 ms
+//  Memory Usage: 64.056 MB
 //
 //  Created by gunhyeong on 2020/10/04.
 //
