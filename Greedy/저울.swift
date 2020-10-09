@@ -15,3 +15,14 @@
 //
 
 import Foundation
+
+let n = Int(readLine()!)! // 저울추의 개수
+let weight = readLine()!.split(separator: " ").map{Int($0)!}.sorted()
+var sum = 0
+
+for w in weight {
+    if sum + 1 < w { break }
+    sum += w
+}
+
+print(sum + 1)
