@@ -13,3 +13,22 @@
 //
 
 import Foundation
+
+class Solution {
+    func allPathsSourceTarget(_ graph: [[Int]]) -> [[Int]] {
+        var result = [[Int]]()
+        
+        addPath(graph, [0], &result)
+        
+        return result
+    }
+    
+    func addPath(_ graph: [[Int]], _ currentPath: [Int], _ result: inout [[Int]]) {
+        if graph.count == 0 || graph[0].count == 0 {
+            result.append(current)
+            return
+        }
+        
+        
+    }
+}
