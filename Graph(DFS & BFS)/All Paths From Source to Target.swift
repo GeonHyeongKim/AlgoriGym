@@ -23,12 +23,14 @@ class Solution {
         return result
     }
     
-    func addPath(_ graph: [[Int]], _ currentPath: [Int], _ result: inout [[Int]]) {
+    func addPath(_ graph: [[Int]], _ originGraph: [[Int]], _ currentPath: [Int], _ result: inout [[Int]]) {
         if graph.count == 0 || graph[0].count == 0 {
             result.append(current)
             return
         }
         
-        
+        for g in graph[0] {
+            addPath(Array(originGraph[g..<originGraph.count]), originGraph, current + [g], &result)
+        }
     }
 }
