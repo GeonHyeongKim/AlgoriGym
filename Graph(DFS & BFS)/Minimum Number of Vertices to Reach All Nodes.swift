@@ -14,3 +14,17 @@
 //
 
 import Foundation
+
+class Solution {
+    func findSmallestSetOfVertices(_ n: Int, _ edges: [[Int]]) -> [Int] {
+        var result = [Int]()
+        
+        var set = Set<Int>(0..<n)
+        
+        for edge in edges {
+            set.remove(edge.last!)
+        }
+        
+        return Array(set)
+    }
+}
