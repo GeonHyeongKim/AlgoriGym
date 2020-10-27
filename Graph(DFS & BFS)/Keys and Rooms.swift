@@ -14,3 +14,23 @@
 //
 
 import Foundation
+
+class Solution {
+    func canVisitAllRooms(_ rooms: [[Int]]) -> Bool {
+        var visited = [Bool](repeating: false, count: rooms.count)
+        visited[0] = true
+        
+        goRoom(rooms, &visited, 0)
+        
+        return !visited.contains(false)
+    }
+    
+    func goRoom(_ rooms: [[Int]], _ visited: inout [Bool], _ no: Int) {
+        for nextNo in rooms[no] {
+            if !visited[nextNo] {
+                visited[nextNo] = true
+                goRoom(rooms, &visited, nextNo)
+            }
+        }
+    }
+}
