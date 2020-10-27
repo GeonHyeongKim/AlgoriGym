@@ -168,7 +168,7 @@ Swift & Java
 |[DFS와 BFS](https://www.acmicpc.net/problem/1260 "백준 알고리즘")|[Swift](https://github.com/GeonHyeongKim/AlgoriGym/blob/master/Graph(DFS%20%26%20BFS)/DFS%EC%99%80%20BFS.swift)|32.154%|O(n^n)|O(n^2)|백준 알고리즘||
 |[Generate Parentheses](https://leetcode.com/problems/combination-sum-iii/ "LeetCode")|[Swift](https://github.com/GeonHyeongKim/AlgoriGym/blob/master/BackTracking/Generate%20Parentheses.swift)|Medium|O(2^n)|O(n)|LeetCode||
 |[Gray Code](https://leetcode.com/problems/combination-sum-iii/ "LeetCode")|[Swift](https://github.com/GeonHyeongKim/AlgoriGym/blob/master/BackTracking/Gray%20Code.swift)|Medium|O(n^n)|O(2^n)|LeetCode||
-|[Jump Game III](https://leetcode.com/problems/jump-game-iii/ "LeetCode")|[Swift](https://github.com/GeonHyeongKim/AlgoriGym/blob/master/BackTracking/Gray%20Code.swift)|Medium|||LeetCode||
+|[Jump Game III](https://leetcode.com/problems/jump-game-iii/ "LeetCode")|[Swift](https://github.com/GeonHyeongKim/AlgoriGym/blob/master/Graph(DFS%20%26%20BFS)/Jump%20Game%20III.swift)|Medium|||LeetCode||
 |[Keys and Rooms](https://leetcode.com/problems/keys-and-rooms/ "LeetCode")|[Swift](https://github.com/GeonHyeongKim/AlgoriGym/blob/master/Graph(DFS%20%26%20BFS)/Keys%20and%20Rooms.swift)|Medium|O(n^n)|O(n^2)|LeetCode|모든 노드 방문 체크 문제|
 |[Letter Combinations of a Phone Number](https://leetcode.com/problems/letter-combinations-of-a-phone-number/ "LeetCode")|[Swift](https://github.com/GeonHyeongKim/AlgoriGym/blob/master/BackTracking/Letter%20Combinations%20of%20a%20Phone%20Number.swift)|Medium|O(4^n)|O(n)|LeetCode||
 |[N과 M (1)](https://www.acmicpc.net/problem/15649 "백준 알고리즘")|[Swift](https://github.com/GeonHyeongKim/AlgoriGym/blob/master/BackTracking/N%EA%B3%BC%20M(1).swift)|60.797%|O(n^n)|O(n)|백준 알고리즘||
