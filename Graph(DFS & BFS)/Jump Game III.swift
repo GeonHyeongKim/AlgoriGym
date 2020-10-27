@@ -6,10 +6,10 @@
 //                      2. index 위치로 간뒤, 1번을 반복
 //                      3. 반복하면서 arr[index] 값이 0이면 종료
 //
-//  Time Complexity :
-//  Space Complexity :
-//  Runtime:  ms
-//  Memory Usage:  MB
+//  Time Complexity : O(n^n)
+//  Space Complexity : O(n)
+//  Runtime: 292 ms
+//  Memory Usage: 15.8 MB
 //
 //  Created by gunhyeong on 2020/10/27.
 //
