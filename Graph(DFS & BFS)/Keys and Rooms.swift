@@ -5,10 +5,10 @@
 //                      1. 전체를 모두 방문하는지 확인하는 문제
 //                      2. dfs로 모든 방문 확인
 //
-//  Time Complexity :
-//  Space Complexity :
-//  Runtime:  ms
-//  Memory Usage:  MB
+//  Time Complexity : O(n^n)
+//  Space Complexity : O(n)
+//  Runtime: 36 ms
+//  Memory Usage: 14.3 MB
 //
 //  Created by gunhyeong on 2020/10/27.
 //
