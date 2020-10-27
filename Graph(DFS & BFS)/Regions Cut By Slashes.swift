@@ -9,11 +9,10 @@
 //                      2. map(6*6)에 1의 배열을 저장한다
 //                      3. dfs로 붙어 있는 0의 갯수를 dfs로 계산해 count한다.
 //
-//
-//  Time Complexity :
-//  Space Complexity :
-//  Runtime:  ms
-//  Memory Usage:  MB
+//  Time Complexity : O(n^n)
+//  Space Complexity : O(n^2)
+//  Runtime: 284 ms
+//  Memory Usage: 15.3 MB
 //
 //  Created by gunhyeong on 2020/10/27.
 //
