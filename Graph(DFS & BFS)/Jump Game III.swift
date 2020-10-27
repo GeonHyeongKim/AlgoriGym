@@ -15,3 +15,28 @@
 //
 
 import Foundation
+
+class Solution {
+    func canReach(_ arr: [Int], _ start: Int) -> Bool {
+        var visited = [Bool](repeating: false, count: arr.count)
+        visited[start] = true
+        
+        return dfs(arr, &visited, start)
+    }
+    
+    func dfs(_ arr: [Int], _ visited: inout [Bool], _ position: Int) -> Bool {
+        guard arr[position] != 0 else { return true }
+
+        for pos in [position + arr[position], position - arr[position]] {
+            if pos >= 0 && pos < arr.count && !visited[pos] {
+                visited[pos] = true
+                if dfs(arr, &visited, pos) {
+                    return true
+                }
+                visited[pos] = false
+            }
+        }
+
+        return false
+    }
+}
