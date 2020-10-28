@@ -166,6 +166,7 @@ Swift & Java
 |[Combination Sum II](https://leetcode.com/problems/combination-sum-ii/ "LeetCode")|[Swift](https://github.com/GeonHyeongKim/AlgoriGym/blob/master/BackTracking/Combination%20Sum%20II.swift)|Medium|O(n^n)|O(2^n - 2)|LeetCode||
 |[Combination Sum III](https://leetcode.com/problems/combination-sum-iii/ "LeetCode")|[Swift](https://github.com/GeonHyeongKim/AlgoriGym/blob/master/BackTracking/Combination%20Sum%20III.swift)|Medium|O(n^n)|O(nCk)|LeetCode||
 |[DFS와 BFS](https://www.acmicpc.net/problem/1260 "백준 알고리즘")|[Swift](https://github.com/GeonHyeongKim/AlgoriGym/blob/master/Graph(DFS%20%26%20BFS)/DFS%EC%99%80%20BFS.swift)|32.154%|O(n^n)|O(n^2)|백준 알고리즘||
+|[Find the Town Judge](https://leetcode.com/problems/find-the-town-judge/ "LeetCode")|[Swift](https://github.com/GeonHyeongKim/AlgoriGym/blob/master/BackTracking/Generate%20Parentheses.swift)|Medium|||LeetCode||
 |[Generate Parentheses](https://leetcode.com/problems/combination-sum-iii/ "LeetCode")|[Swift](https://github.com/GeonHyeongKim/AlgoriGym/blob/master/BackTracking/Generate%20Parentheses.swift)|Medium|O(2^n)|O(n)|LeetCode||
 |[Gray Code](https://leetcode.com/problems/combination-sum-iii/ "LeetCode")|[Swift](https://github.com/GeonHyeongKim/AlgoriGym/blob/master/BackTracking/Gray%20Code.swift)|Medium|O(n^n)|O(2^n)|LeetCode||
 |[Jump Game III](https://leetcode.com/problems/jump-game-iii/ "LeetCode")|[Swift](https://github.com/GeonHyeongKim/AlgoriGym/blob/master/Graph(DFS%20%26%20BFS)/Jump%20Game%20III.swift)|Medium|O(n^n)|O(n)|LeetCode||
