@@ -18,7 +18,40 @@
 import Foundation
 
 class Solution {
+    var row = 0
+    var col = 0
+    var connect = 0
+    
     func countServers(_ grid: [[Int]]) -> Int {
+        var grid = grid
+        row = grid.count
+        col = grid[0].count
+        var answer = 0
         
+        for i in 0..<row {
+            for j in 0..<col {
+                if grid[i][j] == 1 {
+                    connect = 0
+                    dfs(&grid, i, j)
+                    if connect > 1 { answer += connect }
+                }
+            }
+        }
+        
+        return answer
+    }
+    
+    func dfs(_ grid: inout [[Int]], _ i: Int, _ j: Int) {
+        if isOutOfSize(i, j) || grid[i][j] != 1 { return }
+        
+        grid[i][j] = -1
+        connect += 1
+        
+        for x in 0..<row { dfs(&grid, x, j) }
+        for y in 0..<col { dfs(&grid, i, y) }
+    }
+    
+    func isOutOfSize(_ i: Int, _ j: Int) -> Bool {
+        return (i < 0 || i >= row || j < 0 || j >= col) ? true : false
     }
 }
