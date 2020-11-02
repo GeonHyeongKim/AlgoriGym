@@ -7,10 +7,10 @@
 //                      2. connect 변수를 통해, 각각의 섬의 갯수를 저장
 //                      3. 저장된 connect 변수의 값이 2이상이면 결과값(answer)에 누적
 //
-//  Time Complexity :
-//  Space Complexity :
-//  Runtime:  ms
-//  Memory Usage:  MB
+//  Time Complexity : O(n^n)
+//  Space Complexity : O(n^2)
+//  Runtime: 16.5 ms
+//  Memory Usage: 964 MB
 //
 //  Created by gunhyeong on 2020/11/02.
 //
