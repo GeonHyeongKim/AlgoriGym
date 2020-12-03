@@ -252,6 +252,7 @@ Swift & Java
 |h-1|[Swift](https://github.com/GeonHyeongKim/AlgoriGym/blob/master/Test/h-1.swift)|2020-7|
 |h-2|[Swift](https://github.com/GeonHyeongKim/AlgoriGym/blob/master/Test/h-2.swift)|2020-7|
 |h-3|[Swift](https://github.com/GeonHyeongKim/AlgoriGym/blob/master/Test/h-3.swift)|2020-7|
+|n하0-1|[Swift](https://github.com/GeonHyeongKim/AlgoriGym/blob/master/Test/n-1.swift)|2020-8|
 |k-i|[Swift](https://github.com/GeonHyeongKim/AlgoriGym/blob/master/Test/k-i.swift)|2020-5|
 |p-dev|[Swift](https://github.com/GeonHyeongKim/AlgoriGym/blob/master/Test/k-i.swift)|2020-6|
 |t-1|[Swift](https://github.com/GeonHyeongKim/AlgoriGym/blob/master/Test/t-1.swift)|2020-8|
