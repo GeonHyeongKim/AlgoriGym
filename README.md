@@ -249,7 +249,8 @@ Swift & Java
 ## Test
 |Title|Solution|Etc|
 |:---|:---:|:---|
-|a-1|[Swift](https://github.com/GeonHyeongKim/AlgoriGym/blob/master/Test/a-1.swift)|2020-12|
+|a-2|[Swift](https://github.com/GeonHyeongKim/AlgoriGym/blob/master/Test/a-2.swift)|2020-12|
+|a-4|[Swift](https://github.com/GeonHyeongKim/AlgoriGym/blob/master/Test/a-4.swift)|2020-12|
 |h-1|[Swift](https://github.com/GeonHyeongKim/AlgoriGym/blob/master/Test/h-1.swift)|2020-7|
 |h-2|[Swift](https://github.com/GeonHyeongKim/AlgoriGym/blob/master/Test/h-2.swift)|2020-7|
 |h-3|[Swift](https://github.com/GeonHyeongKim/AlgoriGym/blob/master/Test/h-3.swift)|2020-7|
