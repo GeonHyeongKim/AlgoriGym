@@ -193,7 +193,7 @@ Swift & Java
 |[단어 변환](https://programmers.co.kr/learn/courses/30/lessons/43163 "프로그래머스")|[Swift](https://github.com/GeonHyeongKim/AlgoriGym/blob/master/Graph(DFS%20%26%20BFS)/%EB%8B%A8%EC%96%B4%20%EB%B3%80%ED%99%98.swift)|Level 3|O(m^2 * n)|O(m^2 * n)|프로그래머스|코딩테스트 고득점 Kit|
 |[단지번호붙이기](https://www.acmicpc.net/problem/2667 "백준 알고리즘")|[Swift](https://github.com/GeonHyeongKim/AlgoriGym/blob/master/Graph(DFS%20%26%20BFS)/%EB%8B%A8%EC%A7%80%EB%B2%88%ED%98%B8%EB%B6%99%EC%9D%B4%EA%B8%B0.swift)|38.291%|O(n^n)|O(n^2)|백준 알고리즘||
 |[바이러스](https://www.acmicpc.net/problem/2606 "백준 알고리즘")|[Swift](https://github.com/GeonHyeongKim/AlgoriGym/blob/master/Graph(DFS%20%26%20BFS)/%EB%B0%94%EC%9D%B4%EB%9F%AC%EC%8A%A4.swift)|43.304%|O(n^n)|O(n^2)|백준 알고리즘||
-|[아기 상어](https://www.acmicpc.net/problem/2606 "백준 알고리즘")|[Swift](https://github.com/GeonHyeongKim/AlgoriGym/blob/master/Graph(DFS%20%26%20BFS)/%EB%B0%94%EC%9D%B4%EB%9F%AC%EC%8A%A4.swift)|38.369%|||백준 알고리즘||
+|[아기 상어](https://www.acmicpc.net/problem/16236 "백준 알고리즘")|[Swift](https://github.com/GeonHyeongKim/AlgoriGym/blob/master/Graph(DFS%20%26%20BFS)/%EC%95%84%EA%B8%B0%20%EC%83%81%EC%96%B4.swift)|38.369%|||백준 알고리즘||
 |[여행경로](https://programmers.co.kr/learn/courses/30/lessons/43164 "프로그래머스")|[Swift](https://github.com/GeonHyeongKim/AlgoriGym/blob/master/Graph(DFS%20%26%20BFS)/%EC%97%AC%ED%96%89%EA%B2%BD%EB%A1%9C.swift)|Level 3|O(n^n)|O(n)|프로그래머스|코딩테스트 고득점 Kit|
 |[유기농 배추](https://www.acmicpc.net/problem/1012 "백준 알고리즘")|[Swift](https://github.com/GeonHyeongKim/AlgoriGym/blob/master/Graph(DFS%20%26%20BFS)/%EC%9C%A0%EA%B8%B0%EB%86%8D%20%EB%B0%B0%EC%B6%94.swift)|34.852%|O(n^n)|O(n^2)|백준 알고리즘||
 |[상근이의 여행](https://www.acmicpc.net/problem/9372 "백준 알고리즘")|[Swift](https://github.com/GeonHyeongKim/AlgoriGym/blob/master/Graph(DFS%20%26%20BFS)/%EC%83%81%EA%B7%BC%EC%9D%B4%EC%9D%98%20%EC%97%AC%ED%96%89.swift)|62.114%|O(n^n)|O(n)|백준 알고리즘||
@@ -252,6 +252,7 @@ Swift & Java
 |:---|:---:|:---|
 |a-1|[Swift](https://github.com/GeonHyeongKim/AlgoriGym/blob/master/Test/a-1.swift)|2020-12|
 |a-2|[Swift](https://github.com/GeonHyeongKim/AlgoriGym/blob/master/Test/a-2.swift)|2020-12|
+|a-3|[Swift](https://github.com/GeonHyeongKim/AlgoriGym/blob/master/Test/a-3.swift)|2020-12|
 |a-4|[Swift](https://github.com/GeonHyeongKim/AlgoriGym/blob/master/Test/a-4.swift)|2020-12|
 |h-1|[Swift](https://github.com/GeonHyeongKim/AlgoriGym/blob/master/Test/h-1.swift)|2020-7|
 |h-2|[Swift](https://github.com/GeonHyeongKim/AlgoriGym/blob/master/Test/h-2.swift)|2020-7|
