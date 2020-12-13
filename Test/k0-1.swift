@@ -2,31 +2,23 @@
 //  k0-1.swift
 //  
 //
-//  Created by gunhyeong on 2020/12/12.
+//  Created by gunhyeong on 2020/12/13.
 //
 
 import Foundation
 
-func solution(_ n:Int, _ customers: [String]) -> Int {
-    var kiosk = [Int : Int]() // 키호스크 번호 : 이용횟수
+func solution(_ N:Int) -> [Int] {
+    var max = -1
+    var answer = [Int]()
 
-    // init
-    for i in 1...n { kiosk[i] = 0 }
-
-    let format = DateFormatter()
-    format.locale = Locale(identifier: "ko_kr")
-    format.dateFormat = "MM/dd HH:mm:ss"
-
-    for customer in customers {
-        let info = customer.components(separatedBy: " ")
-        let day = info[0]
-        let time = info[1]
-        let lapse = info[2]
-
-        var s = format.date(from: day + " " + time)!
-        print(s)
+    for i in stride(from: 9, to: 2, by: -1) {
+        let digit = String(N, radix: i).filter({$0 != "0"}).map{$0.hexDigitValue!}.reduce(1, *)
+        if max < digit {
+            max = digit
+            answer = [i, digit]
+        }
     }
-    return 0
+    return answer
 }
 
-print(solution(2, ["02/28 23:59:00 03", "03/01 00:00:00 02", "03/01 00:05:00 01"]))
+print(solution(14))
