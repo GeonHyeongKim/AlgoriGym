@@ -91,6 +91,7 @@ Swift & Java
 |[후보키](https://programmers.co.kr/learn/courses/30/lessons/42890 "프로그래머스")|[Swift](https://github.com/GeonHyeongKim/AlgoriGym/blob/master/String%26Array/%EB%B3%B4%EC%84%9D%20%EC%87%BC%ED%95%91.swift)|Level 2|||프로그래머스|2020 카카오 인턴십|
 
 ## Simulation
+### '구현'은 주어진 문제를 그대로 따라가며 각 내용에 맞는 코드를 작성하는 기법
 |Title|Solution|Difficulty|Time|Space|Etc|
 |:---|:---:|:---:|:---:|:---:|:---|
 |[Mixing Milk](https://www.acmicpc.net/problem/16769 "백준 알고리즘")|[Swift](https://github.com/GeonHyeongKim/AlgoriGym/blob/master/Simulation/Mixing%20Milk.swift)|68.707%|O(n)|O(1)||
