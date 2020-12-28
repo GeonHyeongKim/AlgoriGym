@@ -14,9 +14,10 @@ Swift & Java
 [LeetCode](https://leetcode.com/ "LeetCode"), [백준 알고리즘](https://www.acmicpc.net/ "백준 알고리즘"), [프로그래머스](https://programmers.co.kr/ "프로그래머스")
 
 ## String & Array
-### '완전 탐색'은 컴퓨터의 빠른 연산속도를 이용하여 **발생 가능한 모든 경우의 수를 확인하는 방법**
-- i) **for문과 if문을 사용하는 반복문**
-- ii) **재귀함수**를 사용할때는 **기저 사례를 설정**해줘야하며, **재귀 함수의 깊이가 너무 깊어지지 않도록 주의**
+### '완전 탐색'은 컴퓨터의 빠른 연산속도를 이용하여 '발생 가능한 모든 경우의 수를 확인하는 방법'
+- **for문과 if문을 사용하는 반복문**
+- **재귀함수**를 사용할때는 **기저 사례를 설정**해줘야하며, **재귀 함수의 깊이가 너무 깊어지지 않도록 주의**
+
 |Title|Solution|Difficulty|Time|Space|See|Etc|
 |:---|:---:|:---:|:---:|:---:|:---:|:---|
 |[Add Binary](https://leetcode.com/problems/add-binary/ "LeetCode")|[Swift](https://github.com/GeonHyeongKim/AlgoriGym/blob/master/String%26Array/Add%20Binary.swift)|Easy|O(n)|O(n)|LeetCode||
