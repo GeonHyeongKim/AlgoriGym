@@ -240,6 +240,7 @@ Swift & Java
 ### 접근 방법
 1. 하향식 방법 : 믄 문제를 풀 수 잇는 작은 문제가 될떄까지 나눈 후, 작은 문제들을 풀어 얻은 정답들을 합쳐가며 큰 문제의 갑을 구하는 방식으로, 주로 재귀 함수를 이용하여 구현
 2. 상향식 방법 : 가장 작은 문제부터 시작하여 큰 문제를 풀 수 있을 때까지 차례대로 문제들을 풀어나가는 방식으로 주로 반복문을 이용해 구현
+
 |Title|Solution|Difficulty|Time|Space|See|Etc|
 |:---|:---:|:---:|:---:|:---:|:---:|:---|
 |[Climbing Stairs](https://leetcode.com/problems/climbing-stairs/ "LeetCode")|[Swift](https://github.com/GeonHyeongKim/AlgoriGym/blob/master/Dynamic/ClimbStairs.swift)|Easy|O(n)|O(1)|LeetCode||
