@@ -117,6 +117,13 @@ Swift & Java
 |[프린터 큐](https://www.acmicpc.net/problem/1966 "백준 알고리즘")|[Swift](https://github.com/GeonHyeongKim/AlgoriGym/blob/master/Simulation/%ED%94%84%EB%A6%B0%ED%84%B0%20%ED%81%90.swift)|53.788%|O(n logn)|O(n)||
 |[회전하는 큐](https://www.acmicpc.net/problem/1021 "백준 알고리즘")|[Swift](https://github.com/GeonHyeongKim/AlgoriGym/blob/master/Simulation/%ED%9A%8C%EC%A0%84%ED%95%98%EB%8A%94%20%ED%81%90.swift)|48.706%|?|O(n)|[Int] : Array(1...n)|
 
+## Binary Search
+### '이분 탐색'은 이미 정렬된 배열에서 *특정한 원소*가 포함되어 있는지 아닌지를 빠르게 판단할 수 있는 기법
+답을 직접 구하기는 어렵지만, 답을 가정할 수 있고, 해당 답이 맞는지 틀린지 확인하는 문제에서 자주 사용ㅌ
+|Title|Solution|Difficulty|Time|Space|See|Etc|
+|:---|:---:|:---:|:---:|:---:|:---:|:---|
+
+
 ## Greedy
 ### '탐욕(Greedy) 알고리즘'은 현시점에서 가장적합하다고 생각되는 요소를 선택해가는, 즉 **극시안적 선택을 수행하는 알고리즘 기법**
 - **최적화 문제(optimization problem)를 해결**하는데 사용할 수 있는 가장 간단하며 쉽게 구현할 수 있는 알고리즘
