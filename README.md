@@ -230,6 +230,13 @@ Swift & Java
 |[미로 탐색](https://www.acmicpc.net/problem/2178 "백준 알고리즘")|[Swift](https://github.com/GeonHyeongKim/AlgoriGym/blob/master/Dijkstra/%EB%AF%B8%EB%A1%9C%20%ED%83%90%EC%83%89.swift)|36.173%|O(E logE)|O(n^3)|백준 알고리즘||
 
 ## Dynamic Programming
+### '동적 계획법' 은 어렵거나 큰 문제를 간단하고 작은 여러 개의 문제로 나누어서 풀고 작은 문제의 답들을 이용하여 원래 문제의 답을 구하는 방식
+#### 특징
+1. 최적 부분 구조
+: **문제의 정답이 작은 문제에 대해서도 정답**이여야한다. 즉, 전체 문제의 정답은 작은 뭔제들의 정답을 포함하며 작은 문제들을 통해 큰 문제를 풀 수 있어야한다.
+2. 부분 문제 반복
+: **문제를 여러개의 작은 문제로** 나눌 수 있으며, 나눈 작은 문제들을 전체 문제를 푸는 방법과 같은 방법으로 풀 수 있어야 한다.
+* 똑같은 문제를 여러 번 푸는 것을 막기 위해 **메모이제이션**이라는 기법을 사용하는데, 이는 **미리 구해둔 정답을 메모해놓고 만약 다음번에 다시 해당 문제를 풀고자 한다면 미리 메모해둔 정답을 가져와서 쓰는 기법** -> 가장 좋은 예제는 점화식(인접한 항들 사이의 관계식)이다.
 |Title|Solution|Difficulty|Time|Space|See|Etc|
 |:---|:---:|:---:|:---:|:---:|:---:|:---|
 |[Climbing Stairs](https://leetcode.com/problems/climbing-stairs/ "LeetCode")|[Swift](https://github.com/GeonHyeongKim/AlgoriGym/blob/master/Dynamic/ClimbStairs.swift)|Easy|O(n)|O(1)|LeetCode||
