@@ -236,6 +236,7 @@ Swift & Java
 |[플로이드](https://www.acmicpc.net/problem/11404 "백준 알고리즘")|[Swift](https://github.com/GeonHyeongKim/AlgoriGym/blob/master/Graph(DFS%20%26%20BFS)/%ED%94%8C%EB%A1%9C%EC%9D%B4%EB%93%9C.swift)|43.861%|O(n^3)|O(n^2)|백준 알고리즘||
 
 ## Dijkstra
+### 다익스트라 알고리즘은 최단 경로를 찾기 위해 사용하는 알고리즘 중 하나
 |Title|Solution|Difficulty|Time|Space|See|Etc|
 |:---|:---:|:---:|:---:|:---:|:---:|:---|
 |[최단 경로](https://www.acmicpc.net/problem/1753 "백준 알고리즘")|[Swift](https://github.com/GeonHyeongKim/AlgoriGym/blob/master/Dijkstra/%EC%B5%9C%EB%8B%A8%EA%B2%BD%EB%A1%9C.swift)|23.021%|||백준 알고리즘||
