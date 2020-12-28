@@ -118,6 +118,12 @@ Swift & Java
 |[회전하는 큐](https://www.acmicpc.net/problem/1021 "백준 알고리즘")|[Swift](https://github.com/GeonHyeongKim/AlgoriGym/blob/master/Simulation/%ED%9A%8C%EC%A0%84%ED%95%98%EB%8A%94%20%ED%81%90.swift)|48.706%|?|O(n)|[Int] : Array(1...n)|
 
 ## Greedy
+### '탐욕(Greedy) 알고리즘'은 현시점에서 가장적합하다고 생각되는 요소를 선택해가는, 즉 **극시안적 선택을 수행하는 알고리즘 기법**
+- **최적화 문제(optimization problem)를 해결**하는데 사용할 수 있는 가장 간단하며 쉽게 구현할 수 있는 알고리즘
+단, 간단한 만큼 가장 효과적인 답을 찾을 수 있는 문제는 매우 적으니 주의
+- **선택의 방법**에 주의하자! 
+예를 들어 i번째 단계에서 A라는 조건을 이용하여 최적의 해를 선택했다면, i번째 이외의 모든 단계에서도 A라는 조건을 이용하여 해를 구해야한다.
+
 |Title|Solution|Difficulty|Time|Space|See|Etc|
 |:---|:---:|:---:|:---:|:---:|:---:|:---|
 |[APC는 왜 서브태스크 대회가 되었을까?](https://www.acmicpc.net/problem/17224 "백준 알고리즘")|[Swift](https://github.com/GeonHyeongKim/AlgoriGym/blob/master/Greedy/APC%EB%8A%94%20%EC%99%9C%20%EC%84%9C%EB%B8%8C%ED%83%9C%EC%8A%A4%ED%81%AC%20%EB%8C%80%ED%9A%8C%EA%B0%80%20%EB%90%98%EC%97%88%EC%9D%84%EA%B9%8C%3F.swift)|74.247%|O(n^2)|O(n)|백준 알고리즘|swift로 혼자 푼 문제, 풀이법에 다시 생각하게 해준 문제|
