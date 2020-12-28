@@ -237,6 +237,9 @@ Swift & Java
 2. 부분 문제 반복
 : **문제를 여러개의 작은 문제로** 나눌 수 있으며, 나눈 작은 문제들을 전체 문제를 푸는 방법과 같은 방법으로 풀 수 있어야 한다.
 * 똑같은 문제를 여러 번 푸는 것을 막기 위해 **메모이제이션**이라는 기법을 사용하는데, 이는 **미리 구해둔 정답을 메모해놓고 만약 다음번에 다시 해당 문제를 풀고자 한다면 미리 메모해둔 정답을 가져와서 쓰는 기법** -> 가장 좋은 예제는 점화식(인접한 항들 사이의 관계식)이다.
+### 접근 방법
+1. 하향식 방법 : 믄 문제를 풀 수 잇는 작은 문제가 될떄까지 나눈 후, 작은 문제들을 풀어 얻은 정답들을 합쳐가며 큰 문제의 갑을 구하는 방식으로, 주로 재귀 함수를 이용하여 구현
+2. 상향식 방법 : 가장 작은 문제부터 시작하여 큰 문제를 풀 수 있을 때까지 차례대로 문제들을 풀어나가는 방식으로 주로 반복문을 이용해 구현
 |Title|Solution|Difficulty|Time|Space|See|Etc|
 |:---|:---:|:---:|:---:|:---:|:---:|:---|
 |[Climbing Stairs](https://leetcode.com/problems/climbing-stairs/ "LeetCode")|[Swift](https://github.com/GeonHyeongKim/AlgoriGym/blob/master/Dynamic/ClimbStairs.swift)|Easy|O(n)|O(1)|LeetCode||
