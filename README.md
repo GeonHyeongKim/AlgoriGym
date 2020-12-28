@@ -177,6 +177,9 @@ Swift & Java
 |[30](https://www.acmicpc.net/problem/10610 "백준 알고리즘")|[Swift](https://github.com/GeonHyeongKim/AlgoriGym/blob/master/Greedy/30.swift)|35.125%|O(n)|O(1)|백준 알고리즘||
 
 ## DFS & BFS
+### '너비 우선 탐색(BFS: Breadth First Search)'은 그래프를 방문하거나 탐색하는 방법
+* BFS를 이용하여 최단 거리, 최소비용과 같이 최솟값과 관련된 문제를 해결할 수 있는데, 이때 그래프의 가중치(시간, 비용, 거리 등)가 1이어야만 한다.
+
 |Title|Solution|Difficulty|Time|Space|See|Etc|
 |:---|:---:|:---:|:---:|:---:|:---:|:---|
 |[All Paths From Source to Target](https://leetcode.com/problems/all-paths-from-source-to-target/ "LeetCode")|[Swift](https://github.com/GeonHyeongKim/AlgoriGym/blob/master/Graph(DFS%20%26%20BFS)/All%20Paths%20From%20Source%20to%20Target.swift)|Medium|O(n^n)|O(n^2)|LeetCode||
