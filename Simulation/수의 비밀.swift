@@ -15,13 +15,43 @@
     [출력]
     주어진 수가 비밀스러운 정보를 가진 숫자라면 Yes, 아니라면 No를 출력한다.
 
-    [Primary idea] :
-    1.
+    [Primary idea] : 구현, 비트연산사
+    1. 2진법으로 바꾼뒤, 1의 개수 count
 
-    Time Complexity :
-    Space Complexity :
+    Time Complexity : O(n)
+    Space Complexity : O(1)
 
     Created by gunhyeong on 2020/12/29.
 */
 
 import Foundation
+
+var secretNum = Int(readLine()!)!
+
+var count = 0
+for bit in String(secretNum, radix: 2) {
+    if count > 1 { break }
+    
+    if bit == "1" {
+        count += 1
+    }
+}
+
+if count <= 1 {
+    print("Yes")
+} else {
+    print("No")
+}
+
+// Mark : 다른 풀이 - 비트 연산자 이용
+// [Primary idea] : 구현, 비트연산사
+// 1. 비트 연산사를 이용하여 해결한다.
+
+var secretNum = Int(readLine()!)!
+
+if secretNum == (secretNum & (~secretNum + 1)) {
+    print("Yes")
+} else {
+    print("No")
+}
+
