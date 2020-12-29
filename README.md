@@ -116,6 +116,7 @@ Swift & Java
 |[탈출](https://www.acmicpc.net/problem/3055 "백준 알고리즘")|[Swift](https://github.com/GeonHyeongKim/AlgoriGym/blob/master/Simulation/%ED%83%88%EC%B6%9C.swift)|30.897%|O(nm)|O(nm)||
 |[프린터 큐](https://www.acmicpc.net/problem/1966 "백준 알고리즘")|[Swift](https://github.com/GeonHyeongKim/AlgoriGym/blob/master/Simulation/%ED%94%84%EB%A6%B0%ED%84%B0%20%ED%81%90.swift)|53.788%|O(n logn)|O(n)||
 |[회전하는 큐](https://www.acmicpc.net/problem/1021 "백준 알고리즘")|[Swift](https://github.com/GeonHyeongKim/AlgoriGym/blob/master/Simulation/%ED%9A%8C%EC%A0%84%ED%95%98%EB%8A%94%20%ED%81%90.swift)|48.706%|?|O(n)|[Int] : Array(1...n)|
+|[시공의 폭풍속으로](https://edu.goorm.io/lecture/15551/%25ED%2594%2584%25EB%25A6%25AC%25EB%25AF%25B8%25EC%2597%2584-%25EC%2595%258C%25EA%25B3%25A0%25EB%25A6%25AC%25EC%25A6%2598-%25EC%259C%2584%25ED%2581%25B4%25EB%25A6%25AC-%25EB%25B9%2584%25ED%2583%2580%25EC%2595%258C%25EA%25B3%25A0-%25EC%258B%259C%25EC%25A6%258C2-%25EC%259E%2585%25EB%25AC%25B8%25ED%258E%25B8 "구름 - 위클리 비타알고 시즌2 강의")|[Swift](https://github.com/GeonHyeongKim/AlgoriGym/blob/master/Simulation/%ED%9A%8C%EC%A0%84%ED%95%98%EB%8A%94%20%ED%81%90.swift)|★1|O(n^m)|O(1)||
 
 ## Binary Search
 ### '이분 탐색'은 이미 정렬된 배열에서 *특정한 원소*가 포함되어 있는지 아닌지를 빠르게 판단할 수 있는 기법
