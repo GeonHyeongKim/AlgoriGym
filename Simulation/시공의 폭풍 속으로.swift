@@ -23,3 +23,15 @@
 */
 
 import Foundation
+
+let selectedHero = readLine()!.split(separator: " ").map{Int($0)!}
+let selectHero = readLine()!.split(separator: " ").map{Int($0)!}
+
+var count = 0
+for hero in selectHero {
+    if !selectedHero.contains(hero) {
+        count += 1
+    }
+}
+
+print(count)
