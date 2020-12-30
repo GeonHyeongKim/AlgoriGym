@@ -58,3 +58,28 @@ func recursive(_ cur: Int, _ sum: Int) {
 
 recursive(1, skills.first!)
 print(answer)
+
+// 방법 2 - bit mask
+// 몇가지 TestCase에서 Time out
+let info = readLine()!.split(separator: " ").map{Int($0)!}
+let size = info.first!
+let target = info.last!
+let skills = readLine()!.split(separator: " ").map{Int($0)!}
+var hong = skills.first!
+var answer = 0
+
+for mask in (0...((1 << (size - 1)) - 1)).reversed() { //N-1 개의 비트를 켜준다.
+    var sum = hong //홍현이의 능력 수치
+    
+    for bit in 0..<size - 1 {
+        if (mask & (1 << bit)) != 0 { // bit 번째 비트가 켜져있다면 sum에 해당 값을 더해준다.
+            sum += skills[size - 1 - bit]
+        }
+    }
+    
+    if sum == target { // 현재 부분집합의 합(sum)과 S가 같다면 정답을 1 더해준다.
+        answer += 1
+    }
+}
+
+print(answer)
