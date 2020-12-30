@@ -25,8 +25,11 @@
     [출력]
     최고의 팀을 만들 수 있는 경우의 수를 출력한다. 팀의 팀원은 최소 1명 이상이어야 한다. (즉 홍현이 혼자서도 팀을 구성할 수 있다)
 
-    [Primary idea] :
-    1.
+    [Primary idea] : 구현, 재귀함수, 비트마스크
+    방법 1 - 재귀
+    1. 홍현이를 포함하는 부분집합의 합이 S가 되는 경우의 수를 찾는 문제
+    2. 합 A의 크기가 S일 때 공집합을 포함하는 부분집합의 개수는 2^S개
+    
 
     Time Complexity : O()
     Space Complexity : O()
@@ -35,3 +38,23 @@
 */
 
 import Foundation
+
+// 방법 1 - 재귀함수
+let info = readLine()!.split(separator: " ").map{Int($0)!}
+let size = info.first!
+let target = info.last!
+let skills = readLine()!.split(separator: " ").map{Int($0)!}
+var answer = 0
+
+func recursive(_ cur: Int, _ sum: Int) {
+    if cur == size {
+        answer += sum == target ? 1 : 0
+        return
+    }
+    
+    recursive(cur + 1, sum + skills[cur])
+    recursive(cur + 1, sum)
+}
+
+recursive(1, skills.first!)
+print(answer)
