@@ -23,10 +23,14 @@
     가장 애틋한 친구는 가장 멀리 떨어져 있는 두 친구를 말한다.
     만약 답이 여러 개인 경우 첫 번째 번호가 가장 작은 번호를, 첫 번째 번호가 같다면 두 번째 번호가 가장 작은 번호를 출력한다.
  
-    [Primary idea] :
+    [Primary idea] : 완전탐색
+    1. 2개를 확인하는 것이므로 2중반복문으로 완전탐색을 한다.
+    2. 주의사항
+        i)  거리를 계산할 때 오버플로우에 주의
+        ii) 두 거리를 비교할 때 언더플로우에 주의
     
-    Time Complexity : O()
-    Space Complexity : O()
+    Time Complexity : O(n^2)
+    Space Complexity : O(n^2)
 
     Created by gunhyeong on 2020/12/29.
 */
@@ -34,3 +38,31 @@
 
 import Foundation
 
+let people = Int(readLine()!)!
+var relationship = [[Int]]()
+var maxValue = 0.0
+var first = 0
+var second = 0
+
+for _ in 0..<people {
+    let peoples = readLine()!.split(separator: " ").map{Int($0)!}
+    relationship.append([peoples.first!, peoples.last!])
+}
+
+for one in 0..<relationship.count {
+    for other in one+1..<relationship.count {
+        let dis = distance(relationship[one][0], relationship[one][1], relationship[other][0], relationship[other][1])
+        if maxValue < dis {
+            maxValue = dis
+            first = one + 1
+            second = other + 1
+        }
+    }
+}
+
+print("\(first) \(second)")
+
+// 거리 구하기
+func distance(_ x: Int, _ y: Int, _ xx: Int, _ yy: Int) -> Double {
+    return sqrt(Double((x-xx)*(x-xx) + (y-yy)*(y-yy)))
+}

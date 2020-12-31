@@ -93,7 +93,7 @@ Swift & Java
 |[프린터](https://programmers.co.kr/learn/courses/30/lessons/42587 "프로그래머스")|[Swift](https://github.com/GeonHyeongKim/AlgoriGym/blob/master/String%26Array/%ED%94%84%EB%A6%B0%ED%84%B0.swift)|Level 2|O(n)|O(n)|프로그래머스|코딩테스트 고득점 Kit|
 |[행복](https://www.acmicpc.net/problem/15969 "백준 알고리즘")|[Swift](https://github.com/GeonHyeongKim/AlgoriGym/blob/master/String%26Array/%ED%96%89%EB%B3%B5.swift)|74.357%|O(n)|O(n)|||
 |[후보키](https://programmers.co.kr/learn/courses/30/lessons/42890 "프로그래머스")|[Swift](https://github.com/GeonHyeongKim/AlgoriGym/blob/master/String%26Array/%EB%B3%B4%EC%84%9D%20%EC%87%BC%ED%95%91.swift)|Level 2|||프로그래머스|2020 카카오 인턴십|
-|[애틋한 선물](https://edu.goorm.io/lecture/15551/%25ED%2594%2584%25EB%25A6%25AC%25EB%25AF%25B8%25EC%2597%2584-%25EC%2595%258C%25EA%25B3%25A0%25EB%25A6%25AC%25EC%25A6%2598-%25EC%259C%2584%25ED%2581%25B4%25EB%25A6%25AC-%25EB%25B9%2584%25ED%2583%2580%25EC%2595%258C%25EA%25B3%25A0-%25EC%258B%259C%25EC%25A6%258C2-%25EC%259E%2585%25EB%25AC%25B8%25ED%258E%25B8 "구름 - 위클리 비타알고 시즌2 강의")|[Swift](https://github.com/GeonHyeongKim/AlgoriGym/commit/43a1af8bad1454581324553976d8271b18ebfd48)|★1||||
+|[애틋한 선물](https://edu.goorm.io/lecture/15551/%25ED%2594%2584%25EB%25A6%25AC%25EB%25AF%25B8%25EC%2597%2584-%25EC%2595%258C%25EA%25B3%25A0%25EB%25A6%25AC%25EC%25A6%2598-%25EC%259C%2584%25ED%2581%25B4%25EB%25A6%25AC-%25EB%25B9%2584%25ED%2583%2580%25EC%2595%258C%25EA%25B3%25A0-%25EC%258B%259C%25EC%25A6%258C2-%25EC%259E%2585%25EB%25AC%25B8%25ED%258E%25B8 "구름 - 위클리 비타알고 시즌2 강의")|[Swift](https://github.com/GeonHyeongKim/AlgoriGym/blob/master/String%26Array/%EC%95%A0%ED%8B%8B%ED%95%9C%20%EC%B9%9C%EA%B5%AC.swift)|★1|O(n^2)|O(n^2)||
 
 ## Simulation
 ### '구현'은 주어진 문제를 그대로 따라가며 각 내용에 맞는 코드를 작성하는 기법
