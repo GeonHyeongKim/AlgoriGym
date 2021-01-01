@@ -34,3 +34,55 @@
 */
 
 import Foundation
+
+import Foundation
+
+var combatPowerBoard = [[Int]]()
+let shipCnt = 11
+
+for _ in 0..<shipCnt {
+    let row = readLine()!.split(separator: " ").map{Int($0)!}
+    combatPowerBoard.append(row)
+}
+
+var totalPower = 0
+var optimalPlacement = [Int](repeating: 0, count: shipCnt)
+var isUsed = [Bool](repeating: false, count: shipCnt)
+for _ in 0..<shipCnt {
+    var maxPower = -1
+    var index = -1
+    
+    for row in 0..<shipCnt {
+        if isUsed[row] { continue }
+        let maxValueByRow = combatPowerBoard[row].max()!
+        
+        if maxPower < maxValueByRow {
+            maxPower = maxValueByRow
+            index = combatPowerBoard[row].firstIndex(of: maxPower)!
+            optimalPlacement[index] = row
+        }
+    }
+    
+    isUsed[index] = true
+    totalPower += maxPower
+}
+
+print(totalPower)
+for ship in 0..<shipCnt {
+    print("\(optimalPlacement[ship] + 1)", terminator: " ")
+}
+
+
+//10  11  0   0   0   0   0   0   0   0   0   1
+//0   11  10  0   0   0   0   0   0   0   0   1, 2
+//0   3   20  7   0   1   0   0   0   0   0   3
+//3   0   0   9   8   0   0   0   0   0   0   4
+//0   0   0   17  2   15  0   0   0   0   0   4
+//0   0   13  11  0   19  2   0   0   0   0   6
+//2   1   5   4   0   0   0   0   0   0   10  11
+//0   0   0   0   0   0   15  14  0   0   0   7
+//0   0   0   0   0   0   0   0   3   7   2   10
+//0   0   0   0   0   0   9   4   1   10  15  11
+//0   0   0   0   10  1   0   5   19  7   0   5
+//
+//1   2   3   5   4   6   11  8   10  7   9
