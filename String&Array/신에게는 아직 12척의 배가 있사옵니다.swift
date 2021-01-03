@@ -24,16 +24,14 @@
     두 번째 줄에는 아군의 진형을 첫 번째부터 순서대로 출력한다.
     만약 최적의 진형이 여러 개인 경우 사전순으로 가장 앞선 진형을 출력한다.
  
-    [Primary idea] :
-    1.
+    [Primary idea] : 완전탐색
+    1. 재귀함수로 11번을 반복
     
-    Time Complexity : O()
-    Space Complexity : O()
+    Time Complexity : O(n^n)
+    Space Complexity : O(n^n)
 
     Created by gunhyeong on 2020/12/29.
 */
-
-import Foundation
 
 import Foundation
 
@@ -47,42 +45,31 @@ for _ in 0..<shipCnt {
 
 var totalPower = 0
 var optimalPlacement = [Int](repeating: 0, count: shipCnt)
-var isUsed = [Bool](repeating: false, count: shipCnt)
-for _ in 0..<shipCnt {
-    var maxPower = -1
-    var index = -1
-    
-    for row in 0..<shipCnt {
-        if isUsed[row] { continue }
-        let maxValueByRow = combatPowerBoard[row].max()!
-        
-        if maxPower < maxValueByRow {
-            maxPower = maxValueByRow
-            index = combatPowerBoard[row].firstIndex(of: maxPower)!
-            optimalPlacement[index] = row
+var temp = [Int](repeating: 0, count: shipCnt)
+var isUse = [Bool](repeating: false, count: shipCnt)
+recursive(0, 0)
+print(totalPower)
+for ship in optimalPlacement {
+    print("\(ship)", terminator: " ")
+}
+
+func recursive(_ s: Int, _ sum: Int) {
+    if s == shipCnt {
+        if totalPower < sum {
+            totalPower = sum
+            for i in 0..<shipCnt {
+                optimalPlacement[i] = temp[i]
+            }
         }
+        return
     }
     
-    isUsed[index] = true
-    totalPower += maxPower
+    for i in 0..<shipCnt {
+        if isUse[i] { continue }
+        isUse[i] = true
+        temp[s] = i + 1
+        recursive(s+1, sum + combatPowerBoard[s][i])
+        temp[i] = 0
+        isUse[i] = false
+    }
 }
-
-print(totalPower)
-for ship in 0..<shipCnt {
-    print("\(optimalPlacement[ship] + 1)", terminator: " ")
-}
-
-
-//10  11  0   0   0   0   0   0   0   0   0   1
-//0   11  10  0   0   0   0   0   0   0   0   1, 2
-//0   3   20  7   0   1   0   0   0   0   0   3
-//3   0   0   9   8   0   0   0   0   0   0   4
-//0   0   0   17  2   15  0   0   0   0   0   4
-//0   0   13  11  0   19  2   0   0   0   0   6
-//2   1   5   4   0   0   0   0   0   0   10  11
-//0   0   0   0   0   0   15  14  0   0   0   7
-//0   0   0   0   0   0   0   0   3   7   2   10
-//0   0   0   0   0   0   9   4   1   10  15  11
-//0   0   0   0   10  1   0   5   19  7   0   5
-//
-//1   2   3   5   4   6   11  8   10  7   9
