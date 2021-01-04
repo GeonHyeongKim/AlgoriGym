@@ -34,13 +34,52 @@
     [출력]
     홍자가 벌어들일 수 있는 최대 수익을 출력한다.
 
-    [Primary idea] :
+    [Primary idea] : 완전탐색
+    1. 모든 지역을 다 방문할 필요가 없으므로, 두개의 경로가 나온다.
+        i)  1 -> 2 -> 3 -> 1
+        ii) 1 -> 3 -> 2 -> 1
+        단, 두 경로를 회전시켜 모든 경우의 수를 확인 가능하다.
+    2. 한 개의 지역을 방문하고 돌아오는 경로부터 개의 지역을 방문하고 돌아오는 경로까지 모든 경로를 다 확인할 필요가 있다
     
-    Time Complexity :
-    Space Complexity :
+    Time Complexity : O(n^2)
+    Space Complexity : O(n^2)
 
     Created by gunhyeong on 2021/01/4.
 */
 
 import Foundation
 
+
+let N = Int(readLine()!)!
+var serviceArea = [[Int]]()
+
+for _ in 0..<N {
+    let row = readLine()!.split(separator: " ").map{Int($0)!}
+    serviceArea.append(row)
+}
+
+var answer = 0
+var isUse = [Bool](repeating: false, count: N)
+var start = 0
+
+for i in 0..<N {
+    start = i
+    recursive(i, 0)
+}
+
+print(answer)
+func recursive(_ s: Int, _ sum: Int) {
+    if (s == start) && (sum != 0) {
+        answer = max(answer, sum)
+        return
+    }
+    
+    for i in 0..<N {
+        if isUse[i] { continue }
+        if serviceArea[s][i] != 0 {
+            isUse[i] = true
+            recursive(i, sum + serviceArea[s][i])
+            isUse[i] = false
+        }
+    }
+}
