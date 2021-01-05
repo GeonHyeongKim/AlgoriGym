@@ -69,7 +69,8 @@ func recursive(_ s: Int, _ sum: Int) {
         isUse[i] = true
         temp[s] = i + 1
         recursive(s+1, sum + combatPowerBoard[s][i])
-        temp[i] = 0
+        temp[s] = 0
         isUse[i] = false
     }
 }
+
