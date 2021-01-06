@@ -25,13 +25,27 @@
     [출력]
     홍현이가 모든 구슬을 정리하기 위해 필요한 상자의 최소 개수를 출력한다.
  
-    [Primary idea] :
-    1.
+    [Primary idea] : 완전탐색
+    1. 가장 큰 상자에 구슬을 최대한 많이 넣습니다.
+    2. 만약 가장 큰 상자에 구슬을 최대한 많이 넣고도 구슬이 남았다면 다음 큰 상자로 넘어가 이를 반복합니다.
     
-    Time Complexity :
-    Space Complexity : 
+    Time Complexity : O(n)
+    Space Complexity : O(n)
  
     Created by gunhyeong on 2021/01/05.
 */
 
 import Foundation
+
+let input = readLine()!.split(separator: " ").map{Int($0)!}
+var N = input.first!    // 구슬의 개수
+let K = input.last!        // 상자 종류의 개수
+let box = readLine()!.split(separator: " ").map{Int($0)!} // 박스 종류
+var answer = 0
+
+for i in (0..<K).reversed() {
+    answer += (N / box[i])
+    N %= box[i]
+}
+
+print(answer)
