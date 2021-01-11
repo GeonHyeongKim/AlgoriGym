@@ -17,13 +17,53 @@
     주어진 수를 두 소수의 합으로 표현한 수를 출력한다.
     만약 답이 하나가 아니라면 두 수의 차가 가장 작은 수를 출력하고, 작은 수를 먼저 출력한다
  
-    [Primary idea] :
-    1.
+    [Primary idea] : 수학적 사고와 공식 활용 (소수 판별법)
+    1. 에라토스테네스의 체를 통해 미리 소수를 구한 다음, 소수만을 이용하여 합이 인지를 판단하는 방법이 가장 효율적
 
-    Time Complexity :
-    Space Complexity : 
+    Time Complexity : O(1)
+    Space Complexity : O(1)
  
     Created by gunhyeong on 2021/01/12.
 */
 
 import Foundation
+
+let prime = Eratosthenes(1_000_000)
+
+for _ in 0..<Int(readLine()!)! {
+    let num = Int(readLine()!)!
+    var one = 0, other = 0
+    var l = 0, r = prime.count - 1
+    
+    while l <= r {
+        let sum = prime[l] + prime[r]
+        if sum == num {
+            one = prime[l]
+            other = prime[r]
+            l += 1
+            r -= 1
+        } else if sum < num {
+            l += 1
+        } else {
+            r -= 1
+        }
+    }
+    print("\(one) \(other)")
+}
+
+// 에라토스테네스의 체
+func Eratosthenes(_ n: Int) -> [Int] {
+    var array = [Bool](repeating: false, count: n+1)
+    var prime = [Int]()
+
+    for i in 2...n {
+        if !array[i] {
+            prime.append(i)
+            for j in stride(from: i, through: n, by: i) {
+               array[j] = true
+            }
+        }
+    }
+    
+    return prime
+}
