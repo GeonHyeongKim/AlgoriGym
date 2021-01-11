@@ -130,6 +130,11 @@ Swift & Java
 |Title|Solution|Difficulty|Time|Space|See|Etc|
 |:---|:---:|:---:|:---:|:---:|:---:|:---|
 
+## Math Theory
+### 수학적 사고와 공식 활용
+|Title|Solution|Difficulty|Time|Space|See|Etc|
+|:---|:---:|:---:|:---:|:---:|:---:|:---|
+|[특등사수](https://edu.goorm.io/lecture/15551/%25ED%2594%2584%25EB%25A6%25AC%25EB%25AF%25B8%25EC%2597%2584-%25EC%2595%258C%25EA%25B3%25A0%25EB%25A6%25AC%25EC%25A6%2598-%25EC%259C%2584%25ED%2581%25B4%25EB%25A6%25AC-%25EB%25B9%2584%25ED%2583%2580%25EC%2595%258C%25EA%25B3%25A0-%25EC%258B%259C%25EC%25A6%258C2-%25EC%259E%2585%25EB%25AC%25B8%25ED%258E%25B8 "구름 - 위클리 비타알고 시즌2 강의")|[Swift](https://github.com/GeonHyeongKim/AlgoriGym/blob/master/Math%20Theory/%ED%8A%B9%EB%93%B1%EC%82%AC%EC%88%98.swift)|★2|O(n^m)|O(1)|최대공약수(GCD)|
 
 ## Greedy
 ### '탐욕(Greedy) 알고리즘'은 현시점에서 가장적합하다고 생각되는 요소를 선택해가는, 즉 **극시안적 선택을 수행하는 알고리즘 기법**

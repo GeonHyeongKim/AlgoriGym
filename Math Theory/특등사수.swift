@@ -22,13 +22,32 @@
     [출력]
     주어진 표적 중 홍현이가 맞힌 표적의 개수를 출력한다.
  
-    [Primary idea] :
-    1.
+    [Primary idea] : 수학적 사고 이용(최대 공약수)
+    1. 최대 공약수 이용
+    2. 원점에서 해당 표적까지 선분을 그렸을 때 표적과 원점을 제외한 다른 정수 좌표가 선분에 포함되지 않으면 해당 표적을 원점에서 맞힐 수 있다
+    * 주의 사항 : 더 큰 수가 0일 경우, runtime error가 뜬다.
 
-    Time Complexity :
-    Space Complexity :
+    Time Complexity : O(n^m)
+    Space Complexity : O(1)
  
     Created by gunhyeong on 2021/01/12.
 */
 
 import Foundation
+
+let n = Int(readLine()!)! // 사격 횟수
+var ans = 0
+
+for _ in 0..<n {
+    let pos = readLine()!.split(separator: " ").map{Int($0)!}
+    if GCD(abs(pos.first!), abs(pos.last!)) == 1 {
+        ans += 1
+    }
+}
+
+print(ans)
+
+func GCD(_ min: Int, _ max: Int) -> Int {
+    if max == 0 { return min }
+    return min % max == 0 ? max : GCD(max, min % max)
+}
