@@ -20,13 +20,50 @@
     [출력]
     홍현이가 할 수 있는 최대 부업의 개수를 출력한다.
  
-    [Primary idea] :
-    1.
-    
-    Time Complexity :
-    Space Complexity :
+    [Primary idea] : 탐욕
+    1. 다양한 해결책을 생각해본다.
+        1) 시작 시간이 빠른 부업을 먼저 시작한다.   -> (x)
+        2) 걸리는 시간이 짧은 부업을 먼저 시작한다.  -> (x)
+        3) 끝나는 시간이 빠른 부업을 먼저 시작한다.  -> (o)
+    2. STL 정렬을 통해 1-3)을 정렬한다
+    3. i번째 부업이 마지막 부업이 끝난 시간보다 크거나 같다면 정답을 1증가 시키고, 부업이 끝난 시간을 갱신
+
+    Time Complexity : O(n^2)
+    Space Complexity : O(n^2)
  
     Created by gunhyeong on 2021/01/11.
 */
 
 import Foundation
+
+let n = Int(readLine()!)!
+var kitchen = [(Int, Int)]() // c++의 pair & vector 대신
+
+for _ in 0..<n {
+    let info = readLine()!.split(separator: " ").map{Int($0)!}
+    kitchen.append((info.first!, info.last!))
+}
+
+kitchen.sort(by: {
+    if $0.1 < $1.1 {
+        return true
+    } else if $0.1 > $1.1 {
+        return false
+    } else {
+        if $0.0 < $1.0 {
+            return true
+        } else {
+            return false
+        }
+    }
+})
+
+var e = 0, answer = 0
+for i in 0..<n {
+    if kitchen[i].0 >= e { // i번째 부업이 마지막 부업이 끝난 시간보다 크거나 같다면
+        answer += 1
+        e = kitchen[i].1 // 부업이 끝난 시간을 갱신
+    }
+}
+
+print(answer)
