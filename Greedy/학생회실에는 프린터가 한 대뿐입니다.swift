@@ -19,13 +19,27 @@
     [출력]
     가장 좋은 효율 값을 출력한다.
  
-    [Primary idea] :
-    1.
+    [Primary idea] : 탐욕
+    1. 시간을 오름차순으로 정렬
+    2. Σ(w_i+a_i)를 식으로 표현한다.
     
-    Time Complexity :
-    Space Complexity : 
+    Time Complexity : O(n^2)
+    Space Complexity : O(n^2)
  
     Created by gunhyeong on 2021/01/07.
 */
 
 import Foundation
+
+let cntStudent = Int(readLine()!)!
+var student = readLine()!.split(separator: " ").map{Int($0)!}
+
+student.sort()
+var answer = 0, temp = 0
+
+for i in 0..<cntStudent {
+    answer += student[i] + temp
+    temp += student[i]
+}
+
+print(answer)
