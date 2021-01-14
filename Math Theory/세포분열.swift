@@ -22,13 +22,42 @@
     [출력]
     T초 후에 세포의 개수를 출력한다. 답이 매우 커질 수 있으므로 답을 1,000,000,007 (10^9 + 7)로 나눈 나머지를 출력한다.
  
-    [Primary idea] :
-    1.
+    [Primary idea] : 나머지 연산자의 성질(페르마의 소정리)
+    1. 답을 m으로 나눈 나머지를 구하라
+    2. N(K^T - 1) * (K - 1)^(10^9+7 - 2)
 
-    Time Complexity :
-    Space Complexity :
+    Time Complexity : O(n)
+    Space Complexity : O(1)
  
     Created by gunhyeong on 2021/01/12.
 */
 
 import Foundation
+
+let input = readLine()!.split(separator: " ").map{Int($0)!}
+let n = input[0]
+let k = input[1]
+let t = input[2]
+let na = 1_000_000_007
+
+var result = ((n*((pow(k,t) - 1 + na) % na) % na) * pow(k-1, na - 2)) % na
+
+print(result)
+
+func pow(_ a: Int, _ n:Int) -> Int {
+    var a = a
+    var n = n
+    var res = 1
+    
+    while n > 0 {
+        if n % 2 != 0 {
+            res *= a
+            res %= na
+        }
+        
+        a *= a
+        a %= na
+        n /= 2
+    }
+    return res
+}
