@@ -24,13 +24,30 @@
     N번째 날에 홍현이가 가지고 있는 닭의 수를 출력한다.
     답이 매우 커질 수 있으므로 답을 10^9+7로 나눈 나머지를 출력한다.
  
-    [Primary idea] :
-    1.
+    [Primary idea] : 동적계획법, 나머지 연산자 성징
+    1. 작은 문제를 큰 문제를 풀 수 있을 때까지 차례차례 풀어나가는 방법을 상향식 방법(Top-down)으로 해결
+    2. 약 90번째 항부터 수가 매우 커져 나머지 연산자 성질을 이용
     
-    Time Complexity :
-    Space Complexity :
+    Time Complexity : O(n)
+    Space Complexity : O(n)
 
     Created by gunhyeong on 2021/01/4.
 */
 
 import Foundation
+
+let n = Int(readLine()!)!
+let maxN = 1_000_001
+var coop = [Int](repeating: 0, count: maxN)
+var chicken = 0
+coop[0] = 0
+coop[1] = 1
+coop[2] = 1
+let mod = 1_000_000_000 + 7
+
+for i in 3...n {
+    coop[i] = coop[i-1] + coop[i-2]
+    coop[i] %= mod
+}
+
+print(coop[n])
