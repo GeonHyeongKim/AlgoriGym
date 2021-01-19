@@ -26,13 +26,26 @@
     [출력]
     건설할 수 있는 최대 다리 개수를 출력한다.
 
+    [Primary idea] : 동적 계획법
 
-    [Primary idea] :
-    
-    Time Complexity :
-    Space Complexity :
+    Time Complexity : O(n^2)
+    Space Complexity : O(n)
 
     Created by gunhyeong on 2021/01/19.
 */
 
 import Foundation
+
+let n = Int(readLine()!)!
+var point = readLine()!.split(separator: " ").map{Int($0)!}
+var d = [Int](repeating: 1, count: n)
+
+for i in 1..<n {
+    for j in 0..<i {
+        if point[i] > point[j] {
+            d[i] = max(d[i], d[j] + 1)
+        }
+    }
+}
+
+print(d.max()!)
