@@ -293,6 +293,7 @@ Swift & Java
 |[점프](https://www.acmicpc.net/problem/1890 "백준 알고리즘")|[Swift](https://github.com/GeonHyeongKim/AlgoriGym/blob/master/Dynamic/%EC%A0%90%ED%94%84.swift)|28.055%|O(n^2)|O(n^2)|백준 알고리즘||
 |[정수 삼각형](https://www.acmicpc.net/problem/1932 "백준 알고리즘")|[Swift](https://github.com/GeonHyeongKim/AlgoriGym/blob/master/Dynamic/%EC%A0%95%EC%88%98%20%EC%82%BC%EA%B0%81%ED%98%95.swift)|58.748%|O(n^2)|O(1)|백준 알고리즘||
 |[치킨집 사장님](https://edu.goorm.io/lecture/15551/%25ED%2594%2584%25EB%25A6%25AC%25EB%25AF%25B8%25EC%2597%2584-%25EC%2595%258C%25EA%25B3%25A0%25EB%25A6%25AC%25EC%25A6%2598-%25EC%259C%2584%25ED%2581%25B4%25EB%25A6%25AC-%25EB%25B9%2584%25ED%2583%2580%25EC%2595%258C%25EA%25B3%25A0-%25EC%258B%259C%25EC%25A6%258C2-%25EC%259E%2585%25EB%25AC%25B8%25ED%258E%25B8 "구름 - 위클리 비타알고 시즌2 강의")|[Swift](https://github.com/GeonHyeongKim/AlgoriGym/blob/master/Dynamic/%EC%B9%98%ED%82%A8%EC%A7%91%20%EC%82%AC%EC%9E%A5%EB%8B%98.swift)|★2|O(n)|(n)|구름||
+|[다리 건설](https://edu.goorm.io/lecture/15551/%25ED%2594%2584%25EB%25A6%25AC%25EB%25AF%25B8%25EC%2597%2584-%25EC%2595%258C%25EA%25B3%25A0%25EB%25A6%25AC%25EC%25A6%2598-%25EC%259C%2584%25ED%2581%25B4%25EB%25A6%25AC-%25EB%25B9%2584%25ED%2583%2580%25EC%2595%258C%25EA%25B3%25A0-%25EC%258B%259C%25EC%25A6%258C2-%25EC%259E%2585%25EB%25AC%25B8%25ED%258E%25B8 "구름 - 위클리 비타알고 시즌2 강의")|[Swift](https://github.com/GeonHyeongKim/AlgoriGym/blob/master/Dynamic/%EC%B9%98%ED%82%A8%EC%A7%91%20%EC%82%AC%EC%9E%A5%EB%8B%98.swift)|★3|||구름||
 
 ## Data Structure
 |Title|Solution|Etc|
