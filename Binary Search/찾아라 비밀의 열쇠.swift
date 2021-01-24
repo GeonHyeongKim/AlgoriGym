@@ -26,12 +26,51 @@
     [출력]
     홍현이가 현실 세계로 이동할 수 있다면 yes, 이동할 수 없다면 no를 출력한다.
 
-    [Primary idea] :
+    [Primary idea] : 이분 탐색
+    1. 시간 복잡도 줄이기! O(KN) -> O((K+N)logN)
 
-    Time Complexity :
-    Space Complexity : 
+    Time Complexity : O((K+N)logN)
+    Space Complexity : O(N)
 
     Created by gunhyeong on 2021/01/23.
 */
 
 import Foundation
+
+import Foundation
+
+let input = readLine()!.split(separator: " ").map{Int($0)!}
+let n = input[0]
+let k = input[1]
+var c = input[2]
+
+let roomKey = readLine()!.split(separator: " ").map{Int($0)!}.sorted()
+let haveKey = readLine()!.split(separator: " ").map{Int($0)!}.sorted()
+
+for have in haveKey {
+    if binarySearch(have) != -1 {
+        c -= 1
+        if c == 0 { break }
+    }
+}
+
+if c == 0 {
+    print("yes")
+} else {
+    print("no")
+}
+
+func binarySearch(_ num: Int) -> Int {
+    var l = 0, r = roomKey.count - 1
+    while l <= r {
+        let mid = (l+r)/2
+        
+        if roomKey[mid] == num { return mid }
+        else if roomKey[mid] < num {
+            l = mid + 1
+        } else {
+            r = mid - 1
+        }
+    }
+    return -1
+}
