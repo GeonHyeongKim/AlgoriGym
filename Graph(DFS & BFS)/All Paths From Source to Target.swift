@@ -43,3 +43,29 @@ class Solution {
 //for i in Solution().allPathsSourceTarget([[1,2],[3],[3],[]]) {
 //    print(i)
 //}
+
+
+// 2번쨰 풀이
+// func 안에 func
+class Solution {
+    func allPathsSourceTarget(_ graph: [[Int]]) -> [[Int]] {
+        let n = graph.count
+        var list = [[Int]]()
+        
+        func dfs(_ node: Int, _ visit: [Int]) {
+            guard node != n-1 else {
+                list.append(visit)
+                return
+            }
+                        
+            for edge in graph[node] {
+                if !visit.contains(edge) {
+                    dfs(edge, visit + [edge])
+                }
+            }
+        }
+        
+        dfs(0, [0])
+        return list
+    }
+}
