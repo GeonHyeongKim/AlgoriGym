@@ -38,3 +38,14 @@ class Solution {
         return 0
     }
 }
+
+// 2번째 풀이
+// Runtime: 1064 ms, faster than 75.22% of Swift online submissions for Find Center of Star Graph.
+// Memory Usage: 23.6 MB, less than 83.19% of Swift online submissions for Find Center of Star Graph.
+// Primary idea: 첫번쨰 배열의 값이 2번쨰 배열에 들어있는지 확인하는 방법
+
+class Solution {
+    func findCenter(_ edges: [[Int]]) -> Int {
+        return edges[1].contains(edges[0][0]) ? edges[0][0] : edges[0][1]
+    }
+}
