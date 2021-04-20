@@ -2,7 +2,7 @@
 //  Find Center of Star Graph.swift
 //  Question Link: https://leetcode.com/problems/find-center-of-star-graph/
 //  Primary idea:       (Graph)
-//                      1.
+//  1. 1번풀이가 오히려 더 괜찮은 방법이다.
 //
 //  Created by gunhyeong on 2021/04/20.
 //
