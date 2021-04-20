@@ -34,3 +34,25 @@ class Solution {
         }
     }
 }
+
+// 2번째 풀이
+//Runtime: 40 ms, faster than 80.70% of Swift online submissions for Keys and Rooms.
+//Memory Usage: 14.3 MB, less than 49.12% of Swift online submissions for Keys and Rooms.
+class Solution {
+    func canVisitAllRooms(_ rooms: [[Int]]) -> Bool {
+        var visited = [Bool](repeating: false, count: rooms.count)
+        visited[0] = true
+        
+        func dfs(_ n: Int) {
+            for next in rooms[n] {
+                if !visited[next] {
+                    visited[next] = true
+                    dfs(next)
+                }
+            }
+        }
+        
+        dfs(0)
+        return !visited.contains(false)
+    }
+}
