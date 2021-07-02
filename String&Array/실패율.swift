@@ -45,3 +45,22 @@ func solution(_ N:Int, _ stages:[Int]) -> [Int] {
     // 2. 다중 정렬 - 키값으로 정렬한 뒤에 밸류값으로 정렬
     return failureRateListByStage.sorted(by: <).sorted(by: { $0.value > $1.value }).map {$0.key}
 }
+
+//MARK: 분모값에 대한 접근 변경 - 성공
+// result : 100점
+import Foundation
+
+func solution(_ N:Int, _ stages:[Int]) -> [Int] {
+    var len = stages.count
+    var res = [(Int, Double)]()
+    
+    for i in 1...N {
+        let cnt = stages.filter{$0 == i}.count
+        
+        let fail = len == 0 ? 0.0 : Double(cnt) / Double(len)
+        res.append((i, fail))
+        len -= cnt
+    }
+    
+    return res.sorted(by: {$0.1 > $1.1}).map{$0.0}
+}
